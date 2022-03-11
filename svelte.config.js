@@ -5,7 +5,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 
 /** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
   // Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or  used as pages)
   extensions: [".svelte", ".md"],
 
@@ -39,5 +39,3 @@ const config = {
     },
   },
 };
-
-export default config;

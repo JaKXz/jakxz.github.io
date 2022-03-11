@@ -4,8 +4,8 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d build --branch main",
+    "predeploy": "npm run build && touch build/.nojekyll",
+    "deploy": "npx gh-pages -d build -b main --dotfiles",
     "preview": "svelte-kit preview",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
