@@ -1,0 +1,1 @@
+const t="Jason Kurian",o="Personal portfolio via SvelteKit",s="Jason Kurian",e=10,a=[{title:"Blog",route:"/blog"},{title:"About",route:"/about"},{title:"Contact",route:"/contact"}];export{s as a,o as b,a as n,e as p,t as s};
