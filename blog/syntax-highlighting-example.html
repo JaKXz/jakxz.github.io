@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="content-security-policy" content=""><title>Syntax highlighting with mdsvex</title><meta data-key="description" name="description" content="This post shows you how syntax highlighting works here." data-svelte="svelte-1jn8al1"><meta property="og:type" content="article" data-svelte="svelte-1jn8al1"><meta property="og:title" content="Syntax highlighting with mdsvex" data-svelte="svelte-1jn8al1"><meta name="twitter:title" content="Syntax highlighting with mdsvex" data-svelte="svelte-1jn8al1"><meta property="og:description" content="This post shows you how syntax highlighting works here." data-svelte="svelte-1jn8al1"><meta name="twitter:description" content="This post shows you how syntax highlighting works here." data-svelte="svelte-1jn8al1"><meta property="og:image:width" content="16" data-svelte="svelte-1jn8al1"><meta property="og:image:height" content="9" data-svelte="svelte-1jn8al1">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-de1dffd3.css">
+	<link rel="modulepreload" href="/_app/start-c9f7fd12.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-c9842d63.js">
+	<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
+	<link rel="modulepreload" href="/_app/chunks/singletons-d1fb5791.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-d447c007.js">
+	<link rel="modulepreload" href="/_app/chunks/config-c70d1e31.js">
+	<link rel="modulepreload" href="/_app/pages/blog/_post_.svelte-f731988d.js">
+    <!-- You can replace this block to update the Google fonts used in the project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Fonts block -->
+
+    <!-- You can add global <meta> tags here, but anything not global or dynamic should be a `<svelte:head>` tag on the proper page(s) instead. -->
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+
+
+
+
+<div class="layout"><header><a class="skip-to-content-link" href="#main">Skip to main content
+  </a>
+
+  <a href="/" class="site-title">Jason Kurian</a>
+
+  <button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only">Toggle hamburger menu</span>
+  <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button>
+  
+<nav class="main-nav"><ul><li><a href="/blog" aria-current="page" class="active">Blog
+      </a></li><li><a href="/about" aria-current="false">About
+      </a></li><li><a href="/contact" aria-current="false">Contact
+      </a></li></ul>
+  <button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only">Toggle hamburger menu</span>
+  <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></header>
+  <main id="main" tabindex="-1">
+
+
+
+
+
+
+<article class="post">
+  <img class="cover-image" src="/images/linus-nylund-Q5QspluNZmM-unsplash.jpg" alt="" style="aspect-ratio: 16 / 9;" width="16" height="9">
+
+  <h1>Syntax highlighting with mdsvex</h1>
+
+  <div class="meta"><b>Published:</b>
+    2021-12-01
+    <br>
+    <b>Updated:</b>
+    2021-12-01</div>
+
+  <p>mdsvex has automatic, built-in syntax highlighting with <a href="https://prismjs.com/" rel="nofollow">Prism.js</a>; just include the language name after the triple backticks, like so:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&#96;&#96;&#96;css
+/* Your CSS here */
+&#96;&#96;&#96;</code><!-- HTML_TAG_END --></pre>
+<p>And that will render just like so:</p>
+<pre class="language-css"><!-- HTML_TAG_START --><code class="language-css"><span class="token selector">.my-css-class</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #ffd100<span class="token punctuation">;</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token comment">/* etc... */</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>Here’s how you’d do JavaScript:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&#96;&#96;&#96;js
+// You can use js or javascript for the language
+&#96;&#96;&#96;</code><!-- HTML_TAG_END --></pre>
+<p>Highlighted code sample:</p>
+<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">invertNumberInRange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">num<span class="token punctuation">,</span> range</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> range <span class="token operator">-</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token function">invertNumberInRange</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 75</span></code><!-- HTML_TAG_END --></pre>
+<p>Of course, mdsvex supports Svelte highlighting, too:</p>
+<pre class="language-svelte"><!-- HTML_TAG_START --><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> myComponent <span class="token keyword">from</span> <span class="token string">'$lib/components/myComponent.svelte'</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">export</span> <span class="token keyword">let</span> myProp <span class="token operator">=</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token attr-name">prop=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>myProp<span class="token punctuation">&#125;</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<p>All these colors are in the <code>_prism.scss</code> file inside <code>src/lib/assets/scss</code>, if you’d like to change them.</p>
+
+  <aside class="post-footer"><h2>Posted in:</h2>
+      <ul><li><a href="/blog/category/sveltekit/">sveltekit</a>
+          </li><li><a href="/blog/category/web/">web</a>
+          </li><li><a href="/blog/category/css/">css</a>
+          </li><li><a href="/blog/category/markdown/">markdown</a>
+          </li></ul></aside></article></main>
+  <footer>
+<nav class="main-nav"><ul><li><a href="/blog" aria-current="page" class="active">Blog
+      </a></li><li><a href="/about" aria-current="false">About
+      </a></li><li><a href="/contact" aria-current="false">Contact
+      </a></li></ul>
+  <button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only">Toggle hamburger menu</span>
+  <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav>
+
+  <nav><ul><li><a href="/api/rss.xml" rel="external">RSS</a></li>
+      <li><a href="/">Home</a></li></ul></nav>
+
+  <p>©2022 Jason Kurian</p></footer></div>
+
+
+		<script type="module" data-hydrate="6zyf7b">
+		import { start } from "/_app/start-c9f7fd12.js";
+		start({
+			target: document.querySelector('[data-hydrate="6zyf7b"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-d447c007.js"),
+						import("/_app/pages/blog/_post_.svelte-f731988d.js")
+				],
+				params: {post:"syntax-highlighting-example"}
+			}
+		});
+	</script></div>
+  </body>
+</html>
