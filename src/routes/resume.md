@@ -63,12 +63,12 @@ Oct **2015** - Apr **2016**
 Including 4-8 month [internships](https://linkedin.com/in/jgkurian/details/experience):
 
 <div class="flex wrap justify-between captions">
-  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/static/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
-  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/static/images/ims.webp" alt="Intelligent Mechatronic Systems Inc. logo" title="Fullstack Developer at IMS" /> Fullstack Dev</div>
-  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/static/images/coreworx.webp" alt="Coreworx Inc. logo" title="Web Developer at Coreworx" /> Web Dev</div>
-  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/static/images/bluesun.webp" alt="BlueSun logo" title="Web Developer at BlueSun / Wealthserv" /> Web Dev</div>
-  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/static/images/polar.webp" title="Web Developer at Polar Geomatics Solutions LP" alt="Polar Geomatics Solutions logo" /> Web Dev</div>
-  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/static/images/morega.webp" alt="Morega systems logo" title="QA Analyst at Morega Systems Inc."/> QA Analyst</div>
+  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
+  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/ims.webp" alt="Intelligent Mechatronic Systems Inc. logo" title="Fullstack Developer at IMS" /> Fullstack Dev</div>
+  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/coreworx.webp" alt="Coreworx Inc. logo" title="Web Developer at Coreworx" /> Web Dev</div>
+  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/bluesun.webp" alt="BlueSun logo" title="Web Developer at BlueSun / Wealthserv" /> Web Dev</div>
+  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/polar.webp" title="Web Developer at Polar Geomatics Solutions LP" alt="Polar Geomatics Solutions logo" /> Web Dev</div>
+  <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/morega.webp" alt="Morega systems logo" title="QA Analyst at Morega Systems Inc."/> QA Analyst</div>
 </div>
 
 **Bachelor of Knowledge Integration, Honours, inc. | 2016 - 2019**<br>
