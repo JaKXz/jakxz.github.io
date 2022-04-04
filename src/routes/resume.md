@@ -1,4 +1,5 @@
 <svelte:head>
+
   <title>Jason Kurian | Resume</title>
   <meta name="description" content="Jason Kurian - Senior Developer Resume" />
 </svelte:head>
@@ -28,7 +29,7 @@ May **2019** - Aug **2020**
 - Introduced thorough automated testing practices and code consistency for our Python codebases, resulting in faster and more reliable delivery.
 - Supervised a Junior Developer and mentored them through daily processes and ad hoc projects helping them become a quickly contributing member of the team.
 - Facilitated team retrospectives & pruned meetings leading to immediate & continuous improvement in our process and effectiveness of experiments.
-- Reviewed several applicants and conducted personal and technical interviews. Received positive feedback from all applicants for the interview process and mentorship provided. 
+- Reviewed several applicants and conducted personal and technical interviews. Received positive feedback from all applicants for the interview process and mentorship provided.
 
 [Nulogy](http://nulogy.com) | _Intermediate Developer_<br>
 Aug **2016** - Aug **2018**
@@ -45,17 +46,17 @@ Oct **2015** - Apr **2016**
 
 ## ䷢ Open Source
 
-1. [IstanbulJS](https://github.com/istanbuljs), _approx. 10MM weekly downloads_<br> 
-Core team member of JS code-coverage tooling focusing on documentation, issue triaging, and community support.
+1. [IstanbulJS](https://github.com/istanbuljs), _approx. 10MM weekly downloads_<br>
+   Core team member of JS code-coverage tooling focusing on documentation, issue triaging, and community support.
 
 2. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), _500K+ monthly downloads_<br>
-Became a core maintainer after reaching out to the original author on the React core team and taking care of repository issues. Contributed architectural decisions and insights to the larger Redux Utilities org.
+   Became a core maintainer after reaching out to the original author on the React core team and taking care of repository issues. Contributed architectural decisions and insights to the larger Redux Utilities org.
 
 3. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin)<br>
-Took over core maintenance to fix a bug for my own use. Tackled community reported bugs and eventually handed off ownership to the webpack-contrib org.
+   Took over core maintenance to fix a bug for my own use. Tackled community reported bugs and eventually handed off ownership to the webpack-contrib org.
 
 4. [20+ published npm packages](https://www.npmjs.com/~jakxz)<br>
-Sharing smaller modules as utilities and reusable functions as needed.
+   Sharing smaller modules as utilities and reusable functions as needed.
 
 ## 📚 Education
 

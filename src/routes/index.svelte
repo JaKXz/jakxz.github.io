@@ -1,6 +1,6 @@
 <script context="module">
   export const load = async () => {
-    const {default: ReadMe} = await import("../../README.md");
+    const { default: ReadMe } = await import("../../README.md");
 
     return {
       props: {

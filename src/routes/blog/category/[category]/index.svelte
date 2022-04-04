@@ -30,7 +30,6 @@
 
 <!-- This dynamic page renders any page at /blog/category/* -->
 
-
 <svelte:head>
   <title>Category: {category}</title>
 </svelte:head>
