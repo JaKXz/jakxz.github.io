@@ -1,0 +1,1 @@
+const t="Jason Kurian",s="UX + Fullstack dev",e="Jason Kurian",o=10,a=[{title:"Blog",route:"/blog"},{title:"Resum\xE9",route:"/resume"},{title:"Contact",route:"/contact"}];export{e as a,s as b,a as n,o as p,t as s};
