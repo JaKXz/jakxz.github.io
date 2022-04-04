@@ -1,5 +1,5 @@
 export const siteTitle = "Jason Kurian";
-export const siteDescription = "Personal portfolio via SvelteKit";
+export const siteDescription = "UX + Fullstack dev";
 export const siteURL = "jakxz.github.io";
 export const siteLink = "https://jakxz.github.io";
 export const siteAuthor = "Jason Kurian";
