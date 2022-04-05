@@ -1,6 +1,6 @@
 {
-  "name": "sveltekit-blog-starter",
-  "version": "1.4.1",
+  "name": "jason-kurian-portfolio",
+  "private": true,
   "scripts": {
     "build": "svelte-kit build",
     "predeploy": "npm run build && touch build/.nojekyll",
