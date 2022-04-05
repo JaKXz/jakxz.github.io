@@ -3,11 +3,30 @@
   export const load = async ({ params }) => {
     try {
       const post = await import(`../../lib/posts/${params.post}.md`);
+      let coverCaption, imageAlt;
+      if (post.metadata.coverImage) {
+        const [, , id] = post.metadata.coverImage.split("-");
+        const { alt_description, user } = await fetch(
+          `https://api.unsplash.com/photos/${id}`,
+          {
+            headers: {
+              Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`,
+            },
+          }
+        ).then((res) => res.json());
+        imageAlt = alt_description;
+        coverCaption = user
+          ? {
+              author: user.name,
+              authorUrl: user.links.html,
+            }
+          : null;
+      }
 
       return {
         props: {
           PostContent: post.default,
-          meta: { ...post.metadata, slug: params.post },
+          meta: { ...post.metadata, slug: params.post, coverCaption, imageAlt },
         },
       };
     } catch (error) {
@@ -32,6 +51,8 @@
     coverWidth,
     coverHeight,
     categories,
+    imageAlt,
+    coverCaption,
   } = meta;
 </script>
 
@@ -51,15 +72,28 @@
 </svelte:head>
 
 <article class="post">
-  <!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-  <img
-    class="cover-image"
-    src={coverImage}
-    alt=""
-    style="aspect-ratio: {coverWidth} / {coverHeight};"
-    width={coverWidth}
-    height={coverHeight}
-  />
+  <figure class="cover-image">
+    <img
+      src={coverImage}
+      alt={imageAlt || ""}
+      style="aspect-ratio: {coverWidth} / {coverHeight};"
+      width={coverWidth}
+      height={coverHeight} />
+    {#if !!coverCaption}
+      <figcaption>
+        Photo by
+        <a
+          href={`${coverCaption.authorUrl}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`}
+          >{coverCaption.author}</a>
+        on
+        <a
+          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a>
+      </figcaption>
+    {:else if imageAlt}
+      <figcaption>{imageAlt}</figcaption>
+    {/if}
+  </figure>
 
   <h1>{title}</h1>
 

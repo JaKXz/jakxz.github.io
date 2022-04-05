@@ -3,6 +3,7 @@ import { mdsvex } from "mdsvex";
 import preprocess from "svelte-preprocess";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
+import "dotenv/config";
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -31,6 +32,11 @@ export default {
 
     // Allows reading from files in the root directory. Necessary for loading the README on the homepage, but nothing else.
     vite: {
+      define: {
+        "process.env.UNSPLASH_ACCESS_KEY": JSON.stringify(
+          process.env.UNSPLASH_ACCESS_KEY
+        ),
+      },
       server: {
         fs: {
           allow: ["."],
