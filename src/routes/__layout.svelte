@@ -1,10 +1,9 @@
 <!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script context="module">
   export const load = async ({ url, fetch }) => {
-    /**
-     * This fetch call is not used in this file, but the route won't be pre-rendered
-     * and routed properly unless it's called inside a `load` function. ¯\_(ツ)_/¯
-     * */
+    // This fetch call is not used in this file, but the route won't be pre-rendered
+    // and routed properly unless it's called inside a `load` function. ¯\_(ツ)_/¯
+    // eslint-disable-next-line no-unused-vars
     const rss = await fetch(`/api/rss.xml`);
 
     return {
@@ -48,10 +47,6 @@
   });
 </script>
 
-<!-- 
-  The below markup is used on every page in the site. The <slot> is where the page's
-  actual contents will show up.
--->
 <div class="layout" class:open={$isMenuOpen}>
   <Header />
   {#key path}

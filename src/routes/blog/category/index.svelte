@@ -7,7 +7,7 @@
 
     posts.forEach((post) => {
       post.categories.forEach((category) => {
-        if (uniqueCategories.hasOwnProperty(category)) {
+        if (Object.hasOwn(uniqueCategories, category)) {
           uniqueCategories[category].count += 1;
         } else {
           uniqueCategories[category] = {
