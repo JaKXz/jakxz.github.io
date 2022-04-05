@@ -24,7 +24,6 @@
   import { prefetch } from "$app/navigation";
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import Callout from "$lib/components/Callout.svelte";
 
   const transitionIn = { delay: 150, duration: 150 };
   const transitionOut = { duration: 100 };
@@ -60,8 +59,7 @@
       id="main"
       tabindex="-1"
       in:fade={transitionIn}
-      out:fade={transitionOut}
-    >
+      out:fade={transitionOut}>
       <slot />
     </main>
   {/key}
