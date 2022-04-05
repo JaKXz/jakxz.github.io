@@ -60,7 +60,7 @@ Oct **2015** - Apr **2016**
 
 ## 📚 Education
 
-Including 4-8 month [internships](https://linkedin.com/in/jgkurian/details/experience):
+Over 3 years of [internships](https://linkedin.com/in/jgkurian):
 
 <div class="flex wrap justify-between captions">
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
