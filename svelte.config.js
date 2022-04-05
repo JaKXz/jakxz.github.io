@@ -1,5 +1,6 @@
 import adapter from "@sveltejs/adapter-static";
 import { mdsvex } from "mdsvex";
+import rehypeExternalLinks from "rehype-external-links";
 import preprocess from "svelte-preprocess";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
@@ -22,7 +23,7 @@ export default {
       extensions: [".md"],
 
       // Adds IDs to headings, and anchor links to those IDs. Note: must stay in this order to work.
-      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
+      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, rehypeExternalLinks],
     }),
   ],
 
