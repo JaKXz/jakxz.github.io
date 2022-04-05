@@ -27,6 +27,20 @@ img {
   height: auto;
 }
 
+.cover-image {
+  display: flex;
+  flex-flow: column;
+  margin-inline: 0;
+
+  figcaption {
+    background: var(--paper);
+    font-style: italic;
+    font-size: smaller;
+    padding: 3px;
+    text-align: center;
+  }
+}
+
 .post {
   h1 {
     margin-bottom: 1rem;
@@ -35,10 +49,6 @@ img {
   .meta {
     font-size: 0.8rem;
     margin-bottom: 4rem;
-  }
-
-  img + h1 {
-    margin-top: 1rem;
   }
 }
 

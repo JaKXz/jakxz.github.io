@@ -12,8 +12,7 @@
             alt=""
             width={post.coverWidth}
             height={post.coverHeight}
-            style="ratio: {post.coverWidth} / {post.coverHeight}"
-          />
+            style="aspect-ratio: {post.coverWidth} / {post.coverHeight}" />
           <h2>
             {post.title}
           </h2>
