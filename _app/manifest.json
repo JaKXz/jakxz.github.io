@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-5eeb9cac.js",
+    "file": "start-6ef0f2a7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -22,8 +22,7 @@
       "src/routes/blog/page/index.svelte",
       "src/routes/contact.svelte",
       "src/routes/index.svelte",
-      "src/routes/resume.md",
-      "src/routes/uses.svelte"
+      "src/routes/resume.md"
     ]
   },
   "src/routes/__layout.svelte": {
@@ -50,7 +49,7 @@
     ]
   },
   "src/routes/blog/[post].svelte": {
-    "file": "pages/blog/_post_.svelte-8c4ac260.js",
+    "file": "pages/blog/_post_.svelte-76d2be12.js",
     "src": "src/routes/blog/[post].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -165,7 +164,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-92e6e852.js",
+    "file": "pages/index.svelte-bb47c745.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -179,7 +178,7 @@
     ]
   },
   "src/routes/resume.md": {
-    "file": "pages/resume.md-37a5c7c0.js",
+    "file": "pages/resume.md-96f59ee0.js",
     "src": "src/routes/resume.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -188,15 +187,6 @@
     ],
     "css": [
       "assets/pages/resume.md-b2e9be8c.css"
-    ]
-  },
-  "src/routes/uses.svelte": {
-    "file": "pages/uses.svelte-88096fdc.js",
-    "src": "src/routes/uses.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-c8298046.js"
     ]
   },
   "_index-c8298046.js": {
@@ -269,14 +259,11 @@
     ]
   },
   "README.md": {
-    "file": "chunks/README-c009408a.js",
+    "file": "chunks/README-7ec9367d.js",
     "src": "README.md",
     "isDynamicEntry": true,
     "imports": [
       "_index-c8298046.js"
-    ],
-    "css": [
-      "assets/README-c839cb35.css"
     ]
   }
 }
