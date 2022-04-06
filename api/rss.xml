@@ -18,11 +18,11 @@
 <description>This post shows you how syntax highlighting works here.</description>
 <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
 </item><item>
-<guid isPermaLink="true">https://jakxz.github.io/blog/heading-links-example</guid>
-<title>Automatic heading links in mdsvex</title>
-<link>https://jakxz.github.io/blog/heading-links-example</link>
-<description>Check out how heading links work with this starter in this post.</description>
-<pubDate>Tue, 26 Oct 2021 00:00:00 GMT</pubDate>
+<guid isPermaLink="true">https://jakxz.github.io/blog/manage-node-versions-with-brew</guid>
+<title>Manage node versions with brew</title>
+<link>https://jakxz.github.io/blog/manage-node-versions-with-brew</link>
+<description>Use homebrew to simply manage your local node installations</description>
+<pubDate>Thu, 24 Oct 2019 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
