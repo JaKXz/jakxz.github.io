@@ -4,7 +4,7 @@
     try {
       const post = await import(`../../lib/posts/${params.post}.md`);
       let coverCaption, imageAlt;
-      if (post.metadata.coverImage) {
+      if (post.metadata.coverImage?.includes("unsplash")) {
         const [, , id] = post.metadata.coverImage.split("-");
         const { alt_description, user } = await fetch(
           `https://api.unsplash.com/photos/${id}`,
@@ -83,10 +83,14 @@
       <figcaption>
         Photo by
         <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
           href={`${coverCaption.authorUrl}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`}
           >{coverCaption.author}</a>
         on
         <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
           href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >Unsplash</a>
       </figcaption>
