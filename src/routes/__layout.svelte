@@ -51,6 +51,7 @@
   <Header />
   {#key path}
     <main
+      class={path}
       id="main"
       tabindex="-1"
       in:fade={transitionIn}
