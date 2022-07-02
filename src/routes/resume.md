@@ -3,9 +3,7 @@
   <title>Jason Kurian | Resume</title>
   <meta name="description" content="Jason Kurian - Senior Developer Resume" />
 </svelte:head>
-
-# UX + Fullstack dev
-
+<!-- # UX + Fullstack dev -->
 <!-- Avatar • Last updated -->
 
 ## 🧰 Technical
@@ -21,7 +19,7 @@
 
 ## 🎒 Experience
 
-[PaddleHR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior Engineer & Front-end architect_<br>
+[PaddleHR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior UX + Fullstack Developer_<br>
 May **2019** - Aug **2020**
 
 - Designed and led the implementation of robust & extensible JAMstack architecture and design system for Paddle's main product offering. A lot of care went in to the tools chosen [and avoided], and it paid off: functionality that's easy to define, structure, and fix with tests; consistent visual language and principles, and fast adoption of new technologies.
@@ -31,14 +29,14 @@ May **2019** - Aug **2020**
 - Facilitated team retrospectives & pruned meetings leading to immediate & continuous improvement in our process and effectiveness of experiments.
 - Reviewed several applicants and conducted personal and technical interviews. Received positive feedback from all applicants for the interview process and mentorship provided.
 
-[Nulogy](http://nulogy.com) | _Intermediate Developer_<br>
+[Nulogy](http://nulogy.com) | _Fullstack Developer_<br>
 Aug **2016** - Aug **2018**
 
 - Co-invented and implemented [storybook driven development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07) - a methodology for rapidly prototyping/developing visual components - with senior team members.
 - Built a data-intensive dashboard serving millions of rows of data with PostgreSQL, Ruby on Rails, React, and Redux to help planners derive insights from historical data.
 - Developed consistent component / container pattern for data deserialization and visualizations and shared language with the design team, work that led to the full-fledged [design system](https://nulogy.design/).
 
-[Rangle.io](http://rangle.io) | _JS Developer_<br>
+[Rangle.io](http://rangle.io) | _Junior Developer_<br>
 Oct **2015** - Apr **2016**
 
 - Co-led [tooling & maintenance of OSS starter projects](https://github.com/rangle?utf8=%E2%9C%93&q=starter&type=&language=), making new projects start up 2-5x faster & enabling the aggressive staffing model Rangle uses.
@@ -46,21 +44,24 @@ Oct **2015** - Apr **2016**
 
 ## ䷢ Open Source
 
+1. [PrismJS](https://github.com/prismjs/prism), _approx. 8.1MM weekly downloads_<br>
+   Collaborator helping with code review and language definition improvements.
+
 1. [IstanbulJS](https://github.com/istanbuljs), _approx. 10MM weekly downloads_<br>
    Core team member of JS code-coverage tooling focusing on documentation, issue triaging, and community support.
 
-2. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), _500K+ monthly downloads_<br>
+1. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), _500K+ monthly downloads_<br>
    Became a core maintainer after reaching out to the original author on the React core team and taking care of repository issues. Contributed architectural decisions and insights to the larger Redux Utilities org.
 
-3. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin)<br>
+1. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin)<br>
    Took over core maintenance to fix a bug for my own use. Tackled community reported bugs and eventually handed off ownership to the webpack-contrib org.
 
-4. [20+ published npm packages](https://www.npmjs.com/~jakxz)<br>
+1. [20+ published npm packages](https://www.npmjs.com/~jakxz)<br>
    Sharing smaller modules as utilities and reusable functions as needed.
 
 ## 📚 Education
 
-Over 3 years of [internships](https://linkedin.com/in/jgkurian):
+Approx. 3 years of [internships](https://linkedin.com/in/jgkurian) between **2012-2016**:
 
 <div class="flex wrap justify-between captions">
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
@@ -79,6 +80,9 @@ University of Waterloo, Waterloo, ON
 University of Waterloo, Waterloo, ON
 
 <style>
+  h2:first-of-type {
+    margin-top: 0;
+  }
   .flex {
     display: flex;
     row-gap: 1rem;
