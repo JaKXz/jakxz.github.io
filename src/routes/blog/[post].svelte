@@ -1,6 +1,6 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script context="module">
-  export const load = async ({ params }) => {
+  export const load = async ({ params, fetch }) => {
     try {
       const post = await import(`../../lib/posts/${params.post}.md`);
       let coverCaption, imageAlt;
