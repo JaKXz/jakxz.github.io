@@ -59,5 +59,5 @@
       <slot />
     </main>
   {/key}
-  <Footer />
+  <Footer {path} />
 </div>
