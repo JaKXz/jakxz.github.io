@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-a698dc9a.js",
+    "file": "start-3329a4b7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -21,8 +21,7 @@
       "src/routes/blog/page/[page].svelte",
       "src/routes/blog/page/index.svelte",
       "src/routes/index.svelte",
-      "src/routes/resume.md",
-      "src/routes/uses.svelte"
+      "src/routes/resume.md"
     ]
   },
   "src/routes/__layout.svelte": {
@@ -154,7 +153,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-a7cecd83.js",
+    "file": "pages/index.svelte-82bb45ef.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -177,15 +176,6 @@
     ],
     "css": [
       "assets/pages/resume.md-b6116fb1.css"
-    ]
-  },
-  "src/routes/uses.svelte": {
-    "file": "pages/uses.svelte-b5df5d55.js",
-    "src": "src/routes/uses.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-effebd35.js"
     ]
   },
   "_index-effebd35.js": {
@@ -258,7 +248,7 @@
     ]
   },
   "README.md": {
-    "file": "chunks/README-9373badf.js",
+    "file": "chunks/README-17e012f2.js",
     "src": "README.md",
     "isDynamicEntry": true,
     "imports": [
