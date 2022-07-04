@@ -14,4 +14,4 @@ I help teams from behind my Nord Electro.
 
 ## 🎮 team PlayStation:
 
-My online handles, [`@jakxz`](https://github/jakxz) / [`@JaKXz92`](https://twitter.com/jakxz92), come from the PS2 era Jak and Daxter games.
+My online handles, [`@jakxz`](https://github.com/jakxz) / [`@JaKXz92`](https://twitter.com/jakxz92), come from the PS2 era Jak and Daxter games.
