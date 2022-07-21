@@ -6,18 +6,6 @@
 <link>https://jakxz.github.io</link>
 <atom:link href="https://jakxz.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
-<guid isPermaLink="true">https://jakxz.github.io/blog/mdsvex-component-example</guid>
-<title>A Markdown post with a Svelte component</title>
-<link>https://jakxz.github.io/blog/mdsvex-component-example</link>
-<description>This post demonstrates how to include a Svelte component in a Markdown post.</description>
-<pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
-</item><item>
-<guid isPermaLink="true">https://jakxz.github.io/blog/syntax-highlighting-example</guid>
-<title>Syntax highlighting with mdsvex</title>
-<link>https://jakxz.github.io/blog/syntax-highlighting-example</link>
-<description>This post shows you how syntax highlighting works here.</description>
-<pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
-</item><item>
 <guid isPermaLink="true">https://jakxz.github.io/blog/manage-node-versions-with-brew</guid>
 <title>Manage node versions with brew</title>
 <link>https://jakxz.github.io/blog/manage-node-versions-with-brew</link>
