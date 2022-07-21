@@ -11,7 +11,6 @@
   const isCurrentPage = (page) => page == currentPage;
 </script>
 
-<!-- For some reason, the pagination wasn't re-rendering properly during navigation without the #key block -->
 {#key currentPage}
   {#if pagesAvailable > 1}
     <nav aria-label="Pagination navigation" class="pagination">
