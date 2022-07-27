@@ -6,6 +6,12 @@
 <link>https://jakxz.github.io</link>
 <atom:link href="https://jakxz.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://jakxz.github.io/blog/yet-another-react-component-template</guid>
+<title>Yet another react component template</title>
+<link>https://jakxz.github.io/blog/yet-another-react-component-template</link>
+<description>yes I am totally aware of https://xkcd.com/927/</description>
+<pubDate>Mon, 30 Aug 2021 00:00:00 GMT</pubDate>
+</item><item>
 <guid isPermaLink="true">https://jakxz.github.io/blog/manage-node-versions-with-brew</guid>
 <title>Manage node versions with brew</title>
 <link>https://jakxz.github.io/blog/manage-node-versions-with-brew</link>
