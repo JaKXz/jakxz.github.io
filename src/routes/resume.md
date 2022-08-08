@@ -19,7 +19,7 @@
 
 ## 🎒 Experience
 
-[PaddleHR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior UX + Fullstack Developer_<br>
+[Paddle HR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior UX + Fullstack Developer_<br>
 May **2019** - Aug **2020**
 
 - Designed and led the implementation of robust & extensible JAMstack architecture and design system for Paddle's main product offering. A lot of care went in to the tools chosen [and avoided], and it paid off: functionality that's easy to define, structure, and fix with tests; consistent visual language and principles, and fast adoption of new technologies.
