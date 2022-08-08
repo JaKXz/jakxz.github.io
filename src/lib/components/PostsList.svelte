@@ -20,8 +20,26 @@
   {/each}
 </ul>
 
-<style>
+<style lang="scss">
   h2:first-of-type {
     margin-top: 0;
+  }
+
+  .posts-list {
+    margin-top: 0;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 6rem;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  .text-right {
+    text-align: right;
   }
 </style>
