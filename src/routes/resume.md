@@ -45,7 +45,7 @@ Oct **2015** - Apr **2016**
 ## ䷢ Open Source
 
 1. [PrismJS](https://github.com/prismjs/prism), _approx. 8.1MM weekly downloads_<br>
-   Collaborator helping with code review and language definition improvements.
+   Collaborator helping with reviewing new features, fixes, infrastructure and language definition improvements.
 
 1. [IstanbulJS](https://github.com/istanbuljs), _approx. 10MM weekly downloads_<br>
    Core team member of JS code-coverage tooling focusing on documentation, issue triaging, and community support.
@@ -61,7 +61,7 @@ Oct **2015** - Apr **2016**
 
 ## 📚 Education
 
-Approx. 3 years of [internships](https://linkedin.com/in/jgkurian) between **2012-2016**:
+Approx. 3 years of [internships](https://linkedin.com/in/jgkurian) between **2011-2015**:
 
 <div class="flex wrap justify-between captions">
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
@@ -73,7 +73,7 @@ Approx. 3 years of [internships](https://linkedin.com/in/jgkurian) between **201
 </div>
 
 **Bachelor of Knowledge Integration, Honours, inc. | 2016 - 2019**<br>
-Collaborative Design Specialization<br>
+_Collaborative Design Specialization_<br>
 University of Waterloo, Waterloo, ON
 
 **Bachelor of Applied Science, Systems Design Engineering, inc. | 2010 - 2014**<br>
