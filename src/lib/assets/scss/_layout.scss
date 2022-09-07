@@ -30,56 +30,8 @@ img {
 	height: auto;
 }
 
-.cover-image {
-	display: flex;
-	flex-flow: column;
-	margin-inline: 0;
-
-	figcaption {
-		background: var(--paper);
-		font-style: italic;
-		font-size: smaller;
-		padding: 3px;
-		text-align: center;
-	}
-}
-
-.post {
-	h1 {
-		margin-bottom: 1rem;
-	}
-
-	.meta {
-		font-size: 0.8rem;
-		margin-bottom: 4rem;
-	}
-}
-
 li {
 	margin-bottom: 0.25rem;
-}
-
-.post-footer {
-	ul {
-		padding: 0;
-	}
-
-	li {
-		display: inline-block;
-		font-size: 0.8rem;
-
-		a {
-			background-color: var(--lightAccent);
-			padding: 0.5rem 0.75rem;
-			text-transform: uppercase;
-			font-family: var(--primaryFont);
-			font-weight: bold;
-		}
-
-		+ li {
-			margin-left: 0.5rem;
-		}
-	}
 }
 
 :where(h2, h3, h4, h5, h6) {
