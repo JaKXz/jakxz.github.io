@@ -11,8 +11,8 @@
 		return (
 			{
 				'/': '/README.md',
-				'/resume': '/src/routes/resume.md'
-			}[url] || `/src/routes${url}.svelte`
+				'/resume': '/src/routes/resume/+page.md'
+			}[url] || `/src/routes${url}/+page.svelte`
 		);
 	}
 </script>
