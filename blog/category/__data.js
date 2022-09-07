@@ -1,0 +1,1 @@
+window.__sveltekit_data = (function(a,b,c){return {type:c,nodes:[null,{type:c,data:{uniqueCategories:[{title:"react",count:a},{title:"web",count:a},{title:"dev",count:a},{title:"macos",count:a},{title:"homebrew",count:a},{title:"nodejs",count:a}]},uses:{dependencies:b,params:b,parent:b,url:b}}]}}(1,void 0,"data"))
