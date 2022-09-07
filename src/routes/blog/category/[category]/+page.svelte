@@ -10,7 +10,7 @@
 	<title>Category: {data.category}</title>
 </svelte:head>
 
-<h1>Blog category: <code>{data.category}</code></h1>
+<h1>Blog category: {data.category}</h1>
 
 {#if data.posts.length}
 	<PostsList posts={data.posts} />
