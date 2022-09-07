@@ -1,12 +1,12 @@
 ---
-title: "Manage node versions with brew"
-date: "2019-10-24"
-updated: "2022-04-04"
+title: 'Manage node versions with brew'
+date: '2019-10-24'
+updated: '2022-04-04'
 categories:
-  - "macos"
-  - "homebrew"
-  - "nodejs"
-coverImage: "/images/bean-bros-Jaa3KDv9xi4-unsplash.jpeg"
+  - 'macos'
+  - 'homebrew'
+  - 'nodejs'
+coverImage: '/images/bean-bros-Jaa3KDv9xi4-unsplash.jpeg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Use homebrew to simply manage your local node installations
