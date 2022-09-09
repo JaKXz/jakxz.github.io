@@ -5,15 +5,15 @@
 <ul class="posts-list">
 	{#each posts as post}
 		<li>
-			<p class="post-date">{new Date(`${post.date}T00:00:00`).toDateString()}</p>
 			<article>
+				<p class="post-date">{new Date(`${post.date}T00:00:00`).toDateString()}</p>
 				<a href="/blog/{post.slug}">
 					<h3>
 						{post.title}
 					</h3>
 				</a>
+				<p>{post.excerpt}</p>
 			</article>
-			<p>{post.excerpt}</p>
 		</li>
 	{/each}
 </ul>
