@@ -19,10 +19,6 @@
 </ul>
 
 <style lang="scss">
-	h2:first-of-type {
-		margin-top: 0;
-	}
-
 	.posts-list {
 		h3 {
 			margin: 0 0 1rem;
@@ -46,9 +42,5 @@
 		font-size: 0.8rem;
 		color: var(--ink);
 		opacity: 0.9;
-	}
-
-	.text-right {
-		text-align: right;
 	}
 </style>
