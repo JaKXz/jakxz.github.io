@@ -10,7 +10,7 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "1.0.0-next.42",
+		"@sveltejs/adapter-static": "1.0.0-next.43",
 		"@sveltejs/kit": "1.0.0-next.478",
 		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.3.0",
