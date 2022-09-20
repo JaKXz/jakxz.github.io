@@ -40,7 +40,6 @@
 	.post-date {
 		margin: 0;
 		font-size: 0.8rem;
-		color: var(--ink);
 		opacity: 0.9;
 	}
 </style>
