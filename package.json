@@ -3,7 +3,7 @@
 	"private": true,
 	"scripts": {
 		"build": "vite build",
-		"predeploy": "npm run build && touch build/.nojekyll",
+		"predeploy": "test -z \"$(git status --porcelain)\" && npm run build && touch build/.nojekyll",
 		"deploy": "npx gh-pages -d build -b main --dotfiles",
 		"dev": "vite dev",
 		"lint": "eslint --ignore-path .gitignore .",
