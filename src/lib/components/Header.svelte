@@ -14,10 +14,11 @@
 		Skip to main content
 	</a>
 
-	<a href="/" class="site-title">
-		{siteTitle}
-	</a>
-
+	<div>
+		<a href="/" class="site-title">
+			{siteTitle}
+		</a>
+		<MainNav />
+	</div>
 	<HamburgerMenuButton />
-	<MainNav />
 </header>
