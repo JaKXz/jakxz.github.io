@@ -12,7 +12,9 @@
 						{post.title}
 					</h3>
 				</a>
-				<p>{post.excerpt}</p>
+				{#if post.excerpt != null}
+					<p>{post.excerpt}</p>
+				{/if}
 			</article>
 		</li>
 	{/each}
