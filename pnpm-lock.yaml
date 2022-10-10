@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@sveltejs/adapter-static': 1.0.0-next.43
   '@sveltejs/kit': 1.0.0-next.490
-  dotenv: 16.0.2
+  dotenv: 16.0.3
   eslint: 8.23.1
   eslint-config-prettier: 8.5.0
   eslint-plugin-svelte3: 4.0.0
@@ -23,7 +23,7 @@ specifiers:
   vite: 3.1.7
 
 dependencies:
-  dotenv: 16.0.2
+  dotenv: 16.0.3
   just-throttle: 4.1.1
   svelte-preprocess: 4.10.7_sass@1.54.9+svelte@3.50.1
 
@@ -454,8 +454,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /dotenv/16.0.2:
-    resolution: {integrity: sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA==}
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
     dev: false
 
