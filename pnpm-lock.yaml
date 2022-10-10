@@ -17,7 +17,7 @@ specifiers:
   rehype-autolink-headings: 6.1.1
   rehype-external-links: 2.0.1
   rehype-slug: 5.0.1
-  sass: 1.54.9
+  sass: 1.55.0
   svelte: 3.50.1
   svelte-preprocess: 4.10.7
   vite: 3.1.7
@@ -25,7 +25,7 @@ specifiers:
 dependencies:
   dotenv: 16.0.3
   just-throttle: 4.1.1
-  svelte-preprocess: 4.10.7_sass@1.54.9+svelte@3.50.1
+  svelte-preprocess: 4.10.7_sass@1.55.0+svelte@3.50.1
 
 devDependencies:
   '@sveltejs/adapter-static': 1.0.0-next.43
@@ -42,9 +42,9 @@ devDependencies:
   rehype-autolink-headings: 6.1.1
   rehype-external-links: 2.0.1
   rehype-slug: 5.0.1
-  sass: 1.54.9
+  sass: 1.55.0
   svelte: 3.50.1
-  vite: 3.1.7_sass@1.54.9
+  vite: 3.1.7_sass@1.55.0
 
 packages:
 
@@ -167,7 +167,7 @@ packages:
       svelte: 3.50.1
       tiny-glob: 0.2.9
       undici: 5.10.0
-      vite: 3.1.7_sass@1.54.9
+      vite: 3.1.7_sass@1.55.0
     transitivePeerDependencies:
       - diff-match-patch
       - supports-color
@@ -191,7 +191,7 @@ packages:
       magic-string: 0.26.3
       svelte: 3.50.1
       svelte-hmr: 0.14.12_svelte@3.50.1
-      vite: 3.1.7_sass@1.54.9
+      vite: 3.1.7_sass@1.55.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1703,8 +1703,8 @@ packages:
       rimraf: 2.7.1
     dev: false
 
-  /sass/1.54.9:
-    resolution: {integrity: sha512-xb1hjASzEH+0L0WI9oFjqhRi51t/gagWnxLiwUNMltA0Ab6jIDkAacgKiGYKM9Jhy109osM7woEEai6SXeJo5Q==}
+  /sass/1.55.0:
+    resolution: {integrity: sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -1824,7 +1824,7 @@ packages:
       svelte: 3.50.1
     dev: true
 
-  /svelte-preprocess/4.10.7_sass@1.54.9+svelte@3.50.1:
+  /svelte-preprocess/4.10.7_sass@1.55.0+svelte@3.50.1:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -1869,7 +1869,7 @@ packages:
       '@types/sass': 1.43.1
       detect-indent: 6.1.0
       magic-string: 0.25.9
-      sass: 1.54.9
+      sass: 1.55.0
       sorcery: 0.10.0
       strip-indent: 3.0.0
       svelte: 3.50.1
@@ -2006,7 +2006,7 @@ packages:
       vfile-message: 3.1.2
     dev: true
 
-  /vite/3.1.7_sass@1.54.9:
+  /vite/3.1.7_sass@1.55.0:
     resolution: {integrity: sha512-5vCAmU4S8lyVdFCInu9M54f/g8qbOMakVw5xJ4pjoaDy5wgy9sLLZkGdSLN52dlsBqh0tBqxjaqqa8LgPqwRAA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2029,7 +2029,7 @@ packages:
       postcss: 8.4.16
       resolve: 1.22.1
       rollup: 2.78.1
-      sass: 1.54.9
+      sass: 1.55.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
