@@ -33,8 +33,7 @@ export default {
 				'/blog/page/*',
 				'/blog/category/*',
 				'/blog/category/*/page',
-				'/blog/category/*/page/*',
-				'/api/posts/category/*'
+				'/blog/category/*/page/*'
 			]
 		},
 		adapter: adapter()
