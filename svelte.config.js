@@ -34,7 +34,6 @@ export default {
 				'/blog/category/*',
 				'/blog/category/*/page',
 				'/blog/category/*/page/*',
-				'/blog/category/page/*',
 				'/api/posts/category/*'
 			]
 		},
