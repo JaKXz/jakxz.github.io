@@ -1,9 +1,11 @@
-import { redirect } from '@sveltejs/kit';
 import fetchPosts from '$lib/assets/js/fetchPosts';
 import { postsPerPage } from '$lib/config';
+import { redirect } from '@sveltejs/kit';
+
+export const prerender = true;
 
 export async function load({ url, params }) {
-	const page = params.page ? params.page : 1;
+	const page = params.page || 1;
 
 	// Keeps from duplicating the blog index route as page 1
 	if (page <= 1) {
