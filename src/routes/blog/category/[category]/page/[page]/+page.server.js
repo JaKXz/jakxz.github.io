@@ -5,8 +5,8 @@ import { redirect } from '@sveltejs/kit';
 export const prerender = true;
 
 export async function load({ url, params }) {
-	const page = params.page || 1;
 	const { category } = params;
+	const page = Number.isFinite(params.page) ? params.page : 1;
 
 	// Prevents duplication of page 1 as the index page
 	if (page <= 1) {
