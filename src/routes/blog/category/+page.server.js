@@ -1,4 +1,4 @@
-export async function load({ url }) {
+export async function load({ url, fetch }) {
 	const posts = await fetch(`${url.origin}/api/posts.json?limit=-1`).then((res) => res.json());
 
 	let uniqueCategories = {};
