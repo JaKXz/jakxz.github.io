@@ -4,7 +4,7 @@ import { redirect } from '@sveltejs/kit';
 
 export const prerender = true;
 
-export async function load({ url, params }) {
+export async function load({ url, params, fetch }) {
 	const page = params.page || 1;
 
 	// Keeps from duplicating the blog index route as page 1
