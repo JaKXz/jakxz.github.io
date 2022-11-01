@@ -5,7 +5,7 @@ export async function load({ url, fetch }) {
 
 	posts.forEach((post) => {
 		post.categories.forEach((category) => {
-			if (uniqueCategories.hasOwnProperty(category)) {
+			if (category in uniqueCategories) {
 				uniqueCategories[category].count += 1;
 			} else {
 				uniqueCategories[category] = {
