@@ -1,1 +1,0 @@
-window.__sveltekit_data = {"type":"redirect","location":"/blog"}

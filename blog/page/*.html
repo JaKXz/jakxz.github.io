@@ -16,8 +16,8 @@
 		<link rel="modulepreload" href="../../_app/immutable/chunks/config-406b140a.js">
 		<link rel="modulepreload" href="../../_app/immutable/modules/pages/_layout.js-b1522e0a.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/_layout-45c50cc3.js">
-		<link rel="modulepreload" href="../../_app/immutable/components/pages/blog/category/_category_/_page.svelte-29a856ac.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/Pagination-99f8f727.js"><title>Category: nodejs</title><!-- HEAD_svelte-19w1gmq_START --><!-- HEAD_svelte-19w1gmq_END -->
+		<link rel="modulepreload" href="../../_app/immutable/components/pages/blog/page/_page_/_page.svelte-5bc13772.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Pagination-99f8f727.js"><title>Blog - page *</title><!-- HEAD_svelte-19tq2vo_START --><meta data-key="description" name="description" content="UX + Fullstack dev"><!-- HEAD_svelte-19tq2vo_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,19 +49,30 @@
 	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></div>
 	<button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only">Toggle hamburger menu</span>
 	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header>
-	<main id="main" tabindex="-1" class="/blog/category/nodejs">
+	<main id="main" tabindex="-1" class="/blog/page/*">
 
 
 
 
-<h1>Blog category: nodejs</h1>
 
-<ul class="posts-list svelte-jf1hqt"><li class="svelte-jf1hqt"><article><p class="post-date svelte-jf1hqt">Thu Oct 24 2019</p>
+<h1>Posts 1–NaN of 3</h1>
+	
+
+	<ul class="posts-list svelte-jf1hqt"><li class="svelte-jf1hqt"><article><p class="post-date svelte-jf1hqt">Tue Mar 08 2022</p>
+				<a href="/blog/atomically-pull-updates-from-upstream-template-repo" class="svelte-jf1hqt"><h3 class="svelte-jf1hqt">Atomically pull updates from an upstream template repo
+					</h3></a>
+				</article>
+		</li><li class="svelte-jf1hqt"><article><p class="post-date svelte-jf1hqt">Mon Aug 30 2021</p>
+				<a href="/blog/yet-another-react-component-template" class="svelte-jf1hqt"><h3 class="svelte-jf1hqt">Yet another react component template
+					</h3></a>
+				<p>yes I am totally aware of https://xkcd.com/927/</p></article>
+		</li><li class="svelte-jf1hqt"><article><p class="post-date svelte-jf1hqt">Thu Oct 24 2019</p>
 				<a href="/blog/manage-node-versions-with-brew" class="svelte-jf1hqt"><h3 class="svelte-jf1hqt">Manage node versions with brew
 					</h3></a>
 				<p>Use homebrew to simply manage your local node installations</p></article>
 		</li>
 </ul>
+
 	</main>
 	<footer>
 <nav class="main-nav"><ul><li><a href="/blog" aria-current="page" class="active">Blog
@@ -74,10 +85,13 @@
 			<li><a href="/">Home</a></li></ul></nav>
 
 	<div><p>©2022 Jason Kurian</p>
-		</div></footer></div>
+		<p>See a typo?
+				<em><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz/jakxz.github.io/edit/develop/src/lib/posts/page/*.md">Please open a PR here.</a></em>
+				Thank you!
+			</p></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="wo8rsg">
+		<script type="module" data-sveltekit-hydrate="re39tj">
 			import { start } from "../../_app/immutable/start-5fc17af7.js";
 
 			start({
@@ -85,14 +99,14 @@
 				hydrate: {
 					status: 200,
 					error: null,
-					node_ids: [0, 6],
-					params: {category:"nodejs"},
-					routeId: "/blog/category/[category]",
-					data: (function(a,b){return [null,{type:"data",data:{posts:[{title:"Manage node versions with brew",date:"2019-10-24",updated:"2022-04-04",categories:["macos","homebrew",b],coverImage:"\u002Fimages\u002Fbean-bros-Jaa3KDv9xi4-unsplash.jpeg",coverWidth:16,coverHeight:9,excerpt:"Use homebrew to simply manage your local node installations",slug:"manage-node-versions-with-brew"}],category:b,total:1},uses:{dependencies:a,params:["category"],parent:a,url:a}}]}(void 0,"nodejs")),
+					node_ids: [0, 8],
+					params: {page:"*"},
+					routeId: "/blog/page/[page]",
+					data: (function(a,b,c,d){return [null,{type:"data",data:{posts:[{title:"Atomically pull updates from an upstream template repo",date:"2022-03-08",updated:"2022-09-20",categories:["github","git",b],slug:"atomically-pull-updates-from-upstream-template-repo"},{title:"Yet another react component template",date:"2021-08-30",updated:"2022-07-27",categories:["react","web",b],coverImage:"\u002Fimages\u002Flinus-nylund-Q5QspluNZmM-unsplash.jpg",coverWidth:c,coverHeight:d,excerpt:"yes I am totally aware of https:\u002F\u002Fxkcd.com\u002F927\u002F",slug:"yet-another-react-component-template"},{title:"Manage node versions with brew",date:"2019-10-24",updated:"2022-04-04",categories:["macos","homebrew","nodejs"],coverImage:"\u002Fimages\u002Fbean-bros-Jaa3KDv9xi4-unsplash.jpeg",coverWidth:c,coverHeight:d,excerpt:"Use homebrew to simply manage your local node installations",slug:"manage-node-versions-with-brew"}],page:"*",totalPosts:3},uses:{dependencies:a,params:["page"],parent:a,url:a}}]}(void 0,"dev",16,9)),
 					form: null
 				},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="wo8rsg"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="re39tj"]').parentNode,
 				trailing_slash: "never"
 			});
 		</script>
