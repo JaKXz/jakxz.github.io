@@ -22,7 +22,7 @@ export async function load({ params }) {
 		}
 
 		return {
-			PostContent: post.default.render().html,
+			PostContent: post.default,
 			meta: { ...post.metadata, slug: params.post, coverCaption, imageAlt }
 		};
 	} catch (err) {
