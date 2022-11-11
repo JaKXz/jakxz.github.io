@@ -1,7 +1,7 @@
 ---
 title: 'Manage node versions with brew'
 date: '2019-10-24'
-updated: '2022-04-04'
+updated: '2022-11-10'
 categories:
   - 'macos'
   - 'homebrew'
@@ -38,17 +38,18 @@ Since `brew` manages all my packages for me, why not keep using it?
 
 ## What is a `keg-only` formula?
 
-From [brew.sh](https://docs.brew.sh/FAQ#what-does-keg-only-mean):
+<Callout>
+It means the formula is installed only into the Cellar; it is not linked into <code>/usr/local</code>.
+This means most tools will not find it. We don’t do this for stupid reasons. You can still link in the formula if you need to with <code>brew link</code>.
 
-> It means the formula is installed only into the Cellar; it is not linked into <code>/usr/local</code>. This means most tools will not find it. We don’t do this for stupid reasons. You can still link in the formula if you need to with <code>brew link</code>.
+[source: brew.sh](https://docs.brew.sh/FAQ#what-does-keg-only-mean)
+</Callout>
 
 Essentially this means that you can have as many versions of node installed on your computer without them conflicting with each other, and as a bonus, your `npm` installation!
 Tangentially (from my experience), this is another problem that has been solved relatively recently, since `npm@latest` has become much more stable across versions of node.
 
-<Callout>
 Now, run the commands at the top of this article and you should be good to go!
 Remember you will need to <code>export</code> your <code>$PATH</code> variable in every shell session you want to use a different version of node from the default version.
-</Callout>
 
 If you want to set a different version of node as your default system version:
 
