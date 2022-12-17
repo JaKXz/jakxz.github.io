@@ -24,7 +24,7 @@
 		"rehype-autolink-headings": "6.1.1",
 		"rehype-external-links": "2.0.1",
 		"rehype-slug": "5.1.0",
-		"sass": "1.56.2",
+		"sass": "1.57.0",
 		"svelte": "3.53.1",
 		"vite": "3.2.5"
 	},
