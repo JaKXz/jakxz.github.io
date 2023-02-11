@@ -26,7 +26,7 @@
 		"rehype-slug": "5.1.0",
 		"sass": "1.58.0",
 		"svelte": "3.53.1",
-		"vite": "3.2.5"
+		"vite": "4.1.1"
 	},
 	"type": "module",
 	"dependencies": {
