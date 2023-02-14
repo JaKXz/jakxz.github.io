@@ -7,7 +7,7 @@
 		<li>
 			<article>
 				<p class="post-date">{new Date(`${post.date}T00:00:00`).toDateString()}</p>
-				<a href="/blog/{post.slug}">
+				<a href="/learning/{post.slug}">
 					<h3>
 						{post.title}
 					</h3>

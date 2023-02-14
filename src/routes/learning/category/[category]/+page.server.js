@@ -5,7 +5,7 @@ export async function load({ params }) {
 	const { category } = params;
 
 	if (category === 'page') {
-		throw redirect(303, '/blog/category');
+		throw redirect(303, '/learning/category');
 	}
 
 	const { posts } = await fetchPosts({ category });

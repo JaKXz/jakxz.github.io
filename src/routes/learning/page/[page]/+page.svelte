@@ -1,4 +1,4 @@
-<!-- This file handles any /blog/page/x route for pagination -->
+<!-- This file handles any /learning/page/x route for pagination -->
 <script>
 	import PostsList from '$lib/components/PostsList.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
@@ -29,5 +29,5 @@
 
 	<p>Sorry, no posts to show here.</p>
 
-	<a href="/blog">Back to blog</a>
+	<a href="/learning">Back to blog</a>
 {/if}

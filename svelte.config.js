@@ -30,10 +30,10 @@ export default {
 		prerender: {
 			entries: [
 				'*',
-				'/blog/page/*',
-				'/blog/category/*',
-				'/blog/category/*/page',
-				'/blog/category/*/page/*'
+				'/learning/page/*',
+				'/learning/category/*',
+				'/learning/category/*/page',
+				'/learning/category/*/page/*'
 			]
 		},
 		adapter: adapter()

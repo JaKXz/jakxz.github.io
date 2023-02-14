@@ -5,8 +5,8 @@
 	export let path;
 
 	function getEditPath(url) {
-		if (url.startsWith('/blog/')) {
-			return `${url.replace('/blog', '/src/lib/posts')}.md`;
+		if (url.startsWith('/learning/')) {
+			return `${url.replace('/learning', '/src/lib/posts')}.md`;
 		}
 		return (
 			{
@@ -33,7 +33,7 @@
 
 	<div>
 		<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
-		{#if path !== '/blog' && !path.startsWith('/blog/category/')}
+		{#if path !== '/learning' && !path.startsWith('/learning/category/')}
 			<p>
 				See a typo?
 				<em>

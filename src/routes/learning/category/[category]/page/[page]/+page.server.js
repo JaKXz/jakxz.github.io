@@ -4,12 +4,13 @@ import { redirect } from '@sveltejs/kit';
 
 export const prerender = true;
 
-export async function load({ url, params, fetch }) {
-	const page = params.page || 1;
+export async function load({ url, params }) {
+	const { category } = params;
+	const page = Number.isFinite(params.page) ? params.page : 1;
 
-	// Keeps from duplicating the blog index route as page 1
+	// Prevents duplication of page 1 as the index page
 	if (page <= 1) {
-		throw redirect(301, '/blog');
+		throw redirect(301, `/learning/category/${category}`);
 	}
 
 	let offset = page * postsPerPage - postsPerPage;
@@ -20,6 +21,7 @@ export async function load({ url, params, fetch }) {
 	return {
 		posts,
 		page,
+		category,
 		totalPosts
 	};
 }
