@@ -3,24 +3,24 @@
 <channel>
 <title>Jason Kurian</title>
 <description>UX + Fullstack dev</description>
-<link>https://jakxz.github.io</link>
-<atom:link href="https://jakxz.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+<link>https://jasonkurian.dev</link>
+<atom:link href="https://jasonkurian.dev/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
-<guid isPermaLink="true">https://jakxz.github.io/blog/atomically-pull-updates-from-upstream-template-repo</guid>
+<guid isPermaLink="true">https://jasonkurian.dev/learning/atomically-pull-updates-from-upstream-template-repo</guid>
 <title>Atomically pull updates from an upstream template repo</title>
-<link>https://jakxz.github.io/blog/atomically-pull-updates-from-upstream-template-repo</link>
+<link>https://jasonkurian.dev/learning/atomically-pull-updates-from-upstream-template-repo</link>
 <description>undefined</description>
 <pubDate>Tue, 08 Mar 2022 00:00:00 GMT</pubDate>
 </item><item>
-<guid isPermaLink="true">https://jakxz.github.io/blog/yet-another-react-component-template</guid>
+<guid isPermaLink="true">https://jasonkurian.dev/learning/yet-another-react-component-template</guid>
 <title>Yet another react component template</title>
-<link>https://jakxz.github.io/blog/yet-another-react-component-template</link>
+<link>https://jasonkurian.dev/learning/yet-another-react-component-template</link>
 <description>yes I am totally aware of https://xkcd.com/927/</description>
 <pubDate>Mon, 30 Aug 2021 00:00:00 GMT</pubDate>
 </item><item>
-<guid isPermaLink="true">https://jakxz.github.io/blog/manage-node-versions-with-brew</guid>
+<guid isPermaLink="true">https://jasonkurian.dev/learning/manage-node-versions-with-brew</guid>
 <title>Manage node versions with brew</title>
-<link>https://jakxz.github.io/blog/manage-node-versions-with-brew</link>
+<link>https://jasonkurian.dev/learning/manage-node-versions-with-brew</link>
 <description>Use homebrew to simply manage your local node installations</description>
 <pubDate>Thu, 24 Oct 2019 00:00:00 GMT</pubDate>
 </item>
