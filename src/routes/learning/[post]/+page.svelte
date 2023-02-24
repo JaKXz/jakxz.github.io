@@ -28,8 +28,8 @@
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={excerpt} />
 	{#if coverImage}
-		<meta property="og:image" content="{siteLink}/{coverImage}" />
-		<meta name="twitter:image" content="{siteLink}/{coverImage}" />
+		<meta property="og:image" content="{siteLink}{coverImage}" />
+		<meta name="twitter:image" content="{siteLink}{coverImage}" />
 	{/if}
 </svelte:head>
 
