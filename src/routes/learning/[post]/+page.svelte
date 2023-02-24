@@ -1,6 +1,5 @@
-<!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
-	import { siteLink } from '$lib/config';
+	import { siteLink, siteTitle } from '$lib/config';
 
 	export let data;
 
@@ -19,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{title} | {siteTitle}</title>
 	<meta data-key="description" name="description" content={excerpt} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
