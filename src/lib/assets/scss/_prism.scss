@@ -24,9 +24,8 @@ pre[class*='language-'] {
 	hyphens: none;
 }
 
-/* Code blocks */
-pre[class*='language-'] {
-	max-width: calc(100% + 6rem);
+pre[class*='language-'],
+.callout {
 	padding: 2rem;
 	margin: 2rem 0 2rem -2rem;
 	@media (max-width: vars.$smMin) {
@@ -34,7 +33,8 @@ pre[class*='language-'] {
 		width: 100vw;
 	}
 	@media (min-width: vars.$smMin) {
-		border-radius: 0.3em;
+		border-radius: 0.3rem;
+		min-width: calc(100% + 4rem);
 	}
 }
 
