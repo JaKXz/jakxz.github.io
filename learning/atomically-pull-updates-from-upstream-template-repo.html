@@ -6,21 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-084f5652.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_page-66358bc8.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/manage-node-versions-with-brew-1fe99133.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-88cf0e11.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-9658da3a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-537c1773.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/control-654b50f6.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-f6fc4788.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/config-12041e6e.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-a51d6ad7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-d3fe4bba.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/learning/_post_/_page.svelte-2573c87d.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/learning/_post_/_page.js-7788b4e6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-450e4091.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-cbbaa776.js"><title>Atomically pull updates from an upstream template repo</title><!-- HEAD_svelte-xxigpn_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Atomically pull updates from an upstream template repo"><meta property="og:description"><meta property="og:image:width"><meta property="og:image:height"><meta name="twitter:title" content="Atomically pull updates from an upstream template repo"><meta name="twitter:description"><!-- HEAD_svelte-xxigpn_END -->
+		<link href="../_app/immutable/assets/_layout.6c3b29fb.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.66358bc8.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/manage-node-versions-with-brew.2fed2224.css" rel="stylesheet">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/entry/start.4d07ea28.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/index.769db22d.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/singletons.2b27aa28.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/control.e7f5239e.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/entry/app.2fdc61c2.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/preload-helper.41c905a7.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/entry/_layout.svelte.75bd089b.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/config.33a9e0f1.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/entry/_layout.js.d7ca01b4.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/_layout.d3fe4bba.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/entry/learning-_post_-page.svelte.903ea41b.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/entry/learning-_post_-page.js.b14b97ef.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/_page.8e93520d.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="../_app/immutable/chunks/index.dd167fef.mjs"><title>Atomically pull updates from an upstream template repo | Jason Kurian</title><!-- HEAD_svelte-qfee18_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Atomically pull updates from an upstream template repo"><meta property="og:description"><meta property="og:image:width"><meta property="og:image:height"><meta name="twitter:title" content="Atomically pull updates from an upstream template repo"><meta name="twitter:description"><!-- HEAD_svelte-qfee18_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,9 +55,6 @@
 	<button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only">Toggle hamburger menu</span>
 	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header>
 	<main id="main" tabindex="-1" class="/learning/atomically-pull-updates-from-upstream-template-repo">
-
-
-
 
 <article class="post svelte-1xmj924"><figure class="cover-image svelte-1xmj924"><img alt="" style="aspect-ratio: undefined / undefined;">
 		</figure>
@@ -104,22 +103,30 @@ Good luck!</p>
 			</p></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="12a3mt3">
-			import { start } from "../_app/immutable/start-88cf0e11.js";
+			
+			<script>
+				{
+					__sveltekit_j1dvq1 = {
+						env: {},
+						assets: new URL("..", location.href).pathname.replace(/^\/$/, ''),
+						element: document.currentScript.parentElement
+					};
 
-			start({
-				assets: "",
-				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="12a3mt3"]').parentNode,
-				version: "1676345438469",
-				hydrate: {
-					node_ids: [0, 4],
-					data: [null,null],
-					form: null,
-					error: null
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.4d07ea28.mjs"),
+						import("../_app/immutable/entry/app.2fdc61c2.mjs")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_j1dvq1.element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	</body>
 </html>

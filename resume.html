@@ -6,17 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout-084f5652.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-8196ff76.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-88cf0e11.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-9658da3a.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-537c1773.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/control-654b50f6.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-f6fc4788.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/config-12041e6e.js">
-		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-a51d6ad7.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-d3fe4bba.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/resume/_page.md-be2ad96e.js"><title>Jason Kurian | Resume</title><!-- HEAD_svelte-1jgt9ke_START --><meta name="description" content="Jason Kurian - Senior Developer Resume"><!-- HEAD_svelte-1jgt9ke_END -->
+		<link href="./_app/immutable/assets/_layout.6c3b29fb.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.8196ff76.css" rel="stylesheet">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/start.4d07ea28.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/index.769db22d.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/singletons.2b27aa28.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/control.e7f5239e.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/app.2fdc61c2.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/preload-helper.41c905a7.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.svelte.75bd089b.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/config.33a9e0f1.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.js.d7ca01b4.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/_layout.d3fe4bba.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/resume-page.md.d46dbefb.mjs"><title>Jason Kurian | Resume</title><!-- HEAD_svelte-1jgt9ke_START --><meta name="description" content="Jason Kurian - Senior Developer Resume"><!-- HEAD_svelte-1jgt9ke_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -121,22 +123,30 @@ University of Waterloo, Waterloo, ON</p></main>
 			</p></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="2nzzgw">
-			import { start } from "./_app/immutable/start-88cf0e11.js";
+			
+			<script>
+				{
+					__sveltekit_j1dvq1 = {
+						env: {},
+						assets: new URL(".", location.href).pathname.replace(/^\/$/, ''),
+						element: document.currentScript.parentElement
+					};
 
-			start({
-				assets: "",
-				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="2nzzgw"]').parentNode,
-				version: "1676345438469",
-				hydrate: {
-					node_ids: [0, 9],
-					data: [null,null],
-					form: null,
-					error: null
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.4d07ea28.mjs"),
+						import("./_app/immutable/entry/app.2fdc61c2.mjs")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_j1dvq1.element, {
+							node_ids: [0, 9],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	</body>
 </html>
