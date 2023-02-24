@@ -1,6 +1,5 @@
 <script>
 	import MainNav from './MainNav.svelte';
-	import { siteAuthor } from '$lib/config';
 
 	export let path;
 
@@ -32,7 +31,7 @@
 	</nav>
 
 	<div>
-		<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
+		<p>&copy;{new Date().getFullYear()} Jason Kurian</p>
 		{#if path !== '/learning' && !path.startsWith('/learning/category/')}
 			<p>
 				See a typo?
