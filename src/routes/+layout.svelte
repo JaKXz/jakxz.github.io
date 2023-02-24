@@ -4,7 +4,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
-	import { navItems } from '$lib/config';
+	import { navItems, siteLink, siteAuthorTwitter } from '$lib/config';
 	import { preloadData } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
@@ -30,6 +30,12 @@
 		navItems.forEach((item) => preloadData(item.route));
 	});
 </script>
+
+<svelte:head>
+	<meta name="og:url" content="{siteLink}{data.path}" />
+	<meta name="twitter:site" content={siteAuthorTwitter} />
+	<meta name="twitter:creator" content={siteAuthorTwitter} />
+</svelte:head>
 
 <!--
 	The below markup is used on every page in the site. The <slot> is where the page's

@@ -23,13 +23,16 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={excerpt} />
-	<meta property="og:image:width" content={coverWidth} />
-	<meta property="og:image:height" content={coverHeight} />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={excerpt} />
 	{#if coverImage}
+		<meta property="og:image:width" content={coverWidth} />
+		<meta property="og:image:height" content={coverHeight} />
 		<meta property="og:image" content="{siteLink}{coverImage}" />
 		<meta name="twitter:image" content="{siteLink}{coverImage}" />
+		<meta name="twitter:card" content="summary_large_image" />
+	{:else}
+		<meta name="twitter:card" content="summary" />
 	{/if}
 </svelte:head>
 
