@@ -15,7 +15,9 @@ export async function load({ params }) {
 				headers: {
 					Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`
 				}
-			}).then((res) => res.json());
+			})
+				.then((res) => res.json())
+				.catch(() => ({}));
 
 			imageMeta = {
 				coverCaption: user
