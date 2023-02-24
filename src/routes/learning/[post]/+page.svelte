@@ -78,6 +78,16 @@
 
 	<svelte:component this={data.PostContent} />
 
+	<svelte:element
+		this="script"
+		src="https://utteranc.es/client.js"
+		repo="jakxz/jakxz.github.io"
+		issue-term="og:title"
+		theme="preferred-color-scheme"
+		crossorigin="anonymous"
+		async
+	/>
+
 	{#if categories}
 		<aside class="post-footer">
 			<h2>Posted in:</h2>
