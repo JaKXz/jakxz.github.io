@@ -30,6 +30,20 @@ img {
 	height: auto;
 }
 
+.callout,
+pre[class*='language-'] {
+	padding: 2rem;
+	margin: 2rem 0 2rem -2rem;
+	@media (max-width: vars.$smMin) {
+		max-width: unset;
+		width: 100vw;
+	}
+	@media (min-width: vars.$smMin) {
+		border-radius: 0.3rem;
+		min-width: calc(100% + 4rem);
+	}
+}
+
 li {
 	margin-bottom: 0.25rem;
 }
