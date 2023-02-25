@@ -93,4 +93,4 @@ function helper(...args) {
 ```
 
 This reduces distractions and allows developers to cmd+click ("Go To Definition") their way through the component to build an understanding much faster than having to hop back and forth across an unorganized file.
-What do you think? [comments coming soon]
+What do you think?
