@@ -75,7 +75,7 @@ const A_CONSTANT = 'global setup';
 const QUERY_LIMIT = 10; //etc
 
 // now, the thesis, most of the reason why a dev would come to this file
-// *most* of the time this will start at line 50 or less when arranged this way!
+// *most* of the time this will start at line 30 or less when arranged this way!
 export function Profile({name, ...rest}) {
   const [i18n] = usei18n();
   // and so on!
