@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.6c3b29fb.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.66358bc8.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/manage-node-versions-with-brew.2fed2224.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.72daa156.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.dd84b89c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.8f4c4bf7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.bda43505.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.01d7a952.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/config.5e0ed70e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.5e19617c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.d3fe4bba.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.svelte.c57e53e1.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.js.359af0bb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.6923adbb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.2defaa64.js"><title>Write React components like an essay | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/write-react-components-like-an-essay"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Write React components like an essay"><meta property="og:description"><meta name="twitter:title" content="Write React components like an essay"><meta name="twitter:description"><meta name="twitter:card" content="summary"><!-- HEAD_svelte-1iee9m6_END -->
+		<!-- You can replace this block to update the Google fonts used in the project -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- End Google Fonts block -->
+
+		<!-- You can add global <meta> tags here, but anything not global or dynamic should be a `<svelte:head>` tag on the proper page(s) instead. -->
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+
+
+
+
+<div class="layout"><header><a class="skip-to-content-link" href="#main">Skip to main content
+	</a>
+
+	<div><a href="/" class="site-title">Jason Kurian</a>
+		
+<nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning
+			</a></li><li><a href="/resume" aria-current="false">Resumé
+			</a></li></ul>
+	<button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only">Toggle hamburger menu</span>
+	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></div>
+	<button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only">Toggle hamburger menu</span>
+	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header>
+	<main id="main" tabindex="-1" class="/learning/write-react-components-like-an-essay">
+
+<article class="post svelte-1xmj924"><figure class="cover-image svelte-1xmj924"><img alt="" style="aspect-ratio: undefined / undefined;">
+		</figure>
+	<h1 class="svelte-1xmj924">Write React components like an essay</h1>
+
+	<div class="meta svelte-1xmj924"><b>Published:</b>
+		2023-02-09
+		<br>
+		<b>Updated:</b>
+		2023-02-23</div>
+
+	<h2 id="tldr"><a aria-hidden="true" tabindex="-1" href="#tldr"><span class="icon icon-link"></span></a>TL;DR</h2>
+<p>Put your file’s main export as close to the top of the file as possible, like the “thesis” of an essay.
+Put supporting “arguments” (helpers, subcomponents, etc) immediately following in order of relevance and use.</p>
+<hr>
+<p>Let’s take this <code>Profile.jsx</code> component as an (counter) example:</p>
+<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token comment">// app/components/Profile.jsx</span>
+<span class="token keyword">import</span> <span class="token operator">...</span>
+<span class="token comment">// N more imports</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getProfile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">function</span> <span class="token function">utilThatDoesSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">SubComponentThatTakesPartialProps</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> <span class="token constant">A_CONSTANT</span> <span class="token operator">=</span> <span class="token string">'CONSTANT_VALUE'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// named or default exports are interchangeable in this story.</span>
+<span class="token comment">// by this point, we're at line 200+</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">Profile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>name<span class="token punctuation">,</span> <span class="token operator">...</span>rest<span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">inlineUtilBasedOnPropsButReturnsMarkup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      ...
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SubcomponentThatTakesPartialProps</span></span> <span class="token spread"><span class="token punctuation">&#123;</span><span class="token operator">...</span>rest<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>Imagine you’ve just made an excellent hire; they’re super driven and pick things up quickly.
+You ask them to go investigate an issue and they realize it’s in the Profile.</p>
+<p>Now look again at the code in the <code>Profile.jsx</code> file.
+If you’re lucky, you have a strong culture of code hygiene and a lint rule that limits files to a reasonable length.
+Even so, they likely still have to wade through at least a couple hundred lines of code to get to an entrypoint so they can start to trace the path back to the issue they need to fix.
+The supporting code along the way could be confusing or at worst distracting.</p>
+<h3 id="show-me-the-code"><a aria-hidden="true" tabindex="-1" href="#show-me-the-code"><span class="icon icon-link"></span></a>Show me the code</h3>
+<p>In your formal education (assuming at least high school or equivalent) you may have heard that good writing puts its main point (the “lede” or thesis) near the start of the paper.
+The supporting arguments follow in order of relevance.</p>
+<p>So, let’s rewrite <code>Profile.jsx</code> to follow this analogy:</p>
+<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token keyword">import</span> <span class="token operator">...</span>
+<span class="token comment">// N more imports, like the "introductory" sentences that bring in hooks,</span>
+<span class="token comment">// shared helper functions and so on</span>
+
+<span class="token keyword">const</span> <span class="token constant">A_CONSTANT</span> <span class="token operator">=</span> <span class="token string">'global setup'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token constant">QUERY_LIMIT</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment">//etc</span>
+
+<span class="token comment">// now, the thesis, most of the reason why a dev would come to this file</span>
+<span class="token comment">// *most* of the time this will start at line 30 or less when arranged this way!</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">Profile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>name<span class="token punctuation">,</span> <span class="token operator">...</span>rest<span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>i18n<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">usei18n</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// and so on!</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text"> ... </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">//supporting components (maybe broken out into their own "essays" as they become more complex)</span>
+<span class="token keyword">function</span> <span class="token function">Subcomponent</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">function</span> <span class="token function">helper</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>This reduces distractions and allows developers to cmd+click (“Go To Definition”) their way through the component to build an understanding much faster than having to hop back and forth across an unorganized file.
+What do you think?</p>
+
+	<script src="https://utteranc.es/client.js" repo="jakxz/jakxz.github.io" issue-term="og:title" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
+
+	<aside class="post-footer svelte-1xmj924"><h2>Posted in:</h2>
+			<ul class="svelte-1xmj924"><li class="svelte-1xmj924"><a href="/learning/category/react/" class="svelte-1xmj924">react</a>
+					</li><li class="svelte-1xmj924"><a href="/learning/category/web/" class="svelte-1xmj924">web</a>
+					</li><li class="svelte-1xmj924"><a href="/learning/category/dev/" class="svelte-1xmj924">dev</a>
+					</li></ul></aside>
+</article></main>
+	<footer>
+<nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning
+			</a></li><li><a href="/resume" aria-current="false">Resumé
+			</a></li></ul>
+	<button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only">Toggle hamburger menu</span>
+	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav>
+
+	<nav><ul><li><a href="/api/rss.xml" rel="external">RSS</a></li>
+			<li><a href="/">Home</a></li></ul></nav>
+
+	<div><p>©2023 Jason Kurian</p>
+		<p>See a typo?
+				<em><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz/jakxz.github.io/edit/develop/src/lib/posts/write-react-components-like-an-essay.md">Please open a PR here.</a></em>
+				Thank you!
+			</p></div></footer></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_1h8b509 = {
+						env: {},
+						assets: new URL("..", location.href).pathname.replace(/^\/$/, ''),
+						element: document.currentScript.parentElement
+					};
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.72daa156.js"),
+						import("../_app/immutable/entry/app.bda43505.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_1h8b509.element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
