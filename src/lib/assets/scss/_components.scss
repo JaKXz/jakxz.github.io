@@ -1,3 +1,5 @@
+@use './vars';
+
 .pagination {
 	margin: 0 0 1rem;
 
@@ -24,7 +26,7 @@
 			width: 2em;
 			height: 2em;
 			font-family: var(--primaryFont);
-			font-weight: bold;
+			@include vars.font-weight(bold);
 			transition: background 0.1s;
 
 			&:hover {

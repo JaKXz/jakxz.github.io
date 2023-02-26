@@ -130,7 +130,7 @@
 				padding: 0.5rem 0.75rem;
 				text-transform: uppercase;
 				font-family: var(--primaryFont);
-				font-weight: bold;
+				@include vars.font-weight(bold);
 			}
 
 			+ li {

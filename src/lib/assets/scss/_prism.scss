@@ -1,3 +1,5 @@
+@use './vars';
+
 /**
  * What follows is all syntax highlighting, based on the Dracula theme by Zeno Rocha
  */
@@ -98,7 +100,7 @@ pre[class*='language-'] {
 
 .token.important,
 .token.bold {
-	font-weight: bold;
+	@include vars.font-weight(bold);
 }
 
 .token.italic {
