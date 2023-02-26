@@ -1,5 +1,25 @@
 @use './vars';
 
+:root {
+	// These are broken out into two separate variables from a previous iteration. I left
+	// it in because it's nice to be able to split out the heading and body fonts.
+	--accentFont: 'Libre Franklin', Georgia, Times, serif;
+	--primaryFont: 'Libre Franklin', sans-serif;
+	--codeFont: 'Fira Code', monospace;
+
+	// Base styles
+	font-size: 1rem;
+	line-height: 1.6;
+
+	@media (min-width: vars.$smMin) {
+		font-size: 1.125rem;
+	}
+
+	@media (min-width: vars.$lgMin) {
+		font-size: 1.25rem;
+	}
+}
+
 :where(h1, h2, h3, h4, h5, h6) {
 	margin: 4.5rem 0 1rem;
 	line-height: 1.1;
