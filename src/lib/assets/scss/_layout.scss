@@ -74,3 +74,12 @@ li {
 		}
 	}
 }
+
+.utterances {
+	margin-top: 2rem;
+
+	@media (max-width: 359px) {
+		margin-left: -2rem;
+		width: 100vw;
+	}
+}
