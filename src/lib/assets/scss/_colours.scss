@@ -14,8 +14,8 @@
 	@media (prefers-color-scheme: dark) {
 		--lightAccent: #2e5c87;
 		--lighterAccent: #26292b;
-		--dark: #6ea0ce;
-		--darker: #b9d5ee;
+		--dark: #182a45;
+		--darker: var(--background);
 		--paper: var(--black);
 		--ink: var(--white);
 
