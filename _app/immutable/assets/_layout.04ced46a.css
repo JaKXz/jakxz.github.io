@@ -47,12 +47,12 @@
   margin: 4.5rem 0 1rem;
   line-height: 1.1;
   font-family: var(--accentFont);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--darker);
 }
 @media (prefers-color-scheme: dark) {
   :where(h1, h2, h3, h4, h5, h6) {
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 
@@ -123,6 +123,15 @@ ul ul {
 }
 ul ::marker {
   color: var(--accent);
+}
+
+strong {
+  font-weight: 800;
+}
+@media (prefers-color-scheme: dark) {
+  strong {
+    font-weight: 700;
+  }
 }
 
 blockquote {
@@ -246,12 +255,12 @@ li {
   width: 2em;
   height: 2em;
   font-family: var(--primaryFont);
-  font-weight: 700;
+  font-weight: 800;
   transition: background 0.1s;
 }
 @media (prefers-color-scheme: dark) {
   .pagination ul a {
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 .pagination ul a:hover {
@@ -275,12 +284,12 @@ footer a {
 }
 header a.active,
 footer a.active {
-  font-weight: 700;
+  font-weight: 800;
 }
 @media (prefers-color-scheme: dark) {
   header a.active,
   footer a.active {
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 header nav ul,
@@ -324,11 +333,11 @@ header .site-title {
   margin: 0;
   display: block;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 @media (prefers-color-scheme: dark) {
   header .site-title {
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 @media (min-width: 768px) {
@@ -511,7 +520,7 @@ input[type=submit] {
   padding: 0.5rem 1rem;
   background: var(--darker);
   color: var(--paper);
-  font-weight: 700;
+  font-weight: 800;
   border: 2px solid var(--darker);
   border-radius: 0.125rem;
   background: var(--darker);
@@ -523,7 +532,7 @@ input[type=submit] {
 @media (prefers-color-scheme: dark) {
   button,
   input[type=submit] {
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 button:hover, button:focus,
@@ -534,13 +543,13 @@ input[type=submit]:focus {
 
 label,
 fieldset {
-  font-weight: 700;
+  font-weight: 800;
   display: inline-block;
 }
 @media (prefers-color-scheme: dark) {
   label,
   fieldset {
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 
@@ -565,11 +574,6 @@ input[type=radio], input[type=checkbox] {
 }
 input[type=radio]:not(:checked) + label, input[type=checkbox]:not(:checked) + label {
   font-weight: 400;
-}
-@media (prefers-color-scheme: dark) {
-  input[type=radio]:not(:checked) + label, input[type=checkbox]:not(:checked) + label {
-    font-weight: 300;
-  }
 }
 
 .form-section,
@@ -761,12 +765,12 @@ pre[class*=language-] {
 
 .token.important,
 .token.bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 @media (prefers-color-scheme: dark) {
   .token.important,
   .token.bold {
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 
@@ -788,12 +792,6 @@ body {
   color: var(--ink);
   font-family: var(--primaryFont);
   background: var(--paper);
-  font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    font-weight: 300;
-  }
 }
