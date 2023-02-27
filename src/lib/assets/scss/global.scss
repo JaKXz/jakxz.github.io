@@ -1,3 +1,4 @@
+@use './colours';
 @use './typography';
 @use './layout';
 @use './components';
@@ -7,6 +8,7 @@
 @use './utilities';
 @use './code';
 @use './prism';
+@use './vars';
 
 html,
 body {
@@ -18,6 +20,7 @@ body {
 	color: var(--ink);
 	font-family: var(--primaryFont);
 	background: var(--paper);
+	@include vars.font-weight(normal);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }

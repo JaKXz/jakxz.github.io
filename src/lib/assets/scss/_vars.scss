@@ -13,40 +13,35 @@ $xxlMin: 1680px;
 $xxlMax: 1959px;
 $xxxlMin: 1960px;
 
-:root {
-	// Colors
-	--accent: #e63946;
-	--background: #faf9f8;
-	--lightAccent: #a8dae5;
-	--lighterAccent: #e6e8e4;
-	--dark: #457b9d;
-	--darker: #1d3557;
-	--slate: #2f3948;
+@mixin font-weight($weight) {
+	$weights: (
+		thin: 100,
+		extra-light: 200,
+		ultra-light: 200,
+		light: 300,
+		normal: 400,
+		book: 400,
+		regular: 400,
+		medium: 500,
+		semi-bold: 600,
+		demi-bold: 600,
+		bold: 700,
+		extra-bold: 800,
+		ultra-bold: 900,
+		heavy: 900,
+		black: 900,
+		ultra: 900,
+		ultra-black: 900,
+		extra-ultra: 900
+	);
 
-	--white: #fff;
-	--black: #152030;
-
-	--ink: var(--slate);
-	--paper: var(--background);
-
-	// Fonts
-	/**
-   * These are broken out into two separate variables from a previous iteration. I left
-   * it in because it's nice to be able to split out the heading and body fonts.
-   */
-	--accentFont: 'Libre Franklin', Georgia, Times, serif;
-	--primaryFont: 'Libre Franklin', sans-serif;
-	--codeFont: 'Fira Code', monospace;
-
-	// Base styles
-	font-size: 1rem;
-	line-height: 1.6;
-
-	@media (min-width: $smMin) {
-		font-size: 1.125rem;
+	$output: $weight;
+	@if map-has-key($weights, $weight) {
+		$output: map-get($weights, $weight);
 	}
 
-	@media (min-width: $lgMin) {
-		font-size: 1.25rem;
+	font-weight: $output;
+	@media (prefers-color-scheme: dark) {
+		font-weight: $output - 100;
 	}
 }
