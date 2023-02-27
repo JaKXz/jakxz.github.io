@@ -26,7 +26,7 @@
 			width: 2em;
 			height: 2em;
 			font-family: var(--primaryFont);
-			@include vars.font-weight(bold);
+			@include vars.font-weight(extra-bold);
 			transition: background 0.1s;
 
 			&:hover {

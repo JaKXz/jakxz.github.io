@@ -24,7 +24,7 @@
 	margin: 4.5rem 0 1rem;
 	line-height: 1.1;
 	font-family: var(--accentFont);
-	@include vars.font-weight(bold);
+	@include vars.font-weight(extra-bold);
 	color: var(--darker);
 }
 
@@ -95,6 +95,10 @@ ul {
 	::marker {
 		color: var(--accent);
 	}
+}
+
+strong {
+	@include vars.font-weight(extra-bold);
 }
 
 blockquote {

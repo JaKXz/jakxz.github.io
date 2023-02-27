@@ -10,7 +10,7 @@ input[type='submit'] {
 	padding: 0.5rem 1rem;
 	background: var(--darker);
 	color: var(--paper);
-	@include vars.font-weight(bold);
+	@include vars.font-weight(extra-bold);
 	border: 2px solid var(--darker);
 	border-radius: 0.125rem;
 	background: var(--darker);
@@ -27,7 +27,7 @@ input[type='submit'] {
 
 label,
 fieldset {
-	@include vars.font-weight(bold);
+	@include vars.font-weight(extra-bold);
 	display: inline-block;
 }
 

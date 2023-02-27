@@ -9,7 +9,7 @@ footer {
 		text-decoration: none;
 
 		&.active {
-			@include vars.font-weight(bold);
+			@include vars.font-weight(extra-bold);
 		}
 	}
 
@@ -53,7 +53,7 @@ header {
 		margin: 0;
 		display: block;
 		font-size: 1.4rem;
-		@include vars.font-weight(bold);
+		@include vars.font-weight(extra-bold);
 
 		@media (min-width: vars.$smMin) {
 			width: 100%;

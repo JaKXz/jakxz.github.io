@@ -100,7 +100,7 @@ pre[class*='language-'] {
 
 .token.important,
 .token.bold {
-	@include vars.font-weight(bold);
+	@include vars.font-weight(extra-bold);
 }
 
 .token.italic {
