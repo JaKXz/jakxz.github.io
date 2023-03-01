@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@sveltejs/adapter-static': 2.0.1
-  '@sveltejs/kit': 1.8.8
+  '@sveltejs/kit': 1.9.2
   dotenv: 16.0.3
   eslint: 8.35.0
   eslint-config-prettier: 8.6.0
@@ -28,8 +28,8 @@ dependencies:
   svelte-preprocess: 5.0.1_sass@1.58.3+svelte@3.55.1
 
 devDependencies:
-  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.8.8
-  '@sveltejs/kit': 1.8.8_svelte@3.55.1+vite@4.1.4
+  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.9.2
+  '@sveltejs/kit': 1.9.2_svelte@3.55.1+vite@4.1.4
   eslint: 8.35.0
   eslint-config-prettier: 8.6.0_eslint@8.35.0
   eslint-plugin-svelte3: 4.0.0_n4ieifq2d7jq3sqoe474cgqlim
@@ -316,16 +316,16 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.8.8:
+  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.9.2:
     resolution: {integrity: sha512-o5/q3YwD/ErxYCFlK1v3ydvldyNKk1lh3oeyxn4mhz+Pkbx/uuxhzmbOpytTlp5aVqNHDVsb04xadUzOFCDDzw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.8.8_svelte@3.55.1+vite@4.1.4
+      '@sveltejs/kit': 1.9.2_svelte@3.55.1+vite@4.1.4
     dev: true
 
-  /@sveltejs/kit/1.8.8_svelte@3.55.1+vite@4.1.4:
-    resolution: {integrity: sha512-64bEcgIECQ8TPQ7sCMo1X1IMSkFjTP8MaKB4YpG4Tw3rvKDaVxBt6MuxdvMShDJu12CpXv692AY4jhfNUPwcmQ==}
+  /@sveltejs/kit/1.9.2_svelte@3.55.1+vite@4.1.4:
+    resolution: {integrity: sha512-KYDrzs9bdoK+3typr5eBa+8q+RFwZdI80tuSL1yU99Rn5hZsEbcj4tlBGVvlL7SHxJdMUiDUYhTznbpb7CIs9A==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
