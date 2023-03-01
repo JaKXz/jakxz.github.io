@@ -1,12 +1,16 @@
+<script>
+   import { siteTitle, siteDescription } from '$lib/config.js';
+</script>
+
 <svelte:head>
 
-  <title>Jason Kurian | Resume</title>
-  <meta name="description" content="Jason Kurian - Senior Developer Resume" />
+  <title>{siteTitle} | Senior Dev Resume</title>
+  <meta name="description" content="{siteTitle} - {siteDescription} Resume" />
 </svelte:head>
-<!-- # UX + Fullstack dev -->
-<!-- Avatar • Last updated -->
 
 ## 🧰 Technical
+
+~5-{new Date().getFullYear() - 2012} years of experience across all roles in:
 
 - JavaScript in all flavours (e.g. Svelte, TS, Node, React)
 - Figma, Balsamiq
@@ -29,6 +33,8 @@ May **2019** - Aug **2020**
 - Facilitated team retrospectives & pruned meetings leading to immediate & continuous improvement in our process and effectiveness of experiments.
 - Reviewed several applicants and conducted personal and technical interviews. Received positive feedback from all applicants for the interview process and mentorship provided.
 
+<details class='no-print'>
+
 [Nulogy](http://nulogy.com) | _Fullstack Developer_<br>
 Aug **2016** - Aug **2018**
 
@@ -41,6 +47,8 @@ Oct **2015** - Apr **2016**
 
 - Co-led [tooling & maintenance of OSS starter projects](https://github.com/rangle?utf8=%E2%9C%93&q=starter&type=&language=), making new projects start up 2-5x faster & enabling the aggressive staffing model Rangle uses.
 - Consolidated 2 internal products using Koa and React + Redux, managing large datasets from multiple scheduling APIs to set up future employee and company success.
+
+</details>
 
 ## ䷢ Open Source
 
@@ -79,7 +87,7 @@ University of Waterloo, Waterloo, ON
 **Bachelor of Applied Science, Systems Design Engineering, inc. | 2010 - 2014**<br>
 University of Waterloo, Waterloo, ON
 
-<style>
+<style lang="scss">
   h2:first-of-type {
     margin-top: 0;
   }
@@ -107,6 +115,10 @@ University of Waterloo, Waterloo, ON
   }
   .captions {
     font-size: 0.8rem;
+
+    @media print {
+      display: none;
+    }
   }
   img {
     width: 100px;
