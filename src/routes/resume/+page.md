@@ -18,7 +18,7 @@ jasonk92@gmail.com<br>
 
 </div>
 
-<section class='technical'>
+<aside class='technical'>
 
 ## 🧰 Technical
 
@@ -33,7 +33,7 @@ jasonk92@gmail.com<br>
 - Git, Mercurial
 - TDD, pairing, XP
 
-</section>
+</aside>
 
 <section class='experience'>
 
