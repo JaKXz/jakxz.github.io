@@ -83,3 +83,46 @@ li {
 		width: 100vw;
 	}
 }
+
+// made the data.path into classname for this reason,
+// and this was the best way to quickly affect all md content
+.\/resume {
+	row-gap: 4.5rem;
+	display: grid;
+	@media print {
+		background: #fff;
+		line-height: 1.5;
+		display: grid;
+		column-gap: 2rem;
+		row-gap: 1rem;
+		grid-template-areas:
+			'print-title print-title'
+			'oss technical'
+			'experience experience'
+			'education education';
+		h2 {
+			font-size: 1.8rem;
+		}
+		.technical {
+			grid-area: technical;
+		}
+		.experience {
+			grid-area: experience;
+		}
+		.oss {
+			grid-area: oss;
+		}
+		.education {
+			grid-area: education;
+		}
+		.print-title {
+			grid-area: print-title;
+		}
+		ol {
+			list-style-type: square;
+			::marker {
+				color: var(--accent);
+			}
+		}
+	}
+}

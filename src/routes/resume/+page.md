@@ -1,5 +1,5 @@
 <script>
-   import { siteTitle, siteDescription } from '$lib/config.js';
+   import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config.js';
 </script>
 
 <svelte:head>
@@ -8,9 +8,21 @@
   <meta name="description" content="{siteTitle} - {siteDescription} Resume" />
 </svelte:head>
 
+<div class='print-only flex justify-between print-title'>
+
+# {siteTitle}
+
+jasonk92@gmail.com<br>
+[{siteURL}]({siteLink})<br>
+(226) 929-4750
+
+</div>
+
+<section class='technical'>
+
 ## 🧰 Technical
 
-~5-{new Date().getFullYear() - 2012} years of experience across all roles in:
+5-{new Date().getFullYear() - 2012} years of experience across all roles in:
 
 - JavaScript in all flavours (e.g. Svelte, TS, Node, React)
 - Figma, Balsamiq
@@ -21,7 +33,18 @@
 - Git, Mercurial
 - TDD, pairing, XP
 
+</section>
+
+<section class='experience'>
+
 ## 🎒 Experience
+
+[Shopify](https://shopify.com) | _Senior Web Developer_<br>
+Nov **2020 - present**
+
+- Co-authored and implemented new design system on shopify.dev to support multidimensional dark mode
+-
+- Conducted interviews for early career devs and improved the interview process with more objective skill tests;
 
 [Paddle HR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior UX + Fullstack Developer_<br>
 May **2019** - Aug **2020**
@@ -49,8 +72,13 @@ Oct **2015** - Apr **2016**
 - Consolidated 2 internal products using Koa and React + Redux, managing large datasets from multiple scheduling APIs to set up future employee and company success.
 
 </details>
+</section>
+
+<section class='oss'>
 
 ## ䷢ Open Source
+
+I got my start in open source, so I'm quick to jump in and help wherever I see I can:
 
 1. [PrismJS](https://github.com/prismjs/prism), _approx. 8.1MM weekly downloads_<br>
    Collaborator helping with reviewing new features, fixes, infrastructure and language definition improvements.
@@ -58,14 +86,20 @@ Oct **2015** - Apr **2016**
 1. [IstanbulJS](https://github.com/istanbuljs), _approx. 10MM weekly downloads_<br>
    Core team member of JS code-coverage tooling focusing on documentation, issue triaging, and community support.
 
-1. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), _500K+ monthly downloads_<br>
+<span class='no-print'>
+
+4. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), _500K+ monthly downloads_<br>
    Became a core maintainer after reaching out to the original author on the React core team and taking care of repository issues. Contributed architectural decisions and insights to the larger Redux Utilities org.
 
-1. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin)<br>
+5. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin)<br>
    Took over core maintenance to fix a bug for my own use. Tackled community reported bugs and eventually handed off ownership to the webpack-contrib org.
 
-1. [20+ published npm packages](https://www.npmjs.com/~jakxz)<br>
+6. [other published npm packages & contributions](https://www.npmjs.com/~jakxz)<br>
    Sharing smaller modules as utilities and reusable functions as needed.
+
+</span>
+</section>
+<section class='education'>
 
 ## 📚 Education
 
@@ -80,12 +114,14 @@ Approx. 3 years of [internships](https://linkedin.com/in/jgkurian) between **201
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/morega.webp" alt="Morega systems logo" title="QA Analyst at Morega Systems Inc."/> QA Analyst</div>
 </div>
 
-**Bachelor of Knowledge Integration, Honours, inc. | 2016 - 2019**<br>
+**Bachelor of Knowledge Integration, Honours, _inc._ | 2016 - 2019**<br>
 _Collaborative Design Specialization_<br>
 University of Waterloo, Waterloo, ON
 
-**Bachelor of Applied Science, Systems Design Engineering, inc. | 2010 - 2014**<br>
+**Bachelor of Applied Science, Systems Design Engineering, _inc._ | 2010 - 2014**<br>
 University of Waterloo, Waterloo, ON
+
+</section>
 
 <style lang="scss">
   h2:first-of-type {
