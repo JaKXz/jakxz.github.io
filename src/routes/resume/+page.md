@@ -24,7 +24,8 @@ jasonkurian@hey.com<br>
 
 5-{new Date().getFullYear() - 2012} years of experience across all roles in:
 
-- JavaScript in all flavours (e.g. Svelte, Typescript, Node, React)
+- JavaScript in all flavours
+  - Svelte, Typescript, Node, React
   - Vite, Webpack, Storybook
   - Jest, Vitest
 - Figma, Balsamiq, Sass
@@ -44,22 +45,23 @@ jasonkurian@hey.com<br>
 [Shopify](https://shopify.com) | _Senior Web Developer_<br>
 Nov **2020** - Mar **2023**
 
-- Championed the successful release of interactive codeblocks and enabled live rendering of shopify liquid templating language. This improved satisfaction and helpfulness by 25%.
-- Delivered the new vite-powered shopify app template (React, Node), improving adoption of best practices for shopify developers and over 500 new stars for the repo since shipping.
-- Shipped a complex integration with a postal carrier for 2MM+ merchants, iterating over multiple solutions and fixes to now see over 80% adoption.
-- Co-authored and implemented a new design system for shopify.dev to support dark mode & colour themes to WCAG accessibility standards.
+- Championed the successful release of interactive codeblocks and enabled live rendering of Shopify liquid templating language. This improved satisfaction by >=25%.
+- Delivered new Vite-powered Shopify app template (React, Node), improving adoption of best practices for Shopify developers and over 500 new GitHub stars for the repository in 2 months.
+- Shipped an integration with a major postal carrier for all Canadian merchants with over 80% adoption rate.
+- Co-authored and implemented a new design system for Shopify.dev to support dark mode + multi-theming to WCAG accessibility standards.
 - Contributed to the industry leading redesign of Shopify's REST & GraphQL API documentation.
-- Mentored early-career developers to improve their technical skills and knowledge of best practices.
-- Conducted interviews for early career developers and helped improve the interview and evaluation process by helping standardize the tests/questions used.
+- Communicated with cross-functional teams to ensure seamless integration of web application components.
+- Mentored early-career developers to improve skills and knowledge of best practices.
+- Conducted interviews for early career developers and improved the interview and evaluation process; led to successful hires of high potential candidates.
 
 [Paddle HR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior UX + Fullstack Developer_<br>
 May **2019** - Oct **2020**
 
-- Designed and led the implementation of robust & extensible JAMstack architecture and design system for Paddle's main product offering. A lot of care went in to the tools chosen [and avoided], and it paid off: functionality that's easy to define, structure, and fix with tests; consistent visual language and principles, and fast adoption of new technologies.
-- Drove the adoption of GraphQL to easily build useful UIs on top of our 440MM+ pt dataset on career history and skills trajectories and derive useful insights for 30K+ enterprise users.
+- Designed and led the implementation of robust & extensible JAMstack architecture and design system for Paddle's main product offering. Championed careful consideration of functionality that's easy to define, structure, and fix with tests.
+- Led the adoption of GraphQL to easily build useful UIs on top of our 440MM+ pt dataset on career history and skills trajectories and derive useful insights for 30K+ enterprise users.
 - Introduced thorough automated testing practices and code consistency for our Python codebases, resulting in faster and more reliable delivery.
-- Supervised a Junior Developer and mentored them through daily processes and ad hoc projects helping them become a quickly contributing member of the team.
-- Facilitated team retrospectives & pruned meetings leading to immediate & continuous improvement in our process and effectiveness of experiments.
+- Supervised a Junior Developer and mentored them through daily processes and ad hoc projects helping them become a contributing member of the team.
+- Facilitated team retrospectives & pruned meetings leading to immediate and continuous improvement in our process and effectiveness of experiments.
 - Reviewed several applicants and conducted personal and technical interviews. Received positive feedback from all applicants for the interview process and mentorship provided.
 
 [Nulogy](http://nulogy.com) | _Fullstack Developer_<br>
@@ -70,6 +72,7 @@ Aug **2016** - Aug **2018**
 - Developed consistent component / container pattern for data deserialization and visualizations and shared language with the design team, work that led to the full-fledged [design system](https://nulogy.design/).
 
 <details class='no-print'>
+<summary>More roles</summary>
 
 [Rangle.io](http://rangle.io) | _Junior Developer_<br>
 Oct **2015** - Apr **2016**
@@ -84,13 +87,15 @@ Oct **2015** - Apr **2016**
 
 ## ䷢ Open Source
 
-I got my start in open source, so I'm quick to jump in and help wherever I see I can:
+I got my start in open source, so I'm quick to jump in and help wherever I can:
 
-1. [PrismJS](https://github.com/prismjs/prism), _approx. 8.1MM weekly downloads_<br>
-   Collaborator helping with reviewing new features, fixes, infrastructure and language definition improvements.
+1. [PrismJS](https://github.com/prismjs/prism), Maintainer, 2021 - Present<br>
+   _~7.7MM weekly downloads_<br>
+   I work with a small global team to review new features, fixes, infrastructure and language definition improvements.
 
-1. [IstanbulJS](https://github.com/istanbuljs), _approx. 10MM weekly downloads_<br>
-   Early days core team member of de-facto code-coverage tooling focusing on documentation, issue triaging, and community support.
+1. [IstanbulJS](https://github.com/istanbuljs), Collaborator, 2017 - 2020<br>
+   _~10MM weekly downloads_<br>
+   Core team member of code-coverage tooling focusing on documentation, issue triaging, and community support.
 
 <span class='no-print'>
 
