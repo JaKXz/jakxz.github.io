@@ -12,9 +12,9 @@
 
 # {siteTitle}
 
-jasonk92@gmail.com<br>
+jasonkurian@hey.com<br>
 [{siteURL}]({siteLink})<br>
-(226) 929-4750
++1 (226) 929-4750
 
 </div>
 
@@ -24,10 +24,12 @@ jasonk92@gmail.com<br>
 
 5-{new Date().getFullYear() - 2012} years of experience across all roles in:
 
-- JavaScript in all flavours (e.g. Svelte, TS, Node, React)
-- Figma, Balsamiq
+- JavaScript in all flavours (e.g. Svelte, Typescript, Node, React)
+  - Vite, Webpack, Storybook
+  - Jest, Vitest
+- Figma, Balsamiq, Sass
 - Ruby on Rails
-- PostgreSQL, MongoDB
+- PostgreSQL, MySQL, MongoDB (NoSQL)
 - Django, Flask
 - GraphQL
 - Git, Mercurial
@@ -40,14 +42,18 @@ jasonk92@gmail.com<br>
 ## 🎒 Experience
 
 [Shopify](https://shopify.com) | _Senior Web Developer_<br>
-Nov **2020 - present**
+Nov **2020** - Mar **2023**
 
-- Co-authored and implemented new design system on shopify.dev to support multidimensional dark mode
--
-- Conducted interviews for early career devs and improved the interview process with more objective skill tests;
+- Championed the successful release of interactive codeblocks and enabled live rendering of shopify liquid templating language. This improved satisfaction and helpfulness by 25%.
+- Delivered the new vite-powered shopify app template (React, Node), improving adoption of best practices for shopify developers and over 500 new stars for the repo since shipping.
+- Shipped a complex integration with a postal carrier for 2MM+ merchants, iterating over multiple solutions and fixes to now see over 80% adoption.
+- Co-authored and implemented a new design system for shopify.dev to support dark mode & colour themes to WCAG accessibility standards.
+- Contributed to the industry leading redesign of Shopify's REST & GraphQL API documentation.
+- Mentored early-career developers to improve their technical skills and knowledge of best practices.
+- Conducted interviews for early career developers and helped improve the interview and evaluation process by helping standardize the tests/questions used.
 
 [Paddle HR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior UX + Fullstack Developer_<br>
-May **2019** - Aug **2020**
+May **2019** - Oct **2020**
 
 - Designed and led the implementation of robust & extensible JAMstack architecture and design system for Paddle's main product offering. A lot of care went in to the tools chosen [and avoided], and it paid off: functionality that's easy to define, structure, and fix with tests; consistent visual language and principles, and fast adoption of new technologies.
 - Drove the adoption of GraphQL to easily build useful UIs on top of our 440MM+ pt dataset on career history and skills trajectories and derive useful insights for 30K+ enterprise users.
@@ -56,14 +62,14 @@ May **2019** - Aug **2020**
 - Facilitated team retrospectives & pruned meetings leading to immediate & continuous improvement in our process and effectiveness of experiments.
 - Reviewed several applicants and conducted personal and technical interviews. Received positive feedback from all applicants for the interview process and mentorship provided.
 
-<details class='no-print'>
-
 [Nulogy](http://nulogy.com) | _Fullstack Developer_<br>
 Aug **2016** - Aug **2018**
 
 - Co-invented and implemented [storybook driven development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07) - a methodology for rapidly prototyping/developing visual components - with senior team members.
 - Built a data-intensive dashboard serving millions of rows of data with PostgreSQL, Ruby on Rails, React, and Redux to help planners derive insights from historical data.
 - Developed consistent component / container pattern for data deserialization and visualizations and shared language with the design team, work that led to the full-fledged [design system](https://nulogy.design/).
+
+<details class='no-print'>
 
 [Rangle.io](http://rangle.io) | _Junior Developer_<br>
 Oct **2015** - Apr **2016**
@@ -84,7 +90,7 @@ I got my start in open source, so I'm quick to jump in and help wherever I see I
    Collaborator helping with reviewing new features, fixes, infrastructure and language definition improvements.
 
 1. [IstanbulJS](https://github.com/istanbuljs), _approx. 10MM weekly downloads_<br>
-   Core team member of JS code-coverage tooling focusing on documentation, issue triaging, and community support.
+   Early days core team member of de-facto code-coverage tooling focusing on documentation, issue triaging, and community support.
 
 <span class='no-print'>
 
@@ -95,7 +101,7 @@ I got my start in open source, so I'm quick to jump in and help wherever I see I
    Took over core maintenance to fix a bug for my own use. Tackled community reported bugs and eventually handed off ownership to the webpack-contrib org.
 
 6. [other published npm packages & contributions](https://www.npmjs.com/~jakxz)<br>
-   Sharing smaller modules as utilities and reusable functions as needed.
+   Sharing smaller modules as utilities or publishing useful forks with important fixes.
 
 </span>
 </section>
@@ -155,6 +161,9 @@ University of Waterloo, Waterloo, ON
     @media print {
       display: none;
     }
+  }
+  .print-title p {
+    text-align: right;
   }
   img {
     width: 100px;
