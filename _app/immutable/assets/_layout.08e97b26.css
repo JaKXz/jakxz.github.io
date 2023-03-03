@@ -230,6 +230,36 @@ li {
   }
 }
 
+.\/resume {
+  display: grid;
+  row-gap: 4.5rem;
+}
+@media print {
+  .\/resume {
+    background: #fff;
+    line-height: 1.5;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    grid-template-areas: "print-title print-title" "oss technical" "experience experience" "education education";
+  }
+  .\/resume .technical {
+    grid-area: technical;
+  }
+  .\/resume .experience {
+    grid-area: experience;
+  }
+  .\/resume .oss {
+    grid-area: oss;
+  }
+  .\/resume .education {
+    grid-area: education;
+  }
+  .\/resume .print-title {
+    grid-area: print-title;
+  }
+}
+
 .pagination {
   margin: 0 0 1rem;
 }
@@ -782,6 +812,27 @@ pre[class*=language-] {
   cursor: help;
 }
 
+@media print {
+  header,
+  footer,
+  .icon-link,
+  .no-print {
+    display: none;
+  }
+  html,
+  body {
+    font-size: 0.9rem;
+  }
+  main {
+    margin: auto;
+    padding: 0;
+  }
+}
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
 html,
 body {
   height: 100%;
@@ -794,4 +845,9 @@ body {
   background: var(--paper);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+@media print {
+  body {
+    background: #fff;
+  }
 }
