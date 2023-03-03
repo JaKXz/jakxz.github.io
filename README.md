@@ -1,6 +1,6 @@
 👋🏽 hey, thanks for stopping by! My friends call me Jay, or JK.
 
-## [👨🏽‍💻 work](https://jakxz.github.io/resume):
+## [👨🏽‍💻 work](/resume):
 
 _Senior Web Developer at Shopify_
 

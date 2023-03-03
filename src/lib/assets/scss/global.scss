@@ -8,7 +8,7 @@
 @use './utilities';
 @use './code';
 @use './prism';
-@use './vars';
+@use './print';
 
 html,
 body {
@@ -20,6 +20,10 @@ body {
 	color: var(--ink);
 	font-family: var(--primaryFont);
 	background: var(--paper);
+	@media print {
+		background: #fff;
+	}
+
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,22 @@
+@media print {
+	header,
+	footer,
+	.icon-link,
+	.no-print {
+		display: none;
+	}
+	html,
+	body {
+		font-size: 0.9rem;
+	}
+	main {
+		margin: auto;
+		padding: 0;
+	}
+}
+
+@media screen {
+	.print-only {
+		display: none !important;
+	}
+}

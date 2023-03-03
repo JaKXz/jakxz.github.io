@@ -83,3 +83,35 @@ li {
 		width: 100vw;
 	}
 }
+
+.\/resume {
+	display: grid;
+	row-gap: 4.5rem;
+	@media print {
+		background: #fff;
+		line-height: 1.5;
+		display: grid;
+		column-gap: 2rem;
+		row-gap: 1rem;
+		grid-template-areas:
+			'print-title print-title'
+			'oss technical'
+			'experience experience'
+			'education education';
+		.technical {
+			grid-area: technical;
+		}
+		.experience {
+			grid-area: experience;
+		}
+		.oss {
+			grid-area: oss;
+		}
+		.education {
+			grid-area: education;
+		}
+		.print-title {
+			grid-area: print-title;
+		}
+	}
+}
