@@ -12,7 +12,7 @@
 
 # {siteTitle}
 
-jasonkurian@hey.com<br>
+jasonk92@gmail.com<br>
 [{siteURL}]({siteLink})<br>
 +1 (226) 929-4750
 
@@ -93,16 +93,18 @@ I got my start in open source, so I'm quick to jump in and help wherever I can:
    _~7.7MM weekly downloads_<br>
    I work with a small global team to review new features, fixes, infrastructure and language definition improvements.
 
-1. [IstanbulJS](https://github.com/istanbuljs), Collaborator, 2017 - 2020<br>
+1. [IstanbulJS](https://github.com/istanbuljs), Collaborator, 2018 - 2020<br>
    _~10MM weekly downloads_<br>
    Core team member of code-coverage tooling focusing on documentation, issue triaging, and community support.
 
 <span class='no-print'>
 
-4. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), _500K+ monthly downloads_<br>
+4. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), Collaborator, 2017 - 2019<br>
+   _500K+ monthly downloads_<br>
    Became a core maintainer after reaching out to the original author on the React core team and taking care of repository issues. Contributed architectural decisions and insights to the larger Redux Utilities org.
 
-5. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin)<br>
+5. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin), Maintainer, 2016 - 2018<br>
+   _~300K weekly downloads_
    Took over core maintenance to fix a bug for my own use. Tackled community reported bugs and eventually handed off ownership to the webpack-contrib org.
 
 6. [other published npm packages & contributions](https://www.npmjs.com/~jakxz)<br>
@@ -134,43 +136,4 @@ University of Waterloo, Waterloo, ON
 
 </section>
 
-<style lang="scss">
-  h2:first-of-type {
-    margin-top: 0;
-  }
-  .flex {
-    display: flex;
-    row-gap: 1rem;
-  }
-  .wrap {
-    flex-wrap: wrap;
-  }
-  .justify-between {
-    justify-content: space-between;
-  }
-  .basis-1\/3 {
-    flex-basis: calc(1/3 * 100%);
-  }
-  .inline-flex {
-     display: inline-flex;
-  }
-  .flex-col {
-    flex-direction: column;
-  }
-  .items-center {
-    align-items: center;
-  }
-  .captions {
-    font-size: 0.8rem;
-
-    @media print {
-      display: none;
-    }
-  }
-  .print-title p {
-    text-align: right;
-  }
-  img {
-    width: 100px;
-  }
-</style>
+<style src='./resume.scss' />

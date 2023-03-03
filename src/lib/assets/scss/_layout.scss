@@ -84,11 +84,9 @@ li {
 	}
 }
 
-// made the data.path into classname for this reason,
-// and this was the best way to quickly affect all md content
 .\/resume {
-	row-gap: 4.5rem;
 	display: grid;
+	row-gap: 4.5rem;
 	@media print {
 		background: #fff;
 		line-height: 1.5;
@@ -100,12 +98,6 @@ li {
 			'oss technical'
 			'experience experience'
 			'education education';
-		h1 {
-			margin-bottom: 2rem;
-		}
-		h2 {
-			font-size: 1.8rem;
-		}
 		.technical {
 			grid-area: technical;
 		}
@@ -120,12 +112,6 @@ li {
 		}
 		.print-title {
 			grid-area: print-title;
-		}
-		ol {
-			list-style-type: square;
-			::marker {
-				color: var(--accent);
-			}
 		}
 	}
 }
