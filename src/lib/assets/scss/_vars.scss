@@ -42,7 +42,7 @@ $xxxlMin: 1960px;
 
 	font-weight: $output;
 	// prefer that the extra css is not written at all as opposed to setting a minimum
-	@if $output > 400 {
+	@if $output >= 500 {
 		@media (prefers-color-scheme: dark) {
 			font-weight: $output - 100;
 		}
