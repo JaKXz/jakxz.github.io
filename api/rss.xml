@@ -6,6 +6,12 @@
 <link>https://jasonkurian.dev</link>
 <atom:link href="https://jasonkurian.dev/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://jasonkurian.dev/learning/tdd-does-not-have-to-be-dogmatic</guid>
+<title>TDD doesn't have to be dogmatic</title>
+<link>https://jasonkurian.dev/learning/tdd-does-not-have-to-be-dogmatic</link>
+<description>That's right, I said it</description>
+<pubDate>Mon, 06 Mar 2023 00:00:00 GMT</pubDate>
+</item><item>
 <guid isPermaLink="true">https://jasonkurian.dev/learning/write-react-components-like-an-essay</guid>
 <title>Write React components like an essay</title>
 <link>https://jasonkurian.dev/learning/write-react-components-like-an-essay</link>

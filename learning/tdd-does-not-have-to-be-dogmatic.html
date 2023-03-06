@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.bb0be4a5.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.05bc6032.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/manage-node-versions-with-brew.674e82b1.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.1eafec54.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.dd84b89c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.5306e054.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.dcd685fd.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.e64eee44.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/config.09960fbe.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.5e19617c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.d3fe4bba.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.svelte.0079bf67.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.js.1561e849.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.46eade9e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.2defaa64.js"><title>TDD doesn't have to be dogmatic | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/tdd-does-not-have-to-be-dogmatic"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description" content="That's right, I said it"><meta property="og:type" content="article"><meta property="og:title" content="TDD doesn't have to be dogmatic"><meta property="og:description" content="That's right, I said it"><meta name="twitter:title" content="TDD doesn't have to be dogmatic"><meta name="twitter:description" content="That's right, I said it"><meta property="og:image:width" content="16">
+		<meta property="og:image:height" content="9">
+		<meta property="og:image" content="https://jasonkurian.dev/images/markus-spiske-8CWoXxaqGrs-unsplash.jpg">
+		<meta name="twitter:image" content="https://jasonkurian.dev/images/markus-spiske-8CWoXxaqGrs-unsplash.jpg">
+		<meta name="twitter:card" content="summary_large_image"><!-- HEAD_svelte-1iee9m6_END -->
+		<!-- You can replace this block to update the Google fonts used in the project -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- End Google Fonts block -->
+
+		<!-- You can add global <meta> tags here, but anything not global or dynamic should be a `<svelte:head>` tag on the proper page(s) instead. -->
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+
+
+
+
+<div class="layout"><header><a class="skip-to-content-link" href="#main">Skip to main content
+	</a>
+
+	<div><a href="/" class="site-title">Jason Kurian</a>
+		
+<nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning
+			</a></li><li><a href="/resume" aria-current="false">Resumé
+			</a></li></ul>
+	<button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only">Toggle hamburger menu</span>
+	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></div>
+	<button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only">Toggle hamburger menu</span>
+	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header>
+	<main id="main" tabindex="-1" class="/learning/tdd-does-not-have-to-be-dogmatic">
+
+<article class="post svelte-1bveyql"><figure class="cover-image svelte-1bveyql"><img src="/images/markus-spiske-8CWoXxaqGrs-unsplash.jpg" alt="red and grey toy" style="aspect-ratio: 16 / 9;" width="16" height="9">
+		<figcaption class="svelte-1bveyql">Photo by
+				<a target="_blank" rel="noopener noreferrer nofollow" href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Spiske</a>
+				on
+				<a target="_blank" rel="noopener noreferrer nofollow" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption></figure>
+	<h1 class="svelte-1bveyql">TDD doesn't have to be dogmatic</h1>
+
+	<div class="meta svelte-1bveyql"><b>Published:</b>
+		2023-03-06
+		<br>
+		<b>Updated:</b>
+		2023-03-06</div>
+
+	<p>Write your tests first!
+Or don’t!
+It doesn’t matter.</p>
+<p><strong>As long as you end up incrementally improving your understanding of the problem, and confidence in your solution (i.e. end up with reliable tests) it’s successfully test-driven!</strong></p>
+<p>That’s it.
+That’s the post.</p>
+<p>If you’re curious, what I usually do looks something like this (using React as pseudocode):</p>
+<ol><li>write out as many behaviours as I can think of in <code>.skip</code>ped or <code>.todo</code>‘d tests:</li></ol>
+<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'component'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	it<span class="token punctuation">.</span><span class="token function">skip</span><span class="token punctuation">(</span><span class="token string">'renders this by default'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	it<span class="token punctuation">.</span><span class="token function">skip</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<ol start="2"><li>then sketch out a solution</li></ol>
+<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token operator">...</span>props <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">return</span> <span class="token punctuation">(</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+			</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">></span></span><span class="token punctuation">&#123;</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>props<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">></span></span><span class="token plain-text">
+		</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<ol start="3"><li>go back to the tests and fill them out one at at time …ish:</li></ol>
+<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'renders this by default'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	<span class="token function">expect</span><span class="token punctuation">(</span>wrapper<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toContainText</span><span class="token punctuation">(</span><span class="token operator">...</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'does all the other things'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<ol start="4"><li>delete the sketched solution (optional)</li>
+<li>write a good implementation</li></ol>
+<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>i18n<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">usei18n</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//...etc</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<ol start="6"><li>get feedback in a pull / merge request</li>
+<li>add more tests I inevitably missed</li>
+<li>rinse and repeat</li></ol>
+<p>But that’s not the right approach for every situation, and I change it up as necessary.</p>
+<hr>
+<p>This post started as a conversation with a colleague about teaching TDD, and the obstacles that may come in the way;
+especially the dogmatic mindset / “strict TDD is the only TDD”.</p>
+
+	<script src="https://utteranc.es/client.js" repo="jakxz/jakxz.github.io" issue-term="og:title" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
+
+	<aside class="post-footer svelte-1bveyql"><h2>Posted in:</h2>
+			<ul class="svelte-1bveyql"><li class="svelte-1bveyql"><a href="/learning/category/TDD/" class="svelte-1bveyql">TDD</a>
+					</li><li class="svelte-1bveyql"><a href="/learning/category/testing/" class="svelte-1bveyql">testing</a>
+					</li><li class="svelte-1bveyql"><a href="/learning/category/dev/" class="svelte-1bveyql">dev</a>
+					</li></ul></aside>
+</article></main>
+	<footer>
+<nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning
+			</a></li><li><a href="/resume" aria-current="false">Resumé
+			</a></li></ul>
+	<button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only">Toggle hamburger menu</span>
+	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav>
+
+	<nav><ul><li><a href="/api/rss.xml" rel="external">RSS</a></li>
+			<li><a href="/">Home</a></li></ul></nav>
+
+	<div><p>©2023 Jason Kurian</p>
+		<p>See a typo?
+				<em><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz/jakxz.github.io/edit/develop/src/lib/posts/tdd-does-not-have-to-be-dogmatic.md">Please open a PR here.</a></em>
+				Thank you!
+			</p></div></footer></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_1s1d0e7 = {
+						env: {},
+						base: new URL("..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.1eafec54.js"),
+						import("../_app/immutable/entry/app.dcd685fd.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_1s1d0e7.element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
