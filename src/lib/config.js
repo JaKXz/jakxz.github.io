@@ -1,5 +1,5 @@
 export const siteTitle = 'Jason Kurian';
-export const siteDescription = 'UX + Web dev';
+export const siteDescription = 'UX + Web Developer';
 export const siteURL = 'jasonkurian.dev';
 export const siteLink = 'https://jasonkurian.dev';
 export const siteAuthorTwitter = '@JaKXz92';

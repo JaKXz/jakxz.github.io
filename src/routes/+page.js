@@ -1,10 +1,11 @@
 import { error } from '@sveltejs/kit';
+import fetchPosts from '$lib/assets/js/fetchPosts';
 
 export async function load() {
 	try {
-		const ReadMe = await import('../../README.md').then((mod) => mod.default);
+		const { posts } = await fetchPosts({ limit: 4, sort: 'updated' });
 		return {
-			ReadMe
+			posts
 		};
 	} catch (err) {
 		console.error(err.stack);

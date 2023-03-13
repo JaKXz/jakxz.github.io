@@ -1,4 +1,4 @@
-👋🏽 hey, thanks for stopping by! My friends call me Jay, or JK.
+👋🏽 thanks for stopping by! My friends call me Jay, or JK.
 
 ## [👨🏽‍💻 work](/resume):
 
