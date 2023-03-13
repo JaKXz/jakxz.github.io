@@ -42,8 +42,8 @@
 	actual contents will show up.
 -->
 <div class="layout" class:open={$isMenuOpen}>
-	<Header />
 	{#key data.path}
+		<Header path={data.path} />
 		<main id="main" tabindex="-1" class={data.path} in:fade={transitionIn} out:fade={transitionOut}>
 			<slot />
 		</main>

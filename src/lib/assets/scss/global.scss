@@ -10,6 +10,11 @@
 @use './prism';
 @use './print';
 
+@font-face {
+	font-family: 'Zapfino';
+	src: url('fonts/Zapfino.woff') format('woff');
+}
+
 html,
 body {
 	height: 100%;

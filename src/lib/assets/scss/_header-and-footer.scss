@@ -46,13 +46,12 @@ header {
 	}
 
 	.site-title {
-		font-family: var(--accentFont);
 		line-height: 1;
 		color: inherit;
 		text-align: center;
 		margin: 0;
 		display: block;
-		font-size: 1.4rem;
+		font-size: 2rem;
 		@include vars.font-weight(extra-bold);
 
 		@media (min-width: vars.$smMin) {
