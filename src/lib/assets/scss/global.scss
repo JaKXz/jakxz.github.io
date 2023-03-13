@@ -1,4 +1,5 @@
 @use './colours';
+@use './fonts';
 @use './typography';
 @use './layout';
 @use './components';
@@ -9,11 +10,6 @@
 @use './code';
 @use './prism';
 @use './print';
-
-@font-face {
-	font-family: 'Zapfino';
-	src: url('fonts/Zapfino.woff') format('woff');
-}
 
 html,
 body {
