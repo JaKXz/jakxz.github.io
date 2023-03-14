@@ -99,15 +99,15 @@ I got my start in open source, so I'm quick to jump in and help wherever I can:
 
 <span class='no-print'>
 
-4. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), Collaborator, 2017 - 2019<br>
+3. [Redux Utilities](https://github.com/redux-utilities), [flux-standard-action](https://www.npmjs.com/package/flux-standard-action), Collaborator, 2017 - 2019<br>
    _500K+ monthly downloads_<br>
    Became a core maintainer after reaching out to the original author on the React core team and taking care of repository issues. Contributed architectural decisions and insights to the larger Redux Utilities org.
 
-5. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin), Maintainer, 2016 - 2018<br>
+1. [stylelint-plugin-webpack](https://github.com/webpack-contrib/stylelint-webpack-plugin), Maintainer, 2016 - 2018<br>
    _~300K weekly downloads_<br>
    Took over core maintenance to fix a bug for my own use. Tackled community reported bugs and eventually handed off ownership to the webpack-contrib org.
 
-6. [other published npm packages & contributions](https://www.npmjs.com/~jakxz)<br>
+1. [other published npm packages & contributions](https://www.npmjs.com/~jakxz)<br>
    Sharing smaller modules as utilities or publishing useful forks with important fixes.
 
 </span>

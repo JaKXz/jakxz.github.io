@@ -73,11 +73,14 @@
 	}
 	.heading-container {
 		line-height: 1.1;
+		margin-top: 5rem;
 		margin-bottom: 2.5rem;
 		position: relative;
 		font-style: italic;
 	}
 	.name-heading {
+		color: var(--darker);
+		@include vars.font-weight(extra-bold);
 		font-size: 5rem;
 		letter-spacing: -1px;
 
@@ -86,8 +89,13 @@
 		}
 	}
 	.first-name {
+		&:first-letter {
+			letter-spacing: 4px;
+		}
 		@media (max-width: vars.$xsMin) {
-			padding-left: 1rem;
+			&:first-letter {
+				padding-left: 1rem;
+			}
 		}
 	}
 	.subtitle {
