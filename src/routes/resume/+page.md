@@ -118,7 +118,7 @@ I got my start in open source, so I'm quick to jump in and help wherever I can:
 
 Approx. 3 years of [internships](https://linkedin.com/in/jgkurian) between **2011-2015**:
 
-<div class="flex wrap justify-between captions">
+<div class="flex gap-y-4 flex-wrap justify-between captions">
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/ims.webp" alt="Intelligent Mechatronic Systems Inc. logo" title="Fullstack Developer at IMS" /> Fullstack Dev</div>
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/coreworx.webp" alt="Coreworx Inc. logo" title="Web Developer at Coreworx" /> Web Dev</div>

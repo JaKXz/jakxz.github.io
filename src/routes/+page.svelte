@@ -17,7 +17,7 @@
 <section class="overview">
 	<div class="heading-container">
 		<div class="name-heading first-name">Jason</div>
-		<div class="name-heading align-right">Kurian</div>
+		<div class="name-heading text-right">Kurian</div>
 		<code class="subtitle">{siteDescription}</code>
 	</div>
 
@@ -106,12 +106,6 @@
 		font-size: 1.5rem;
 		margin: 1.5rem auto;
 		padding: 0.2rem;
-	}
-	.text-center {
-		text-align: center;
-	}
-	.align-right {
-		text-align: right;
 	}
 	.cards {
 		display: grid;
