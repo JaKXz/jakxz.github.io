@@ -10,8 +10,10 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@iconify/json": "^2.2.34",
 		"@sveltejs/adapter-static": "2.0.1",
 		"@sveltejs/kit": "1.11.0",
+		"@unocss/transformer-directives": "^0.50.4",
 		"eslint": "8.36.0",
 		"eslint-config-prettier": "8.7.0",
 		"eslint-plugin-svelte3": "4.0.0",
@@ -26,6 +28,7 @@
 		"rehype-slug": "5.1.0",
 		"sass": "1.58.3",
 		"svelte": "3.56.0",
+		"unocss": "^0.50.4",
 		"vite": "4.1.4"
 	},
 	"type": "module",
