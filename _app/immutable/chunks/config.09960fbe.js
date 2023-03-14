@@ -1,1 +1,0 @@
-const s="Jason Kurian",t="UX + Web dev",e="jasonkurian.dev",n="https://jasonkurian.dev",a="@JaKXz92",i=10,o=[{title:"Learning",route:"/learning"},{title:"Resumé",route:"/resume"}];export{n as a,a as b,t as c,e as d,o as n,i as p,s};
