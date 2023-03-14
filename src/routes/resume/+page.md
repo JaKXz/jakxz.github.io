@@ -18,6 +18,7 @@ jasonk92@gmail.com<br>
 
 </div>
 
+<article>
 <aside class='technical'>
 
 ## 🧰 Technical
@@ -135,5 +136,6 @@ University of Waterloo, Waterloo, ON
 University of Waterloo, Waterloo, ON
 
 </section>
+</article>
 
 <style src='./resume.scss' />

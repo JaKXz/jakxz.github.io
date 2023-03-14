@@ -1,13 +1,10 @@
 @use './vars';
 
 :root {
-	// These are broken out into two separate variables from a previous iteration. I left
-	// it in because it's nice to be able to split out the heading and body fonts.
 	--accentFont: 'Zapfino', Georgia, Times, serif;
 	--primaryFont: 'Libre Franklin', sans-serif;
 	--codeFont: 'Fira Code', monospace;
 
-	// Base styles
 	font-size: 1rem;
 	line-height: 1.6;
 
