@@ -28,41 +28,38 @@
 		I'm a combination <a href="/resume">UX and Web Developer</a>, and sometimes touring or session
 		keys player & music director.
 	</p>
-	<p>
-		Contact me on <a
-			target="_blank"
-			rel="nofollow noopener noreferrer"
-			href="https://github.com/jakxz"
-			><div class="i-tabler-brand-github vertical-sub" />
-			GitHub</a
-		>,
-		<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"
-			><div class="i-tabler-brand-twitter vertical-sub" />
-			Twitter</a
-		>, or<br />
-		<a
-			target="_blank"
-			rel="nofollow noopener noreferrer"
-			href="https://www.linkedin.com/in/jgkurian/"
-			><div class="i-tabler-brand-linkedin vertical-sub" />
-			LinkedIn</a
-		>.
-	</p>
+	Contact me on&nbsp;<a
+		target="_blank"
+		rel="nofollow noopener noreferrer"
+		href="https://github.com/jakxz"
+		><div class="i-tabler-brand-github vertical-sub" />
+		GitHub</a
+	>,&nbsp;
+	<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"
+		><div class="i-tabler-brand-twitter vertical-sub" />
+		Twitter</a
+	>, or<br />
+	<a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/"
+		><div class="i-tabler-brand-linkedin vertical-sub" />
+		LinkedIn</a
+	>.
 </section>
 
 <section>
 	<h2>Recent Posts</h2>
 	<div class="cards-grid">
 		{#each data.posts as post (post.slug)}
-			<a href="/learning/{post.slug}" class="block link-decoration-none border-rounded-2">
-				<div class="subdued">{formatDate(post.updated)}</div>
-				<div><strong>{post.title}</strong></div>
+			<div class="border-rounded-2">
+				<a href="/learning/{post.slug}" class="link-decoration-none">
+					<div class="subdued">{formatDate(post.updated)}</div>
+					<div><strong>{post.title}</strong></div>
+				</a>
 				<div class="flex gap-4 my-4 mx-auto">
 					{#each post.categories as category (category)}
 						<a href="/learning/category/{category}"><code>#{category}</code></a>
 					{/each}
 				</div>
-			</a>
+			</div>
 		{/each}
 	</div>
 	<p class="text-center"><a href="/learning">See all posts</a></p>
