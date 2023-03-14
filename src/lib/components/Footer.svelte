@@ -9,7 +9,6 @@
 		}
 		return (
 			{
-				'/': '/README.md',
 				'/resume': '/src/routes/resume/+page.md'
 			}[url] || `/src/routes${url}/+page.svelte`
 		);
