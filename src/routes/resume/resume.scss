@@ -14,6 +14,37 @@ img {
 	width: 100px;
 }
 
+article {
+	display: grid;
+	row-gap: 4.5rem;
+	@media print {
+		line-height: 1.5;
+		column-gap: 2rem;
+		row-gap: 1rem;
+		grid-template-areas:
+			'print-title print-title'
+			'oss technical'
+			'experience experience'
+			'education education';
+
+		.technical {
+			grid-area: technical;
+		}
+		.experience {
+			grid-area: experience;
+		}
+		.oss {
+			grid-area: oss;
+		}
+		.education {
+			grid-area: education;
+		}
+		.print-title {
+			grid-area: print-title;
+		}
+	}
+}
+
 @media print {
 	h1 {
 		margin-bottom: 2rem;
