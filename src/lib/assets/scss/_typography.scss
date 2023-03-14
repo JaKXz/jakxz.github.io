@@ -103,6 +103,7 @@ strong {
 
 .name-heading {
 	@include vars.font-weight(extra-bold);
+	color: var(--darker);
 	font-variant: small-caps;
 	text-transform: lowercase;
 

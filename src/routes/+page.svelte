@@ -14,11 +14,13 @@
 	<title>{siteTitle}</title>
 </svelte:head>
 
-<section class="overview">
-	<div class="heading-container">
+<section class="m-auto max-w-21rem">
+	<div class="heading-container my-16 italic">
 		<div class="name-heading first-name">Jason</div>
 		<div class="name-heading text-right">Kurian</div>
-		<code class="subtitle">{siteDescription}</code>
+		<code class="block text-center mt-5 mx-auto not-italic font-300 text-xl p-0"
+			>{siteDescription}</code
+		>
 	</div>
 
 	<p>👋🏽 thanks for stopping by! My friends call me Jay, or JK.</p>
@@ -30,27 +32,34 @@
 		Contact me on <a
 			target="_blank"
 			rel="nofollow noopener noreferrer"
-			href="https://github.com/jakxz">GitHub</a
-		>
-		or
+			href="https://github.com/jakxz"
+			><div class="i-tabler-brand-github vertical-sub" />
+			GitHub</a
+		>,
+		<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"
+			><div class="i-tabler-brand-twitter vertical-sub" />
+			Twitter</a
+		>, or<br />
 		<a
 			target="_blank"
 			rel="nofollow noopener noreferrer"
-			href="https://www.linkedin.com/in/jgkurian/">LinkedIn</a
+			href="https://www.linkedin.com/in/jgkurian/"
+			><div class="i-tabler-brand-linkedin vertical-sub" />
+			LinkedIn</a
 		>.
 	</p>
 </section>
 
-<section class="posts">
+<section>
 	<h2>Recent Posts</h2>
-	<div class="cards">
+	<div class="cards-grid">
 		{#each data.posts as post (post.slug)}
-			<a href="/learning/{post.slug}" class="card">
+			<a href="/learning/{post.slug}" class="block link-decoration-none border-rounded-2">
 				<div class="subdued">{formatDate(post.updated)}</div>
 				<div><strong>{post.title}</strong></div>
-				<div class="gap-1">
+				<div class="flex gap-4 my-4 mx-auto">
 					{#each post.categories as category (category)}
-						<a href="/learning/category/{category}"><code class="lowercase">#{category}</code></a>
+						<a href="/learning/category/{category}"><code>#{category}</code></a>
 					{/each}
 				</div>
 			</a>
@@ -59,28 +68,14 @@
 	<p class="text-center"><a href="/learning">See all posts</a></p>
 </section>
 
-<section class="experience">
-	<h2>Experience</h2>
-</section>
-
 <style lang="scss">
 	section {
 		@include vars.screen-height(90);
 	}
-	.overview {
-		margin: auto;
-		max-width: 21rem;
-	}
 	.heading-container {
 		line-height: 1.1;
-		margin-top: 5rem;
-		margin-bottom: 2.5rem;
-		position: relative;
-		font-style: italic;
 	}
 	.name-heading {
-		color: var(--darker);
-		@include vars.font-weight(extra-bold);
 		font-size: 5rem;
 		letter-spacing: -1px;
 
@@ -98,16 +93,7 @@
 			}
 		}
 	}
-	.subtitle {
-		display: block;
-		text-align: center;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 1.5rem;
-		margin: 1.5rem auto;
-		padding: 0.2rem;
-	}
-	.cards {
+	.cards-grid {
 		display: grid;
 		gap: 1rem;
 		@media (min-width: vars.$xsMin) {
@@ -116,17 +102,8 @@
 			grid: auto-flow dense / 1fr 1fr;
 		}
 	}
-	.card {
-		display: block;
-		text-decoration: none;
-		border-radius: 0.3rem;
-	}
 	.subdued {
-		color: var(--white);
-	}
-	.gap-1 {
-		display: flex;
-		margin: 1rem auto;
-		gap: 1rem;
+		color: var(--ink);
+		opacity: 0.9;
 	}
 </style>
