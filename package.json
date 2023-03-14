@@ -10,9 +10,10 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.34",
+		"@iconify-json/tabler": "^1.1.67",
 		"@sveltejs/adapter-static": "2.0.1",
 		"@sveltejs/kit": "1.11.0",
+		"@unocss/eslint-config": "^0.50.4",
 		"@unocss/transformer-directives": "^0.50.4",
 		"eslint": "8.36.0",
 		"eslint-config-prettier": "8.7.0",
