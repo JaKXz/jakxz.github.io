@@ -16,9 +16,9 @@
 	</a>
 
 	<div>
-		<a href="/" class="site-title">
-			<span class="name-heading inline-block">Jason</span>
-			<span class="name-heading inline-block">Kurian</span>
+		<a href="/" class="site-title w-fit">
+			<div class="name-heading inline-block w-fit">Jason</div>
+			<div class="name-heading inline-block w-fit">Kurian</div>
 		</a>
 		<MainNav />
 	</div>
@@ -29,8 +29,5 @@
 	.\/ {
 		visibility: hidden;
 		display: none;
-	}
-	.inline-block {
-		display: inline-block;
 	}
 </style>
