@@ -50,6 +50,6 @@ $xxxlMin: 1960px;
 }
 
 @mixin screen-height($val) {
-	min-height: #{$val}vh;
-	min-height: #{$val}svh;
+	min-height: clamp(400px, #{$val}vh, calc(800px - 4.5rem));
+	min-height: clamp(400px, #{$val}svh, calc(800px - 4.5rem));
 }
