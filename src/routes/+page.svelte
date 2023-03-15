@@ -15,7 +15,7 @@
 </svelte:head>
 
 <section class="m-auto max-w-21rem">
-	<div class="heading-container my-12 italic">
+	<div class="leading-[1.1] my-12 italic">
 		<div class="name-heading first-name">Jason</div>
 		<div class="name-heading text-right">Kurian</div>
 		<code class="block text-center mt-5 mx-auto not-italic font-300 text-xl p-0"
@@ -53,7 +53,7 @@
 		{#each data.posts as post (post.slug)}
 			<div class="border-rounded-2 transform transition duration-500 hover:scale-110 card">
 				<a href="/learning/{post.slug}" class="link-decoration-none">
-					<div class="subdued">{formatDate(post.updated)}</div>
+					<div class="opacity-90 text-[color:var(--ink)] text-xs">{formatDate(post.updated)}</div>
 					<div><strong>{post.title}</strong></div>
 				</a>
 				<div class="flex gap-4 my-4 mx-auto">
@@ -64,15 +64,12 @@
 			</div>
 		{/each}
 	</div>
-	<p class="text-center"><a href="/learning">See all posts</a></p>
+	<p class="text-center"><a href="/learning">See all entries</a></p>
 </section>
 
 <style lang="scss">
 	section:not(:last-of-type) {
 		@include vars.screen-height(90);
-	}
-	.heading-container {
-		line-height: 1.1;
 	}
 	.name-heading {
 		font-size: 5rem;
@@ -103,9 +100,5 @@
 	}
 	.cards-grid:hover > .card:not(:hover) {
 		opacity: 0.5;
-	}
-	.subdued {
-		color: var(--ink);
-		opacity: 0.9;
 	}
 </style>
