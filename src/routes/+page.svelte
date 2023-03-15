@@ -1,5 +1,5 @@
 <script>
-	import { siteTitle, siteDescription } from '$lib/config';
+	import { siteDescription, siteTitle } from '$lib/config';
 
 	export let data;
 
@@ -15,7 +15,7 @@
 </svelte:head>
 
 <section class="m-auto max-w-21rem">
-	<div class="heading-container my-16 italic">
+	<div class="heading-container my-12 italic">
 		<div class="name-heading first-name">Jason</div>
 		<div class="name-heading text-right">Kurian</div>
 		<code class="block text-center mt-5 mx-auto not-italic font-300 text-xl p-0"
@@ -49,7 +49,7 @@
 	<h2>Recent Posts</h2>
 	<div class="cards-grid">
 		{#each data.posts as post (post.slug)}
-			<div class="border-rounded-2">
+			<div class="border-rounded-2 transform transition duration-500 hover:scale-110 card">
 				<a href="/learning/{post.slug}" class="link-decoration-none">
 					<div class="subdued">{formatDate(post.updated)}</div>
 					<div><strong>{post.title}</strong></div>
@@ -94,10 +94,13 @@
 		display: grid;
 		gap: 1rem;
 		@media (min-width: vars.$xsMin) {
-			column-gap: 2rem;
-			row-gap: 4rem;
+			margin-top: 2rem;
+			gap: 2rem;
 			grid: auto-flow dense / 1fr 1fr;
 		}
+	}
+	.cards-grid:hover > .card:not(:hover) {
+		opacity: 0.5;
 	}
 	.subdued {
 		color: var(--ink);
