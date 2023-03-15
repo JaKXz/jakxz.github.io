@@ -51,9 +51,14 @@
 	<h2>Recent Posts</h2>
 	<div class="cards-grid">
 		{#each data.posts as post (post.slug)}
-			<div class="border-rounded-2 transform transition duration-500 hover:scale-110 card">
+			<div
+				class="border-rounded-2 transform transition duration-500 hover:scale-110 focus-within:scale-110 card"
+			>
 				<a href="/learning/{post.slug}" class="link-decoration-none">
-					<div class="opacity-90 text-[color:var(--ink)] text-xs">{formatDate(post.updated)}</div>
+					<div class="opacity-90 text-[color:var(--ink)] text-xs">
+						<div class="i-tabler-rotate-rectangle" />
+						{formatDate(post.updated)}
+					</div>
 					<div><strong>{post.title}</strong></div>
 				</a>
 				<div class="flex gap-4 my-4 mx-auto">
@@ -98,6 +103,7 @@
 			grid: auto-flow dense / 1fr 1fr;
 		}
 	}
+	.cards-grid:focus-within > .card:not(:focus-within),
 	.cards-grid:hover > .card:not(:hover) {
 		opacity: 0.5;
 	}
