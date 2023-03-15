@@ -30,7 +30,7 @@
 	</nav>
 
 	<div>
-		<p>
+		<p class="inline-block">
 			&copy;{new Date().getFullYear()} Jason Kurian &mdash;
 			<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"
 				><div class="i-tabler-brand-github vertical-sub" />
