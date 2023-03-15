@@ -30,7 +30,23 @@
 	</nav>
 
 	<div>
-		<p>&copy;{new Date().getFullYear()} Jason Kurian</p>
+		<p>
+			&copy;{new Date().getFullYear()} Jason Kurian &mdash;
+			<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"
+				><div class="i-tabler-brand-github vertical-sub" />
+			</a>
+			&mdash;
+			<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"
+				><div class="i-tabler-brand-twitter vertical-sub" />
+			</a>
+			&mdash;
+			<a
+				target="_blank"
+				rel="nofollow noopener noreferrer"
+				href="https://www.linkedin.com/in/jgkurian/"
+				><div class="i-tabler-brand-linkedin vertical-sub" />
+			</a>
+		</p>
 		{#if path !== '/learning' && !path.startsWith('/learning/category/')}
 			<p>
 				See a typo?

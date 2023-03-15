@@ -32,15 +32,17 @@
 		target="_blank"
 		rel="nofollow noopener noreferrer"
 		href="https://github.com/jakxz"
-		><div class="i-tabler-brand-github vertical-sub" />
+	>
 		GitHub</a
-	>,&nbsp;
-	<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"
-		><div class="i-tabler-brand-twitter vertical-sub" />
+	>,
+	<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92">
 		Twitter</a
-	>, or<br />
-	<a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/"
-		><div class="i-tabler-brand-linkedin vertical-sub" />
+	>, or
+	<a
+		target="_blank"
+		rel="nofollow noopener noreferrer"
+		href="https://www.linkedin.com/in/jgkurian/"
+	>
 		LinkedIn</a
 	>.
 </section>
