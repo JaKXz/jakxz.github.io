@@ -66,7 +66,7 @@
 </section>
 
 <style lang="scss">
-	section {
+	section:not(:last-of-type) {
 		@include vars.screen-height(90);
 	}
 	.heading-container {
