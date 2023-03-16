@@ -9,7 +9,7 @@ categories:
 ---
 
 Earlier this year I helped improve a template repo 3rd party Shopify developers use to build apps.
-As we were working on the updates to the app app template in a separate branch from `main`, here's what I suggested to those who wanted to test out our changes early:
+As we were working on the updates to the app template in a separate branch from `main`, here's what I suggested to those who wanted to test out our changes early:
 
 1. Add `.diff` to the end of a github PR url
 2. Visit that link - copy the link you are redirected to
