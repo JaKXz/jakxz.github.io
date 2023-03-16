@@ -98,6 +98,10 @@ strong {
 	@include vars.font-weight(extra-bold);
 }
 
+.subdued {
+	@apply opacity-90 text-xs text-[color:var(--ink)];
+}
+
 .name-heading {
 	@include vars.font-weight(extra-bold);
 	color: var(--darker);

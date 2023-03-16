@@ -2,13 +2,16 @@
 	export let posts = [];
 </script>
 
-<ul class="posts-list">
-	{#each posts as post}
-		<li>
+<ul class="mt-0 list-none p-0">
+	{#each posts as post (post.slug)}
+		<li class="mb-24">
 			<article>
-				<p class="post-date">{new Date(`${post.date}T00:00:00`).toDateString()}</p>
-				<a href="/learning/{post.slug}">
-					<h3>
+				<div class="subdued">
+					📝
+					{new Date(`${post.date}T00:00:00`).toDateString()}
+				</div>
+				<a class="block" href="/learning/{post.slug}">
+					<h3 class="mt-0 mb-4">
 						{post.title}
 					</h3>
 				</a>
@@ -19,29 +22,3 @@
 		</li>
 	{/each}
 </ul>
-
-<style lang="scss">
-	.posts-list {
-		h3 {
-			margin: 0 0 1rem;
-		}
-
-		margin-top: 0;
-		list-style-type: none;
-		padding: 0;
-
-		li {
-			margin-bottom: 6rem;
-		}
-
-		a {
-			display: block;
-		}
-	}
-
-	.post-date {
-		margin: 0;
-		font-size: 0.8rem;
-		opacity: 0.9;
-	}
-</style>

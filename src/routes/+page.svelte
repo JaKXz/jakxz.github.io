@@ -55,8 +55,8 @@
 				class="border-rounded-2 transform transition duration-500 hover:scale-110 focus-within:scale-110 card"
 			>
 				<a href="/learning/{post.slug}" class="link-decoration-none">
-					<div class="opacity-90 text-[color:var(--ink)] text-xs">
-						<div class="i-tabler-rotate-rectangle" />
+					<div class="subdued">
+						🔃
 						{formatDate(post.updated)}
 					</div>
 					<div><strong>{post.title}</strong></div>
