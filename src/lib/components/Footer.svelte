@@ -30,7 +30,22 @@
 	</nav>
 
 	<div>
-		<p class="inline-block mb-2">
+		{#if path !== '/learning' && !path.startsWith('/learning/category/')}
+			<p>
+				See a typo?
+				<em>
+					<a
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						href={`https://github.com/jakxz/jakxz.github.io/edit/develop${getEditPath(path)}`}
+					>
+						Please open a PR here.</a
+					>
+				</em>
+				Thank you!
+			</p>
+		{/if}
+		<p class="inline-block mt-1">
 			&copy;{new Date().getFullYear()} Jason Kurian &mdash;
 			<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"
 				><div class="i-tabler-brand-github vertical-middle text-xl" />
@@ -47,20 +62,5 @@
 				><div class="i-tabler-brand-linkedin vertical-middle text-xl" />
 			</a>
 		</p>
-		{#if path !== '/learning' && !path.startsWith('/learning/category/')}
-			<p>
-				See a typo?
-				<em>
-					<a
-						target="_blank"
-						rel="nofollow noopener noreferrer"
-						href={`https://github.com/jakxz/jakxz.github.io/edit/develop${getEditPath(path)}`}
-					>
-						Please open a PR here.</a
-					>
-				</em>
-				Thank you!
-			</p>
-		{/if}
 	</div>
 </footer>
