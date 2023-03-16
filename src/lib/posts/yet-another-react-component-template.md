@@ -9,10 +9,10 @@ categories:
 coverImage: '/images/linus-nylund-Q5QspluNZmM-unsplash.jpg'
 coverWidth: 16
 coverHeight: 9
-excerpt: 'yes I am totally aware of https://xkcd.com/927/'
+excerpt: 'xkcd standards comic anyone?'
 ---
 
-[Give it a try for your next react component](https://github.com/JaKXz/react-component-template#readme). I would love feedback!
+[Give it a try for your next react component](https://github.com/JaKXz/react-component-template#readme). I would love feedback! Yes, the irony of the [xkcd standards comic](https://xkcd.com/927) is not lost on me! :)
 
 ## Motivation & Philosophy
 
