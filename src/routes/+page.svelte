@@ -76,19 +76,17 @@
 	}
 	.name-heading {
 		font-size: 5rem;
+		letter-spacing: -1px;
 
 		&:first-letter {
 			font-size: 6.5rem;
+			letter-spacing: normal;
 		}
 	}
-	.first-name {
-		&:first-letter {
-			letter-spacing: -3.6px;
-		}
+	.first-name::first-letter {
+		letter-spacing: 0.025em;
 		@media (max-width: vars.$xsMin) {
-			&:first-letter {
-				padding-left: 1rem;
-			}
+			padding-left: 1rem;
 		}
 	}
 	.cards-grid {
