@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@iconify-json/tabler': ^1.1.67
   '@sveltejs/adapter-static': 2.0.1
-  '@sveltejs/kit': 1.11.0
+  '@sveltejs/kit': 1.12.0
   '@unocss/eslint-config': ^0.50.4
   '@unocss/transformer-directives': ^0.50.4
   dotenv: 16.0.3
@@ -22,19 +22,19 @@ specifiers:
   rehype-slug: 5.1.0
   sass: 1.59.3
   svelte: 3.57.0
-  svelte-preprocess: 5.0.2
+  svelte-preprocess: 5.0.3
   unocss: ^0.50.4
   vite: 4.1.4
 
 dependencies:
   dotenv: 16.0.3
   just-throttle: 4.2.0
-  svelte-preprocess: 5.0.2_sass@1.59.3+svelte@3.57.0
+  svelte-preprocess: 5.0.3_sass@1.59.3+svelte@3.57.0
 
 devDependencies:
   '@iconify-json/tabler': 1.1.67
-  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.11.0
-  '@sveltejs/kit': 1.11.0_svelte@3.57.0+vite@4.1.4
+  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.12.0
+  '@sveltejs/kit': 1.12.0_svelte@3.57.0+vite@4.1.4
   '@unocss/eslint-config': 0.50.4_eslint@8.36.0
   '@unocss/transformer-directives': 0.50.4
   eslint: 8.36.0
@@ -436,16 +436,16 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.11.0:
+  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.12.0:
     resolution: {integrity: sha512-o5/q3YwD/ErxYCFlK1v3ydvldyNKk1lh3oeyxn4mhz+Pkbx/uuxhzmbOpytTlp5aVqNHDVsb04xadUzOFCDDzw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.11.0_svelte@3.57.0+vite@4.1.4
+      '@sveltejs/kit': 1.12.0_svelte@3.57.0+vite@4.1.4
     dev: true
 
-  /@sveltejs/kit/1.11.0_svelte@3.57.0+vite@4.1.4:
-    resolution: {integrity: sha512-PwViZcMoLgEU/jhLoSyjf5hSrHS67wvSm0ifBo4prP9irpGa5HuPOZeVDTL5tPDSBoKxtdYi1zlGdoiJfO86jA==}
+  /@sveltejs/kit/1.12.0_svelte@3.57.0+vite@4.1.4:
+    resolution: {integrity: sha512-hhOtaL3jS7p4A3O34m8RlM+K5OSyrEyFUIh4iqsv6e8BDvupzNSxGa7J9+Gfjb+Z1yZCxjvxJ8Flb2Cj0g8cLg==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -466,7 +466,7 @@ packages:
       sirv: 2.0.2
       svelte: 3.57.0
       tiny-glob: 0.2.9
-      undici: 5.20.0
+      undici: 5.21.0
       vite: 4.1.4_sass@1.59.3
     transitivePeerDependencies:
       - supports-color
@@ -2319,8 +2319,8 @@ packages:
       svelte: 3.57.0
     dev: true
 
-  /svelte-preprocess/5.0.2_sass@1.59.3+svelte@3.57.0:
-    resolution: {integrity: sha512-iXpIoa43VdF7fPkBdoodztZd4H+3EP/GYA66tbuLVtQnM3sWCpsOtc7HjfA7BDR+6VTpqlEnpDmPoXk0dgUa0g==}
+  /svelte-preprocess/5.0.3_sass@1.59.3+svelte@3.57.0:
+    resolution: {integrity: sha512-GrHF1rusdJVbOZOwgPWtpqmaexkydznKzy5qIC2FabgpFyKN57bjMUUUqPRfbBXK5igiEWn1uO/DXsa2vJ5VHA==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
     peerDependencies:
@@ -2452,8 +2452,8 @@ packages:
       jiti: 1.17.2
     dev: true
 
-  /undici/5.20.0:
-    resolution: {integrity: sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==}
+  /undici/5.21.0:
+    resolution: {integrity: sha512-HOjK8l6a57b2ZGXOcUsI5NLfoTrfmbOl90ixJDl0AEFG4wgHNDQxtZy15/ZQp7HhjkpaGlp/eneMgtsu1dIlUA==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
