@@ -15,12 +15,10 @@
 </svelte:head>
 
 <section class="m-auto max-w-21rem">
-	<div class="leading-[1.1] my-12 italic">
+	<div class="leading-[1.1] my-12">
 		<div class="name-heading first-name">Jason</div>
 		<div class="name-heading text-right">Kurian</div>
-		<code class="block text-center mt-5 mx-auto not-italic font-300 text-xl p-0"
-			>{siteDescription}</code
-		>
+		<code class="block text-center mt-5 mx-auto font-300 text-xl p-0">{siteDescription}</code>
 	</div>
 
 	<p>👋🏽 thanks for stopping by! My friends call me Jay, or JK.</p>
@@ -78,7 +76,6 @@
 	}
 	.name-heading {
 		font-size: 5rem;
-		letter-spacing: -1px;
 
 		&:first-letter {
 			font-size: 6.5rem;
@@ -86,7 +83,7 @@
 	}
 	.first-name {
 		&:first-letter {
-			letter-spacing: 4px;
+			letter-spacing: -3.6px;
 		}
 		@media (max-width: vars.$xsMin) {
 			&:first-letter {

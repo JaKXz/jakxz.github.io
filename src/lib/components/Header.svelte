@@ -1,6 +1,6 @@
 <script>
-	import MainNav from './MainNav.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
+	import MainNav from './MainNav.svelte';
 
 	export let path;
 
@@ -16,7 +16,10 @@
 	</a>
 
 	<div>
-		<a href="/" class="site-title w-fit">
+		<a
+			href="/"
+			class="site-title w-fit italic leading-none color-inherit text-center m-0 block text-[2.5rem]"
+		>
 			<div class="name-heading inline-block w-fit">Jason</div>
 			<div class="name-heading inline-block w-fit">Kurian</div>
 		</a>

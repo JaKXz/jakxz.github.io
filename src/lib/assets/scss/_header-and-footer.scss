@@ -46,12 +46,6 @@ header {
 	}
 
 	.site-title {
-		line-height: 1;
-		color: inherit;
-		text-align: center;
-		margin: 0;
-		display: block;
-		font-size: 2.5rem;
 		@include vars.font-weight(extra-bold);
 	}
 
