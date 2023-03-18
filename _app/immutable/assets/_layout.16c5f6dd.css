@@ -155,8 +155,8 @@ strong {
   }
 }
 .name-heading:first-letter {
-  letter-spacing: normal;
   font-family: var(--accentFont);
+  letter-spacing: 0.075em;
 }
 
 *,
