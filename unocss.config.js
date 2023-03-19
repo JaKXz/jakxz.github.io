@@ -1,5 +1,5 @@
-import { defineConfig, presetAttributify, presetUno, presetIcons } from 'unocss';
 import transformerDirectives from '@unocss/transformer-directives';
+import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss';
 
 export default defineConfig({
 	transformers: [transformerDirectives()],
