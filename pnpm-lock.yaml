@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@iconify-json/tabler': ^1.1.67
   '@sveltejs/adapter-static': 2.0.1
-  '@sveltejs/kit': 1.12.0
+  '@sveltejs/kit': 1.13.0
   '@unocss/eslint-config': ^0.50.4
   '@unocss/transformer-directives': ^0.50.4
   dotenv: 16.0.3
@@ -33,8 +33,8 @@ dependencies:
 
 devDependencies:
   '@iconify-json/tabler': 1.1.67
-  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.12.0
-  '@sveltejs/kit': 1.12.0_svelte@3.57.0+vite@4.2.1
+  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.13.0
+  '@sveltejs/kit': 1.13.0_svelte@3.57.0+vite@4.2.1
   '@unocss/eslint-config': 0.50.4_eslint@8.36.0
   '@unocss/transformer-directives': 0.50.4
   eslint: 8.36.0
@@ -436,16 +436,16 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.12.0:
+  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.13.0:
     resolution: {integrity: sha512-o5/q3YwD/ErxYCFlK1v3ydvldyNKk1lh3oeyxn4mhz+Pkbx/uuxhzmbOpytTlp5aVqNHDVsb04xadUzOFCDDzw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.12.0_svelte@3.57.0+vite@4.2.1
+      '@sveltejs/kit': 1.13.0_svelte@3.57.0+vite@4.2.1
     dev: true
 
-  /@sveltejs/kit/1.12.0_svelte@3.57.0+vite@4.2.1:
-    resolution: {integrity: sha512-hhOtaL3jS7p4A3O34m8RlM+K5OSyrEyFUIh4iqsv6e8BDvupzNSxGa7J9+Gfjb+Z1yZCxjvxJ8Flb2Cj0g8cLg==}
+  /@sveltejs/kit/1.13.0_svelte@3.57.0+vite@4.2.1:
+    resolution: {integrity: sha512-t44xqlSTn/k+BridiJFTD8dCRPNd9msCSSPLZT+/3P9deNp/al6ed396MSpsskK7r2kevYmmxywK16qtn6Rvjw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
