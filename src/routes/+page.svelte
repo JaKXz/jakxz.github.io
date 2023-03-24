@@ -57,7 +57,7 @@
 						🔃
 						{formatDate(post.updated)}
 					</div>
-					<div><strong>{post.title}</strong></div>
+					<div class="my-1"><strong>{post.title}</strong></div>
 				</a>
 				<div class="flex gap-4 my-4 mx-auto">
 					{#each post.categories as category (category)}

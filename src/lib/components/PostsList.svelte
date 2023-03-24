@@ -11,7 +11,7 @@
 					{new Date(`${post.date}T00:00:00`).toDateString()}
 				</div>
 				<a class="block" href="/learning/{post.slug}">
-					<h3 class="mt-0 mb-4">
+					<h3 class="mt-1">
 						{post.title}
 					</h3>
 				</a>
