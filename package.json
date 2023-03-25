@@ -7,7 +7,8 @@
 		"deploy": "npx gh-pages -d build -b main --dotfiles",
 		"dev": "vite dev",
 		"lint": "eslint --ignore-path .gitignore .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"test": "vitest"
 	},
 	"devDependencies": {
 		"@iconify-json/tabler": "^1.1.68",
@@ -30,7 +31,8 @@
 		"sass": "1.60.0",
 		"svelte": "3.57.0",
 		"unocss": "^0.50.6",
-		"vite": "4.2.1"
+		"vite": "4.2.1",
+		"vitest": "^0.29.7"
 	},
 	"type": "module",
 	"dependencies": {
