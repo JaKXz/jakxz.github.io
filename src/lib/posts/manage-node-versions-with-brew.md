@@ -1,6 +1,6 @@
 ---
 title: 'Manage node versions with brew'
-date: '2019-10-24'
+date: '2019-01-24'
 updated: '2022-11-10'
 categories:
   - 'macos'
