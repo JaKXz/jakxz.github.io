@@ -11,9 +11,9 @@
 		"test": "vitest"
 	},
 	"devDependencies": {
-		"@iconify-json/tabler": "^1.1.68",
+		"@iconify-json/tabler": "^1.1.69",
 		"@sveltejs/adapter-static": "2.0.1",
-		"@sveltejs/kit": "1.14.0",
+		"@sveltejs/kit": "1.15.0",
 		"@unocss/eslint-config": "^0.50.6",
 		"@unocss/transformer-directives": "^0.50.6",
 		"eslint": "8.37.0",
@@ -29,10 +29,10 @@
 		"rehype-external-links": "2.0.1",
 		"rehype-slug": "5.1.0",
 		"sass": "1.60.0",
-		"svelte": "3.57.0",
+		"svelte": "3.58.0",
 		"unocss": "^0.50.6",
 		"vite": "4.2.1",
-		"vitest": "^0.29.7"
+		"vitest": "^0.29.8"
 	},
 	"type": "module",
 	"dependencies": {
