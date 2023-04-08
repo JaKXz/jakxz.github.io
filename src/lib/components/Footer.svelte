@@ -45,7 +45,7 @@
 				Thank you!
 			</p>
 		{/if}
-		<p class="inline-block mt-1">
+		<p class="mt-1 inline-block">
 			&copy;{new Date().getFullYear()} Jason Kurian &mdash;
 			<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"
 				><div class="i-tabler-brand-github vertical-middle text-xl" />

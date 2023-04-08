@@ -18,7 +18,7 @@
 	<div>
 		<a
 			href="/"
-			class="site-title w-fit italic leading-none color-inherit text-center m-0 block text-[2.5rem]"
+			class="site-title m-0 block w-fit text-center text-[2.5rem] leading-none italic color-inherit"
 		>
 			<div class="name-heading inline-block w-fit">Jason</div>
 			<div class="name-heading inline-block w-fit">Kurian</div>

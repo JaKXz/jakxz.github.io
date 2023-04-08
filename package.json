@@ -11,14 +11,14 @@
 		"test": "vitest"
 	},
 	"devDependencies": {
-		"@iconify-json/tabler": "^1.1.69",
+		"@iconify-json/tabler": "1.1.71",
 		"@sveltejs/adapter-static": "2.0.1",
 		"@sveltejs/kit": "1.15.2",
-		"@unocss/eslint-config": "^0.50.6",
-		"@unocss/transformer-directives": "^0.50.6",
+		"@unocss/eslint-config": "0.50.8",
+		"@unocss/transformer-directives": "0.50.8",
 		"eslint": "8.38.0",
 		"eslint-config-prettier": "8.8.0",
-		"eslint-plugin-svelte3": "4.0.0",
+		"eslint-plugin-svelte": "2.26.0",
 		"gh-pages": "5.0.0",
 		"husky": "8.0.3",
 		"mdsvex": "0.10.6",
@@ -30,9 +30,9 @@
 		"rehype-slug": "5.1.0",
 		"sass": "1.61.0",
 		"svelte": "3.58.0",
-		"unocss": "^0.50.6",
+		"unocss": "0.50.8",
 		"vite": "4.2.1",
-		"vitest": "^0.29.8"
+		"vitest": "0.29.8"
 	},
 	"type": "module",
 	"dependencies": {

@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 
-export async function load({ params }) {
+export async function load({ params, fetch }) {
 	try {
 		const post = await import(`../../../lib/posts/${params.post}.md`);
 
@@ -11,11 +11,14 @@ export async function load({ params }) {
 		let imageMeta = {};
 		if (post.metadata.coverImage) {
 			const [, , id] = post.metadata.coverImage.split('-');
-			const { alt_description, user } = await fetch(`https://api.unsplash.com/photos/${id}`, {
-				headers: {
-					Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`
+			const { alt_description, user, blur_hash } = await fetch(
+				`https://api.unsplash.com/photos/${id}`,
+				{
+					headers: {
+						Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`
+					}
 				}
-			})
+			)
 				.then((res) => res.json())
 				.catch(() => ({}));
 
@@ -27,7 +30,8 @@ export async function load({ params }) {
 							authorUrl: user.links.html
 					  }
 					: null,
-				imageAlt: alt_description
+				imageAlt: alt_description,
+				imageBlurHash: blur_hash
 			};
 		}
 

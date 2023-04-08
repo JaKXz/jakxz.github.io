@@ -15,10 +15,10 @@
 </svelte:head>
 
 <section class="m-auto max-w-21rem">
-	<div class="leading-[1.1] my-12">
+	<div class="my-12 leading-[1.1]">
 		<div class="name-heading first-name">Jason</div>
 		<div class="name-heading text-right">Kurian</div>
-		<code class="block text-center mt-5 mx-auto font-300 text-xl p-0">{siteDescription}</code>
+		<code class="mx-auto mt-5 block p-0 text-center text-xl font-300">{siteDescription}</code>
 	</div>
 
 	<p>👋🏽 thanks for stopping by! My friends call me Jay, or JK.</p>
@@ -50,7 +50,7 @@
 	<div class="cards-grid">
 		{#each data.posts as post (post.slug)}
 			<div
-				class="border-rounded-2 transform transition duration-500 hover:scale-110 focus-within:scale-110 card"
+				class="card transform border-rounded-2 transition duration-500 focus-within:scale-110 hover:scale-110"
 			>
 				<a href="/learning/{post.slug}" class="link-decoration-none">
 					<div class="subdued">
@@ -59,7 +59,7 @@
 					</div>
 					<div class="my-1"><strong>{post.title}</strong></div>
 				</a>
-				<div class="flex gap-4 my-4 mx-auto">
+				<div class="mx-auto my-4 flex gap-4">
 					{#each post.categories as category (category)}
 						<a href="/learning/category/{category}"><code>#{category}</code></a>
 					{/each}

@@ -144,13 +144,5 @@
 		flex-flow: column;
 		margin-inline: 0;
 		margin-block: 0;
-
-		figcaption {
-			background: var(--paper);
-			font-style: italic;
-			font-size: smaller;
-			padding: 3px;
-			text-align: center;
-		}
 	}
 </style>

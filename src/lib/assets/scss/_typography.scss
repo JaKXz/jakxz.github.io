@@ -102,6 +102,14 @@ strong {
 	@apply opacity-90 text-xs text-[color:var(--ink)];
 }
 
+figcaption {
+	background: var(--paper);
+	font-style: italic;
+	font-size: smaller;
+	padding: 3px;
+	text-align: center;
+}
+
 .name-heading {
 	@include vars.font-weight(extra-bold);
 	color: var(--darker);

@@ -5,6 +5,14 @@
 		{
 			"packagePatterns": ["^.*svelte.*"],
 			"groupName": "all svelte packages"
+		},
+		{
+			"packagePatterns": ["^.*unocss.*"],
+			"groupName": "unocss"
+		},
+		{
+			"packagePatterns": ["^.*(prettier|husky|pretty-quick).*"],
+			"groupName": "prettier"
 		}
 	]
 }
