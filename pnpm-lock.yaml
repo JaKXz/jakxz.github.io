@@ -24,6 +24,9 @@ devDependencies:
   '@unocss/eslint-config':
     specifier: 0.51.2
     version: 0.51.2(eslint@8.38.0)(typescript@5.0.4)
+  '@unocss/extractor-svelte':
+    specifier: 0.51.2
+    version: 0.51.2
   '@unocss/transformer-directives':
     specifier: 0.51.2
     version: 0.51.2
@@ -706,6 +709,10 @@ packages:
     resolution: {integrity: sha512-wA6vijuKUWtJQyrEuYQKaWTrja9B7MwKnRqnx1Jt6KIV8uYMm95k4bCkcMDNdqZECY2UvSDbzR2d/wFC0RDERg==}
     dependencies:
       '@unocss/core': 0.51.2
+    dev: true
+
+  /@unocss/extractor-svelte@0.51.2:
+    resolution: {integrity: sha512-BpNPKWLd/btIJhejTe86Jce4Lq13hZrQMNIhLqmNjoMd0XSDmmPe5giFRXWxsP8QPPZZeI4i/X0tK4XRXK/ocw==}
     dev: true
 
   /@unocss/inspector@0.51.2:

@@ -1,6 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { extractorSvelte } from 'unocss';
+import extractorSvelte from '@unocss/extractor-svelte';
 import UnoCss from 'unocss/vite';
+
 import 'dotenv/config';
 
 /** @type {import('vite').UserConfig} */

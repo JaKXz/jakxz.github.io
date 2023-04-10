@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-static": "2.0.1",
 		"@sveltejs/kit": "1.15.2",
 		"@unocss/eslint-config": "0.51.2",
+		"@unocss/extractor-svelte": "0.51.2",
 		"@unocss/transformer-directives": "0.51.2",
 		"eslint": "8.38.0",
 		"eslint-config-prettier": "8.8.0",
