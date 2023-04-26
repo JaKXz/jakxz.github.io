@@ -40,10 +40,5 @@
 		"dotenv": "16.0.3",
 		"just-throttle": "4.2.0",
 		"svelte-preprocess": "5.0.3"
-	},
-	"pnpm": {
-		"overrides": {
-			"svelte-eslint-parser": "npm:@jakxz/svelte-eslint-parser@^0.26.1"
-		}
 	}
 }
