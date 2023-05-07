@@ -23,7 +23,6 @@ export async function load({ params, fetch }) {
 				.catch((_networkError) => ({}));
 
 			if (!process.env.CI && errors && errors.length) {
-				console.error(errors);
 				throw new Error(`Unsplash error(s): ${errors.join(', ')}`);
 			}
 
