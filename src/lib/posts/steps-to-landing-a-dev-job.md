@@ -4,7 +4,8 @@ date: '2020-08-21'
 updated: '2023-05-07'
 categories:
   - 'career'
-  - 'development'
+  - 'dev'
+  - 'coaching'
 excerpt: 'From Internships to GitHub, metaphorically speaking'
 ---
 
