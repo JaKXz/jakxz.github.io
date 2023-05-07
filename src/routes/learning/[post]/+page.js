@@ -11,7 +11,7 @@ export async function load({ params, fetch }) {
 		let imageMeta = {};
 		if (post.metadata.coverImage) {
 			const [, , id] = post.metadata.coverImage.split('-');
-			const { alt_description, user, blur_hash } = await fetch(
+			const { alt_description, user, blur_hash, errors } = await fetch(
 				`https://api.unsplash.com/photos/${id}`,
 				{
 					headers: {
@@ -20,7 +20,12 @@ export async function load({ params, fetch }) {
 				}
 			)
 				.then((res) => res.json())
-				.catch(() => ({}));
+				.catch((_networkError) => ({}));
+
+			if (!process.env.CI && errors && errors.length) {
+				console.error(errors);
+				throw new Error(`Unsplash error(s): ${errors.join(', ')}`);
+			}
 
 			imageMeta = {
 				coverCaption: user
