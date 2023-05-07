@@ -42,6 +42,10 @@ pre[class*='language-'] {
 		border-radius: 0.3rem;
 		min-width: calc(100% + 4rem);
 	}
+
+	:where(h1, h2, h3, h4, h5, h6):first-of-type {
+		margin-top: 0;
+	}
 }
 
 li {
