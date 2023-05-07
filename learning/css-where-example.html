@@ -22,10 +22,10 @@
 		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.svelte.671445e4.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.js.7cfd9458.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_page.b5643a79.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.2defaa64.js"><title>Yet another react component template | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/yet-another-react-component-template"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description" content="xkcd standards comic anyone?"><meta property="og:type" content="article"><meta property="og:title" content="Yet another react component template"><meta property="og:description" content="xkcd standards comic anyone?"><meta name="twitter:title" content="Yet another react component template"><meta name="twitter:description" content="xkcd standards comic anyone?"><meta property="og:image:width" content="16">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.2defaa64.js"><title>A practical example of the :where() pseudo-selector | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/css-where-example"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description" content="This is how it clicked for me"><meta property="og:type" content="article"><meta property="og:title" content="A practical example of the :where() pseudo-selector"><meta property="og:description" content="This is how it clicked for me"><meta name="twitter:title" content="A practical example of the :where() pseudo-selector"><meta name="twitter:description" content="This is how it clicked for me"><meta property="og:image:width" content="16">
 		<meta property="og:image:height" content="9">
-		<meta property="og:image" content="https://jasonkurian.dev/images/linus-nylund-Q5QspluNZmM-unsplash.jpg">
-		<meta name="twitter:image" content="https://jasonkurian.dev/images/linus-nylund-Q5QspluNZmM-unsplash.jpg">
+		<meta property="og:image" content="https://jasonkurian.dev/images/kelly-sikkema-mdADGzyXCVE-unsplash.jpg">
+		<meta name="twitter:image" content="https://jasonkurian.dev/images/kelly-sikkema-mdADGzyXCVE-unsplash.jpg">
 		<meta name="twitter:card" content="summary_large_image"><!-- HEAD_svelte-1iee9m6_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,7 +48,7 @@
 
 
 
-<div class="layout"><header class="/learning/yet-another-react-component-template svelte-823y9m"><a class="skip-to-content-link" href="#main">Skip to main content
+<div class="layout"><header class="/learning/css-where-example svelte-823y9m"><a class="skip-to-content-link" href="#main">Skip to main content
 	</a>
 
 	<div><a href="/" class="site-title m-0 block w-fit text-center text-[2.5rem] leading-none italic color-inherit"><div class="name-heading inline-block w-fit">Jason</div>
@@ -62,43 +62,57 @@
 	<button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only">Toggle hamburger menu</span>
 	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button>
 </header>
-		<main id="main" tabindex="-1" class="/learning/yet-another-react-component-template">
+		<main id="main" tabindex="-1" class="/learning/css-where-example">
 
-<article class="post svelte-1is1pnb"><figure class="cover-image svelte-1is1pnb"><img src="/images/linus-nylund-Q5QspluNZmM-unsplash.jpg" alt="" style="aspect-ratio: 16 / 9;" width="16" height="9">
+<article class="post svelte-1is1pnb"><figure class="cover-image svelte-1is1pnb"><img src="/images/kelly-sikkema-mdADGzyXCVE-unsplash.jpg" alt="" style="aspect-ratio: 16 / 9;" width="16" height="9">
 		</figure>
-	<h1 class="svelte-1is1pnb">Yet another react component template</h1>
+	<h1 class="svelte-1is1pnb">A practical example of the :where() pseudo-selector</h1>
 
 	<div class="meta svelte-1is1pnb"><b>Published:</b>
-		2021-08-30
+		2023-05-07
 		<br>
 		<b>Updated:</b>
-		2022-07-27</div>
+		2023-05-07</div>
 
-	<p><a href="https://github.com/JaKXz/react-component-template#readme" rel="nofollow">Give it a try for your next react component</a>. I would love feedback! Yes, the irony of the <a href="https://xkcd.com/927" rel="nofollow">xkcd standards comic</a> is not lost on me! :)</p>
-<h2 id="motivation--philosophy"><a aria-hidden="true" tabindex="-1" href="#motivation--philosophy"><span class="icon icon-link"></span></a>Motivation &amp; Philosophy</h2>
-<p>I wanted a relatively minimalist [in JS land] starter for publishing a react package.
-I loved the simplicity of working with the svelte starter repos in some side projects, and I think keeping a template repository up to date is much easier than the generator approach, having worked on <code>generator-angular-fullstack</code> way back in the day.</p>
-<p>I also wanted to produce something with the fewest possible opinions baked in / exposed them as much as possible.
-<code>husky</code>’s pre-commit hook for prettier seemed like a reasonable exception but is also easily removable.</p>
-<h3 id="alternatives--prior-art--inspirations"><a aria-hidden="true" tabindex="-1" href="#alternatives--prior-art--inspirations"><span class="icon icon-link"></span></a>Alternatives / Prior art / inspirations</h3>
-<p><a href="https://tsdx.io/" rel="nofollow">tsdx</a> is great, but, their <code>example</code> folder did not work out of the box (at time of writing) &amp; did not quite scratch my itch because it comes with some opinions that are hard to opt out of.
-I really like their typescript + storybook starter and I want to eventually include storybook support somehow.</p>
-<p>The tradeoff is that with this template, <code>microbundle</code> handles a lot of the rollup work under the hood.
-It is extensible (you can add your own <code>babel.config.js</code> etc) but the important parts like <a href="https://github.com/developit/microbundle#-features-" rel="nofollow">code optimization</a> are taken care of and are usually “set and forget” anyway.</p>
-<p>This project is essentially a fork of what you get from <a href="https://www.npmjs.com/package/create-react-library" rel="nofollow">create-react-library</a> without the reliance on an undocumented fork of microbundle and with updated dependencies.
-I liked the usage of <code>react-scripts</code> since that is well-maintained and likely going to remain a reliable &amp; simple bootstrap as well as the <code>link:../</code> pattern for the example folder’s dependencies.</p>
-<h2 id="stack"><a aria-hidden="true" tabindex="-1" href="#stack"><span class="icon icon-link"></span></a>Stack:</h2>
-<ul><li><a href="https://npm.im/microbundle" rel="nofollow">microbundle</a> for rollup/packaging.</li>
-<li><a href="https://npm.im/react-scripts" rel="nofollow">react-scripts</a> for local testing and example app build &amp; deploy.</li>
-<li><a href="https://npm.im/husky" rel="nofollow">husky v7+</a> for git hooks.</li>
-<li><a href="https://npm.im/prettier" rel="nofollow">prettier</a> &amp; <a href="https://npm.im/pretty-quick" rel="nofollow">pretty-quick</a> for formatting. Add your own prettier config and modify <a href="https://github.com/JaKXz/react-component-template/blob/master/.eslintrc.js" rel="nofollow">eslint config</a> as you please.</li>
-<li><a href="http://npm.im/typescript" rel="nofollow">typescript</a></li>
-<li><a href="https://npm.im/react" rel="nofollow">react</a></li></ul>
+	<p>This is a practical example of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:where" rel="nofollow"><code>:where()</code></a> pseudo-selector and how it clicked for me; the original docs are better than this, but I’m just writing this for me :)</p>
+<p>Say you have a <code>.container</code> element, and you want to specify that all headings within that container should not have a margin:</p>
+<pre class="language-scss"><!-- HTML_TAG_START --><code class="language-scss"><span class="token selector">.container </span><span class="token punctuation">&#123;</span>
+	<span class="token selector">h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 </span><span class="token punctuation">&#123;</span>
+		<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>In Sass, that’s easy enough.
+In normal CSS we’d have to have multiple lines and it would be a bit of a chore to write, but still doable.
+However, what if e.g. you only wanted the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type" rel="nofollow"><code>:first-of-type</code></a> pseudo-class not to have a margin?</p>
+<pre class="language-scss"><!-- HTML_TAG_START --><code class="language-scss"><span class="token selector">.container </span><span class="token punctuation">&#123;</span>
+	<span class="token selector">h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 </span><span class="token punctuation">&#123;</span>
+		<span class="token selector"><span class="token parent important">&amp;</span>:first-of-type </span><span class="token punctuation">&#123;</span>
+			<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>Sass does make it easier, but, we are getting deeply nested.
+With the <code>:where()</code> pseudo-selector, we can simplify this to one line of CSS:</p>
+<pre class="language-css"><!-- HTML_TAG_START --><code class="language-css"><span class="token selector">.container :where(h1, h2, h3, h4, h5, h6):first-of-type</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p>The <code>:where()</code> pseudo-selector is a way to group selectors together without creating a new specificity context.
+That way we can apply the <code>:first-of-type</code> pseudo-class [or something else] to everything matched by the selectors provided, really easily!</p>
 
 	<script src="https://utteranc.es/client.js" repo="jakxz/jakxz.github.io" issue-term="og:title" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
 
 	<aside class="post-footer svelte-1is1pnb"><h2>Posted in:</h2>
-			<ul class="svelte-1is1pnb"><li class="svelte-1is1pnb"><a href="/learning/category/react/" class="svelte-1is1pnb">react</a>
+			<ul class="svelte-1is1pnb"><li class="svelte-1is1pnb"><a href="/learning/category/css/" class="svelte-1is1pnb">css</a>
 					</li><li class="svelte-1is1pnb"><a href="/learning/category/web/" class="svelte-1is1pnb">web</a>
 					</li><li class="svelte-1is1pnb"><a href="/learning/category/dev/" class="svelte-1is1pnb">dev</a>
 					</li></ul></aside>
@@ -114,7 +128,7 @@ I liked the usage of <code>react-scripts</code> since that is well-maintained an
 			<li><a href="/">Home</a></li></ul></nav>
 
 	<div><p>See a typo?
-				<em><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz/jakxz.github.io/edit/develop/src/lib/posts/yet-another-react-component-template.md">Please open a PR here.</a></em>
+				<em><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz/jakxz.github.io/edit/develop/src/lib/posts/css-where-example.md">Please open a PR here.</a></em>
 				Thank you!
 			</p>
 		<p class="mt-1 inline-block">©2023 Jason Kurian —
@@ -125,7 +139,7 @@ I liked the usage of <code>react-scripts</code> since that is well-maintained an
 			<a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/"><div class="i-tabler-brand-linkedin vertical-middle text-xl"></div></a></p></div></footer></div>
 
 
-			<script type="application/json" data-sveltekit-fetched data-url="https://api.unsplash.com/photos/Q5QspluNZmM" data-hash="1yjb28h">{"status":401,"statusText":"Unauthorized","headers":{},"body":"{\"errors\":[\"OAuth error: The access token is invalid\"]}"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="https://api.unsplash.com/photos/mdADGzyXCVE" data-hash="1yjb28h">{"status":401,"statusText":"Unauthorized","headers":{},"body":"{\"errors\":[\"OAuth error: The access token is invalid\"]}"}</script>
 			<script>
 				{
 					__sveltekit_gmz5cn = {

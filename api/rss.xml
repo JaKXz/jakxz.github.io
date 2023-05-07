@@ -6,6 +6,12 @@
 <link>https://jasonkurian.dev</link>
 <atom:link href="https://jasonkurian.dev/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://jasonkurian.dev/learning/css-where-example</guid>
+<title>A practical example of the :where() pseudo-selector</title>
+<link>https://jasonkurian.dev/learning/css-where-example</link>
+<description>This is how it clicked for me</description>
+<pubDate>Sun, 07 May 2023 00:00:00 GMT</pubDate>
+</item><item>
 <guid isPermaLink="true">https://jasonkurian.dev/learning/tdd-does-not-have-to-be-dogmatic</guid>
 <title>TDD doesn't have to be dogmatic</title>
 <link>https://jasonkurian.dev/learning/tdd-does-not-have-to-be-dogmatic</link>
