@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@iconify-json/tabler": "1.1.74",
 		"@sveltejs/adapter-static": "2.0.2",
-		"@sveltejs/kit": "1.15.10",
+		"@sveltejs/kit": "1.16.2",
 		"@unocss/eslint-config": "0.51.8",
 		"@unocss/extractor-svelte": "0.51.8",
 		"@unocss/transformer-directives": "0.51.8",
@@ -30,7 +30,7 @@
 		"rehype-external-links": "2.1.0",
 		"rehype-slug": "5.1.0",
 		"sass": "1.62.1",
-		"svelte": "3.58.0",
+		"svelte": "3.59.0",
 		"unocss": "0.51.8",
 		"vite": "4.3.5",
 		"vitest": "0.31.0"
