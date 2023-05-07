@@ -37,35 +37,37 @@
 </svelte:head>
 
 <article class="post">
-	<figure class="cover-image">
-		<img
-			src={coverImage}
-			alt={imageAlt || ''}
-			style="aspect-ratio: {coverWidth} / {coverHeight};"
-			width={coverWidth}
-			height={coverHeight}
-		/>
-		{#if !!coverCaption}
-			<figcaption>
-				Photo by
-				<a
-					target="_blank"
-					rel="noopener noreferrer nofollow"
-					href={`${coverCaption.authorUrl}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`}
-					>{coverCaption.author}</a
-				>
-				on
-				<a
-					target="_blank"
-					rel="noopener noreferrer nofollow"
-					href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-					>Unsplash</a
-				>
-			</figcaption>
-		{:else if imageAlt}
-			<figcaption>{imageAlt}</figcaption>
-		{/if}
-	</figure>
+	{#if !!coverImage}
+		<figure class="cover-image">
+			<img
+				src={coverImage}
+				alt={imageAlt || ''}
+				style="aspect-ratio: {coverWidth} / {coverHeight};"
+				width={coverWidth}
+				height={coverHeight}
+			/>
+			{#if !!coverCaption}
+				<figcaption>
+					Photo by
+					<a
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						href={`${coverCaption.authorUrl}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`}
+						>{coverCaption.author}</a
+					>
+					on
+					<a
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+						>Unsplash</a
+					>
+				</figcaption>
+			{:else if imageAlt}
+				<figcaption>{imageAlt}</figcaption>
+			{/if}
+		</figure>
+	{/if}
 	<h1>{title}</h1>
 
 	<div class="meta">
