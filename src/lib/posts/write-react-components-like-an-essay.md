@@ -1,96 +1,87 @@
 ---
 title: 'Write React components like an essay'
 date: '2023-02-09'
-updated: '2023-02-23'
+updated: '2023-05-08'
 categories:
   - 'react'
   - 'web'
   - 'dev'
 ---
 
-## TL;DR
+If you're a developer who writes React components, you may have found yourself wondering how to structure your code to make it more readable and maintainable.
+One way to approach this is to think of your component code like an essay.
 
-Put your file's main export as close to the top of the file as possible, like the "thesis" of an essay.
-Put supporting "arguments" (helpers, subcomponents, etc) immediately following in order of relevance and use.
+In a well-written essay, the main point (or thesis) is usually near the beginning of the piece, with supporting arguments and evidence following in order of relevance.
+Similarly, in a React component, you can put the main export of your file as close to the top as possible, like the "thesis" of your code.
+Then, put supporting "arguments" (helpers, subcomponents, etc.) immediately following in order of relevance and use.
 
----
-
-Let's take this `Profile.jsx` component as an (counter) example:
+Let's look at an example of a `Profile.jsx` component:
 
 ```tsx
 // app/components/Profile.jsx
-import ...
+import React from 'react';
 // N more imports
 
 async function getProfile() {
-  // ...
+	// ...
 }
 
-function utilThatDoesSomething() {
+function utilThatDoesSomething() {}
 
-}
-
-const SubComponentThatTakesPartialProps = () => {
-
-}
+const SubComponentThatTakesPartialProps = () => {};
 
 const A_CONSTANT = 'CONSTANT_VALUE';
 
 // named or default exports are interchangeable in this story.
-// by this point, we're at line 200+
-export default function Profile({name, ...rest}) {
-  const inlineUtilBasedOnPropsButReturnsMarkup = () => {
-
-  };
-  return (
-    <div>
-      ...
-      <SubcomponentThatTakesPartialProps {...rest} />
-    </div>
-  );
+// by this point, we might be at line 200+
+export default function Profile({ name, ...rest }) {
+	const inlineUtilBasedOnPropsButReturnsMarkup = () => {};
+	return (
+		<div>
+			...
+			<SubcomponentThatTakesPartialProps {...rest} />
+		</div>
+	);
 }
 ```
 
-Imagine you've just made an excellent hire; they're super driven and pick things up quickly.
-You ask them to go investigate an issue and they realize it's in the Profile.
+In this example, the main export of the file, the Profile component, is buried under a lot of supporting code.
+If you're trying to debug an issue in this component, you may have to wade through a lot of unrelated code before you find the entry point.
+By reordering the code to put the main export first, you can make it easier for other developers (or your future self!) to quickly understand what the component is doing and find the relevant code.
 
-Now look again at the code in the `Profile.jsx` file.
-If you're lucky, you have a strong culture of code hygiene and a lint rule that limits files to a reasonable length.
-Even so, they likely still have to wade through at least a couple hundred lines of code to get to an entrypoint so they can start to trace the path back to the issue they need to fix.
-The supporting code along the way could be confusing or at worst distracting.
-
-### Show me the code
-
-In your formal education (assuming at least high school or equivalent) you may have heard that good writing puts its main point (the "lede" or thesis) near the start of the paper.
-The supporting arguments follow in order of relevance.
-
-So, let's rewrite `Profile.jsx` to follow this analogy:
+Here's an example of what the same Profile.jsx file could look like if it followed the essay structure:
 
 ```tsx
-import ...
-// N more imports, like the "introductory" sentences that bring in hooks,
-// shared helper functions and so on
+// app/components/Profile.jsx
+import React from 'react';
+// N more imports, like the "introductory" sentences that bring in hooks, shared helper functions, and so on
 
 const A_CONSTANT = 'global setup';
-const QUERY_LIMIT = 10; //etc
+const QUERY_LIMIT = 10; // etc.
 
 // now, the thesis, most of the reason why a dev would come to this file
 // *most* of the time this will start at line 30 or less when arranged this way!
-export function Profile({name, ...rest}) {
-  const [i18n] = usei18n();
-  // and so on!
-  return <div> ... </div>;
+export function Profile({ name, ...rest }) {
+	const [i18n] = usei18n();
+	// and so on!
+	return (
+		<div>
+			<Subcomponent>{helper(...rest)}</Subcomponent>
+		</div>
+	);
 }
 
-//supporting components (maybe broken out into their own "essays" as they become more complex)
-function Subcomponent({}) {
-
+// supporting components (maybe broken out into their own "essays" as they become more complex)
+function Subcomponent({ children }) {
+	return <div>{children}</div>;
 }
 
 function helper(...args) {
-
+	// Many complex lines
 }
 ```
 
-This reduces distractions and allows developers to cmd+click ("Go To Definition") their way through the component to build an understanding much faster than having to hop back and forth across an unorganized file.
-What do you think?
+By structuring your React components like an essay, you can make your code more readable, easier to maintain, and quicker to understand.
+Give it a try in your own projects and see how it works for you!
+I also think this could be applicable to non React code;
+you would just need to determine what the "thesis" is and see if it makes sense to use "supporting arguments" as described here.
