@@ -37,8 +37,8 @@ devDependencies:
     specifier: 8.8.0
     version: 8.8.0(eslint@8.40.0)
   eslint-plugin-svelte:
-    specifier: 2.27.3
-    version: 2.27.3(eslint@8.40.0)(svelte@3.59.0)
+    specifier: 2.27.4
+    version: 2.27.4(eslint@8.40.0)(svelte@3.59.0)
   gh-pages:
     specifier: 5.0.0
     version: 5.0.0
@@ -1287,8 +1287,8 @@ packages:
       eslint: 8.40.0
     dev: true
 
-  /eslint-plugin-svelte@2.27.3(eslint@8.40.0)(svelte@3.59.0):
-    resolution: {integrity: sha512-LPri23kkKeeh+TkYr9FndQEy2Q5BhOrIwatnLdXx6hUtTIolohzrTJhWMK3k8BwitVBnJGl5CDVWNkV80tmdkQ==}
+  /eslint-plugin-svelte@2.27.4(eslint@8.40.0)(svelte@3.59.0):
+    resolution: {integrity: sha512-P1VPNgM0a6AGWU/qlk3Jf/55B4TIF6V0vlkRrZsqe+Um3SeCbH8dSakI/WJ4kwupYr7lMzHIbnjFXpzemXqzVw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
