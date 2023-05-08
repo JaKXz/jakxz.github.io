@@ -6,22 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.eaa53719.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_page.3ec009a7.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.eaa53719.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.3ec009a7.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/manage-node-versions-with-brew.674e82b1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.8e2ab097.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.54728de9.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.431c3752.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.154a5e70.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.f1db45d5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.bee6348e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.8f9c9f0e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.63e552a0.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.57b360b8.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.1f008742.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/config.1a866872.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.5e19617c.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.d3fe4bba.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.svelte.671445e4.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/learning-_post_-page.js.f5794c31.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page.96b02be0.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.38919825.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.2defaa64.js"><title>Write React components like an essay | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/write-react-components-like-an-essay"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Write React components like an essay"><meta property="og:description"><meta name="twitter:title" content="Write React components like an essay"><meta name="twitter:description"><meta name="twitter:card" content="summary"><!-- HEAD_svelte-1iee9m6_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,87 +56,81 @@
 </header>
 		<main id="main" tabindex="-1" class="/learning/write-react-components-like-an-essay">
 
-<article class="post svelte-1is1pnb"><figure class="cover-image svelte-1is1pnb"><img alt="" style="aspect-ratio: undefined / undefined;">
-		</figure>
+<article class="post svelte-1is1pnb">
 	<h1 class="svelte-1is1pnb">Write React components like an essay</h1>
 
 	<div class="meta svelte-1is1pnb"><b>Published:</b>
 		2023-02-09
 		<br>
 		<b>Updated:</b>
-		2023-02-23</div>
+		2023-05-08</div>
 
-	<h2 id="tldr"><a aria-hidden="true" tabindex="-1" href="#tldr"><span class="icon icon-link"></span></a>TL;DR</h2>
-<p>Put your file’s main export as close to the top of the file as possible, like the “thesis” of an essay.
-Put supporting “arguments” (helpers, subcomponents, etc) immediately following in order of relevance and use.</p>
-<hr>
-<p>Let’s take this <code>Profile.jsx</code> component as an (counter) example:</p>
+	<p>If you’re a developer who writes React components, you may have found yourself wondering how to structure your code to make it more readable and maintainable.
+One way to approach this is to think of your component code like an essay.</p>
+<p>In a well-written essay, the main point (or thesis) is usually near the beginning of the piece, with supporting arguments and evidence following in order of relevance.
+Similarly, in a React component, you can put the main export of your file as close to the top as possible, like the “thesis” of your code.
+Then, put supporting “arguments” (helpers, subcomponents, etc.) immediately following in order of relevance and use.</p>
+<p>Let’s look at an example of a <code>Profile.jsx</code> component:</p>
 <pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token comment">// app/components/Profile.jsx</span>
-<span class="token keyword">import</span> <span class="token operator">...</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
 <span class="token comment">// N more imports</span>
 
 <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getProfile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token comment">// ...</span>
+	<span class="token comment">// ...</span>
 <span class="token punctuation">&#125;</span>
 
-<span class="token keyword">function</span> <span class="token function">utilThatDoesSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">function</span> <span class="token function">utilThatDoesSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
 
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">const</span> <span class="token function-variable function">SubComponentThatTakesPartialProps</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-
-<span class="token punctuation">&#125;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">SubComponentThatTakesPartialProps</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> <span class="token constant">A_CONSTANT</span> <span class="token operator">=</span> <span class="token string">'CONSTANT_VALUE'</span><span class="token punctuation">;</span>
 
 <span class="token comment">// named or default exports are interchangeable in this story.</span>
-<span class="token comment">// by this point, we're at line 200+</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">Profile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>name<span class="token punctuation">,</span> <span class="token operator">...</span>rest<span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">inlineUtilBasedOnPropsButReturnsMarkup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-
-  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
-      ...
-      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SubcomponentThatTakesPartialProps</span></span> <span class="token spread"><span class="token punctuation">&#123;</span><span class="token operator">...</span>rest<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
-    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// by this point, we might be at line 200+</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">Profile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> name<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> <span class="token function-variable function">inlineUtilBasedOnPropsButReturnsMarkup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token punctuation">(</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+			...
+			</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SubcomponentThatTakesPartialProps</span></span> <span class="token spread"><span class="token punctuation">&#123;</span><span class="token operator">...</span>rest<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+		</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>Imagine you’ve just made an excellent hire; they’re super driven and pick things up quickly.
-You ask them to go investigate an issue and they realize it’s in the Profile.</p>
-<p>Now look again at the code in the <code>Profile.jsx</code> file.
-If you’re lucky, you have a strong culture of code hygiene and a lint rule that limits files to a reasonable length.
-Even so, they likely still have to wade through at least a couple hundred lines of code to get to an entrypoint so they can start to trace the path back to the issue they need to fix.
-The supporting code along the way could be confusing or at worst distracting.</p>
-<h3 id="show-me-the-code"><a aria-hidden="true" tabindex="-1" href="#show-me-the-code"><span class="icon icon-link"></span></a>Show me the code</h3>
-<p>In your formal education (assuming at least high school or equivalent) you may have heard that good writing puts its main point (the “lede” or thesis) near the start of the paper.
-The supporting arguments follow in order of relevance.</p>
-<p>So, let’s rewrite <code>Profile.jsx</code> to follow this analogy:</p>
-<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token keyword">import</span> <span class="token operator">...</span>
-<span class="token comment">// N more imports, like the "introductory" sentences that bring in hooks,</span>
-<span class="token comment">// shared helper functions and so on</span>
+<p>In this example, the main export of the file, the Profile component, is buried under a lot of supporting code.
+If you’re trying to debug an issue in this component, you may have to wade through a lot of unrelated code before you find the entry point.
+By reordering the code to put the main export first, you can make it easier for other developers (or your future self!) to quickly understand what the component is doing and find the relevant code.</p>
+<p>Here’s an example of what the same Profile.jsx file could look like if it followed the essay structure:</p>
+<pre class="language-tsx"><!-- HTML_TAG_START --><code class="language-tsx"><span class="token comment">// app/components/Profile.jsx</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token comment">// N more imports, like the "introductory" sentences that bring in hooks, shared helper functions, and so on</span>
 
 <span class="token keyword">const</span> <span class="token constant">A_CONSTANT</span> <span class="token operator">=</span> <span class="token string">'global setup'</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token constant">QUERY_LIMIT</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment">//etc</span>
+<span class="token keyword">const</span> <span class="token constant">QUERY_LIMIT</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment">// etc.</span>
 
 <span class="token comment">// now, the thesis, most of the reason why a dev would come to this file</span>
 <span class="token comment">// *most* of the time this will start at line 30 or less when arranged this way!</span>
-<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">Profile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>name<span class="token punctuation">,</span> <span class="token operator">...</span>rest<span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>i18n<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">usei18n</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">// and so on!</span>
-  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text"> ... </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">Profile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> name<span class="token punctuation">,</span> <span class="token operator">...</span>rest <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> <span class="token punctuation">[</span>i18n<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">usei18n</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">// and so on!</span>
+	<span class="token keyword">return</span> <span class="token punctuation">(</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+			</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Subcomponent</span></span><span class="token punctuation">></span></span><span class="token punctuation">&#123;</span><span class="token function">helper</span><span class="token punctuation">(</span><span class="token operator">...</span>rest<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Subcomponent</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+		</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
 
-<span class="token comment">//supporting components (maybe broken out into their own "essays" as they become more complex)</span>
-<span class="token keyword">function</span> <span class="token function">Subcomponent</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-
+<span class="token comment">// supporting components (maybe broken out into their own "essays" as they become more complex)</span>
+<span class="token keyword">function</span> <span class="token function">Subcomponent</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> children <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">&#123;</span>children<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
 
 <span class="token keyword">function</span> <span class="token function">helper</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-
+	<span class="token comment">// Many complex lines</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>This reduces distractions and allows developers to cmd+click (“Go To Definition”) their way through the component to build an understanding much faster than having to hop back and forth across an unorganized file.
-What do you think?</p>
+<p>By structuring your React components like an essay, you can make your code more readable, easier to maintain, and quicker to understand.
+Give it a try in your own projects and see how it works for you!
+I also think this could be applicable to non React code;
+you would just need to determine what the “thesis” is and see if it makes sense to use “supporting arguments” as described here.</p>
 
 	<script src="https://utteranc.es/client.js" repo="jakxz/jakxz.github.io" issue-term="og:title" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
 
@@ -175,7 +165,7 @@ What do you think?</p>
 			
 			<script>
 				{
-					__sveltekit_18xay4x = {
+					__sveltekit_gyryor = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -185,8 +175,8 @@ What do you think?</p>
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.8e2ab097.js"),
-						import("../_app/immutable/entry/app.8f9c9f0e.js")
+						import("../_app/immutable/entry/start.154a5e70.js"),
+						import("../_app/immutable/entry/app.63e552a0.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
