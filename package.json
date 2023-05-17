@@ -33,7 +33,7 @@
 		"svelte": "3.59.1",
 		"unocss": "0.51.12",
 		"vite": "4.3.5",
-		"vitest": "0.31.0"
+		"vitest": "0.31.1"
 	},
 	"type": "module",
 	"dependencies": {
