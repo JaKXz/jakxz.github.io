@@ -11,7 +11,7 @@
 		"test": "vitest"
 	},
 	"devDependencies": {
-		"@iconify-json/tabler": "1.1.74",
+		"@iconify-json/tabler": "1.1.76",
 		"@sveltejs/adapter-static": "2.0.2",
 		"@sveltejs/kit": "1.16.3",
 		"@unocss/eslint-config": "0.51.12",
