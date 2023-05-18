@@ -1,5 +1,9 @@
 on:
-  - push
+  push:
+    branches:
+      - develop
+  pull_request:
+  merge_group:
 
 jobs:
   build-and-lint:
