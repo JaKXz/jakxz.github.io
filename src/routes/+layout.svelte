@@ -9,6 +9,7 @@
 	import { preloadData } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+
 	export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
@@ -43,8 +44,10 @@
 	actual contents will show up.
 -->
 <div class="layout" class:open={$isMenuOpen}>
+	{#if data.path !== '/'}
+		<Header />
+	{/if}
 	{#key data.path}
-		<Header path={data.path} />
 		<main id="main" tabindex="-1" class={data.path} in:fade={transitionIn} out:fade={transitionOut}>
 			<slot />
 		</main>
