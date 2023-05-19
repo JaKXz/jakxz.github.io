@@ -59,7 +59,7 @@ To practice your coding skills, consider using online platforms like CodeSignal,
 
 ---
 
-This post is adapted from advice I gave to someone who DM'd me on LinkedIn and asked some good specific questions;
+This post is adapted from advice I gave to someone who DM'd me on LinkedIn back in 2020 and asked some good specific questions;
 they leveraged this advice and (I'm sure) the wisdom of others to begin a successful career.
 Let me know what you think in the comments below;
 this isn't a complete guide, as mentioned, but it's 3 really solid pillars to build on / start with.
