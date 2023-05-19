@@ -1,8 +1,7 @@
 <script>
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 	import MainNav from './MainNav.svelte';
-
-	export let path;
+	import { slide } from 'svelte/transition';
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
@@ -10,7 +9,7 @@
 	};
 </script>
 
-<header class={path}>
+<header in:slide out:slide>
 	<a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
 		Skip to main content
 	</a>
@@ -27,10 +26,3 @@
 	</div>
 	<HamburgerMenuButton />
 </header>
-
-<style>
-	.\/ {
-		visibility: hidden;
-		display: none;
-	}
-</style>
