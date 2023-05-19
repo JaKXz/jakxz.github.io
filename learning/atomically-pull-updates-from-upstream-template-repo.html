@@ -6,18 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/0.eaa53719.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.b7463f52.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.3ec009a7.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/manage-node-versions-with-brew.674e82b1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.154a5e70.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.f1db45d5.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.bee6348e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.d8dce5dc.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.64865596.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.1debec50.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.63e552a0.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.da01882d.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.1f008742.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.c6be4933.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/config.1a866872.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.38919825.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.cc3a55a5.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.2defaa64.js"><title>Atomically pull updates from an upstream template repo | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/atomically-pull-updates-from-upstream-template-repo"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Atomically pull updates from an upstream template repo"><meta property="og:description"><meta name="twitter:title" content="Atomically pull updates from an upstream template repo"><meta name="twitter:description"><meta name="twitter:card" content="summary"><!-- HEAD_svelte-1iee9m6_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +40,7 @@
 
 
 
-<div class="layout"><header class="/learning/atomically-pull-updates-from-upstream-template-repo svelte-823y9m"><a class="skip-to-content-link" href="#main">Skip to main content
+<div class="layout"><header><a class="skip-to-content-link" href="#main">Skip to main content
 	</a>
 
 	<div><a href="/" class="site-title m-0 block w-fit text-center text-[2.5rem] leading-none italic color-inherit"><div class="name-heading inline-block w-fit">Jason</div>
@@ -52,9 +52,8 @@
 	<button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only">Toggle hamburger menu</span>
 	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></div>
 	<button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only">Toggle hamburger menu</span>
-	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button>
-</header>
-		<main id="main" tabindex="-1" class="/learning/atomically-pull-updates-from-upstream-template-repo">
+	<svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header>
+	<main id="main" tabindex="-1" class="/learning/atomically-pull-updates-from-upstream-template-repo">
 
 <article class="post svelte-1is1pnb">
 	<h1 class="svelte-1is1pnb">Atomically pull updates from an upstream template repo</h1>
@@ -112,7 +111,7 @@ Good luck!</p>
 			
 			<script>
 				{
-					__sveltekit_gyryor = {
+					__sveltekit_1cwu5p8 = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -122,8 +121,8 @@ Good luck!</p>
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.154a5e70.js"),
-						import("../_app/immutable/entry/app.63e552a0.js")
+						import("../_app/immutable/entry/start.d8dce5dc.js"),
+						import("../_app/immutable/entry/app.da01882d.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
