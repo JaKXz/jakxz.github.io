@@ -13,8 +13,8 @@ dependencies:
 
 devDependencies:
   '@iconify-json/tabler':
-    specifier: 1.1.76
-    version: 1.1.76
+    specifier: 1.1.77
+    version: 1.1.77
   '@sveltejs/adapter-static':
     specifier: 2.0.2
     version: 2.0.2(@sveltejs/kit@1.18.0)
@@ -362,8 +362,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/tabler@1.1.76:
-    resolution: {integrity: sha512-p/NRbxR3xjxHaiyVg0SAtUIZjvhGy9UJHBU+blpcLUTlz4T8yM3gNLTnmQJrQ6bcbRHxHNG0ncjixTH/MVdrqg==}
+  /@iconify-json/tabler@1.1.77:
+    resolution: {integrity: sha512-FC/X5ScOvx07bVqTj2pqMbQhdSv63ZWYk2wbYHzPrxOKjQPZCt9cqSc2wh+rex0GR3HsI/T10FNG/cHPhNZy5A==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
