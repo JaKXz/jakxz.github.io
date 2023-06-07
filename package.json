@@ -29,7 +29,7 @@
 		"rehype-autolink-headings": "6.1.1",
 		"rehype-external-links": "2.1.0",
 		"rehype-slug": "5.1.0",
-		"sass": "1.62.1",
+		"sass": "1.63.0",
 		"svelte": "3.59.1",
 		"unocss": "0.53.1",
 		"vite": "4.3.9",
