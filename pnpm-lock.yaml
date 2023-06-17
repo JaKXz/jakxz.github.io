@@ -27,7 +27,7 @@ devDependencies:
     version: 1.20.4(svelte@3.59.1)(vite@4.3.9)
   '@unocss/eslint-config':
     specifier: 0.53.1
-    version: 0.53.1(eslint@8.42.0)(typescript@5.0.4)
+    version: 0.53.1(eslint@8.43.0)(typescript@5.0.4)
   '@unocss/extractor-svelte':
     specifier: 0.53.1
     version: 0.53.1
@@ -35,14 +35,14 @@ devDependencies:
     specifier: 0.53.1
     version: 0.53.1
   eslint:
-    specifier: 8.42.0
-    version: 8.42.0
+    specifier: 8.43.0
+    version: 8.43.0
   eslint-config-prettier:
     specifier: 8.8.0
-    version: 8.8.0(eslint@8.42.0)
+    version: 8.8.0(eslint@8.43.0)
   eslint-plugin-svelte:
     specifier: 2.30.0
-    version: 2.30.0(eslint@8.42.0)(svelte@3.59.1)
+    version: 2.30.0(eslint@8.43.0)(svelte@3.59.1)
   gh-pages:
     specifier: 5.0.0
     version: 5.0.0
@@ -305,13 +305,13 @@ packages:
     dev: true
     optional: true
 
-  /@eslint-community/eslint-utils@4.4.0(eslint@8.42.0):
+  /@eslint-community/eslint-utils@4.4.0(eslint@8.43.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
     dependencies:
-      eslint: 8.42.0
+      eslint: 8.43.0
       eslint-visitor-keys: 3.4.1
     dev: true
 
@@ -337,8 +337,8 @@ packages:
       - supports-color
     dev: true
 
-  /@eslint/js@8.42.0:
-    resolution: {integrity: sha512-6SWlXpWU5AvId8Ac7zjzmIOqMOba/JWY8XZ4A7q7Gn1Vlfg/SFFIlrtHXt9nPn4op9ZPAkl91Jao+QQv3r/ukw==}
+  /@eslint/js@8.43.0:
+    resolution: {integrity: sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
@@ -622,19 +622,19 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/utils@5.59.8(eslint@8.42.0)(typescript@5.0.4):
+  /@typescript-eslint/utils@5.59.8(eslint@8.43.0)(typescript@5.0.4):
     resolution: {integrity: sha512-Tr65630KysnNn9f9G7ROF3w1b5/7f6QVCJ+WK9nhIocWmx9F+TmCAcglF26Vm7z8KCTwoKcNEBZrhlklla3CKg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.42.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.43.0)
       '@types/json-schema': 7.0.11
       '@types/semver': 7.3.13
       '@typescript-eslint/scope-manager': 5.59.8
       '@typescript-eslint/types': 5.59.8
       '@typescript-eslint/typescript-estree': 5.59.8(typescript@5.0.4)
-      eslint: 8.42.0
+      eslint: 8.43.0
       eslint-scope: 5.1.1
       semver: 7.3.8
     transitivePeerDependencies:
@@ -695,22 +695,22 @@ packages:
     resolution: {integrity: sha512-6CUaOMeQyoPIgMuSboX9yGywiCumhoYTPk6uMFhgD3vZmIRCZMwN9RFDLB+s2+NOlnBU6aQsJLONcUapZb/49g==}
     dev: true
 
-  /@unocss/eslint-config@0.53.1(eslint@8.42.0)(typescript@5.0.4):
+  /@unocss/eslint-config@0.53.1(eslint@8.43.0)(typescript@5.0.4):
     resolution: {integrity: sha512-n1yV1Ma92GQjvnZefOE+Renm/esnEkmbk5n7fKoSifejF9fv2h+hth0aTkTGbhZfODtpK9NLayuBD72qNlFtPQ==}
     engines: {node: '>=14'}
     dependencies:
-      '@unocss/eslint-plugin': 0.53.1(eslint@8.42.0)(typescript@5.0.4)
+      '@unocss/eslint-plugin': 0.53.1(eslint@8.43.0)(typescript@5.0.4)
     transitivePeerDependencies:
       - eslint
       - supports-color
       - typescript
     dev: true
 
-  /@unocss/eslint-plugin@0.53.1(eslint@8.42.0)(typescript@5.0.4):
+  /@unocss/eslint-plugin@0.53.1(eslint@8.43.0)(typescript@5.0.4):
     resolution: {integrity: sha512-GGFkKLjJ1zcXyWN1ZrxAG7MeyhIk80E6VZ9N2usBNFYc+5S52mGOHKyyyxc3t7Wi32C29I1LtiWLcTeaPR1nUg==}
     engines: {node: '>=14'}
     dependencies:
-      '@typescript-eslint/utils': 5.59.8(eslint@8.42.0)(typescript@5.0.4)
+      '@typescript-eslint/utils': 5.59.8(eslint@8.43.0)(typescript@5.0.4)
       '@unocss/config': 0.53.1
       '@unocss/core': 0.53.1
       magic-string: 0.30.0
@@ -1299,16 +1299,16 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier@8.8.0(eslint@8.42.0):
+  /eslint-config-prettier@8.8.0(eslint@8.43.0):
     resolution: {integrity: sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 8.42.0
+      eslint: 8.43.0
     dev: true
 
-  /eslint-plugin-svelte@2.30.0(eslint@8.42.0)(svelte@3.59.1):
+  /eslint-plugin-svelte@2.30.0(eslint@8.43.0)(svelte@3.59.1):
     resolution: {integrity: sha512-2/qj0BJsfM0U2j4EjGb7iC/0nbUvXx1Gn78CdtyuXpi/rSomLPCPwnsZsloXMzlt6Xwe8LBlpRvZObSKEHLP5A==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1318,10 +1318,10 @@ packages:
       svelte:
         optional: true
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.42.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.43.0)
       '@jridgewell/sourcemap-codec': 1.4.15
       debug: 4.3.4
-      eslint: 8.42.0
+      eslint: 8.43.0
       esutils: 2.0.3
       known-css-properties: 0.27.0
       postcss: 8.4.23
@@ -1355,15 +1355,15 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint@8.42.0:
-    resolution: {integrity: sha512-ulg9Ms6E1WPf67PHaEY4/6E2tEn5/f7FXGzr3t9cBMugOmf1INYvuUwwh1aXQN4MfJ6a5K2iNwP3w4AColvI9A==}
+  /eslint@8.43.0:
+    resolution: {integrity: sha512-aaCpf2JqqKesMFGgmRPessmVKjcGXqdlAYLLC3THM8t5nBRZRQ+st5WM/hoJXkdioEXLLbXgclUpM0TXo5HX5Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.42.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.43.0)
       '@eslint-community/regexpp': 4.5.0
       '@eslint/eslintrc': 2.0.3
-      '@eslint/js': 8.42.0
+      '@eslint/js': 8.43.0
       '@humanwhocodes/config-array': 0.11.10
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
