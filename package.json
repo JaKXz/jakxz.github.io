@@ -32,7 +32,7 @@
 		"sass": "1.63.6",
 		"svelte": "4.0.5",
 		"unocss": "0.53.4",
-		"vite": "4.4.1",
+		"vite": "4.4.2",
 		"vitest": "0.33.0"
 	},
 	"type": "module",
