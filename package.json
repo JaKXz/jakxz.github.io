@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@iconify-json/tabler": "1.1.81",
 		"@sveltejs/adapter-static": "2.0.2",
-		"@sveltejs/kit": "1.22.2",
+		"@sveltejs/kit": "1.22.3",
 		"@unocss/eslint-config": "0.53.5",
 		"@unocss/extractor-svelte": "0.53.5",
 		"@unocss/transformer-directives": "0.53.5",
