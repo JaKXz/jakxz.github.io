@@ -13,7 +13,7 @@ dependencies:
     version: 4.2.0
   svelte-preprocess:
     specifier: 5.0.4
-    version: 5.0.4(postcss@8.4.24)(sass@1.63.6)(svelte@4.0.5)(typescript@5.0.4)
+    version: 5.0.4(postcss@8.4.25)(sass@1.63.6)(svelte@4.0.5)(typescript@5.0.4)
 
 devDependencies:
   '@iconify-json/tabler':
@@ -21,10 +21,10 @@ devDependencies:
     version: 1.1.81
   '@sveltejs/adapter-static':
     specifier: 2.0.2
-    version: 2.0.2(@sveltejs/kit@1.22.2)
+    version: 2.0.2(@sveltejs/kit@1.22.3)
   '@sveltejs/kit':
-    specifier: 1.22.2
-    version: 1.22.2(svelte@4.0.5)(vite@4.4.3)
+    specifier: 1.22.3
+    version: 1.22.3(svelte@4.0.5)(vite@4.4.3)
   '@unocss/eslint-config':
     specifier: 0.53.5
     version: 0.53.5(eslint@8.44.0)(typescript@5.0.4)
@@ -78,7 +78,7 @@ devDependencies:
     version: 4.0.5
   unocss:
     specifier: 0.53.5
-    version: 0.53.5(postcss@8.4.24)(vite@4.4.3)
+    version: 0.53.5(postcss@8.4.25)(vite@4.4.3)
   vite:
     specifier: 4.4.3
     version: 4.4.3(@types/node@18.15.11)(sass@1.63.6)
@@ -479,16 +479,16 @@ packages:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
     dev: true
 
-  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.22.2):
+  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.22.3):
     resolution: {integrity: sha512-9wYtf6s6ew7DHUHMrt55YpD1FgV7oWql2IGsW5BXquLxqcY9vjrqCFo0TzzDpo+ZPZkW/v77k0eOP6tsAb8HmQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.22.2(svelte@4.0.5)(vite@4.4.3)
+      '@sveltejs/kit': 1.22.3(svelte@4.0.5)(vite@4.4.3)
     dev: true
 
-  /@sveltejs/kit@1.22.2(svelte@4.0.5)(vite@4.4.3):
-    resolution: {integrity: sha512-T6GY5jSfQgoDnNPNqAuDi9IK+ZW0TspzTV16UAN6GTsxbri67DGVIbw7QOXPg8FMrZQMmda1AtAxPMfXbOqCgw==}
+  /@sveltejs/kit@1.22.3(svelte@4.0.5)(vite@4.4.3):
+    resolution: {integrity: sha512-IpHD5wvuoOIHYaHQUBJ1zERD2Iz+fB/rBXhXjl8InKw6X4VKE9BSus+ttHhE7Ke+Ie9ecfilzX8BnWE3FeQyng==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -747,7 +747,7 @@ packages:
       sirv: 2.0.3
     dev: true
 
-  /@unocss/postcss@0.53.5(postcss@8.4.24):
+  /@unocss/postcss@0.53.5(postcss@8.4.25):
     resolution: {integrity: sha512-IfZl4GxrpegP/861bp3e0X3VcQJ9/M3VxC9UQ7zzxkOz/E8R09iMpbnznVLrTiLp2r96p5k/ggXLoadFm1FxGA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -758,7 +758,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.0
       magic-string: 0.30.1
-      postcss: 8.4.24
+      postcss: 8.4.25
     dev: true
 
   /@unocss/preset-attributify@0.53.5:
@@ -2351,6 +2351,7 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
 
   /postcss@8.4.25:
     resolution: {integrity: sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==}
@@ -2359,7 +2360,6 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -2693,7 +2693,7 @@ packages:
       svelte: 4.0.5
     dev: true
 
-  /svelte-preprocess@5.0.4(postcss@8.4.24)(sass@1.63.6)(svelte@4.0.5)(typescript@5.0.4):
+  /svelte-preprocess@5.0.4(postcss@8.4.25)(sass@1.63.6)(svelte@4.0.5)(typescript@5.0.4):
     resolution: {integrity: sha512-ABia2QegosxOGsVlsSBJvoWeXy1wUKSfF7SWJdTjLAbx/Y3SrVevvvbFNQqrSJw89+lNSsM58SipmZJ5SRi5iw==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -2734,7 +2734,7 @@ packages:
       '@types/pug': 2.0.6
       detect-indent: 6.1.0
       magic-string: 0.27.0
-      postcss: 8.4.24
+      postcss: 8.4.25
       sass: 1.63.6
       sorcery: 0.11.0
       strip-indent: 3.0.0
@@ -2922,7 +2922,7 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: true
 
-  /unocss@0.53.5(postcss@8.4.24)(vite@4.4.3):
+  /unocss@0.53.5(postcss@8.4.25)(vite@4.4.3):
     resolution: {integrity: sha512-LXAdtzAaH8iEDWxW4t9i6TvJNw0OSrgdN+jw8rAZAWb73Nx51ZLoKPUB1rFvQMr2Li7LcsUj5hYpOrQbhhafYg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2935,7 +2935,7 @@ packages:
       '@unocss/cli': 0.53.5
       '@unocss/core': 0.53.5
       '@unocss/extractor-arbitrary-variants': 0.53.5
-      '@unocss/postcss': 0.53.5(postcss@8.4.24)
+      '@unocss/postcss': 0.53.5(postcss@8.4.25)
       '@unocss/preset-attributify': 0.53.5
       '@unocss/preset-icons': 0.53.5
       '@unocss/preset-mini': 0.53.5
