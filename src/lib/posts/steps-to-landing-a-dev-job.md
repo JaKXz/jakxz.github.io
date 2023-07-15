@@ -41,9 +41,9 @@ This will demonstrate your understanding of the problem you're solving, ability 
 Get involved in open source by being positive, supporting others, and contributing useful code or _documentation_ (another underrated avenue for growth) to projects that you use.
 
 Finally, make sure you have a solid understanding of computer science fundamentals.
-In [good] interviews you'll be asked mid to high difficulty level questions;
-while there might be pressure to finish, **they're really testing your ability to communicate: model/picture a problem, think about it critically, break it down into steps**, and _then [lastly, perhaps least importantly] turn that into a coded solution_.
-To practice your coding skills, find a platform like CodeSignal or exercises [adventofcode](https://adventofcode.com/), which offer a range of exercises and tutorials on data structures and algorithms.
+In good interviews you'll be asked mid to high difficulty level questions;
+while there might be pressure to finish, **they're really testing your ability to communicate: to model/picture a problem, think about it critically, break it down into steps**, and _then [lastly, perhaps least importantly] turn that into a coded solution_.
+To practice your coding skills, try [harder] exercises on [adventofcode](https://adventofcode.com/) or use a platform like CodeSignal, with its wide range of tutorials on data structures and algorithms.
 There is no substitute for practice, and you cannot rush time spent working on the craft.
 
 ### Resources
