@@ -29,7 +29,7 @@
 		</ul>
 	</nav>
 
-	<div>
+	<div class="flex flex-col gap-1">
 		{#if path !== '/learning' && !path.startsWith('/learning/category/')}
 			<p>
 				See a typo?
@@ -45,21 +45,21 @@
 				Thank you!
 			</p>
 		{/if}
-		<p class="mt-1 inline-block">
-			&copy;{new Date().getFullYear()} Jason Kurian &mdash;
+		<p>
+			&copy;{new Date().getFullYear()} Jason Kurian
+		</p>
+		<p class="justify-between flex w-1/3">
 			<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"
-				><div class="i-tabler-brand-github vertical-middle text-xl" />
+				><i class="i-radix-icons-github-logo text-xl" />
 			</a>
-			&mdash;
 			<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"
-				><div class="i-tabler-brand-twitter vertical-middle text-xl" />
+				><i class="i-radix-icons-twitter-logo text-xl" />
 			</a>
-			&mdash;
 			<a
 				target="_blank"
 				rel="nofollow noopener noreferrer"
 				href="https://www.linkedin.com/in/jgkurian/"
-				><div class="i-tabler-brand-linkedin vertical-middle text-xl" />
+				><i class="i-radix-icons-linkedin-logo text-xl" />
 			</a>
 		</p>
 	</div>
