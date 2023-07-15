@@ -23,8 +23,8 @@
 
 	<p>👋🏽 thanks for stopping by! My friends call me Jay, or JK.</p>
 	<p>
-		I'm a combination <a href="/resume">UX and Web Developer</a>, and sometimes touring or session
-		keys player & music director.
+		I am a Staff Developer refactoring healthcare at <a href="https://flexpa.com">Flexpa</a>, and
+		touring/session keys player & music director.
 	</p>
 	Contact me on&nbsp;<a
 		target="_blank"
@@ -53,11 +53,11 @@
 				class="card transform border-rounded-2 transition duration-500 focus-within:scale-110 hover:scale-110"
 			>
 				<a href="/learning/{post.slug}" class="link-decoration-none">
-					<div class="subdued">
+					<p class="subdued m-0">
 						🔃
 						{formatDate(post.updated)}
-					</div>
-					<div class="my-1"><strong>{post.title}</strong></div>
+					</p>
+					<p class="my-1"><strong>{post.title}</strong></p>
 				</a>
 				<div class="mx-auto my-4 flex gap-4">
 					{#each post.categories as category (category)}
