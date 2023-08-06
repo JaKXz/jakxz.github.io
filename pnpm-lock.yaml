@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@iconify-json/radix-icons':
-    specifier: 1.1.10
-    version: 1.1.10
+    specifier: 1.1.11
+    version: 1.1.11
   '@sveltejs/adapter-static':
     specifier: 2.0.3
     version: 2.0.3(@sveltejs/kit@1.22.4)
@@ -370,8 +370,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/radix-icons@1.1.10:
-    resolution: {integrity: sha512-7ivY9XvUe1CWsuR1qy/icK6tfl1+Xq3sh2AqQuGHNx49VCJyXQq+RRr6bqf3u36mPPzV+C8oRlfifNt8iWK2Ew==}
+  /@iconify-json/radix-icons@1.1.11:
+    resolution: {integrity: sha512-0FkllP6ghJakWHC0oQb+Jwg4W52mCDkV3JvVrXoyCPjG4kxX4wNhl8Ilk1dfT1EM+YvEXxrR2Mv63ySzVeYr9w==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

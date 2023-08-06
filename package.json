@@ -11,7 +11,7 @@
 		"test": "vitest"
 	},
 	"devDependencies": {
-		"@iconify-json/radix-icons": "1.1.10",
+		"@iconify-json/radix-icons": "1.1.11",
 		"@sveltejs/adapter-static": "2.0.3",
 		"@sveltejs/kit": "1.22.4",
 		"@unocss/eslint-config": "0.54.1",
