@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@iconify-json/radix-icons": "1.1.11",
 		"@sveltejs/adapter-static": "2.0.3",
-		"@sveltejs/kit": "1.24.1",
+		"@sveltejs/kit": "1.25.0",
 		"@unocss/eslint-config": "0.55.7",
 		"@unocss/extractor-svelte": "0.55.7",
 		"@unocss/transformer-directives": "0.55.7",
