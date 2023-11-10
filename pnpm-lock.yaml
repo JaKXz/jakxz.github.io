@@ -12,8 +12,8 @@ dependencies:
     specifier: 4.2.0
     version: 4.2.0
   svelte-preprocess:
-    specifier: 5.0.4
-    version: 5.0.4(postcss@8.4.28)(sass@1.69.5)(svelte@4.2.2)(typescript@5.0.4)
+    specifier: 5.1.0
+    version: 5.1.0(postcss@8.4.28)(sass@1.69.5)(svelte@4.2.2)(typescript@5.0.4)
 
 devDependencies:
   '@iconify-json/radix-icons':
@@ -2693,8 +2693,8 @@ packages:
       svelte: 4.2.2
     dev: true
 
-  /svelte-preprocess@5.0.4(postcss@8.4.28)(sass@1.69.5)(svelte@4.2.2)(typescript@5.0.4):
-    resolution: {integrity: sha512-ABia2QegosxOGsVlsSBJvoWeXy1wUKSfF7SWJdTjLAbx/Y3SrVevvvbFNQqrSJw89+lNSsM58SipmZJ5SRi5iw==}
+  /svelte-preprocess@5.1.0(postcss@8.4.28)(sass@1.69.5)(svelte@4.2.2)(typescript@5.0.4):
+    resolution: {integrity: sha512-EkErPiDzHAc0k2MF5m6vBNmRUh338h2myhinUw/xaqsLs7/ZvsgREiLGj03VrSzbY/TB5ZXgBOsKraFee5yceA==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
     peerDependencies:
@@ -2707,7 +2707,7 @@ packages:
       sass: ^1.26.8
       stylus: ^0.55.0
       sugarss: ^2.0.0 || ^3.0.0 || ^4.0.0
-      svelte: ^3.23.0 || ^4.0.0-next.0 || ^4.0.0
+      svelte: ^3.23.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
       typescript: '>=3.9.5 || ^4.0.0 || ^5.0.0'
     peerDependenciesMeta:
       '@babel/core':
