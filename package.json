@@ -30,7 +30,7 @@
 		"rehype-external-links": "2.1.0",
 		"rehype-slug": "5.1.0",
 		"sass": "1.69.5",
-		"svelte": "4.2.3",
+		"svelte": "4.2.4",
 		"unocss": "0.57.4",
 		"vite": "4.5.0",
 		"vitest": "0.34.6"
