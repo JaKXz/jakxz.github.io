@@ -12,8 +12,8 @@ dependencies:
     specifier: 4.2.0
     version: 4.2.0
   svelte-preprocess:
-    specifier: 5.1.1
-    version: 5.1.1(@babel/core@7.23.5)(postcss@8.4.32)(sass@1.69.5)(svelte@4.2.8)(typescript@5.0.4)
+    specifier: 5.1.2
+    version: 5.1.2(@babel/core@7.23.5)(postcss@8.4.32)(sass@1.69.5)(svelte@4.2.8)(typescript@5.0.4)
 
 devDependencies:
   '@iconify-json/radix-icons':
@@ -21,10 +21,10 @@ devDependencies:
     version: 1.1.14
   '@sveltejs/adapter-static':
     specifier: 2.0.3
-    version: 2.0.3(@sveltejs/kit@1.29.0)
+    version: 2.0.3(@sveltejs/kit@1.29.1)
   '@sveltejs/kit':
-    specifier: 1.29.0
-    version: 1.29.0(svelte@4.2.8)(vite@4.5.1)
+    specifier: 1.29.1
+    version: 1.29.1(svelte@4.2.8)(vite@4.5.1)
   '@unocss/eslint-config':
     specifier: 0.58.0
     version: 0.58.0(eslint@8.55.0)(typescript@5.0.4)
@@ -1070,16 +1070,16 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@sveltejs/adapter-static@2.0.3(@sveltejs/kit@1.29.0):
+  /@sveltejs/adapter-static@2.0.3(@sveltejs/kit@1.29.1):
     resolution: {integrity: sha512-VUqTfXsxYGugCpMqQv1U0LIdbR3S5nBkMMDmpjGVJyM6Q2jHVMFtdWJCkeHMySc6mZxJ+0eZK3T7IgmUCDrcUQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.29.0(svelte@4.2.8)(vite@4.5.1)
+      '@sveltejs/kit': 1.29.1(svelte@4.2.8)(vite@4.5.1)
     dev: true
 
-  /@sveltejs/kit@1.29.0(svelte@4.2.8)(vite@4.5.1):
-    resolution: {integrity: sha512-O+DvB67Ouha0pVKh0nRxr8QwZcls8h4knLoS6Sk1DhRLAuQzuM0FNnPNIhMHL1iP1LFeXd3P+bk+h2V07WSF5w==}
+  /@sveltejs/kit@1.29.1(svelte@4.2.8)(vite@4.5.1):
+    resolution: {integrity: sha512-zbHS6hy2OZLWTmkTktx7jpPaE5Qg9tk3li+wh06ISSLEYeiPrLlPMuhzmI2gM5d6ParNfDx7YCiPTeRr23IpMw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -3527,8 +3527,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /svelte-preprocess@5.1.1(@babel/core@7.23.5)(postcss@8.4.32)(sass@1.69.5)(svelte@4.2.8)(typescript@5.0.4):
-    resolution: {integrity: sha512-p/Dp4hmrBW5mrCCq29lEMFpIJT2FZsRlouxEc5qpbOmXRbaFs7clLs8oKPwD3xCFyZfv1bIhvOzpQkhMEVQdMw==}
+  /svelte-preprocess@5.1.2(@babel/core@7.23.5)(postcss@8.4.32)(sass@1.69.5)(svelte@4.2.8)(typescript@5.0.4):
+    resolution: {integrity: sha512-XF0aliMAcYnP4hLETvB6HRAMnaL09ASYT1Z2I1Gwu0nz6xbdg/dSgAEthtFZJA4AKrNhFDFdmUDO+H9d/6xg5g==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
     peerDependencies:
@@ -3536,7 +3536,7 @@ packages:
       coffeescript: ^2.5.1
       less: ^3.11.3 || ^4.0.0
       postcss: ^7 || ^8
-      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
+      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
       pug: ^3.0.0
       sass: ^1.26.8
       stylus: ^0.55.0
