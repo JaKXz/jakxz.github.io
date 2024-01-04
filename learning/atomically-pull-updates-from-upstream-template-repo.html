@@ -6,21 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		
-		<link href="../_app/immutable/assets/0.c30164ab.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.fd8bff34.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.3ec009a7.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Callout.674e82b1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.8ab8070b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.ab7f467a.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.35f0b4e5.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.10e00991.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/control.f5b05b5f.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.1ed63794.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.e946b852.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.c2cf8273.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.16912e3b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.987f3b64.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.bf7f25c4.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.4d58f1c6.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/each.ab4cb26a.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/config.1a866872.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.1734ada5.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.93323930.js"><title>Atomically pull updates from an upstream template repo | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/atomically-pull-updates-from-upstream-template-repo"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Atomically pull updates from an upstream template repo"><meta property="og:description"><meta name="twitter:title" content="Atomically pull updates from an upstream template repo"><meta name="twitter:description"><meta name="twitter:card" content="summary"><!-- HEAD_svelte-1iee9m6_END -->
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.8e28fdb8.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.8f2ca6db.js"><title>Atomically pull updates from an upstream template repo | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/atomically-pull-updates-from-upstream-template-repo"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Atomically pull updates from an upstream template repo"><meta property="og:description"><meta name="twitter:title" content="Atomically pull updates from an upstream template repo"><meta name="twitter:description"><meta name="twitter:card" content="summary"><!-- HEAD_svelte-1iee9m6_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,11 +40,11 @@ As we were working on the updates to the app template in a separate branch from 
 Hopefully this is still useful to you to pull down upstream changes and to try to incorporate them in your local environment.
 Good luck!</p> <hr> <p data-svelte-h="svelte-1hd6io">Originally shared here: <a href="https://github.com/Shopify/shopify-app-template-node/issues/725#issuecomment-1062308480" rel="nofollow">https://github.com/Shopify/shopify-app-template-node/issues/725#issuecomment-1062308480</a></p> <script src="https://utteranc.es/client.js" repo="jakxz/jakxz.github.io" issue-term="og:title" theme="preferred-color-scheme" crossorigin="anonymous" async></script> <aside class="post-footer svelte-1is1pnb"><h2 data-svelte-h="svelte-18w0g4i">Posted in:</h2> <ul class="svelte-1is1pnb"><li class="svelte-1is1pnb"><a href="/learning/category/github/" class="svelte-1is1pnb">github</a> </li><li class="svelte-1is1pnb"><a href="/learning/category/git/" class="svelte-1is1pnb">git</a> </li><li class="svelte-1is1pnb"><a href="/learning/category/dev/" class="svelte-1is1pnb">dev</a> </li></ul></aside> </article></main> <footer> <nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning </a></li><li><a href="/resume" aria-current="false">Resumé </a></li></ul> <button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav> <nav data-svelte-h="svelte-1yy5td4"><ul><li><a href="/api/rss.xml" rel="external">RSS</a></li> <li><a href="/">Home</a></li></ul></nav> <div class="flex flex-col gap-1"><p>See a typo?
 				<em><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz/jakxz.github.io/edit/develop/src/lib/posts/atomically-pull-updates-from-upstream-template-repo.md">Please open a PR here.</a></em>
-				Thank you!</p> <p>©2023 Jason Kurian</p> <p class="justify-between flex w-1/3" data-svelte-h="svelte-9q520a"><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"><i class="i-radix-icons-github-logo text-xl"></i></a> <a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"><i class="i-radix-icons-twitter-logo text-xl"></i></a> <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/"><i class="i-radix-icons-linkedin-logo text-xl"></i></a></p></div></footer></div> 
+				Thank you!</p> <p>©2024 Jason Kurian</p> <p class="justify-between flex w-1/3" data-svelte-h="svelte-9q520a"><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"><i class="i-radix-icons-github-logo text-xl"></i></a> <a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"><i class="i-radix-icons-twitter-logo text-xl"></i></a> <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/"><i class="i-radix-icons-linkedin-logo text-xl"></i></a></p></div></footer></div> 
 			
 			<script>
 				{
-					__sveltekit_38z1dd = {
+					__sveltekit_1lpz3kq = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -54,8 +54,8 @@ Good luck!</p> <hr> <p data-svelte-h="svelte-1hd6io">Originally shared here: <a 
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.8ab8070b.js"),
-						import("../_app/immutable/entry/app.1ed63794.js")
+						import("../_app/immutable/entry/start.ab7f467a.js"),
+						import("../_app/immutable/entry/app.16912e3b.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
