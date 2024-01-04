@@ -22,10 +22,6 @@
 	</div>
 
 	<p>👋🏽 thanks for stopping by! My friends call me Jay, or JK.</p>
-	<p>
-		I am a Staff Developer refactoring healthcare at <a href="https://flexpa.com">Flexpa</a>, and
-		touring/session keys player & music director.
-	</p>
 	Contact me on&nbsp;<a
 		target="_blank"
 		rel="nofollow noopener noreferrer"

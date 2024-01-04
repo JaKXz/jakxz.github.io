@@ -18,16 +18,17 @@ article {
 	display: grid;
 	row-gap: 4.5rem;
 	@media print {
-		line-height: 1.5;
+		row-gap: 0;
 		column-gap: 2rem;
-		row-gap: 1rem;
+		grid-auto-rows: minmax(400px, auto);
+		grid-template-columns: 33% 1fr;
 		grid-template-areas:
-			'print-title print-title'
-			'oss technical'
-			'experience experience'
-			'education education';
-
+			'oss experience'
+			'technical experience'
+			'education experience'
+			'education experience';
 		.technical {
+			margin: 1rem 0;
 			grid-area: technical;
 		}
 		.experience {
@@ -50,15 +51,17 @@ article {
 		margin-bottom: 2rem;
 	}
 
-	h2 {
-		font-size: 1.8rem;
-	}
-
 	.captions {
-		display: none;
+		font-size: 0.5rem;
 	}
 
-	ol {
+	img {
+		width: 50px;
+	}
+
+	ol,
+	ul:not(ul ul) {
+		padding-inline-start: 27px;
 		list-style-type: square;
 
 		::marker {
