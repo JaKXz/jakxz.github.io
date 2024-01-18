@@ -24,6 +24,22 @@ main {
 	grid-template-rows: auto 1fr auto;
 }
 
+.layout.\/coaching {
+	header {
+		align-items: unset;
+		grid-area: header;
+	}
+	main {
+		grid-area: main;
+	}
+	footer {
+		grid-area: footer;
+	}
+
+	grid-template-areas: 'header main' 'footer footer';
+	grid-template-columns: 1fr 4fr;
+}
+
 img {
 	width: 100%;
 	max-width: 100%;

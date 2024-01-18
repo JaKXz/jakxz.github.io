@@ -43,12 +43,12 @@
 	The below markup is used on every page in the site. The <slot> is where the page's
 	actual contents will show up.
 -->
-<div class="layout" class:open={$isMenuOpen}>
+<div class="layout {data.path}" class:open={$isMenuOpen}>
 	{#if data.path !== '/'}
 		<Header />
 	{/if}
 	{#key data.path}
-		<main id="main" tabindex="-1" class={data.path} in:fade={transitionIn} out:fade={transitionOut}>
+		<main id="main" tabindex="-1" in:fade={transitionIn} out:fade={transitionOut}>
 			<slot />
 		</main>
 	{/key}
