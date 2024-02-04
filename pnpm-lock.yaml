@@ -56,14 +56,14 @@ devDependencies:
     specifier: 0.11.0
     version: 0.11.0(svelte@4.2.9)
   prettier:
-    specifier: 3.2.4
-    version: 3.2.4
+    specifier: 3.2.5
+    version: 3.2.5
   prettier-plugin-svelte:
     specifier: 3.1.2
-    version: 3.1.2(prettier@3.2.4)(svelte@4.2.9)
+    version: 3.1.2(prettier@3.2.5)(svelte@4.2.9)
   pretty-quick:
     specifier: mgabeler-lee-6rs/pretty-quick#prettier-3
-    version: github.com/mgabeler-lee-6rs/pretty-quick/7bc55e6011c06e7379d492b6092dac246fba4eba(prettier@3.2.4)
+    version: github.com/mgabeler-lee-6rs/pretty-quick/7bc55e6011c06e7379d492b6092dac246fba4eba(prettier@3.2.5)
   rehype-autolink-headings:
     specifier: 7.1.0
     version: 7.1.0
@@ -2856,18 +2856,18 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte@3.1.2(prettier@3.2.4)(svelte@4.2.9):
+  /prettier-plugin-svelte@3.1.2(prettier@3.2.5)(svelte@4.2.9):
     resolution: {integrity: sha512-7xfMZtwgAWHMT0iZc8jN4o65zgbAQ3+O32V6W7pXrqNvKnHnkoyQCGCbKeUyXKZLbYE0YhFRnamfxfkEGxm8qA==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
     dependencies:
-      prettier: 3.2.4
+      prettier: 3.2.5
       svelte: 4.2.9
     dev: true
 
-  /prettier@3.2.4:
-    resolution: {integrity: sha512-FWu1oLHKCrtpO1ypU6J0SbK2d9Ckwysq6bHj/uaCP26DxrPpppCLQRGVuqAxSTvhF00AcvDRyYrLNW7ocBhFFQ==}
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -3659,7 +3659,7 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  github.com/mgabeler-lee-6rs/pretty-quick/7bc55e6011c06e7379d492b6092dac246fba4eba(prettier@3.2.4):
+  github.com/mgabeler-lee-6rs/pretty-quick/7bc55e6011c06e7379d492b6092dac246fba4eba(prettier@3.2.5):
     resolution: {tarball: https://codeload.github.com/mgabeler-lee-6rs/pretty-quick/tar.gz/7bc55e6011c06e7379d492b6092dac246fba4eba}
     id: github.com/mgabeler-lee-6rs/pretty-quick/7bc55e6011c06e7379d492b6092dac246fba4eba
     name: pretty-quick
@@ -3675,5 +3675,5 @@ packages:
       ignore: 5.2.4
       mri: 1.2.0
       multimatch: 4.0.0
-      prettier: 3.2.4
+      prettier: 3.2.5
     dev: true
