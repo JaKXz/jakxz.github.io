@@ -20,7 +20,7 @@
 		"@unocss/transformer-directives": "0.58.9",
 		"eslint": "8.57.0",
 		"eslint-config-prettier": "9.1.0",
-		"eslint-plugin-svelte": "2.35.1",
+		"eslint-plugin-svelte": "2.36.0",
 		"gh-pages": "6.1.1",
 		"husky": "8.0.3",
 		"mdsvex": "0.11.0",
