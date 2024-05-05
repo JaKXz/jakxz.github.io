@@ -50,7 +50,7 @@ May **2023** - Jan **2024**
 - Shipping new extract-transform-load pipeline for patient data serving over 2000 requests/minute with 99.9% success (Redis, Node). This new architecture allows us to provide expectable and reliable connections to over 200 APIs covering 135MM+ lives.
 - Leading a small agile team through scoping, shaping, and shipping projects from the ground up for our customer facing applications in the monorepo (UX, a11y, Next.js, Turborepo).
 - Providing high quality coaching and mentoring in code reviews, pairing, and 1:1s to help the team grow and improve.
-- Defining great defaults for practices like retrospectives, pairing, and internal documentation to improve the team's effectiveness; e.g. running our quarterly retreat where we dig deep into OKRs, Product roadmap & understanding, and constructive personal and team feedback.
+- Defining great defaults for practices like retrospectives, [pairing](/learning/pairing), and internal documentation to improve the team's effectiveness; e.g. running our quarterly retreat where we dig deep into OKRs, Product roadmap & understanding, and constructive personal and team feedback.
 
 [Shopify](https://shopify.dev) | _Senior Web Developer_<br>
 Nov **2020** - Mar **2023**
