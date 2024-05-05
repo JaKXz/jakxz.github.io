@@ -1,3 +1,4 @@
 {
-	"nodejs.editor.formatOnSave.prettier.mode": "Enabled"
+	"nodejs.editor.formatOnSave.prettier.mode": "Enabled",
+	"files.exclude": ["build/**/*", ".svelte-kit/**/*"]
 }

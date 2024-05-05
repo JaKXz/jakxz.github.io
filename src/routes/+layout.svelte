@@ -4,7 +4,7 @@
 	import '$lib/assets/scss/global.scss';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
+	import { currentPage } from '$lib/assets/js/store';
 	import { navItems, siteLink, siteAuthorTwitter } from '$lib/config';
 	import { preloadData } from '$app/navigation';
 	import { onMount } from 'svelte';
@@ -43,14 +43,12 @@
 	The below markup is used on every page in the site. The <slot> is where the page's
 	actual contents will show up.
 -->
-<div class="layout" class:open={$isMenuOpen}>
-	{#if data.path !== '/'}
-		<Header />
-	{/if}
-	{#key data.path}
-		<main id="main" tabindex="-1" class={data.path} in:fade={transitionIn} out:fade={transitionOut}>
-			<slot />
-		</main>
-	{/key}
-	<Footer path={data.path} />
-</div>
+{#if data.path !== '/'}
+	<Header />
+{/if}
+{#key data.path}
+	<main id="main" tabindex="-1" class={data.path} in:fade={transitionIn} out:fade={transitionOut}>
+		<slot />
+	</main>
+{/key}
+<Footer path={data.path} />

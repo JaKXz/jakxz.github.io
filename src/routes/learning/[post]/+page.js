@@ -32,7 +32,7 @@ export async function load({ params, fetch }) {
 							...user,
 							author: user.name,
 							authorUrl: user.links.html
-					  }
+						}
 					: null,
 				imageAlt: alt_description,
 				imageBlurHash: blur_hash
