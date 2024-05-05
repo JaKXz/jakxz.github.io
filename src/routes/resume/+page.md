@@ -3,7 +3,6 @@
 </script>
 
 <svelte:head>
-
   <title>{siteTitle} | Staff Dev Resume</title>
   <meta name="description" content="{siteTitle} - {siteDescription} Resume" />
 </svelte:head>
@@ -120,7 +119,7 @@ I got my start in open source, so I'm quick to jump in and help:
 
 ## 📚 Education
 
-[Internships for 3 years](https://linkedin.com/in/jgkurian) between **2011-2015** on these teams:
+[Internships 3+ years cumulatively](https://linkedin.com/in/jgkurian) between **2011-2015** on these teams:
 
 <div class="flex gap-y-4 flex-wrap justify-between captions">
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
