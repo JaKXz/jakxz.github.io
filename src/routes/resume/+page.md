@@ -117,7 +117,6 @@ I got my start in open source, so I'm quick to jump in and help:
 </span>
 </section>
 <section class='education'>
-<br/>
 
 ## 📚 Education
 
