@@ -37,7 +37,7 @@
 		"vitest": "1.6.0"
 	},
 	"simple-git-hooks": {
-		"pre-commit": "pnpx pretty-quick --staged"
+		"pre-commit": "npx pretty-quick --staged"
 	},
 	"type": "module",
 	"dependencies": {
