@@ -207,3 +207,11 @@ footer {
 		z-index: 11;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	header .main-nav.open,
+	footer {
+		background-color: var(--lighterAccent);
+		color: var(--darker);
+	}
+}

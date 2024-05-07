@@ -48,7 +48,7 @@
 		<p>
 			&copy;{new Date().getFullYear()} Jason Kurian
 		</p>
-		<p class="justify-between flex w-1/3">
+		<p class="w-1/3 flex justify-between">
 			<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"
 				><i class="i-radix-icons-github-logo text-xl" />
 			</a>
@@ -64,3 +64,6 @@
 		</p>
 	</div>
 </footer>
+
+<style>
+</style>
