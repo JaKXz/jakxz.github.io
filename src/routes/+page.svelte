@@ -67,9 +67,6 @@
 </section>
 
 <style lang="scss">
-	section:not(:last-of-type) {
-		@include vars.screen-height(90);
-	}
 	.name-heading {
 		font-size: 5rem;
 		letter-spacing: -1px;
