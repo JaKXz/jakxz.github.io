@@ -18,7 +18,7 @@
 		"@unocss/eslint-config": "0.60.0",
 		"@unocss/extractor-svelte": "0.60.0",
 		"@unocss/transformer-directives": "0.60.0",
-		"eslint": "8.57.0",
+		"eslint": "9.2.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-svelte": "2.38.0",
 		"gh-pages": "6.1.1",
