@@ -42,11 +42,11 @@
 </section>
 
 <section>
-	<h2 class="text-center xs:text-left">Recent Posts</h2>
+	<h2 class="xs:text-left text-center">Recent Posts</h2>
 	<div class="cards-grid">
 		{#each data.posts as post (post.slug)}
 			<div
-				class="card border-rounded-2 transition duration-500 xs:transform xs:focus-within:scale-110 xs:hover:scale-110"
+				class="card xs:transform xs:focus-within:scale-110 xs:hover:scale-110 border-rounded-2 transition duration-500"
 			>
 				<a href="/learning/{post.slug}" class="link-decoration-none">
 					<p class="subdued m-0">
