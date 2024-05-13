@@ -16,22 +16,22 @@ excerpt: Why reviews matter, what to do, and some tips for etiquette
 Good reviews are a gift to your future self and teammates who have to maintain and understand the code being merged to ship new code on top of it.
 Since most developers spend more time reading code than writing it, practicing reading and reviewing code is has multiplicative benefits for you and eventually you'll find yourself reviewing code as written here right in your editor. 
 This is one senior dev's take among several others on the internet based on my own experience, usually being the one who leads the team in quantity and quality of reviews:
-**your mileage may vary so help yourself to a few grains of salt 🙂**
+**your mileage may vary so help yourself to a few grains of salt 🙂** especially because I'm trying not to be too generic here but it's inevitable.
 
 <Callout>
 
 **Note the synonyms:** PR == Pull Request == MR == Merge request
 
-My understanding of the lore behind the different names is that it was essentially a typo in the early days of GitHub but we all just rolled with it.
+My understanding of the lore behind the different names is that "pull request" was a typo in the early days of GitHub but we all just rolled with it.
 If I'm wrong let me know in the comments or make a PR to correct me ;)
 
 </Callout>
 
-There are three points along the spectrum of context you possess about the code in question that I think will make for the clearest explanation without getting too specific or generic to be applicable.
+There are three points along the spectrum of context you possess about the code in question that you might be at.
 
-1. In-context - you are actively working on this area of the codebase and you are familiar with the inner workings, tribal knowledge, and arcane hacks going on.
-2. In-between - you touch this code occasionally, enough to be able to make changes with some confidence; but, not an expert.
-3. Out of context - you may or may not be responsible for this area of the codebase, but you don't work on it very much. Most of what you'reading in this PR is new to you or vaguely familiar (product-wise) at best.
+1. High context - you are actively working on this area of the codebase and you are familiar with the inner workings, tribal knowledge, and arcane hacks going on.
+2. In-between - you touch this code occasionally, enough to be able to make changes with some confidence; but, are not an expert.
+3. Low / outside your normal context - you may or may not be responsible for this area of the codebase, but you don't work on it very much. Most of what you'reading in this PR is new to you or vaguely familiar (product-wise) at best.
 
 Here are some guidelines and questions you can ask yourself and the author(s) to provide a good review depending on how much context you have.
 The points along the spectrum are just prompts to help you ask good questions; at each level these should guide you towards providing higher quality feedback.
@@ -46,7 +46,7 @@ You can mix and match as you see fit!
     - For the inevitably large MR, try to review commit by commit, and ideally those commits are where most of the time bound context/documentation is.
     - Or, review file by file, _going in order_ from UI -> backend, or, backend out to UI. Can you trace the logic from your developer tools back to the server requests?
 
-## In between
+## In-between
 
 e.g. This might be a component library that you use but don't modify often.
 
