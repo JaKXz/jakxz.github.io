@@ -5,9 +5,7 @@ updated: '2024-05-12'
 categories:
     - 'coaching'
     - 'dev'
-coverImage: '/images/kelly-sikkema-mdADGzyXCVE-unsplash.jpg'
-coverWidth: 16
-coverHeight: 9
+coverImage: '/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg'
 excerpt: Why reviews matter, what to do, and some tips for etiquette
 ---
 
