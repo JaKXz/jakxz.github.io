@@ -8,43 +8,12 @@ export async function load({ params, fetch }) {
 			throw new Error(`${params.post} is missing meta, check the frontmatter`);
 		}
 
-		let imageMeta = {};
-		if (post.metadata.coverImage) {
-			const [, , id] = post.metadata.coverImage.split('-');
-			const { alt_description, user, blur_hash, errors } = await fetch(
-				`https://api.unsplash.com/photos/${id}`,
-				{
-					headers: {
-						Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`
-					}
-				}
-			)
-				.then((res) => res.json())
-				.catch((_networkError) => ({}));
-
-			if (!process.env.CI && errors && errors.length) {
-				throw new Error(`Unsplash error(s): ${errors.join(', ')}`);
-			}
-
-			imageMeta = {
-				coverCaption: user
-					? {
-							...user,
-							author: user.name,
-							authorUrl: user.links.html
-						}
-					: null,
-				imageAlt: alt_description,
-				imageBlurHash: blur_hash
-			};
-		}
-
 		return {
 			PostContent: post.default,
 			meta: {
 				...post.metadata,
 				slug: params.post,
-				...imageMeta
+				...imageMeta(post.metadata.coverImage, fetch)
 			}
 		};
 	} catch (err) {
@@ -57,4 +26,38 @@ export async function load({ params, fetch }) {
 			throw error(500, err.message);
 		}
 	}
+}
+
+async function imageMeta(coverImage, fetch) {
+	if (!coverImage) return {};
+
+	const [, , id] = coverImage.split('-');
+	if (!id) return {};
+
+	const { alt_description, user, blur_hash, errors } = await fetch(
+		`https://api.unsplash.com/photos/${id}`,
+		{
+			headers: {
+				Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`
+			}
+		}
+	)
+		.then((res) => res.json())
+		.catch((_networkError) => ({}));
+
+	if (!process.env.CI && errors && errors.length) {
+		throw new Error(`Unsplash error(s): ${errors.join(', ')}`);
+	}
+
+	return {
+		coverCaption: user
+			? {
+					...user,
+					author: user.name,
+					authorUrl: user.links.html
+				}
+			: null,
+		imageAlt: alt_description,
+		imageBlurHash: blur_hash
+	};
 }
