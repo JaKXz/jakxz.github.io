@@ -6,7 +6,7 @@ categories:
     - 'coaching'
     - 'dev'
 coverImage: '/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg'
-excerpt: Why reviews matter, what to do, and some tips for etiquette
+excerpt: Why reviews matter, how to start, and some tips for etiquette
 ---
 
 <script>
@@ -14,7 +14,7 @@ excerpt: Why reviews matter, what to do, and some tips for etiquette
 </script>
 
 Good reviews are a gift to your future self and teammates who have to maintain and understand the code being merged to ship new code on top of it.
-Since most developers spend more time reading code than writing it, practicing reading and reviewing code is has multiplicative benefits for you and eventually you'll find yourself reviewing code as written here right in your editor. 
+Since most developers spend more time reading code than writing it, practicing reading and reviewing code is has multiplicative benefits and soon you'll find yourself reviewing code as written here right in your editor. 
 This is one senior dev's take among several others on the internet based on my own experience, usually being the one who leads the team in quantity and quality of reviews:
 **your mileage may vary so help yourself to a few grains of salt 🙂** especially because I'm trying not to be too generic here but it's inevitable.
 
@@ -76,4 +76,4 @@ Code review should support you and your teammates getting to this - you don't ha
 
 ---
 
-What do you think? What did I miss?
+What do you think? What did I miss? 👇🏽
