@@ -66,13 +66,15 @@ e.g. A dependency bump or security request somewhere you've been asked to provid
 ## What about general etiquette?
 
 First, assume positive intent: past you or your colleague are not deliberately trying to lower the quality of the codebase.
+Encourage continuous improvement over perfection.
+Developers need to make progress; overly difficult reviews can discourage future improvements.
 
 With that in mind, ask these questions from a posture of learning and curiousity.
 Easily applicable one-line suggestions help get the PR shipped sooner so don't be shy about those!
 
 Finally, pick your battles!
 Remember where you are in your product cycle: first make it work, then make it fast, _then_ make it right.
-Code review should support you and your teammates getting to this - you don't have to ask every question every time. 
+Code review should support you and your teammates getting to this - you don't have to ask every question every time.
 
 ---
 
