@@ -16,20 +16,20 @@ importers:
         version: 4.2.0
       svelte-preprocess:
         specifier: 5.1.4
-        version: 5.1.4(@babel/core@7.24.5)(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(sass@1.77.1)(svelte@4.2.17)(typescript@5.4.5)
+        version: 5.1.4(@babel/core@7.24.5)(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(sass@1.77.2)(svelte@4.2.17)(typescript@5.4.5)
     devDependencies:
       '@iconify-json/radix-icons':
         specifier: 1.1.14
         version: 1.1.14
       '@sveltejs/adapter-static':
         specifier: 3.0.1
-        version: 3.0.1(@sveltejs/kit@2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))
+        version: 3.0.1(@sveltejs/kit@2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))
       '@sveltejs/kit':
         specifier: 2.5.8
-        version: 2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))
+        version: 2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.0.1
-        version: 3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))
+        version: 3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))
       '@unocss/eslint-config':
         specifier: 0.60.2
         version: 0.60.2(eslint@8.57.0)(typescript@5.4.5)
@@ -73,8 +73,8 @@ importers:
         specifier: 6.0.0
         version: 6.0.0
       sass:
-        specifier: 1.77.1
-        version: 1.77.1
+        specifier: 1.77.2
+        version: 1.77.2
       simple-git-hooks:
         specifier: ^2.11.1
         version: 2.11.1
@@ -83,13 +83,13 @@ importers:
         version: 4.2.17
       unocss:
         specifier: 0.60.2
-        version: 0.60.2(postcss@8.4.38)(rollup@4.13.2)(vite@5.2.11(sass@1.77.1))
+        version: 0.60.2(postcss@8.4.38)(rollup@4.13.2)(vite@5.2.11(sass@1.77.2))
       vite:
         specifier: 5.2.11
-        version: 5.2.11(sass@1.77.1)
+        version: 5.2.11(sass@1.77.2)
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(sass@1.77.1)
+        version: 1.6.0(sass@1.77.2)
 
 packages:
 
@@ -1718,8 +1718,8 @@ packages:
   sander@0.5.1:
     resolution: {integrity: sha512-3lVqBir7WuKDHGrKRDn/1Ye3kwpXaDOMsiRP1wd6wpZW56gJhsbp5RqQpA6JG/P+pkXizygnr1dKR8vzWaVsfA==}
 
-  sass@1.77.1:
-    resolution: {integrity: sha512-OMEyfirt9XEfyvocduUIOlUSkWOXS/LAt6oblR/ISXCTukyavjex+zQNm51pPCOiFKY1QpWvEH1EeCkgyV3I6w==}
+  sass@1.77.2:
+    resolution: {integrity: sha512-eb4GZt1C3avsX3heBNlrc7I09nyT00IUuo4eFhAbeXWU2fvA7oXI53SxODVAA+zgZCk9aunAZgO+losjR3fAwA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2525,13 +2525,13 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
-  '@sveltejs/adapter-static@3.0.1(@sveltejs/kit@2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))':
+  '@sveltejs/adapter-static@3.0.1(@sveltejs/kit@2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))':
     dependencies:
-      '@sveltejs/kit': 2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))
+      '@sveltejs/kit': 2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))
 
-  '@sveltejs/kit@2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))':
+  '@sveltejs/kit@2.5.8(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))
+      '@sveltejs/vite-plugin-svelte': 3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))
       '@types/cookie': 0.6.0
       cookie: 0.6.0
       devalue: 5.0.0
@@ -2545,28 +2545,28 @@ snapshots:
       sirv: 2.0.4
       svelte: 4.2.17
       tiny-glob: 0.2.9
-      vite: 5.2.11(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
 
-  '@sveltejs/vite-plugin-svelte-inspector@2.1.0(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))':
+  '@sveltejs/vite-plugin-svelte-inspector@2.1.0(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))
+      '@sveltejs/vite-plugin-svelte': 3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))
       debug: 4.3.4
       svelte: 4.2.17
-      vite: 5.2.11(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))':
+  '@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 2.1.0(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.1)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.1))
+      '@sveltejs/vite-plugin-svelte-inspector': 2.1.0(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.17)(vite@5.2.11(sass@1.77.2)))(svelte@4.2.17)(vite@5.2.11(sass@1.77.2))
       debug: 4.3.4
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.10
       svelte: 4.2.17
       svelte-hmr: 0.16.0(svelte@4.2.17)
-      vite: 5.2.11(sass@1.77.1)
-      vitefu: 0.2.5(vite@5.2.11(sass@1.77.1))
+      vite: 5.2.11(sass@1.77.2)
+      vitefu: 0.2.5(vite@5.2.11(sass@1.77.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -2631,13 +2631,13 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@unocss/astro@0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.1))':
+  '@unocss/astro@0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.2))':
     dependencies:
       '@unocss/core': 0.60.2
       '@unocss/reset': 0.60.2
-      '@unocss/vite': 0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.1))
+      '@unocss/vite': 0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.2))
     optionalDependencies:
-      vite: 5.2.11(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
     transitivePeerDependencies:
       - rollup
 
@@ -2790,7 +2790,7 @@ snapshots:
     dependencies:
       '@unocss/core': 0.60.2
 
-  '@unocss/vite@0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.1))':
+  '@unocss/vite@0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.2))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.13.2)
@@ -2802,7 +2802,7 @@ snapshots:
       chokidar: 3.6.0
       fast-glob: 3.3.2
       magic-string: 0.30.10
-      vite: 5.2.11(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
     transitivePeerDependencies:
       - rollup
 
@@ -3814,7 +3814,7 @@ snapshots:
       mkdirp: 0.5.6
       rimraf: 2.7.1
 
-  sass@1.77.1:
+  sass@1.77.2:
     dependencies:
       chokidar: 3.6.0
       immutable: 4.2.4
@@ -3909,7 +3909,7 @@ snapshots:
     dependencies:
       svelte: 4.2.17
 
-  svelte-preprocess@5.1.4(@babel/core@7.24.5)(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(sass@1.77.1)(svelte@4.2.17)(typescript@5.4.5):
+  svelte-preprocess@5.1.4(@babel/core@7.24.5)(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(sass@1.77.2)(svelte@4.2.17)(typescript@5.4.5):
     dependencies:
       '@types/pug': 2.0.6
       detect-indent: 6.1.0
@@ -3921,7 +3921,7 @@ snapshots:
       '@babel/core': 7.24.5
       postcss: 8.4.38
       postcss-load-config: 3.1.4(postcss@8.4.38)
-      sass: 1.77.1
+      sass: 1.77.2
       typescript: 5.4.5
 
   svelte@4.2.17:
@@ -4032,9 +4032,9 @@ snapshots:
 
   universalify@2.0.0: {}
 
-  unocss@0.60.2(postcss@8.4.38)(rollup@4.13.2)(vite@5.2.11(sass@1.77.1)):
+  unocss@0.60.2(postcss@8.4.38)(rollup@4.13.2)(vite@5.2.11(sass@1.77.2)):
     dependencies:
-      '@unocss/astro': 0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.1))
+      '@unocss/astro': 0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.2))
       '@unocss/cli': 0.60.2(rollup@4.13.2)
       '@unocss/core': 0.60.2
       '@unocss/extractor-arbitrary-variants': 0.60.2
@@ -4053,9 +4053,9 @@ snapshots:
       '@unocss/transformer-compile-class': 0.60.2
       '@unocss/transformer-directives': 0.60.2
       '@unocss/transformer-variant-group': 0.60.2
-      '@unocss/vite': 0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.1))
+      '@unocss/vite': 0.60.2(rollup@4.13.2)(vite@5.2.11(sass@1.77.2))
     optionalDependencies:
-      vite: 5.2.11(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -4089,13 +4089,13 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-node@1.6.0(sass@1.77.1):
+  vite-node@1.6.0(sass@1.77.2):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.11(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4106,20 +4106,20 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.2.11(sass@1.77.1):
+  vite@5.2.11(sass@1.77.2):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.13.2
     optionalDependencies:
       fsevents: 2.3.3
-      sass: 1.77.1
+      sass: 1.77.2
 
-  vitefu@0.2.5(vite@5.2.11(sass@1.77.1)):
+  vitefu@0.2.5(vite@5.2.11(sass@1.77.2)):
     optionalDependencies:
-      vite: 5.2.11(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
 
-  vitest@1.6.0(sass@1.77.1):
+  vitest@1.6.0(sass@1.77.2):
     dependencies:
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
@@ -4138,8 +4138,8 @@ snapshots:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.3
-      vite: 5.2.11(sass@1.77.1)
-      vite-node: 1.6.0(sass@1.77.1)
+      vite: 5.2.11(sass@1.77.2)
+      vite-node: 1.6.0(sass@1.77.2)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
