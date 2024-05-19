@@ -6,20 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		
-		<link href="../_app/immutable/assets/0.D5CviUgL.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.Dxq6oYsF.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.BF_IVyUN.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Callout.Bfm-SLVP.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.D0BjBMHq.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.T0X2Cd0C.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DS2m97XH.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.fpBtNK5f.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.z2Rozvoi.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control.CYgJF_JY.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.CNsWh19F.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BiyZP-9x.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.D6kgxu3v.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXJW-Xr-.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CGlpYaWE.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.BzdAkcdq.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/each.Bf2fYacG.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/config.BGhx3d_X.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.Bsu5vxxX.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.B9vZ1iwv.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.CzR0xuCU.js"><title>Atomically pull updates from an upstream template repo | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/atomically-pull-updates-from-upstream-template-repo"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description"><meta property="og:type" content="article"><meta property="og:title" content="Atomically pull updates from an upstream template repo"><meta property="og:description"><meta name="twitter:title" content="Atomically pull updates from an upstream template repo"><meta name="twitter:description"><meta name="twitter:card" content="summary"><!-- HEAD_svelte-1iee9m6_END -->
 		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +33,7 @@
 		<!-- You can add global <meta> tags here, but anything not global or dynamic should be a `<svelte:head>` tag on the proper page(s) instead. -->
 	</head>
 	<body>
-		<div style="display: contents">      <header><a class="skip-to-content-link" href="#main" data-svelte-h="svelte-wnfvf6">Skip to main content</a> <div><a href="/" class="site-title m-0 block w-fit text-center text-[2.5rem] leading-none italic color-inherit" data-svelte-h="svelte-if6nhh"><div class="name-heading inline-block w-fit">Jason</div> <div class="name-heading inline-block w-fit">Kurian</div></a>  <nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning </a></li><li><a href="/resume" aria-current="false">Resumé </a></li></ul> <button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></div> <button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header> <main id="main" tabindex="-1" class="/learning/atomically-pull-updates-from-upstream-template-repo"> <article class="post svelte-1is1pnb"> <h1 class="svelte-1is1pnb">Atomically pull updates from an upstream template repo</h1> <div class="meta svelte-1is1pnb"><b data-svelte-h="svelte-ssrxh0">Published:</b> 2022-03-08 <br> <b data-svelte-h="svelte-1uwawh">Updated:</b> 2022-09-20</div> <p data-svelte-h="svelte-ls6cl9">Earlier this year I helped improve a template repo 3rd party Shopify developers use to build apps.
+		<div style="display: contents">      <header><a class="skip-to-content-link" href="#main" data-svelte-h="svelte-wnfvf6">Skip to main content</a> <div><a href="/" class="site-title m-0 block w-fit text-center text-[2.5rem] color-inherit leading-none italic" data-svelte-h="svelte-hcxbcp"><div class="name-heading inline-block w-fit">Jason</div> <div class="name-heading inline-block w-fit">Kurian</div></a>  <nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning </a></li><li><a href="/resume" aria-current="false">Resumé </a></li></ul> <button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></div> <button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header> <main id="main" tabindex="-1" class="/learning/atomically-pull-updates-from-upstream-template-repo"> <article class="post svelte-1is1pnb"> <h1 class="svelte-1is1pnb">Atomically pull updates from an upstream template repo</h1> <div class="meta svelte-1is1pnb"><b data-svelte-h="svelte-ssrxh0">Published:</b> 2022-03-08 <br> <b data-svelte-h="svelte-1uwawh">Updated:</b> 2022-09-20</div> <p data-svelte-h="svelte-ls6cl9">Earlier this year I helped improve a template repo 3rd party Shopify developers use to build apps.
 As we were working on the updates to the app template in a separate branch from <code>main</code>, here’s what I suggested to those who wanted to test out our changes early:</p> <ol data-svelte-h="svelte-msjhrv"><li>Add <code>.diff</code> to the end of a github PR url</li> <li>Visit that link - copy the link you are redirected to</li> <li>Apply the changes via <code>curl</code> &amp; <code>git</code>, e.g. for <a href="https://github.com/Shopify/shopify-app-node/pull/726.diff" rel="nofollow">https://github.com/Shopify/shopify-app-node/pull/726.diff</a>:</li></ol> <pre class="language-sh"><!-- HTML_TAG_START --><code class="language-sh"><span class="token function">curl</span> https://patch-diff.githubusercontent.com/raw/Shopify/shopify-app-node/pull/<span class="token operator">&lt;</span>PR number<span class="token operator">></span>.diff <span class="token operator">|</span> <span class="token function">git</span> apply
 <span class="token function">git</span> checkout <span class="token parameter variable">-b</span> get-fix-or-feature-from-shopify
 <span class="token comment"># and so on</span></code><!-- HTML_TAG_END --></pre> <p data-svelte-h="svelte-5vgk2m">Your mileage may vary with this especially if you re-arrange files differently than the original template repo, and of course it depends on the authors following “atomic PR” best practices.
@@ -44,7 +44,7 @@ Good luck!</p> <hr> <p data-svelte-h="svelte-1hd6io">Originally shared here: <a 
 			
 			<script>
 				{
-					__sveltekit_1s7vboe = {
+					__sveltekit_5zhu66 = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
@@ -53,8 +53,8 @@ Good luck!</p> <hr> <p data-svelte-h="svelte-1hd6io">Originally shared here: <a 
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.D0BjBMHq.js"),
-						import("../_app/immutable/entry/app.CNsWh19F.js")
+						import("../_app/immutable/entry/start.DS2m97XH.js"),
+						import("../_app/immutable/entry/app.BiyZP-9x.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

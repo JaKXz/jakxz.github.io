@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+		<link href="../_app/immutable/assets/0.Dxq6oYsF.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.BF_IVyUN.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Callout.Bfm-SLVP.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DS2m97XH.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.fpBtNK5f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.z2Rozvoi.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.CYgJF_JY.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BiyZP-9x.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.D6kgxu3v.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.CXJW-Xr-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.BzdAkcdq.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/each.Bf2fYacG.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/config.BGhx3d_X.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.B9vZ1iwv.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.CzR0xuCU.js"><title>How to review a pull/merge request | Jason Kurian</title><!-- HEAD_svelte-1a4ikyt_START --><meta name="og:url" content="https://jasonkurian.dev/learning/how-to-review-a-pull-request"><meta name="twitter:site" content="@JaKXz92"><meta name="twitter:creator" content="@JaKXz92"><!-- HEAD_svelte-1a4ikyt_END --><!-- HEAD_svelte-1iee9m6_START --><meta data-key="description" name="description" content="Why reviews matter, how to start, and some tips for etiquette"><meta property="og:type" content="article"><meta property="og:title" content="How to review a pull/merge request"><meta property="og:description" content="Why reviews matter, how to start, and some tips for etiquette"><meta name="twitter:title" content="How to review a pull/merge request"><meta name="twitter:description" content="Why reviews matter, how to start, and some tips for etiquette"><meta property="og:image:width"> <meta property="og:image:height"> <meta property="og:image" content="https://jasonkurian.dev/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg"> <meta name="twitter:image" content="https://jasonkurian.dev/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg"> <meta name="twitter:card" content="summary_large_image"><!-- HEAD_svelte-1iee9m6_END -->
+		<!-- You can replace this block to update the Google fonts used in the project -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- End Google Fonts block -->
+
+		<!-- You can add global <meta> tags here, but anything not global or dynamic should be a `<svelte:head>` tag on the proper page(s) instead. -->
+	</head>
+	<body>
+		<div style="display: contents">      <header><a class="skip-to-content-link" href="#main" data-svelte-h="svelte-wnfvf6">Skip to main content</a> <div><a href="/" class="site-title m-0 block w-fit text-center text-[2.5rem] color-inherit leading-none italic" data-svelte-h="svelte-hcxbcp"><div class="name-heading inline-block w-fit">Jason</div> <div class="name-heading inline-block w-fit">Kurian</div></a>  <nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning </a></li><li><a href="/resume" aria-current="false">Resumé </a></li></ul> <button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav></div> <button aria-pressed="false" class="menu-button" tabindex="0"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><rect x="0" y="12.48" width="128" height="18.688"></rect></g><g><rect x="0" y="96.832" width="128" height="18.688"></rect></g><g><rect x="0" y="54.656" width="128" height="18.688"></rect></g></svg></button></header> <main id="main" tabindex="-1" class="/learning/how-to-review-a-pull-request"> <article class="post svelte-1is1pnb"><figure class="cover-image svelte-1is1pnb"><img src="/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="" style="aspect-ratio: undefined / undefined;"> </figure> <h1 class="svelte-1is1pnb">How to review a pull/merge request</h1> <div class="meta svelte-1is1pnb"><b data-svelte-h="svelte-ssrxh0">Published:</b> 2024-05-08 <br> <b data-svelte-h="svelte-1uwawh">Updated:</b> 2024-05-12</div> <p data-svelte-h="svelte-yj7rv9">Good reviews are a gift to your future self and teammates who have to maintain and understand the code being merged to ship new code on top of it.
+Since most developers spend more time reading code than writing it, practicing reading and reviewing code is has multiplicative benefits and soon you’ll find yourself reviewing code as written here right in your editor.
+This is one senior dev’s take among several others on the internet based on my own experience, usually being the one who leads the team in quantity and quality of reviews:
+<strong>your mileage may vary so help yourself to a few grains of salt 🙂</strong> especially because I’m trying not to be too generic here but it’s inevitable.</p> <div class="callout svelte-fvhigc"><p data-svelte-h="svelte-1bomm2e"><strong>Note the synonyms:</strong> PR == Pull Request == MR == Merge request</p> <p data-svelte-h="svelte-gyzsh">My understanding of the lore behind the different names is that “pull request” was a typo in the early days of GitHub but we all just rolled with it.
+If I’m wrong let me know in the comments or make a PR to correct me ;)</p> </div> <p data-svelte-h="svelte-n9p4mq">There are three points along the spectrum of context you possess about the code in question that you might be at.</p> <ol data-svelte-h="svelte-1r8sg2n"><li>High context - you are actively working on this area of the codebase and you are familiar with the inner workings, tribal knowledge, and arcane hacks going on.</li> <li>In-between - you touch this code occasionally, enough to be able to make changes with some confidence; but, are not an expert.</li> <li>Low / outside your normal context - you may or may not be responsible for this area of the codebase, but you don’t work on it very much. Most of what you’reading in this PR is new to you or vaguely familiar (product-wise) at best.</li></ol> <p data-svelte-h="svelte-14yeze9">Here are some guidelines and questions you can ask yourself and the author(s) to provide a good review depending on how much context you have.
+The points along the spectrum are just prompts to help you ask good questions; at each level these should guide you towards providing higher quality feedback.
+You can mix and match as you see fit!</p> <h2 id="high-context" data-svelte-h="svelte-1teqsl1"><a aria-hidden="true" tabindex="-1" href="#high-context"><span class="icon icon-link"></span></a>High context</h2> <ul data-svelte-h="svelte-alu1zr"><li>Acting as QA for your teammate is the best way to “have each other’s backs” - testing for and catching edge cases that the author may have missed is clutch. Good teammates will thank you.</li> <li>Product minded questions are crucial: <em>why</em> do we need this change? Can the desired behaviour be achieved with simpler or no code? Remember, less (no) code is best code.</li> <li>Ideally, PRs are relatively small (<code>+200/-200</code> lines changed at most excluding tests/fixtures etc);<ul><li>if not, can the PR be split up to introduce the change in steps? This might point out gaps in dependencies to the author.</li> <li>For the inevitably large MR, try to review commit by commit, and ideally those commits are where most of the time bound context/documentation is.</li> <li>Or, review file by file, <em>going in order</em> from UI -&gt; backend, or, backend out to UI. Can you trace the logic from your developer tools back to the server requests?</li></ul></li></ul> <h2 id="in-between" data-svelte-h="svelte-1l3gnhi"><a aria-hidden="true" tabindex="-1" href="#in-between"><span class="icon icon-link"></span></a>In-between</h2> <p data-svelte-h="svelte-1o6aunh">e.g. This might be a component library that you use but don’t modify often.</p> <ul data-svelte-h="svelte-1b4upqd"><li>This change should further educate you on this area of the codebase. <ul><li>If not, ask for clarification. Requesting documentation via tests is a good place to start.</li> <li>Asking for comments might be a double edged sword (since they can go out of date) - the best approach is to ask for a comment explaining <em>why</em> a complex section of code exists or is written the way it is, rather than <em>what</em> that code is doing.</li></ul></li> <li>Ideally, you spot / point out patterns that repeat or can be simplified to make the area of the codebase easier to understand.</li></ul> <h2 id="low-context" data-svelte-h="svelte-bu26lf"><a aria-hidden="true" tabindex="-1" href="#low-context"><span class="icon icon-link"></span></a>Low context</h2> <p data-svelte-h="svelte-11a5mwv">e.g. A dependency bump or security request somewhere you’ve been asked to provide eyes on.</p> <ul data-svelte-h="svelte-z163b3"><li>Does a smoke test pass? Are you able to pull, build, and test the code locally? Anything strange in CI?</li> <li>Ask about “general best practices” e.g. usually an X project does Y, does that apply here? Why or why not?</li> <li>Can you articulate the <em>Why</em> <em>and</em> <em>What</em> (rather than <em>How</em>) of this change succinctly back to the author?</li></ul> <h2 id="what-about-general-etiquette" data-svelte-h="svelte-vzdpv0"><a aria-hidden="true" tabindex="-1" href="#what-about-general-etiquette"><span class="icon icon-link"></span></a>What about general etiquette?</h2> <p data-svelte-h="svelte-18aak8u">First, assume positive intent: past you or your colleague are not deliberately trying to lower the quality of the codebase.
+Encourage continuous improvement over perfection.
+Developers need to make progress; overly difficult reviews can discourage future improvements.</p> <p data-svelte-h="svelte-s2t09p">With that in mind, ask these questions from a posture of learning and curiousity.
+Easily applicable one-line suggestions help get the PR shipped sooner so don’t be shy about those!</p> <p data-svelte-h="svelte-jt3iu1">Finally, pick your battles!
+Remember where you are in your product cycle: first make it work, then make it fast, <em>then</em> make it right.
+Code review should support you and your teammates getting to this - you don’t have to ask every question every time.</p> <hr> <p data-svelte-h="svelte-18uqvyv">What do you think? What did I miss? 👇🏽</p> <script src="https://utteranc.es/client.js" repo="jakxz/jakxz.github.io" issue-term="og:title" theme="preferred-color-scheme" crossorigin="anonymous" async></script> <aside class="post-footer svelte-1is1pnb"><h2 data-svelte-h="svelte-18w0g4i">Posted in:</h2> <ul class="svelte-1is1pnb"><li class="svelte-1is1pnb"><a href="/learning/category/coaching/" class="svelte-1is1pnb">coaching</a> </li><li class="svelte-1is1pnb"><a href="/learning/category/dev/" class="svelte-1is1pnb">dev</a> </li></ul></aside> </article></main> <footer> <nav class="main-nav"><ul><li><a href="/learning" aria-current="page" class="active">Learning </a></li><li><a href="/resume" aria-current="false">Resumé </a></li></ul> <button aria-pressed="false" class="menu-button" tabindex="-1"><span class="sr-only" data-svelte-h="svelte-1yaclsl">Toggle hamburger menu</span> <svg viewBox="0 0 128 128" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M64,48.496l-48.496,-48.496l-15.504,15.504l48.496,48.496l-48.496,48.496l15.504,15.504l48.496,-48.496l48.496,48.496l15.504,-15.504l-48.496,-48.496l48.496,-48.496l-15.504,-15.504l-48.496,48.496Z"></path></svg></button></nav> <nav data-svelte-h="svelte-1yy5td4"><ul><li><a href="/api/rss.xml" rel="external">RSS</a></li> <li><a href="/">Home</a></li></ul></nav> <div class="flex flex-col gap-1"><p>See a typo?
+				<em><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz/jakxz.github.io/edit/develop/src/lib/posts/how-to-review-a-pull-request.md">Please open a PR here.</a></em>
+				Thank you!</p> <p>©2024 Jason Kurian</p> <p class="w-1/3 flex justify-between" data-svelte-h="svelte-vtoapy"><a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"><i class="i-radix-icons-github-logo text-xl"></i></a> <a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"><i class="i-radix-icons-twitter-logo text-xl"></i></a> <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/"><i class="i-radix-icons-linkedin-logo text-xl"></i></a></p></div> </footer> 
+			
+			<script>
+				{
+					__sveltekit_5zhu66 = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.DS2m97XH.js"),
+						import("../_app/immutable/entry/app.BiyZP-9x.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
