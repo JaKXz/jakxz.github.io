@@ -1,7 +1,7 @@
 ---
 title: 'How to review a pull/merge request'
 date: '2024-05-08'
-updated: '2024-05-12'
+updated: '2024-05-17'
 categories:
     - 'coaching'
     - 'dev'
