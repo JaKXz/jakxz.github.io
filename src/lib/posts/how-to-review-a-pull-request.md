@@ -1,7 +1,7 @@
 ---
 title: 'How to review a pull/merge request'
 date: '2024-05-08'
-updated: '2024-05-19'
+updated: '2024-05-21'
 categories:
     - 'coaching'
     - 'dev'
@@ -28,14 +28,14 @@ If I'm wrong let me know in the comments or make a PR to correct me ;)
 
 </Callout>
 
-There are three points along the spectrum of context you possess about the code in question that you might be at.
+I usually approach reviews based on the level of context I have with a codebase and how frequently I have to interact with it or take responsibility for it.
 
 1. High context - you are actively working on this area of the codebase and you are familiar with the inner workings, tribal knowledge, and arcane hacks going on.
 2. In-between - you touch this code occasionally, enough to be able to make changes with some confidence; but, are not an expert.
 3. Low / outside your normal context - you may or may not be responsible for this area of the codebase, but you don't work on it very much. Most of what you're reading in this PR is new to you or vaguely familiar (product-wise) at best.
 
 Here are some guidelines and questions you can ask yourself and the author(s) to provide a good review depending on how much context you have.
-The points along the spectrum are just prompts to help you ask good questions; at each level these should guide you towards providing higher quality feedback.
+For each level of context, there are prompts to help you ask good questions; at each level these should guide you towards providing higher quality feedback.
 You can mix and match as you see fit!
 
 ## High context
