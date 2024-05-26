@@ -22,22 +22,21 @@
 	</div>
 
 	<p>👋🏽 thanks for stopping by! My friends call me Jay, or JK.</p>
-	Contact me on&nbsp;<a
+	Contact me on
+	<a
+		target="_blank"
+		rel="nofollow noopener noreferrer"
+		href="https://bsky.app/profile/jasonkurian.dev"
+	>
+		Bluesky</a
+	>
+	or
+	<a
 		target="_blank"
 		rel="nofollow noopener noreferrer"
 		href="https://github.com/jakxz"
 	>
 		GitHub</a
-	>,
-	<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92">
-		Twitter</a
-	>, or
-	<a
-		target="_blank"
-		rel="nofollow noopener noreferrer"
-		href="https://www.linkedin.com/in/jgkurian/"
-	>
-		LinkedIn</a
 	>.
 </section>
 
