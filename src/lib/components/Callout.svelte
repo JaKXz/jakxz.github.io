@@ -5,7 +5,8 @@
 <style lang="scss">
 	.callout {
 		background: var(--lightAccent);
-		font-style: italic;
 		border-radius: 0.125rem;
+		font-style: italic;
+		padding: 2rem;
 	}
 </style>

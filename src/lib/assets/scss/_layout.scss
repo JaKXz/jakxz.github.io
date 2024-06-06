@@ -24,9 +24,9 @@ img {
 	height: auto;
 }
 
+img,
 .callout,
 pre[class*='language-'] {
-	padding: 2rem;
 	margin: 2rem 0 2rem -2rem;
 	@media (max-width: vars.$smMin) {
 		max-width: unset;
