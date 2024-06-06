@@ -14,9 +14,9 @@ img {
 	height: auto;
 }
 
+img,
 .callout,
 pre[class*='language-'] {
-	padding: 2rem;
 	margin: 2rem 0 2rem -2rem;
 	$xsMinMaxW: vars.$xsMin - 1;
 	@media (max-width: $xsMinMaxW) {
