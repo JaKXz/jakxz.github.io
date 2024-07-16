@@ -12,6 +12,10 @@
 			"groupName": "unocss"
 		},
 		{
+			"packagePatterns": ["^.*vite.*"],
+			"groupName": "vite"
+		},
+		{
 			"packagePatterns": ["^.*(prettier|husky|pretty-quick).*"],
 			"groupName": "prettier"
 		},
