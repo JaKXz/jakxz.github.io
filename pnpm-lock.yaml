@@ -31,8 +31,8 @@ importers:
         specifier: ^3.0.1
         version: 3.1.1(svelte@4.2.18)(vite@5.3.5(sass@1.77.8))
       '@unocss/eslint-config':
-        specifier: 0.61.8
-        version: 0.61.8(eslint@8.57.0)(typescript@5.4.5)
+        specifier: 0.61.9
+        version: 0.61.9(eslint@8.57.0)(typescript@5.4.5)
       '@unocss/extractor-svelte':
         specifier: 0.61.9
         version: 0.61.9
@@ -672,26 +672,19 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  '@unocss/config@0.61.8':
-    resolution: {integrity: sha512-q+QlX+X4kkKwOWCR+CEWzMdLJhC+m+MsbL7BI+KNE25ntoDTVEaN2AhC8T4lznlPc04ykKl/U8VxVCju9m0Y/A==}
-    engines: {node: '>=14'}
-
   '@unocss/config@0.61.9':
     resolution: {integrity: sha512-ATvZEFMQiW3/oUaaplVMBYuagEELtnLbHSYH4pUGbJ5MALAfV98mZRyk4FkKkYoMYqWLGdCylzpgMPFDOuFQlQ==}
     engines: {node: '>=14'}
 
-  '@unocss/core@0.61.8':
-    resolution: {integrity: sha512-WFCJVGrhyNyF5i2SBTO3vR9HE+hMi7aP+e3VpAkveiqoCh3QBm2AeoEGUGpBPTLTZpb7AhcqOkRPiPeYk3+z+A==}
-
   '@unocss/core@0.61.9':
     resolution: {integrity: sha512-2W1YZQIWXcueGdbXU/ZCqn/8yQhWk8e8kAHFkVlbc9rictkd2UmPB9nIZ8Ii1tMwt6F0TT6vfHbLJEGCV08o2g==}
 
-  '@unocss/eslint-config@0.61.8':
-    resolution: {integrity: sha512-GgilMSdRsnSxfF/LNKlf6p+gch/Bj8D40G4Jh5+mptoFI564A4lXZTVj5sm27xYvG5aCXmzmX3XsNVCopPzgcg==}
+  '@unocss/eslint-config@0.61.9':
+    resolution: {integrity: sha512-TYjrfSLkRZSRBBcdKWKuZafB9XuFHqI/P/AVI5Vwqvbdq3uc/eQpRXgnYoX1jM0ds1jzOigWRWiYkJx7KhxSnw==}
     engines: {node: '>=14'}
 
-  '@unocss/eslint-plugin@0.61.8':
-    resolution: {integrity: sha512-qCCsdO8IHpaJyl3Dilfb7NbZKPXdNkiqHOykWdT4CjLIAsFlLMOWnNTRx+oCfPZKlE6DArvsg+70KSNmex9u4g==}
+  '@unocss/eslint-plugin@0.61.9':
+    resolution: {integrity: sha512-jgOym3WyWXAWyjkrtIZurkl87XuWAwhN8mul8V4mokpFMB5y6VMlatCYql/dD0tIyZuFJujxfWvUkizqyE84aQ==}
     engines: {node: '>=14'}
 
   '@unocss/extractor-arbitrary-variants@0.61.9':
@@ -2711,13 +2704,6 @@ snapshots:
       - rollup
       - supports-color
 
-  '@unocss/config@0.61.8':
-    dependencies:
-      '@unocss/core': 0.61.8
-      unconfig: 0.5.4
-    transitivePeerDependencies:
-      - supports-color
-
   '@unocss/config@0.61.9':
     dependencies:
       '@unocss/core': 0.61.9
@@ -2725,23 +2711,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@unocss/core@0.61.8': {}
-
   '@unocss/core@0.61.9': {}
 
-  '@unocss/eslint-config@0.61.8(eslint@8.57.0)(typescript@5.4.5)':
+  '@unocss/eslint-config@0.61.9(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
-      '@unocss/eslint-plugin': 0.61.8(eslint@8.57.0)(typescript@5.4.5)
+      '@unocss/eslint-plugin': 0.61.9(eslint@8.57.0)(typescript@5.4.5)
     transitivePeerDependencies:
       - eslint
       - supports-color
       - typescript
 
-  '@unocss/eslint-plugin@0.61.8(eslint@8.57.0)(typescript@5.4.5)':
+  '@unocss/eslint-plugin@0.61.9(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
       '@typescript-eslint/utils': 7.18.0(eslint@8.57.0)(typescript@5.4.5)
-      '@unocss/config': 0.61.8
-      '@unocss/core': 0.61.8
+      '@unocss/config': 0.61.9
+      '@unocss/core': 0.61.9
       magic-string: 0.30.11
       synckit: 0.9.1
     transitivePeerDependencies:
