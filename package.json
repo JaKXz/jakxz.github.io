@@ -34,7 +34,7 @@
 		"svelte": "4.2.18",
 		"unocss": "0.61.8",
 		"vite": "5.3.5",
-		"vitest": "2.0.4"
+		"vitest": "2.0.5"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npx pretty-quick --staged"
