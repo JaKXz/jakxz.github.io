@@ -1,7 +1,7 @@
 ---
 title: 'Pairing'
 date: '2023-08-22'
-updated: '2024-02-15'
+updated: '2024-08-07'
 categories:
   - 'dev'
   - 'pairing'
@@ -91,4 +91,4 @@ Tooling alone cannot overcome the problem of passive participation, but good def
 
 * [Martin Fowler: On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
 * [Tuple’s Pair Programming Guide](https://tuple.app/pair-programming-guide/)
-* [Pair Programming in Onboarding](https://martinfowler.com/articles/bottlenecks-of-scaleups/06-onboarding.html#PairProgrammingAsACriticalOnboardingTechnique)
+* [Removing bottlenecks in onboarding with pairing](https://martinfowler.com/articles/bottlenecks-of-scaleups/06-onboarding.html#PairProgrammingAsACriticalOnboardingTechnique)
