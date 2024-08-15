@@ -52,8 +52,8 @@ importers:
         specifier: 6.1.1
         version: 6.1.1
       mdsvex:
-        specifier: 0.11.2
-        version: 0.11.2(svelte@4.2.18)
+        specifier: 0.12.2
+        version: 0.12.2(svelte@4.2.18)
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -1393,8 +1393,8 @@ packages:
   mdn-data@2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
 
-  mdsvex@0.11.2:
-    resolution: {integrity: sha512-Y4ab+vLvTJS88196Scb/RFNaHMHVSWw6CwfsgWIQP8f42D57iDII0/qABSu530V4pkv8s6T2nx3ds0MC1VwFLA==}
+  mdsvex@0.12.2:
+    resolution: {integrity: sha512-G8lgu0tcGs3h62QSLDLFUAbb4A/UonCTulrtr7YbFN5PXh6dAXo4e+ODjrGTYgx5cMPrmag9OXrQiLG31fM+0Q==}
     peerDependencies:
       svelte: ^3.56.0 || ^4.0.0 || ^5.0.0-next.120
 
@@ -3482,7 +3482,7 @@ snapshots:
 
   mdn-data@2.0.30: {}
 
-  mdsvex@0.11.2(svelte@4.2.18):
+  mdsvex@0.12.2(svelte@4.2.18):
     dependencies:
       '@types/unist': 2.0.6
       prism-svelte: 0.4.7
