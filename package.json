@@ -33,7 +33,7 @@
 		"simple-git-hooks": "^2.11.1",
 		"svelte": "4.2.19",
 		"unocss": "0.62.3",
-		"vite": "5.4.3",
+		"vite": "5.4.4",
 		"vitest": "2.0.5"
 	},
 	"simple-git-hooks": {
