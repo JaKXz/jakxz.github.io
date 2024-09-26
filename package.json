@@ -24,7 +24,7 @@
 		"gh-pages": "6.1.1",
 		"mdsvex": "0.12.3",
 		"prettier": "3.3.3",
-		"prettier-plugin-svelte": "3.2.6",
+		"prettier-plugin-svelte": "3.2.7",
 		"pretty-quick": "^4.0.0",
 		"rehype-autolink-headings": "7.1.0",
 		"rehype-external-links": "3.0.0",
