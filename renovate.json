@@ -1,27 +1,18 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base", "group:recommended"],
+	"extends": ["config:recommended", "group:recommended"],
 	"platformAutomerge": true,
 	"packageRules": [
 		{
-			"packagePatterns": ["^.*svelte.*"],
+			"matchPackagePatterns": ["^.*svelte.*"],
 			"groupName": "all svelte packages"
 		},
+		{ "matchPackagePatterns": ["^.*unocss.*"], "groupName": "unocss" },
+		{ "matchPackagePatterns": ["^.*vite.*"], "groupName": "vite" },
 		{
-			"packagePatterns": ["^.*unocss.*"],
-			"groupName": "unocss"
-		},
-		{
-			"packagePatterns": ["^.*vite.*"],
-			"groupName": "vite"
-		},
-		{
-			"packagePatterns": ["^.*(prettier|husky|pretty-quick).*"],
+			"matchPackagePatterns": ["^.*(prettier|husky|pretty-quick).*"],
 			"groupName": "prettier"
 		},
-		{
-			"matchUpdateTypes": ["minor", "patch"],
-			"automerge": true
-		}
+		{ "matchUpdateTypes": ["minor", "patch"], "automerge": true }
 	]
 }
