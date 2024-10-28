@@ -48,19 +48,22 @@
 		<p>
 			&copy;{new Date().getFullYear()} Jason Kurian
 		</p>
-		<p class="w-1/3 flex justify-between">
-			<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"
-				><i class="i-radix-icons-github-logo text-xl" />
-			</a>
-			<a target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/jakxz92"
-				><i class="i-radix-icons-twitter-logo text-xl" />
+		<p class="grid grid-cols-2 gap-4 w-1/2">
+			<a
+				class="i-radix-icons-globe text-xl"
+				href="https://bsky.app/profile/jasonkurian.dev"
+				aria-label="Bluesky"
+			>
 			</a>
 			<a
-				target="_blank"
-				rel="nofollow noopener noreferrer"
-				href="https://www.linkedin.com/in/jgkurian/"
-				><i class="i-radix-icons-linkedin-logo text-xl" />
+				class="i-radix-icons-github-logo text-xl"
+				href="https://github.com/jakxz"
+				aria-label="GitHub"
+			>
 			</a>
+			<!-- <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/" aria-label="LinkedIn">
+				<i class="i-radix-icons-linkedin-logo text-xl"></i>
+			</a> -->
 		</p>
 	</div>
 </footer>
