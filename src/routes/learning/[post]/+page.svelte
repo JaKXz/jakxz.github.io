@@ -107,6 +107,9 @@
 </article>
 
 <style lang="scss">
+	:global(.utterances-frame) {
+		position: unset;
+	}
 	.post {
 		h1 {
 			margin: 1rem 0;
