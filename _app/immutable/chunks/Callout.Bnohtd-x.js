@@ -1,0 +1,1 @@
+import{a as s,t as e}from"./disclose-version.D_6FvSZB.js";import{i,r as l}from"./runtime.BDXICSVk.js";import{s as v}from"./slot.BgtVGuz6.js";var d=e('<div class="callout svelte-fvhigc"><!></div>');function c(t,o){var a=d(),r=i(a);v(r,o,"default",{}),l(a),s(t,a)}export{c as C};

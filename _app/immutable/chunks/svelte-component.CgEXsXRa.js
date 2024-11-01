@@ -1,1 +1,0 @@
-import{b as c,E as s,c as i,h as r,d as h,e as d,g as p}from"./runtime.BDSRHlc4.js";function u(t,f,o){r&&h();var n=t,a,e;c(()=>{a!==(a=f())&&(e&&(d(e),e=null),a&&(e=i(()=>o(n,a))))},s),r&&(n=p)}export{u as c};
