@@ -1,7 +1,7 @@
 <script>
 	import { siteDescription, siteTitle } from '$lib/config';
 
-	export let data;
+	let { data } = $props();
 
 	function formatDate(date) {
 		return new Intl.DateTimeFormat(undefined, {
@@ -31,13 +31,7 @@
 		Bluesky</a
 	>
 	or
-	<a
-		target="_blank"
-		rel="nofollow noopener noreferrer"
-		href="https://github.com/jakxz"
-	>
-		GitHub</a
-	>.
+	<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/jakxz"> GitHub</a>.
 </section>
 
 <section>
@@ -90,8 +84,8 @@
 			grid: auto-flow dense / 1fr 1fr;
 		}
 	}
-	.cards-grid:focus-within > .card:not(:focus-within),
-	.cards-grid:hover > .card:not(:hover) {
+	.cards-grid:focus-within > .card:not(:global(:focus-within)),
+	.cards-grid:hover > .card:not(:global(:hover)) {
 		opacity: 0.5;
 	}
 </style>

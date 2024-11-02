@@ -1,7 +1,7 @@
 <script>
 	import MainNav from './MainNav.svelte';
 
-	export let path;
+	let { path } = $props();
 
 	function getEditPath(url) {
 		if (url.startsWith('/learning/')) {

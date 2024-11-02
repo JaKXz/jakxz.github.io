@@ -3,7 +3,7 @@
 	import HamburgerSVG from './svg/HamburgerSVG.svelte';
 	import XSVG from './svg/XSVG.svelte';
 
-	export let closeOnly;
+	let { closeOnly } = $props();
 
 	const toggleIsMenuOpen = () => {
 		isMenuOpen.set(!$isMenuOpen);
@@ -11,7 +11,7 @@
 </script>
 
 <button
-	on:click={toggleIsMenuOpen}
+	onclick={toggleIsMenuOpen}
 	aria-pressed={$isMenuOpen}
 	class="menu-button"
 	tabindex={$isMenuOpen || !closeOnly ? '0' : '-1'}

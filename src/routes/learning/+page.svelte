@@ -3,7 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import { siteTitle, siteDescription } from '$lib/config';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>

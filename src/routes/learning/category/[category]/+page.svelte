@@ -3,7 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>

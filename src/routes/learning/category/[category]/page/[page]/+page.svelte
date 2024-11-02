@@ -4,11 +4,11 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import { postsPerPage, siteDescription } from '$lib/config';
 
-	export let data;
+	let { data } = $props();
 	const { page, category, totalPosts, posts } = data;
 
-	$: lowerBound = page * postsPerPage - (postsPerPage - 1) || 1;
-	$: upperBound = Math.min(page * postsPerPage, totalPosts);
+	let lowerBound = $derived(page * postsPerPage - (postsPerPage - 1) || 1);
+	let upperBound = $derived(Math.min(page * postsPerPage, totalPosts));
 </script>
 
 <svelte:head>
