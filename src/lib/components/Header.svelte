@@ -14,7 +14,7 @@
 <header
 	in:slide
 	out:slide
-	class="flex justify-between text-[var(--darker)] mb-2 mt-8 px-8 py-6 mx-auto xs:w-4/5 xs:max-w-54rem border-solid border-0.5 border-rounded-t-lg border-gray bg-white dark:bg-[var(--dark)] shadow-lg"
+	class="xs:w-4/5 xs:max-w-54rem mx-auto mb-2 mt-8 flex justify-between border-0.5 border-gray border-rounded-t-lg border-solid bg-white px-8 py-6 text-[var(--darker)] shadow-lg dark:bg-[var(--dark)]"
 >
 	<a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
 		Skip to main content

@@ -5,6 +5,7 @@
 
 	import { preloadData } from '$app/navigation';
 	import { currentPage } from '$lib/assets/js/store';
+	import classNames from '$lib/assets/js/classNames';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import { navItems, siteAuthorTwitter, siteLink } from '$lib/config';
@@ -43,10 +44,6 @@
 	<meta name="twitter:creator" content={siteAuthorTwitter} />
 </svelte:head>
 
-<!--
-	The below markup is used on every page in the site. The <slot> is where the page's
-	actual contents will show up.
--->
 {#if data.path !== '/'}
 	<Header />
 {/if}
@@ -54,7 +51,11 @@
 	<main
 		id="main"
 		tabindex="-1"
-		class={`${data.path} xs:max-w-42rem p-8 mx-auto ${data.path !== '/' && 'relative shadow-xl mt-[-1rem] bg-white dark:bg-[var(--dark)] border-solid border-0.5 xs:border-rounded-t-lg border-gray px-8 py-10 xs:px-24 xs:py-16 z-1 xs:max-w-60rem'}`}
+		class={classNames(
+			'xs:max-w-42rem p-8 mx-auto',
+			data.path !== '/' &&
+				'relative shadow-xl mt-[-1rem] bg-white dark:bg-[var(--dark)] border-solid border-0.5 xs:border-rounded-t-lg border-gray px-8 py-10 xs:px-24 xs:py-16 z-1 xs:max-w-60rem'
+		)}
 		in:fade={transitionIn}
 		out:fade={transitionOut}
 	>

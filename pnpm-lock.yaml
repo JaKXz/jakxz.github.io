@@ -16,7 +16,7 @@ importers:
         version: 4.2.0
       svelte-preprocess:
         specifier: 6.0.3
-        version: 6.0.3(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.47))(postcss@8.4.47)(sass@1.80.6)(svelte@5.1.9)(typescript@5.4.5)
+        version: 6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(sass@1.80.6)(svelte@5.1.9)(typescript@5.4.5)
     devDependencies:
       '@iconify-json/radix-icons':
         specifier: 1.2.1
@@ -39,6 +39,9 @@ importers:
       '@unocss/transformer-directives':
         specifier: 0.64.0
         version: 0.64.0
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -81,6 +84,9 @@ importers:
       svelte:
         specifier: 5.1.9
         version: 5.1.9
+      tailwind-merge:
+        specifier: ^2.5.4
+        version: 2.5.4
       unocss:
         specifier: 0.64.0
         version: 0.64.0(postcss@8.4.47)(rollup@4.24.2)(vite@5.4.10(sass@1.80.6))(vue@3.5.12(typescript@5.4.5))
@@ -1041,6 +1047,10 @@ packages:
     resolution: {integrity: sha512-n8enUVCED/KVRQlab1hr3MVpcVMvxtZjmEa956u+4YijlmQED223XMSYj2tLuKvr4jcCTzNNMpQDUer72MMmzA==}
     engines: {node: '>= 14.16.0'}
 
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
+
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -1526,6 +1536,10 @@ packages:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
     engines: {node: '>=10'}
 
+  lilconfig@3.1.2:
+    resolution: {integrity: sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow==}
+    engines: {node: '>=14'}
+
   load-tsconfig@0.2.5:
     resolution: {integrity: sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -1722,6 +1736,18 @@ packages:
   postcss-load-config@3.1.4:
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
+    peerDependencies:
+      postcss: '>=8.0.9'
+      ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      postcss:
+        optional: true
+      ts-node:
+        optional: true
+
+  postcss-load-config@4.0.2:
+    resolution: {integrity: sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==}
+    engines: {node: '>= 14'}
     peerDependencies:
       postcss: '>=8.0.9'
       ts-node: '>=9.0.0'
@@ -1966,6 +1992,9 @@ packages:
     resolution: {integrity: sha512-vrozgXDQwYO72vHjUb/HnFbQx1exDjoKzqx23aXEg2a9VIg2TSFZ8FmeZpTjUCFMYw7mpX4BE2SFu8wI7asYsw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
+  tailwind-merge@2.5.4:
+    resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
+
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
@@ -2198,6 +2227,11 @@ packages:
   yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+
+  yaml@2.6.0:
+    resolution: {integrity: sha512-a6ae//JvKDEra2kdi1qzCyrJW/WZCgFi8ydDV+eXExl95t+5R+ijnqHJbz9tmMh8FUjx3iv2fCQ4dclAQlO2UQ==}
+    engines: {node: '>= 14'}
+    hasBin: true
 
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
@@ -3150,6 +3184,8 @@ snapshots:
     dependencies:
       readdirp: 4.0.2
 
+  clsx@2.1.1: {}
+
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -3671,6 +3707,9 @@ snapshots:
 
   lilconfig@2.1.0: {}
 
+  lilconfig@3.1.2:
+    optional: true
+
   load-tsconfig@0.2.5: {}
 
   local-pkg@0.5.0:
@@ -3850,6 +3889,14 @@ snapshots:
       yaml: 1.10.2
     optionalDependencies:
       postcss: 8.4.47
+
+  postcss-load-config@4.0.2(postcss@8.4.47):
+    dependencies:
+      lilconfig: 3.1.2
+      yaml: 2.6.0
+    optionalDependencies:
+      postcss: 8.4.47
+    optional: true
 
   postcss-safe-parser@6.0.0(postcss@8.4.47):
     dependencies:
@@ -4046,13 +4093,13 @@ snapshots:
     optionalDependencies:
       svelte: 5.1.9
 
-  svelte-preprocess@6.0.3(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.47))(postcss@8.4.47)(sass@1.80.6)(svelte@5.1.9)(typescript@5.4.5):
+  svelte-preprocess@6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(sass@1.80.6)(svelte@5.1.9)(typescript@5.4.5):
     dependencies:
       svelte: 5.1.9
     optionalDependencies:
       '@babel/core': 7.25.2
       postcss: 8.4.47
-      postcss-load-config: 3.1.4(postcss@8.4.47)
+      postcss-load-config: 4.0.2(postcss@8.4.47)
       sass: 1.80.6
       typescript: 5.4.5
 
@@ -4076,6 +4123,8 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.1.0
       tslib: 2.6.2
+
+  tailwind-merge@2.5.4: {}
 
   text-table@0.2.0: {}
 
@@ -4325,6 +4374,9 @@ snapshots:
     optional: true
 
   yaml@1.10.2: {}
+
+  yaml@2.6.0:
+    optional: true
 
   yocto-queue@0.1.0: {}
 

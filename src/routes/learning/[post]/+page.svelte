@@ -111,7 +111,7 @@
 		position: unset;
 	}
 	.post {
-		h1:not(:first-of-type) {
+		h1:not(:first-child) {
 			margin: 1rem 0;
 		}
 

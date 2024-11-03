@@ -18,7 +18,8 @@ img {
 pre[class*='language-'] {
 	padding: 2rem;
 	margin: 2rem 0 2rem -2rem;
-	@media (max-width: vars.$xsMin) {
+	$xsMinMaxW: vars.$xsMin - 1;
+	@media (max-width: $xsMinMaxW) {
 		max-width: unset;
 		width: 100vw;
 	}

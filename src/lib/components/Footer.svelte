@@ -48,7 +48,7 @@
 		<p>
 			&copy;{new Date().getFullYear()} Jason Kurian
 		</p>
-		<p class="grid grid-cols-2 gap-4 w-1/2">
+		<p class="grid grid-cols-2 w-1/2 gap-4">
 			<a
 				class="i-radix-icons-globe text-xl"
 				href="https://bsky.app/profile/jasonkurian.dev"
