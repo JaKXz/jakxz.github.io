@@ -3,7 +3,6 @@
 
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 	import MainNav from './MainNav.svelte';
-	import { slide } from 'svelte/transition';
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
@@ -12,9 +11,7 @@
 </script>
 
 <header
-	in:slide
-	out:slide
-	class="xs:w-4/5 xs:max-w-54rem mx-auto mb-2 mt-8 flex justify-between border-0.5 border-gray border-rounded-t-lg border-solid bg-white px-8 py-6 text-[var(--darker)] shadow-lg dark:bg-[var(--dark)]"
+	class="xs:w-4/5 xs:max-w-54rem xs:border-solid mx-auto mb-2 mt-8 flex justify-between border-0.5 border-gray border-rounded-t-lg bg-white px-8 py-6 text-[var(--darker)] shadow-lg dark:bg-[var(--dark)]"
 >
 	<a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
 		Skip to main content

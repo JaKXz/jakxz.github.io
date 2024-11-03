@@ -11,12 +11,8 @@
 	import { navItems, siteAuthorTwitter, siteLink } from '$lib/config';
 	import { onMount } from 'svelte';
 	import { run } from 'svelte/legacy';
-	import { fade } from 'svelte/transition';
 
 	let { data, children } = $props();
-
-	const transitionIn = { delay: 150, duration: 150 };
-	const transitionOut = { duration: 100 };
 
 	/**
 	 * Updates the global store with the current path. (Used for highlighting
@@ -54,10 +50,8 @@
 		class={classNames(
 			'xs:max-w-42rem p-8 mx-auto',
 			data.path !== '/' &&
-				'relative shadow-xl mt-[-1rem] bg-white dark:bg-[var(--dark)] border-solid border-0.5 xs:border-rounded-t-lg border-gray px-8 py-10 xs:px-24 xs:py-16 z-1 xs:max-w-60rem'
+				'relative xs:shadow-xl mt-[-1rem] bg-white dark:bg-[var(--dark)] border-solid border-0.1 xs:border-1 xs:border-rounded-t-lg border-gray px-8 py-10 xs:px-24 xs:py-16 z-2 xs:max-w-60rem'
 		)}
-		in:fade={transitionIn}
-		out:fade={transitionOut}
 	>
 		{@render children?.()}
 	</main>

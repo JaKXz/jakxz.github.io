@@ -157,7 +157,7 @@ footer {
 		display: initial;
 
 		@media (min-width: vars.$smMin) {
-			border-right: 1px solid var(--dark);
+			border-right: 1px solid var(--darker);
 		}
 
 		ul {
