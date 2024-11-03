@@ -11,7 +11,9 @@ export default defineConfig({
 			}
 		}),
 		presetAttributify({ prefix: 'uno-' }),
-		presetUno(),
+		presetUno({
+			dark: 'media'
+		}),
 		presetTypography()
 	]
 });

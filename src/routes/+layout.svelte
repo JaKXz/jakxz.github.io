@@ -1,15 +1,15 @@
-<!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
-	import { run } from 'svelte/legacy';
-
 	import 'uno.css';
+
 	import '$lib/assets/scss/global.scss';
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import { currentPage } from '$lib/assets/js/store';
-	import { navItems, siteLink, siteAuthorTwitter } from '$lib/config';
+
 	import { preloadData } from '$app/navigation';
+	import { currentPage } from '$lib/assets/js/store';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import { navItems, siteAuthorTwitter, siteLink } from '$lib/config';
 	import { onMount } from 'svelte';
+	import { run } from 'svelte/legacy';
 	import { fade } from 'svelte/transition';
 
 	let { data, children } = $props();
@@ -51,7 +51,13 @@
 	<Header />
 {/if}
 {#key data.path}
-	<main id="main" tabindex="-1" class={data.path} in:fade={transitionIn} out:fade={transitionOut}>
+	<main
+		id="main"
+		tabindex="-1"
+		class={`${data.path} xs:max-w-42rem p-8 mx-auto ${data.path !== '/' && 'relative shadow-xl mt-[-1rem] bg-white dark:bg-[var(--dark)] border-solid border-0.5 xs:border-rounded-t-lg border-gray px-8 py-10 xs:px-24 xs:py-16 z-1 xs:max-w-60rem'}`}
+		in:fade={transitionIn}
+		out:fade={transitionOut}
+	>
 		{@render children?.()}
 	</main>
 {/key}
