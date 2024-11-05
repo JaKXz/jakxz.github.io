@@ -1,12 +1,17 @@
 <script>
 	import { postsPerPage } from '$lib/config';
 
-	export let currentPage;
-	export let totalPosts;
-	export let path = '/learning/page';
+	/**
+	 * @typedef {Object} Props
+	 * @property {any} currentPage
+	 * @property {any} totalPosts
+	 * @property {string} [path]
+	 */
 
-	let pagesAvailable;
-	$: pagesAvailable = Math.ceil(totalPosts / postsPerPage);
+	/** @type {Props} */
+	let { currentPage, totalPosts, path = '/learning/page' } = $props();
+
+	let pagesAvailable = $derived(Math.ceil(totalPosts / postsPerPage));
 
 	const isCurrentPage = (page) => page == currentPage;
 </script>

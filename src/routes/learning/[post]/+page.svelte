@@ -1,7 +1,7 @@
 <script>
 	import { siteLink, siteTitle } from '$lib/config';
 
-	export let data;
+	let { data } = $props();
 
 	const {
 		coverCaption,
@@ -78,7 +78,7 @@
 		{updated}
 	</div>
 
-	<svelte:component this={data.PostContent} />
+	<data.PostContent />
 
 	<svelte:element
 		this={'script'}
@@ -111,7 +111,7 @@
 		position: unset;
 	}
 	.post {
-		h1 {
+		h1:not(:first-child) {
 			margin: 1rem 0;
 		}
 

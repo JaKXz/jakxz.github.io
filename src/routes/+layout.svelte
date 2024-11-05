@@ -1,25 +1,26 @@
-<!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
 	import 'uno.css';
+
 	import '$lib/assets/scss/global.scss';
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import { currentPage } from '$lib/assets/js/store';
-	import { navItems, siteLink, siteAuthorTwitter } from '$lib/config';
+
 	import { preloadData } from '$app/navigation';
+	import { currentPage } from '$lib/assets/js/store';
+	import classNames from '$lib/assets/js/classNames';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import { navItems, siteAuthorTwitter, siteLink } from '$lib/config';
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
+	import { run } from 'svelte/legacy';
 
-	export let data;
-
-	const transitionIn = { delay: 150, duration: 150 };
-	const transitionOut = { duration: 100 };
+	let { data, children } = $props();
 
 	/**
 	 * Updates the global store with the current path. (Used for highlighting
 	 * the current page in the nav, but could be useful for other purposes.)
 	 **/
-	$: currentPage.set(data.path);
+	run(() => {
+		currentPage.set(data.path);
+	});
 
 	/**
 	 * This pre-fetches all top-level routes on the site in the background for faster loading.
@@ -39,16 +40,20 @@
 	<meta name="twitter:creator" content={siteAuthorTwitter} />
 </svelte:head>
 
-<!--
-	The below markup is used on every page in the site. The <slot> is where the page's
-	actual contents will show up.
--->
 {#if data.path !== '/'}
 	<Header />
 {/if}
 {#key data.path}
-	<main id="main" tabindex="-1" class={data.path} in:fade={transitionIn} out:fade={transitionOut}>
-		<slot />
+	<main
+		id="main"
+		tabindex="-1"
+		class={classNames(
+			'xs:max-w-42rem p-8 mx-auto',
+			data.path !== '/' &&
+				'relative xs:shadow-xl mt-[-1rem] bg-white dark:bg-[var(--dark)] border-solid border-0.1 xs:border-1 xs:border-rounded-t-lg border-gray px-8 py-10 xs:px-24 xs:py-16 z-2 xs:max-w-60rem'
+		)}
+	>
+		{@render children?.()}
 	</main>
 {/key}
 <Footer path={data.path} />

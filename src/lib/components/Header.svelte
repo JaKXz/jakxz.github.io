@@ -1,7 +1,8 @@
 <script>
+	import { preventDefault } from 'svelte/legacy';
+
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 	import MainNav from './MainNav.svelte';
-	import { slide } from 'svelte/transition';
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
@@ -9,20 +10,28 @@
 	};
 </script>
 
-<header in:slide out:slide>
-	<a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
+<header
+	class="xs:w-4/5 xs:max-w-54rem xs:border-solid mx-auto mb-2 mt-8 flex justify-between border-0.5 border-gray border-rounded-t-lg bg-white px-8 py-6 text-[var(--darker)] shadow-lg dark:bg-[var(--dark)]"
+>
+	<a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
 		Skip to main content
 	</a>
 
-	<div>
-		<a
-			href="/"
-			class="site-title m-0 block w-fit text-center text-[2.5rem] color-inherit leading-none italic"
-		>
-			<div class="name-heading inline-block w-fit">Jason</div>
-			<div class="name-heading inline-block w-fit">Kurian</div>
-		</a>
-		<MainNav />
-	</div>
+	<a
+		href="/"
+		class="site-title m-0 block w-fit text-center text-[2.5rem] color-inherit leading-none italic"
+	>
+		<div class="name-heading inline-block w-fit">Jason</div>
+		<div class="name-heading inline-block w-fit">Kurian</div>
+	</a>
+	<MainNav />
 	<HamburgerMenuButton />
 </header>
+
+<style lang="scss">
+	header {
+		.site-title {
+			@include vars.font-weight(extra-bold);
+		}
+	}
+</style>
