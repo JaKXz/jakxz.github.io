@@ -32,7 +32,7 @@
 		"rehype-slug": "6.0.0",
 		"sass": "1.81.0",
 		"simple-git-hooks": "^2.11.1",
-		"svelte": "5.2.0",
+		"svelte": "5.2.1",
 		"tailwind-merge": "^2.5.4",
 		"unocss": "0.64.1",
 		"vite": "5.4.11",
