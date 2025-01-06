@@ -16,7 +16,7 @@ importers:
         version: 4.2.0
       svelte-preprocess:
         specifier: 6.0.3
-        version: 6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(sass@1.83.1)(svelte@5.16.2)(typescript@5.4.5)
+        version: 6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(sass@1.83.1)(svelte@5.16.2)(typescript@5.4.5)
     devDependencies:
       '@iconify-json/radix-icons':
         specifier: 1.2.2
@@ -89,7 +89,7 @@ importers:
         version: 2.6.0
       unocss:
         specifier: 0.65.3
-        version: 0.65.3(postcss@8.4.47)(rollup@4.24.2)(vite@6.0.7(jiti@2.4.2)(sass@1.83.1)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5))
+        version: 0.65.3(postcss@8.4.49)(rollup@4.24.2)(vite@6.0.7(jiti@2.4.2)(sass@1.83.1)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5))
       vite:
         specifier: 6.0.7
         version: 6.0.7(jiti@2.4.2)(sass@1.83.1)(tsx@4.19.2)(yaml@2.6.1)
@@ -1249,15 +1249,6 @@ packages:
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
-  debug@4.3.7:
-    resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
     engines: {node: '>=6.0'}
@@ -1737,9 +1728,6 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  magic-string@0.30.13:
-    resolution: {integrity: sha512-8rYBO+MsWkgjDSOvLomYnzhdwEG51olQ4zL5KXnNJWV5MNmrb4rTZdrtkhxjnD/QyZUqR/Z/XDsUs/4ej2nx0g==}
-
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
@@ -1944,10 +1932,6 @@ packages:
   postcss-selector-parser@6.1.0:
     resolution: {integrity: sha512-UMz42UD0UY0EApS0ZL9o1XnLhSTtvvvLe5Dc2H2O56fvRZi+KulDyf5ctDhhtYJBGKStV2FL1fy6253cmLgqVQ==}
     engines: {node: '>=4'}
-
-  postcss@8.4.47:
-    resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.4.49:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
@@ -2803,7 +2787,7 @@ snapshots:
   '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.7
+      debug: 4.4.0
       espree: 9.6.1
       globals: 13.20.0
       ignore: 5.3.1
@@ -2819,7 +2803,7 @@ snapshots:
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.7
+      debug: 4.4.0
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -3170,13 +3154,13 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  '@unocss/postcss@0.65.3(postcss@8.4.47)':
+  '@unocss/postcss@0.65.3(postcss@8.4.49)':
     dependencies:
       '@unocss/config': 0.65.3
       '@unocss/core': 0.65.3
       '@unocss/rule-utils': 0.65.3
       css-tree: 3.1.0
-      postcss: 8.4.47
+      postcss: 8.4.49
       tinyglobby: 0.2.10
     transitivePeerDependencies:
       - supports-color
@@ -3511,10 +3495,6 @@ snapshots:
 
   csstype@3.1.3: {}
 
-  debug@4.3.7:
-    dependencies:
-      ms: 2.1.3
-
   debug@4.4.0:
     dependencies:
       ms: 2.1.3
@@ -3666,9 +3646,9 @@ snapshots:
       eslint-compat-utils: 0.5.1(eslint@8.57.1)
       esutils: 2.0.3
       known-css-properties: 0.35.0
-      postcss: 8.4.47
-      postcss-load-config: 3.1.4(postcss@8.4.47)
-      postcss-safe-parser: 6.0.0(postcss@8.4.47)
+      postcss: 8.4.49
+      postcss-load-config: 3.1.4(postcss@8.4.49)
+      postcss-safe-parser: 6.0.0(postcss@8.4.49)
       postcss-selector-parser: 6.1.0
       semver: 7.6.2
       svelte-eslint-parser: 0.43.0(svelte@5.16.2)
@@ -3699,7 +3679,7 @@ snapshots:
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.7
+      debug: 4.4.0
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.2.2
@@ -4057,10 +4037,6 @@ snapshots:
       yallist: 3.1.1
     optional: true
 
-  magic-string@0.30.13:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.0
-
   magic-string@0.30.17:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -4208,39 +4184,33 @@ snapshots:
       mlly: 1.7.3
       pathe: 1.1.2
 
-  postcss-load-config@3.1.4(postcss@8.4.47):
+  postcss-load-config@3.1.4(postcss@8.4.49):
     dependencies:
       lilconfig: 2.1.0
       yaml: 1.10.2
     optionalDependencies:
-      postcss: 8.4.47
+      postcss: 8.4.49
 
-  postcss-load-config@4.0.2(postcss@8.4.47):
+  postcss-load-config@4.0.2(postcss@8.4.49):
     dependencies:
       lilconfig: 3.1.3
       yaml: 2.6.1
     optionalDependencies:
-      postcss: 8.4.47
+      postcss: 8.4.49
     optional: true
 
-  postcss-safe-parser@6.0.0(postcss@8.4.47):
+  postcss-safe-parser@6.0.0(postcss@8.4.49):
     dependencies:
-      postcss: 8.4.47
+      postcss: 8.4.49
 
-  postcss-scss@4.0.9(postcss@8.4.47):
+  postcss-scss@4.0.9(postcss@8.4.49):
     dependencies:
-      postcss: 8.4.47
+      postcss: 8.4.49
 
   postcss-selector-parser@6.1.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-
-  postcss@8.4.47:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.4.49:
     dependencies:
@@ -4413,18 +4383,18 @@ snapshots:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      postcss: 8.4.47
-      postcss-scss: 4.0.9(postcss@8.4.47)
+      postcss: 8.4.49
+      postcss-scss: 4.0.9(postcss@8.4.49)
     optionalDependencies:
       svelte: 5.16.2
 
-  svelte-preprocess@6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(sass@1.83.1)(svelte@5.16.2)(typescript@5.4.5):
+  svelte-preprocess@6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(sass@1.83.1)(svelte@5.16.2)(typescript@5.4.5):
     dependencies:
       svelte: 5.16.2
     optionalDependencies:
       '@babel/core': 7.25.2
-      postcss: 8.4.47
-      postcss-load-config: 4.0.2(postcss@8.4.47)
+      postcss: 8.4.49
+      postcss-load-config: 4.0.2(postcss@8.4.49)
       sass: 1.83.1
       typescript: 5.4.5
 
@@ -4552,12 +4522,12 @@ snapshots:
 
   universalify@2.0.0: {}
 
-  unocss@0.65.3(postcss@8.4.47)(rollup@4.24.2)(vite@6.0.7(jiti@2.4.2)(sass@1.83.1)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5)):
+  unocss@0.65.3(postcss@8.4.49)(rollup@4.24.2)(vite@6.0.7(jiti@2.4.2)(sass@1.83.1)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5)):
     dependencies:
       '@unocss/astro': 0.65.3(rollup@4.24.2)(vite@6.0.7(jiti@2.4.2)(sass@1.83.1)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5))
       '@unocss/cli': 0.65.3(rollup@4.24.2)
       '@unocss/core': 0.65.3
-      '@unocss/postcss': 0.65.3(postcss@8.4.47)
+      '@unocss/postcss': 0.65.3(postcss@8.4.49)
       '@unocss/preset-attributify': 0.65.3
       '@unocss/preset-icons': 0.65.3
       '@unocss/preset-mini': 0.65.3
@@ -4611,7 +4581,7 @@ snapshots:
   vite-node@2.1.8(sass@1.83.1):
     dependencies:
       cac: 6.7.14
-      debug: 4.3.7
+      debug: 4.4.0
       es-module-lexer: 1.5.4
       pathe: 1.1.2
       vite: 5.4.11(sass@1.83.1)
@@ -4661,9 +4631,9 @@ snapshots:
       '@vitest/spy': 2.1.8
       '@vitest/utils': 2.1.8
       chai: 5.1.2
-      debug: 4.3.7
+      debug: 4.4.0
       expect-type: 1.1.0
-      magic-string: 0.30.13
+      magic-string: 0.30.17
       pathe: 1.1.2
       std-env: 3.8.0
       tinybench: 2.9.0
