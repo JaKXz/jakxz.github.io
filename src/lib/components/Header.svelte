@@ -11,7 +11,7 @@
 </script>
 
 <header
-	class="xs:w-4/5 xs:max-w-54rem xs:border-solid mx-auto mb-2 mt-8 flex justify-between border-0.5 border-gray border-rounded-t-lg bg-white px-8 py-6 text-[var(--darker)] shadow-lg dark:bg-[var(--dark)]"
+	class="xs:w-4/5 xs:max-w-54rem xs:border-solid xs:mt-8 mx-auto mb-2 flex justify-between border-0.5 border-gray border-rounded-t-lg bg-white px-8 py-6 text-[var(--darker)] shadow-lg dark:bg-[var(--dark)]"
 >
 	<a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
 		Skip to main content
