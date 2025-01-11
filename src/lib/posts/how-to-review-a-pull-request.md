@@ -1,7 +1,7 @@
 ---
 title: 'How to review a pull/merge request'
 date: '2024-05-08'
-updated: '2024-05-21'
+updated: '2025-01-11'
 categories:
     - 'coaching'
     - 'dev'
@@ -44,7 +44,7 @@ You can mix and match as you see fit!
 - Product minded questions are crucial: _why_ do we need this change? Can the desired behaviour be achieved with simpler or no code? Remember, less (no) code is best code.
 - Ideally, PRs are relatively small (`+200/-200` lines changed at most excluding tests/fixtures etc);
     - if not, can the PR be split up to introduce the change in steps? This might point out gaps in dependencies to the author.
-    - For the inevitably large MR, try to review commit by commit, and ideally those commits are where most of the time bound context/documentation is.
+    - For the inevitably large MR, try to review commit by commit, and ideally commit messages are where most of the time bound context/documentation is.
     - Or, review file by file, _going in order_ from UI -> backend, or, backend out to UI. Can you trace the logic from your developer tools back to the server requests?
 
 ## In-between
@@ -62,7 +62,7 @@ e.g. A dependency bump or security request somewhere you've been asked to provid
 
 - Does a smoke test pass? Are you able to pull, build, and test the code locally? Anything strange in CI?
 - Ask about "general best practices" e.g. usually an X project does Y, does that apply here? Why or why not?
-- Can you articulate the _Why_ *and* _What_ of this change (rather than / don't worry about specific details in the *How*) succinctly back to the author?
+- Can you articulate the _Why_ **and** _What_ of this change (rather than / don't worry about specific details in the *How*) succinctly back to the author?
 
 ## What about general etiquette?
 
@@ -75,7 +75,7 @@ Easily applicable one-line suggestions help get the PR shipped sooner so don't b
 
 Finally, pick your battles!
 Remember where you are in your product cycle: first make it work, then make it fast, _then_ make it right.
-Code review should support you and your teammates getting to this - you don't have to ask every question every time.
+Code review should support you and your teammates getting to this end.
 
 ---
 
