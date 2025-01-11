@@ -1,0 +1,1 @@
+import{b as r,t as e}from"./disclose-version.C5ZaUgfg.js";import{p,e as i,r as l,aa as v,t as d}from"./runtime.I8AkAxFz.js";import{s as m}from"./snippet.BRLaIjw3.js";var n=e('<div class="callout svelte-fvhigc"><!></div>');function h(o,t){p(t,!0);var a=n(),s=l(a);m(s,()=>t.children??v),d(a),r(o,a),i()}export{h as C};
