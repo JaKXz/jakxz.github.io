@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="compressed-content">
-	<h1 class="h2">All blog categories</h1>
+	<h1>All blog categories</h1>
 
 	<ul>
 		{#each uniqueCategories as category}
