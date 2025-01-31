@@ -33,7 +33,7 @@
 		"sass": "1.83.4",
 		"simple-git-hooks": "^2.11.1",
 		"svelte": "5.19.6",
-		"tailwind-merge": "^2.5.4",
+		"tailwind-merge": "^3.0.0",
 		"unocss": "0.65.4",
 		"vite": "6.0.11",
 		"vitest": "3.0.4"
