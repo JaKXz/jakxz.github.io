@@ -28,14 +28,11 @@ jasonk92@gmail.com<br>
   - Svelte, Typescript, Node, React
   - Vite, Webpack, Storybook
   - Jest, Vitest
-- TDD, pairing, XP
-- Git, Mercurial
 - Figma, Balsamiq, Sass, Style Dictionary
 - Turborepo, Lerna
 - GraphQL
 - Ruby on Rails
 - PostgreSQL, Redis
-- Django, Flask
 
 </aside>
 
@@ -62,11 +59,11 @@ Nov **2020** – Mar **2023**
 - Mentored early-career developers to improve skills and knowledge of best practices in Rails, GraphQL, React, CSS, Git, and other tools.
 - Conducted interviews for early career developers and improved the interview and evaluation process; led to successful hires of high potential candidates.
 
-[Paddle HR](https://www.paddlehr.com) (acq. LinkedIn) | _Senior UX + Fullstack Developer_ | **May 2019 – Aug 2020**
+[Paddle HR](https://www.paddlehr.com) (acq. LinkedIn) &nbsp; | &nbsp; _Senior UX + Fullstack Developer_ &nbsp; | &nbsp; **May 2019 – Aug 2020**
 
-[Nulogy](http://nulogy.com) | _Fullstack Developer_ | **Aug 2016 – Aug 2018**
+[Nulogy](http://nulogy.com) &nbsp; | &nbsp; _Fullstack Developer_ &nbsp; | &nbsp; **Aug 2016 – Aug 2018**
 
-[Rangle.io](http://rangle.io) | _Junior Developer_ | **Oct 2015 – Apr 2016**
+[Rangle.io](http://rangle.io) &nbsp; | &nbsp; _Junior Developer_ &nbsp; | &nbsp; **Oct 2015 – Apr 2016**
 
 </section>
 
