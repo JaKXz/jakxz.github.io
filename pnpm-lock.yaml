@@ -85,8 +85,8 @@ importers:
         specifier: 5.20.1
         version: 5.20.1
       tailwind-merge:
-        specifier: ^2.5.4
-        version: 2.6.0
+        specifier: ^3.0.0
+        version: 3.0.1
       unocss:
         specifier: 0.65.4
         version: 0.65.4(postcss@8.4.49)(rollup@4.34.3)(vite@6.1.0(jiti@2.4.2)(sass@1.85.0)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5))
@@ -2016,8 +2016,8 @@ packages:
     resolution: {integrity: sha512-vrozgXDQwYO72vHjUb/HnFbQx1exDjoKzqx23aXEg2a9VIg2TSFZ8FmeZpTjUCFMYw7mpX4BE2SFu8wI7asYsw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tailwind-merge@2.6.0:
-    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
+  tailwind-merge@3.0.1:
+    resolution: {integrity: sha512-AvzE8FmSoXC7nC+oU5GlQJbip2UO7tmOhOfQyOmPhrStOGXHU08j8mZEHZ4BmCqY5dWTCo4ClWkNyRNx1wpT0g==}
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
@@ -4172,7 +4172,7 @@ snapshots:
       '@pkgr/core': 0.1.0
       tslib: 2.6.2
 
-  tailwind-merge@2.6.0: {}
+  tailwind-merge@3.0.1: {}
 
   text-table@0.2.0: {}
 
