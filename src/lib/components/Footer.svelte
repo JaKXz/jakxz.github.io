@@ -48,7 +48,7 @@
 		<p>
 			&copy;{new Date().getFullYear()} Jason Kurian
 		</p>
-		<p class="grid grid-cols-2 w-1/2 gap-4">
+		<p class="w-1/3 flex gap-4">
 			<a class="text-xl" href="https://bsky.app/profile/jasonkurian.dev" aria-label="Bluesky">
 				<svg
 					viewBox="0 0 16 16"
@@ -68,9 +68,14 @@
 				aria-label="GitHub"
 			>
 			</a>
-			<!-- <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/jgkurian/" aria-label="LinkedIn">
+			<a
+				target="_blank"
+				rel="nofollow noopener noreferrer"
+				href="https://www.linkedin.com/in/jgkurian/"
+				aria-label="LinkedIn"
+			>
 				<i class="i-radix-icons-linkedin-logo text-xl"></i>
-			</a> -->
+			</a>
 		</p>
 	</div>
 </footer>
