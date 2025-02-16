@@ -4,7 +4,7 @@
 	"scripts": {
 		"build": "vite build",
 		"predeploy": "pnpm dedupe && test -z \"$(git status --porcelain)\" && pnpm run build",
-		"deploy": "npx gh-pages -d build -b main --dotfiles --nojekyll --cname \"jasonkurian.dev\" --tag $(git rev-parse --short HEAD)",
+		"deploy": "gh-pages -d build -b main --dotfiles --nojekyll --cname \"jasonkurian.dev\" --tag $(git rev-parse --short HEAD)",
 		"dev": "vite dev",
 		"lint": "eslint --ignore-path .gitignore .",
 		"preview": "vite preview",
