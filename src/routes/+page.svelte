@@ -1,7 +1,15 @@
 <script>
 	import { siteDescription, siteTitle } from '$lib/config';
+	import { slide } from 'svelte/transition';
 
 	let { data } = $props();
+	let index = $state(0);
+	let subtitles = [
+		[siteDescription, '@1Password 🇨🇦'],
+		['MD + keys', '@johnmaksymmusic 🇺🇦 🇨🇦']
+	];
+
+	let [desc, subtitle] = $derived(subtitles[index]);
 
 	function formatDate(date) {
 		return new Intl.DateTimeFormat(undefined, {
@@ -20,7 +28,17 @@
 			<div class="name-heading first-name">Jason</div>
 			<div class="name-heading">Kurian</div>
 		</div>
-		<code class="p-0 text-center text-xl font-300">{siteDescription}<br />@1Password 🇨🇦</code>
+		{#key index}
+			<code
+				transition:slide
+				onclick={() => {
+					index = (index + 1) % subtitles.length;
+				}}
+				class="p-0 text-center text-xl font-300"
+			>
+				{desc}<br />{subtitle}
+			</code>
+		{/key}
 
 		<p class="m-0">
 			👋🏽 hey, thanks for stopping by! My friends call me Jay, or JK. Contact me on

@@ -14,7 +14,7 @@ export const navItems = [
 		route: '/learning'
 	},
 	{
-		title: 'Resumé',
-		route: '/resume'
+		title: '@Recruiters',
+		route: '/recruiters'
 	}
 ];
