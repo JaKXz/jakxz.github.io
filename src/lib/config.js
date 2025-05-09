@@ -12,9 +12,10 @@ export const navItems = [
 	{
 		title: 'Learning',
 		route: '/learning'
-	},
-	{
-		title: 'Resumé',
-		route: '/resume'
 	}
+];
+
+export const subtitles = [
+	[siteDescription, '@1Password 🇨🇦'],
+	['MD + keys', '@johnmaksymmusic 🇺🇦 🇨🇦']
 ];

@@ -1,7 +1,10 @@
 <script>
-	import { siteDescription, siteTitle } from '$lib/config';
+	import { subtitles, siteTitle } from '$lib/config';
+	import { slide } from 'svelte/transition';
 
 	let { data } = $props();
+	let index = $state(0);
+	let [desc, subtitle] = $derived(subtitles[index]);
 
 	function formatDate(date) {
 		return new Intl.DateTimeFormat(undefined, {
@@ -20,8 +23,20 @@
 			<div class="name-heading first-name">Jason</div>
 			<div class="name-heading">Kurian</div>
 		</div>
-		<code class="p-0 text-center text-xl font-300">{siteDescription}<br />@1Password 🇨🇦</code>
-
+		<button
+			class="reset-button w-full cursor-pointer p-0 text-center"
+			type="button"
+			aria-label="Change subtitle"
+			onclick={() => {
+				index = (index + 1) % subtitles.length;
+			}}
+		>
+			{#key index}
+				<code class="block whitespace-pre border-none p-0 text-xl font-300" transition:slide>
+					{desc}<br />{subtitle}
+				</code>
+			{/key}
+		</button>
 		<p class="m-0">
 			👋🏽 hey, thanks for stopping by! My friends call me Jay, or JK. Contact me on
 			<a
@@ -76,12 +91,14 @@
 			letter-spacing: normal;
 		}
 	}
+
 	.first-name::first-letter {
 		letter-spacing: 0.025em;
 		@media (max-width: vars.$xsMin) {
 			padding-left: 1rem;
 		}
 	}
+
 	.cards-grid {
 		display: grid;
 		gap: 1rem;
@@ -91,6 +108,7 @@
 			grid: auto-flow dense / 1fr 1fr;
 		}
 	}
+
 	.cards-grid:focus-within > .card:not(:global(:focus-within)),
 	.cards-grid:hover > .card:not(:global(:hover)) {
 		opacity: 0.5;
