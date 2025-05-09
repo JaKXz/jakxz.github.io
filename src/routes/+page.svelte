@@ -24,7 +24,7 @@
 			<div class="name-heading">Kurian</div>
 		</div>
 		<button
-			class="text-center cursor-pointer p-0 w-full reset-button"
+			class="reset-button w-full cursor-pointer p-0 text-center"
 			type="button"
 			aria-label="Change subtitle"
 			onclick={() => {
@@ -32,7 +32,7 @@
 			}}
 		>
 			{#key index}
-				<code class="block whitespace-pre p-0 text-xl font-300 border-none" transition:slide>
+				<code class="block whitespace-pre border-none p-0 text-xl font-300" transition:slide>
 					{desc}<br />{subtitle}
 				</code>
 			{/key}
