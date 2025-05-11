@@ -16,6 +16,7 @@ export const navItems = [
 ];
 
 export const subtitles = [
+	// ['Husband + father', 'Erin + Gordon'],
 	[siteDescription, '@1Password 🇨🇦'],
 	['MD + keys', '@johnmaksymmusic 🇺🇦 🇨🇦']
 ];

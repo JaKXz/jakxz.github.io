@@ -17,14 +17,14 @@
 	<title>{siteTitle}</title>
 </svelte:head>
 
-<section class="m-auto max-w-21rem min-h-100svh flex flex-col items-center justify-center">
+<section>
 	<div class="flex flex-col gap-8">
 		<div class="text-center leading-[1.1]">
 			<div class="name-heading first-name">Jason</div>
 			<div class="name-heading">Kurian</div>
 		</div>
 		<button
-			class="reset-button w-full cursor-pointer p-0 text-center"
+			class="reset-button m-0 w-full cursor-pointer p-0 text-center"
 			type="button"
 			aria-label="Change subtitle"
 			onclick={() => {
@@ -54,7 +54,7 @@
 	</div>
 </section>
 
-<section class="m-auto min-h-100svh flex flex-col items-center justify-center">
+<section>
 	<div class="flex flex-col">
 		<h2 class="xs:text-left text-center">Recent Posts</h2>
 		<div class="cards-grid">
@@ -82,6 +82,18 @@
 </section>
 
 <style lang="scss">
+	:global(body) {
+		scroll-behavior: smooth;
+		/* Enable vertical scroll snapping */
+		scroll-snap-type: y mandatory;
+		overflow-y: scroll;
+		height: 100vh;
+	}
+
+	section {
+		@apply m-auto max-w-21rem min-h-100svh flex flex-col items-center justify-center snap-start;
+	}
+
 	.name-heading {
 		font-size: 5rem;
 		letter-spacing: -1px;
