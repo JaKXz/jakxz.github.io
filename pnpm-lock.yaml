@@ -65,7 +65,7 @@ importers:
         version: 3.4.0(prettier@3.5.3)(svelte@5.33.13)
       pretty-quick:
         specifier: ^4.0.0
-        version: 4.2.0(prettier@3.5.3)
+        version: 4.2.2(prettier@3.5.3)
       rehype-autolink-headings:
         specifier: 7.1.0
         version: 7.1.0
@@ -1792,8 +1792,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  pretty-quick@4.2.0:
-    resolution: {integrity: sha512-YHNtLadWFvdvqKhSqhgb9W1XC2pNAKHhXiy6NW1FVY7ogivjdWiZgTjIRLkQtRCBaDnT2eyTTOMkcYB6mkx1Ug==}
+  pretty-quick@4.2.2:
+    resolution: {integrity: sha512-uAh96tBW1SsD34VhhDmWuEmqbpfYc/B3j++5MC/6b3Cb8Ow7NJsvKFhg0eoGu2xXX+o9RkahkTK6sUdd8E7g5w==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
@@ -3929,7 +3929,7 @@ snapshots:
 
   prettier@3.5.3: {}
 
-  pretty-quick@4.2.0(prettier@3.5.3):
+  pretty-quick@4.2.2(prettier@3.5.3):
     dependencies:
       '@pkgr/core': 0.2.7
       ignore: 7.0.5
@@ -3937,7 +3937,7 @@ snapshots:
       picocolors: 1.1.1
       picomatch: 4.0.2
       prettier: 3.5.3
-      tinyexec: 1.0.1
+      tinyexec: 0.3.2
       tslib: 2.8.1
 
   prism-svelte@0.4.7: {}
