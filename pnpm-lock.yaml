@@ -23,10 +23,10 @@ importers:
         version: 1.2.2
       '@sveltejs/adapter-static':
         specifier: 3.0.8
-        version: 3.0.8(@sveltejs/kit@2.22.0(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))
+        version: 3.0.8(@sveltejs/kit@2.22.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))
       '@sveltejs/kit':
-        specifier: 2.22.0
-        version: 2.22.0(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))
+        specifier: 2.22.1
+        version: 2.22.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.0
         version: 5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))
@@ -737,8 +737,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.22.0':
-    resolution: {integrity: sha512-DJm0UxVgzXq+1MUfiJK4Ridk7oIQsIets6JwHiEl97sI6nXScfXe+BeqNhzB7jQIVBb3BM51U4hNk8qQxRXBAA==}
+  '@sveltejs/kit@2.22.1':
+    resolution: {integrity: sha512-I4VKGN18Q3SjyjFysyTu1Ze0PgLnct9dSypgTJHWzGw0F+WIokEOBv6XEQ3JZfEzoP3DNTLDfsVLD6QyOvD1uw==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -2768,11 +2768,11 @@ snapshots:
     dependencies:
       acorn: 8.14.1
 
-  '@sveltejs/adapter-static@3.0.8(@sveltejs/kit@2.22.0(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))':
+  '@sveltejs/adapter-static@3.0.8(@sveltejs/kit@2.22.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))':
     dependencies:
-      '@sveltejs/kit': 2.22.0(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))
+      '@sveltejs/kit': 2.22.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))
 
-  '@sveltejs/kit@2.22.0(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))':
+  '@sveltejs/kit@2.22.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))':
     dependencies:
       '@sveltejs/acorn-typescript': 1.0.5(acorn@8.14.1)
       '@sveltejs/vite-plugin-svelte': 5.1.0(svelte@5.34.8)(vite@6.3.5(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))
