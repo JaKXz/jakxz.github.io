@@ -16,7 +16,7 @@ importers:
         version: 4.2.0
       svelte-preprocess:
         specifier: 6.0.3
-        version: 6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.5.3))(postcss@8.5.3)(sass@1.89.2)(svelte@5.37.1)(typescript@5.4.5)
+        version: 6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.5.6))(postcss@8.5.6)(sass@1.89.2)(svelte@5.37.1)(typescript@5.4.5)
     devDependencies:
       '@iconify-json/radix-icons':
         specifier: 1.2.2
@@ -89,7 +89,7 @@ importers:
         version: 3.3.1
       unocss:
         specifier: 66.3.3
-        version: 66.3.3(postcss@8.5.3)(vite@7.0.6(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5))
+        version: 66.3.3(postcss@8.5.6)(vite@7.0.6(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5))
       vite:
         specifier: 7.0.6
         version: 7.0.6(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1)
@@ -520,9 +520,6 @@ packages:
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.5.0':
-    resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
   '@jridgewell/sourcemap-codec@1.5.4':
     resolution: {integrity: sha512-VT2+G1VQs/9oz078bLrYbecdZKs912zQlkelYpuf+SXF+QvZDYJlbx/LSx+meSAwdDFnF8FVXW92AVjjkVmgFw==}
@@ -1142,15 +1139,6 @@ packages:
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
-  debug@4.4.0:
-    resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-
   debug@4.4.1:
     resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
     engines: {node: '>=6.0'}
@@ -1593,9 +1581,6 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
-  loupe@3.1.3:
-    resolution: {integrity: sha512-kkIp7XSkP78ZxJEsSxW3712C6teJVoeHHwgo9zJ380de7IYyJ2ISlxojcH2pC5OFLewESmnRi/+XCDIEEVyoug==}
-
   loupe@3.1.4:
     resolution: {integrity: sha512-wJzkKwJrheKtknCOKNEtDK4iqg/MxmZheEMtSTYvnzRdEYaZzmgH976nenp8WdJRdx5Vc1X/9MO0Oszl6ezeXg==}
 
@@ -1648,11 +1633,6 @@ packages:
 
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
-  nanoid@3.3.8:
-    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -1742,10 +1722,6 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  picomatch@4.0.2:
-    resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
-    engines: {node: '>=12'}
-
   picomatch@4.0.3:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
@@ -1799,10 +1775,6 @@ packages:
   postcss-selector-parser@6.1.0:
     resolution: {integrity: sha512-UMz42UD0UY0EApS0ZL9o1XnLhSTtvvvLe5Dc2H2O56fvRZi+KulDyf5ctDhhtYJBGKStV2FL1fy6253cmLgqVQ==}
     engines: {node: '>=4'}
-
-  postcss@8.5.3:
-    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
@@ -2576,7 +2548,7 @@ snapshots:
   '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
-      debug: 4.4.0
+      debug: 4.4.1
       espree: 9.6.1
       globals: 13.20.0
       ignore: 5.3.2
@@ -2592,7 +2564,7 @@ snapshots:
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.4.0
+      debug: 4.4.1
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -2626,8 +2598,6 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.29
 
   '@jridgewell/resolve-uri@3.1.2': {}
-
-  '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.4': {}
 
@@ -2968,13 +2938,13 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  '@unocss/postcss@66.3.3(postcss@8.5.3)':
+  '@unocss/postcss@66.3.3(postcss@8.5.6)':
     dependencies:
       '@unocss/config': 66.3.3
       '@unocss/core': 66.3.3
       '@unocss/rule-utils': 66.3.3
       css-tree: 3.1.0
-      postcss: 8.5.3
+      postcss: 8.5.6
       tinyglobby: 0.2.14
 
   '@unocss/preset-attributify@66.3.3':
@@ -3243,7 +3213,7 @@ snapshots:
       assertion-error: 2.0.1
       check-error: 2.1.1
       deep-eql: 5.0.2
-      loupe: 3.1.3
+      loupe: 3.1.4
       pathval: 2.0.0
 
   chalk@4.1.2:
@@ -3310,10 +3280,6 @@ snapshots:
   cssesc@3.0.0: {}
 
   csstype@3.1.3: {}
-
-  debug@4.4.0:
-    dependencies:
-      ms: 2.1.3
 
   debug@4.4.1:
     dependencies:
@@ -3436,14 +3402,14 @@ snapshots:
   eslint-plugin-svelte@2.46.1(eslint@8.57.1)(svelte@5.37.1):
     dependencies:
       '@eslint-community/eslint-utils': 4.7.0(eslint@8.57.1)
-      '@jridgewell/sourcemap-codec': 1.5.0
+      '@jridgewell/sourcemap-codec': 1.5.4
       eslint: 8.57.1
       eslint-compat-utils: 0.5.1(eslint@8.57.1)
       esutils: 2.0.3
       known-css-properties: 0.35.0
-      postcss: 8.5.3
-      postcss-load-config: 3.1.4(postcss@8.5.3)
-      postcss-safe-parser: 6.0.0(postcss@8.5.3)
+      postcss: 8.5.6
+      postcss-load-config: 3.1.4(postcss@8.5.6)
+      postcss-safe-parser: 6.0.0(postcss@8.5.6)
       postcss-selector-parser: 6.1.0
       semver: 7.7.1
       svelte-eslint-parser: 0.43.0(svelte@5.37.1)
@@ -3474,7 +3440,7 @@ snapshots:
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.4.0
+      debug: 4.4.1
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.2.2
@@ -3793,8 +3759,6 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
-  loupe@3.1.3: {}
-
   loupe@3.1.4: {}
 
   lru-cache@5.1.1:
@@ -3851,8 +3815,6 @@ snapshots:
   ms@2.1.3: {}
 
   nanoid@3.3.11: {}
-
-  nanoid@3.3.8: {}
 
   natural-compare@1.4.0: {}
 
@@ -3927,8 +3889,6 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  picomatch@4.0.2: {}
-
   picomatch@4.0.3: {}
 
   pkg-dir@4.2.0:
@@ -3947,39 +3907,33 @@ snapshots:
       exsolve: 1.0.5
       pathe: 2.0.3
 
-  postcss-load-config@3.1.4(postcss@8.5.3):
+  postcss-load-config@3.1.4(postcss@8.5.6):
     dependencies:
       lilconfig: 2.1.0
       yaml: 1.10.2
     optionalDependencies:
-      postcss: 8.5.3
+      postcss: 8.5.6
 
-  postcss-load-config@4.0.2(postcss@8.5.3):
+  postcss-load-config@4.0.2(postcss@8.5.6):
     dependencies:
       lilconfig: 3.1.3
       yaml: 2.6.1
     optionalDependencies:
-      postcss: 8.5.3
+      postcss: 8.5.6
     optional: true
 
-  postcss-safe-parser@6.0.0(postcss@8.5.3):
+  postcss-safe-parser@6.0.0(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.3
+      postcss: 8.5.6
 
-  postcss-scss@4.0.9(postcss@8.5.3):
+  postcss-scss@4.0.9(postcss@8.5.6):
     dependencies:
-      postcss: 8.5.3
+      postcss: 8.5.6
 
   postcss-selector-parser@6.1.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-
-  postcss@8.5.3:
-    dependencies:
-      nanoid: 3.3.8
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.5.6:
     dependencies:
@@ -4002,7 +3956,7 @@ snapshots:
       ignore: 7.0.5
       mri: 1.2.0
       picocolors: 1.1.1
-      picomatch: 4.0.2
+      picomatch: 4.0.3
       prettier: 3.6.2
       tinyexec: 0.3.2
       tslib: 2.8.1
@@ -4157,18 +4111,18 @@ snapshots:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      postcss: 8.5.3
-      postcss-scss: 4.0.9(postcss@8.5.3)
+      postcss: 8.5.6
+      postcss-scss: 4.0.9(postcss@8.5.6)
     optionalDependencies:
       svelte: 5.37.1
 
-  svelte-preprocess@6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.5.3))(postcss@8.5.3)(sass@1.89.2)(svelte@5.37.1)(typescript@5.4.5):
+  svelte-preprocess@6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.5.6))(postcss@8.5.6)(sass@1.89.2)(svelte@5.37.1)(typescript@5.4.5):
     dependencies:
       svelte: 5.37.1
     optionalDependencies:
       '@babel/core': 7.25.2
-      postcss: 8.5.3
-      postcss-load-config: 4.0.2(postcss@8.5.3)
+      postcss: 8.5.6
+      postcss-load-config: 4.0.2(postcss@8.5.6)
       sass: 1.89.2
       typescript: 5.4.5
 
@@ -4305,12 +4259,12 @@ snapshots:
 
   universalify@2.0.0: {}
 
-  unocss@66.3.3(postcss@8.5.3)(vite@7.0.6(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5)):
+  unocss@66.3.3(postcss@8.5.6)(vite@7.0.6(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5)):
     dependencies:
       '@unocss/astro': 66.3.3(vite@7.0.6(jiti@2.4.2)(sass@1.89.2)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.12(typescript@5.4.5))
       '@unocss/cli': 66.3.3
       '@unocss/core': 66.3.3
-      '@unocss/postcss': 66.3.3(postcss@8.5.3)
+      '@unocss/postcss': 66.3.3(postcss@8.5.6)
       '@unocss/preset-attributify': 66.3.3
       '@unocss/preset-icons': 66.3.3
       '@unocss/preset-mini': 66.3.3
@@ -4336,7 +4290,7 @@ snapshots:
   unplugin-utils@0.2.4:
     dependencies:
       pathe: 2.0.3
-      picomatch: 4.0.2
+      picomatch: 4.0.3
 
   update-browserslist-db@1.1.3(browserslist@4.25.1):
     dependencies:
@@ -4422,7 +4376,7 @@ snapshots:
       expect-type: 1.2.1
       magic-string: 0.30.17
       pathe: 2.0.3
-      picomatch: 4.0.2
+      picomatch: 4.0.3
       std-env: 3.9.0
       tinybench: 2.9.0
       tinyexec: 0.3.2
