@@ -1,1 +1,0 @@
-const t="Jason Kurian",s="UX + Web Developer",e="jasonkurian.dev",n="https://jasonkurian.dev",a="@JaKXz92",o=10,i=[{title:"Learning",route:"/learning"}],r=[[s,"@1Password 🇨🇦"],["MD + keys","@johnmaksymmusic 🇺🇦 🇨🇦"]];export{s as a,e as b,n as c,r as d,a as e,i as n,o as p,t as s};
