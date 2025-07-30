@@ -22,19 +22,21 @@ jasonk92@gmail.com<br>
 
 ## 🧰 Technical
 
-5-{new Date().getFullYear() - 2012} years of experience across all roles in:
+Up to {new Date().getFullYear() - 2012} years of experience across all roles in:
 
 - JavaScript in all flavours
-  - Svelte, Typescript, Node, React
-  - Vite, Webpack, Storybook
-  - Jest, Vitest
+  - React, Typescript, Node, Svelte
+  - Vite, Webpack
+  - Vitest, Jest
 - TDD, pairing, XP
 - Git, Mercurial
-- Figma, Balsamiq, Sass, Style Dictionary
+- Figma, Balsamiq, Style Dictionary
 - Turborepo, Lerna
-- GraphQL
+- GraphQL, Apollo
 - Ruby on Rails
 - PostgreSQL, Redis
+- Golang
+- Rust
 - Django, Flask
 
 </aside>
