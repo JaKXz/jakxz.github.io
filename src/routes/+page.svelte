@@ -24,7 +24,7 @@
 			<div class="name-heading">Kurian</div>
 		</div>
 		<button
-			class="reset-button w-full cursor-pointer p-0 text-center"
+			class="reset-button w-full cursor-pointer p-0 text-center mt-0"
 			type="button"
 			aria-label="Change subtitle"
 			onclick={() => {
