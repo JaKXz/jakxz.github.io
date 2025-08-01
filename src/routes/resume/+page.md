@@ -1,5 +1,5 @@
 <script>
-   import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config.js';
+   import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config';
 </script>
 
 <svelte:head>
@@ -24,20 +24,21 @@ jasonk92@gmail.com<br>
 
 Up to {new Date().getFullYear() - 2012} years of experience across all roles in:
 
-- JavaScript in all flavours
-  - React, Typescript, Node, Svelte
+- JavaScript in any and all flavours
+  - React, Typescript, Redux Toolkit
+  - Deno, Node.js, Fastify, Express
+  - Svelte, Solid
   - Vite, Webpack
   - Vitest, Jest
 - TDD, pairing, XP
 - Git, Mercurial
 - Figma, Balsamiq, Style Dictionary
+- Ruby on Rails
 - Turborepo, Lerna
 - GraphQL, Apollo
-- Ruby on Rails
 - PostgreSQL, Redis
 - Golang
 - Rust
-- Django, Flask
 
 </aside>
 
@@ -45,13 +46,19 @@ Up to {new Date().getFullYear() - 2012} years of experience across all roles in:
 
 ## 🎒 Experience
 
+[1Password](https://1password.com) | _Senior Web Developer_<br>
+Jan **2024 - present**
+
+- $1MM net new ARR item sharing experience for desktop, mobile, and web platforms.
+- Providing high quality coaching and mentoring in [code reviews](/learning/how-to-review-a-pull-request), pairing, and 1:1s to help the team grow and improve.
+
+
 [Flexpa](https://flexpa.com) | _Staff Developer_<br>
 May **2023** - Jan **2024**
 
 - Shipping new extract-transform-load pipeline for patient data serving over 2000 requests/minute with 99.9% success (Redis, Node). This new architecture allows us to provide expectable and reliable connections to over 200 APIs covering 135MM+ lives.
 - Leading a small agile team through scoping, shaping, and shipping projects from the ground up for our customer facing applications in the monorepo (UX, a11y, Next.js, Turborepo).
-- Providing high quality coaching and mentoring in code reviews, pairing, and 1:1s to help the team grow and improve.
-- Defining great defaults for practices like retrospectives, [pairing](/learning/pairing), and internal documentation to improve the team's effectiveness; e.g. running our quarterly retreat where we dig deep into OKRs, Product roadmap & understanding, and constructive personal and team feedback.
+- Defining great defaults for engineering practices: retrospectives, [pairing](/learning/pairing), and a quarterly retreat where we dig deep into OKRs, Product roadmap & understanding, and constructive personal and team feedback.
 
 [Shopify](https://shopify.dev) | _Senior Web Developer_<br>
 Nov **2020** - Mar **2023**
@@ -76,15 +83,14 @@ May **2019** - Aug **2020**
 [Nulogy](http://nulogy.com) | _Fullstack Developer_<br>
 Aug **2016** - Aug **2018**
 
-- Co-invented and implemented [storybook driven development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07) - a methodology for rapidly prototyping/developing visual components - with senior team members.
+- Implemented [storybook driven development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07) - a methodology for rapidly prototyping/developing visual components - with senior team members.
 - Built a data-intensive dashboard serving millions of rows of data with PostgreSQL, Ruby on Rails, React, and Redux to help planners derive insights from historical data.
 - Developed consistent component / container pattern for data deserialization and visualizations and shared language with the design team, work that led to the full-fledged [design system](https://nulogy.design/).
 
 [Rangle.io](http://rangle.io) | _Junior Developer_<br>
 Oct **2015** - Apr **2016**
 
-- Co-led [tooling & maintenance of OSS starter projects](https://github.com/rangle?utf8=%E2%9C%93&q=starter&type=&language=), making new projects start up 2-5x faster & enabling the aggressive staffing model Rangle uses.
-- Consolidated 2 internal products using Koa and React + Redux, managing large datasets from multiple scheduling APIs to set up future employee and company success.
+- Co-led [tooling & maintenance of OSS starter projects](https://github.com/rangle?utf8=%E2%9C%93&q=starter&type=&language=), making new projects start up 2-5x faster & enabling the aggressive staffing model Rangle uses; supported client projects throughout.
 
 </section>
 
@@ -94,7 +100,7 @@ Oct **2015** - Apr **2016**
 
 I got my start in open source, so I'm quick to jump in and help:
 
-1. [PrismJS](https://github.com/prismjs/prism), Maintainer, 2021 - Present<br>
+1. [PrismJS](https://github.com/prismjs/prism), Maintainer, 2021 - 2023<br>
    _~7.7MM weekly downloads_<br>
    I work with a small global team to review new features, fixes, infrastructure and language definition improvements.
 
