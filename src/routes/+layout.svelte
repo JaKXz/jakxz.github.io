@@ -48,9 +48,9 @@
 		id="main"
 		tabindex="-1"
 		class={classNames(
-			'xs:max-w-42rem px-8 mx-auto',
+			'xs:max-w-42rem mx-auto px-8',
 			data.path !== '/' &&
-				'relative xs:shadow-xl mt-[-1rem] bg-white dark:bg-[var(--dark)] border-solid border-0.1 border-b-0 xs:border-x-1 xs:border-t-1 xs:border-rounded-t border-gray px-8 py-10 xs:px-24 xs:py-16 z-2 xs:max-w-60rem'
+				'xs:shadow-xl xs:border-x-1 xs:border-t-1 xs:border-rounded-t xs:px-24 xs:py-16 xs:max-w-60rem relative z-2 mt-[-1rem] border-0.1 border-b-0 border-gray border-solid bg-white px-8 py-10 dark:bg-[var(--dark)]'
 		)}
 	>
 		{@render children?.()}
