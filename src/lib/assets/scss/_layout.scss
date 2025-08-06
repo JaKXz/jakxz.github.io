@@ -11,6 +11,7 @@
 figure img,
 .callout,
 pre[class*='language-'] {
+	max-height: 100%;
 	margin: 2rem 0 2rem -2rem;
 	$xsMinMaxW: vars.$xsMin - 1;
 	@media (max-width: $xsMinMaxW) {
@@ -24,6 +25,14 @@ pre[class*='language-'] {
 
 	:where(h1, h2, h3, h4, h5, h6):first-of-type {
 		margin-top: 0;
+	}
+}
+
+figure img {
+	height: 100%;
+	$xsMinMaxW: vars.$xsMin - 1;
+	@media (max-width: $xsMinMaxW) {
+		margin-top: -2rem;
 	}
 }
 
