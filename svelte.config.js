@@ -3,7 +3,7 @@ import { mdsvex } from 'mdsvex';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
-import { sveltePreprocess } from 'svelte-preprocess';
+import { scss } from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -11,11 +11,10 @@ export default {
 	extensions: ['.svelte', '.md'],
 
 	preprocess: [
-		sveltePreprocess({
-			scss: {
-				// Ensures Sass variables are always available inside component <style lang="scss"> blocks as vars.$variableDefinedInFile
-				prependData: `@use 'src/lib/assets/scss/vars';`
-			}
+		scss({
+			// Ensures Sass variables are always available inside component <style lang="scss"> blocks as vars.$variableDefinedInFile
+			prependData: `@use 'src/lib/assets/scss/vars';`,
+			silenceDeprecations: ['import', 'mixed-decls', 'global-builtin']
 		}),
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.
