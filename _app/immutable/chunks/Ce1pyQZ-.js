@@ -1,1 +1,0 @@
-import"./NZTpNUN0.js";import{C as t,G as i,W as e,ae as l,X as p}from"./CrW1dq1R.js";import{s as d}from"./BQ-o88kk.js";var m=t('<div class="callout svelte-19uruig"><!></div>');function u(o,r){var a=m(),s=e(a);d(s,()=>r.children??l),p(a),i(o,a)}export{u as C};
