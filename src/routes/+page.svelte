@@ -57,10 +57,11 @@
 <section class="m-auto min-h-100svh flex flex-col items-center justify-center">
 	<div class="flex flex-col">
 		<h2 class="xs:text-left text-center">Recent Posts</h2>
+		<p>I occasionally write about things I've learned or shared and taught to colleagues.</p>
 		<div class="cards-grid">
 			{#each data.posts as post (post.slug)}
 				<div
-					class="card xs:transform xs:focus-within:scale-110 xs:hover:scale-110 border-rounded-2 transition duration-500"
+					class="card xs:transform xs:focus-within:scale-101 xs:hover:scale-101 border-rounded-2 transition duration-200"
 				>
 					<a href="/learning/{post.slug}" class="link-decoration-none">
 						<p class="subdued m-0">
@@ -111,6 +112,6 @@
 
 	.cards-grid:focus-within > .card:not(:global(:focus-within)),
 	.cards-grid:hover > .card:not(:global(:hover)) {
-		opacity: 0.5;
+		opacity: 0.75;
 	}
 </style>

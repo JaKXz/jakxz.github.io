@@ -1,7 +1,7 @@
 ---
 title: 'Write React components like an essay'
 date: '2023-02-09'
-updated: '2023-05-08'
+updated: '2025-05-08'
 categories:
   - 'react'
   - 'web'
@@ -15,10 +15,10 @@ In a well-written essay, the main point (or thesis) is usually near the beginnin
 Similarly, in a React component, you can put the main export of your file as close to the top as possible, like the "thesis" of your code.
 Then, put supporting "arguments" (helpers, subcomponents, etc.) immediately following in order of relevance and use.
 
-Let's look at an example of a `Profile.jsx` component:
+Let's look at an example of a `<Profile />` component:
 
 ```tsx
-// app/components/Profile.jsx
+// app/components/Profile.tsx (types omitted for brevity)
 import React from 'react';
 // N more imports
 
@@ -45,14 +45,15 @@ export default function Profile({ name, ...rest }) {
 }
 ```
 
-In this example, the main export of the file, the Profile component, is buried under a lot of supporting code.
-If you're trying to debug an issue in this component, you may have to wade through a lot of unrelated code before you find the entry point.
+Spotted the problem? 
+The `<Profile />` component, the _main export of this file_ and most likely the reason you're opening the file called `Profile.tsx`, is buried under a lot of supporting code.
+If you're trying to debug an issue in this component, you have to wade through a lot of code before you find the entry point; at best, it's supporting code, and at worst its just noise and red herrings taking away cognitive budget.
 By reordering the code to put the main export first, you can make it easier for other developers (or your future self!) to quickly understand what the component is doing and find the relevant code.
 
-Here's an example of what the same Profile.jsx file could look like if it followed the essay structure:
+Here's an example of what the same `<Profile />` component could look like if it followed the essay structure:
 
 ```tsx
-// app/components/Profile.jsx
+// app/components/Profile.tsx (types omitted for brevity)
 import React from 'react';
 // N more imports, like the "introductory" sentences that bring in hooks, shared helper functions, and so on
 
@@ -83,5 +84,6 @@ function helper(...args) {
 
 By structuring your React components like an essay, you can make your code more readable, easier to maintain, and quicker to understand.
 Give it a try in your own projects and see how it works for you!
+
 I also think this could be applicable to non React code;
 you would just need to determine what the "thesis" is and see if it makes sense to use "supporting arguments" as described here.

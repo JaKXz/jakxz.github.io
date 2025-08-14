@@ -1,7 +1,7 @@
 ---
-title: 'How to review a pull/merge request'
+title: 'How to read code, familiar or not'
 date: '2024-05-08'
-updated: '2025-01-11'
+updated: '2025-08-14'
 categories:
     - 'coaching'
     - 'dev'
@@ -13,9 +13,10 @@ excerpt: Why reviews matter, how to start, and some tips for etiquette
     import Callout from "$lib/components/Callout.svelte";
 </script>
 
+## The Why
+
+Most developers spend more time reading code than writing it, practicing reading and reviewing code has multiplicative benefits. 
 Good reviews are a gift to your future self and teammates who have to maintain and understand the code being merged to ship new code on top of it.
-Since most developers spend more time reading code than writing it, practicing reading and reviewing code has multiplicative benefits;
-soon you'll find yourself reviewing code as written here right in your editor. 
 This is one senior dev's take among several others on the internet based on my own experience, usually being the one who leads the team in quantity and quality of reviews:
 **your mileage may vary so help yourself to a few grains of salt 🙂** especially because I'm trying not to be too generic here but it's inevitable.
 
@@ -28,6 +29,8 @@ If I'm wrong let me know in the comments or make a PR to correct me ;)
 
 </Callout>
 
+## The How
+
 I usually approach reviews based on the level of context I have with a codebase and how frequently I have to interact with it or take responsibility for it.
 
 1. High context - you are actively working on this area of the codebase and you are familiar with the inner workings, tribal knowledge, and arcane hacks going on.
@@ -38,7 +41,7 @@ Here are some guidelines and questions you can ask yourself and the author(s) to
 For each level of context, there are prompts to help you ask good questions; at each level these should guide you towards providing higher quality feedback.
 You can mix and match as you see fit!
 
-## High context
+### High context
 
 - Acting as QA for your teammate is the best way to "have each other's backs" - testing for and catching edge cases that the author may have missed is clutch. Good teammates will thank you.
 - Product minded questions are crucial: _why_ do we need this change? Can the desired behaviour be achieved with simpler or no code? Remember, less (no) code is best code.
@@ -47,7 +50,7 @@ You can mix and match as you see fit!
     - For the inevitably large MR, try to review commit by commit, and ideally commit messages are where most of the time bound context/documentation is.
     - Or, review file by file, _going in order_ from UI -> backend, or, backend out to UI. Can you trace the logic from your developer tools back to the server requests?
 
-## In-between
+### In-between
 
 e.g. This might be a component library that you use but don't modify often.
 
@@ -56,7 +59,7 @@ e.g. This might be a component library that you use but don't modify often.
     - Asking for comments might be a double-edged sword (since they can go out of date) - the best approach is to ask for a comment explaining _why_ a complex section of code exists or is written the way it is, rather than _what_ that code is doing.
 - Ideally, you spot / point out patterns that repeat or can be simplified to make the area of the codebase easier to understand.
 
-## Low context
+### Low context
 
 e.g. A dependency bump or security request somewhere you've been asked to provide eyes on.
 
