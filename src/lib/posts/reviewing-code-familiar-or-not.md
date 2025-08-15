@@ -1,31 +1,31 @@
 ---
-title: 'How to read code, familiar or not'
+title: 'Reviewing code: familiar or not'
 date: '2024-05-08'
 updated: '2025-08-14'
 categories:
     - 'coaching'
     - 'dev'
 coverImage: '/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg'
-excerpt: Why reviews matter, how to start, and some tips for etiquette
 ---
 
 <script>
     import Callout from "$lib/components/Callout.svelte";
 </script>
 
-## The Why
+## Reviewing code is most of the job
 
-Most developers spend more time reading code than writing it, practicing reading and reviewing code has multiplicative benefits. 
+Most developers spend more time reading code than writing it: practicing reading and reviewing code has multiplicative benefits.
 Good reviews are a gift to your future self and teammates who have to maintain and understand the code being merged to ship new code on top of it.
+Sometimes you may be asked to review code that you have never seen before or work with very occasionally.
 This is one senior dev's take among several others on the internet based on my own experience, usually being the one who leads the team in quantity and quality of reviews:
-**your mileage may vary so help yourself to a few grains of salt 🙂** especially because I'm trying not to be too generic here but it's inevitable.
+**your mileage may vary so help yourself to a few grains of salt** as you read this.
 
 <Callout>
 
 **Note the synonyms:** PR == Pull Request == MR == Merge request
 
 My understanding of the lore behind the different names is that "pull request" was a typo in the early days of GitHub but we all just rolled with it.
-If I'm wrong let me know in the comments or make a PR to correct me ;)
+If I'm wrong let me know in the comments or make a PR :)
 
 </Callout>
 

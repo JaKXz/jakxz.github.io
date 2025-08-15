@@ -48,15 +48,15 @@ li {
 			content: url('/link.svg');
 			fill: currentColor;
 			position: absolute;
-			left: -1rem;
+			left: -1.25rem;
 			min-width: 1rem;
 			width: 100%;
 			height: 1rem;
-			top: 0;
+			top: 0.1rem;
 			opacity: 0.2;
 			transition: opacity 0.2s;
 
-			@media (min-width: vars.$smMin) {
+			@media (min-width: vars.$xsMin) {
 				left: -1.5rem;
 			}
 		}
