@@ -3,6 +3,7 @@ import { mdsvex } from 'mdsvex';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
+import remarkGfm from 'remark-gfm';
 import { scss } from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -19,6 +20,8 @@ export default {
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.
 			extensions: ['.md'],
+
+			remarkPlugins: [remarkGfm],
 
 			// Adds IDs to headings, and anchor links to those IDs. Note: must stay in this order to work.
 			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, rehypeExternalLinks]
