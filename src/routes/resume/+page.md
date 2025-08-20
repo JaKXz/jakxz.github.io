@@ -24,12 +24,12 @@ jasonk92@gmail.com<br>
 
 Up to {new Date().getFullYear() - 2012} years of experience across all roles with:
 
-- JavaScript in all flavours:
-  - React, Typescript, Redux Toolkit
-  - Deno, Node.js, Fastify, Express
-  - Vite, Vitest, Webpack, Jest
+- React, Typescript, Redux Toolkit
+- Deno, Node.js, Fastify, Express
+- Vite, Vitest, Webpack, Jest
+- Tailwind, Sass, CSS4
 - TDD, pairing, XP
-- Git, Mercurial
+- `git`, `jj`
 - Figma, Balsamiq, Style Dictionary
 - Ruby on Rails
 - Turborepo, Lerna
@@ -47,8 +47,9 @@ Up to {new Date().getFullYear() - 2012} years of experience across all roles wit
 [1Password](https://1password.com) | _Senior Web Developer_<br>
 Jan **2024 - Present**
 
-- Implemented performant user lookup for large organizations for 1Password's [item sharing experience](https://share.1password.com) across desktop, mobile, and web platforms. This product, with our squad's maintainership, has delivered ~$1MM net new consumer ARR since 2024.
-- Led front-end engineering team of five, in collaboration with backend, product, and design, to build 1Password's main showcase at RSA Conference 2025: a new product in the [1Password browser extension](https://1password.com/applauncher) securing access to enterprise provisioned apps for employees and security-conscious administrators.
+- Implemented performant user lookup for large organizations for 1Password's [item sharing experience](https://share.1password.com) across desktop, mobile, and web platforms. With our squad's maintainership, this product has driven ~$1MM net new consumer ARR since 2024.
+- Led front-end engineering team of five, making the secure way the easy way with App Launcher in the [1Password browser extension](https://1password.com/applauncher) securing access to enterprise provisioned apps for employees and security-conscious administrators.
+- Co-architected simplified state management improving rendering performance by 83% in the browser extension.
 - Coached and mentored developers at all levels to support their output and professional development with [code reviews](https://jasonkurian.dev/learning/how-to-review-a-pull-request) and pair programming.
 - Improved user success in item creation and item search flows by >=25% on web platforms including the desktop app.
 
@@ -61,10 +62,10 @@ May **2023** - Jan **2024**
 [Shopify](https://shopify.dev) | _Senior Web Developer_<br>
 Nov **2020** - Mar **2023**
 
-- Co-authored and implemented a new design system for shopify.dev to support dark mode + multi-theming to WCAG accessibility standards.
 - Contributed to the industry-leading redesign of Shopify's REST & GraphQL API documentation by taking the product from static content to learning experience.
-- Championed the successful release of interactive codeblocks and enabled live rendering of Shopify liquid templating language.
+- Co-authored and implemented a new design system for shopify.dev to support dark mode + multi-theming to WCAG accessibility standards from first principles (tokens, atoms, and so on).
 - Delivered new Vite-powered Shopify app template (React, Node), improving adoption of best practices for Shopify app developers and over 500 new GitHub stars for the repository in 2 months.
+- Championed the successful release of interactive codeblocks and enabled live rendering of Shopify liquid templating language.
 - Shipped an integration with a major postal carrier for all Canadian merchants with over 80% adoption rate (Rails, React).
 - Mentored early-career developers to improve skills and knowledge of best practices in Rails, GraphQL, React, CSS, Git, and other tools.
 - Conducted interviews for early career developers and improved the interview and evaluation process; led to successful hires of high potential candidates.
@@ -82,8 +83,8 @@ May **2019** - Aug **2020**
 Aug **2016** - Aug **2018**
 
 - Implemented [storybook driven development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07) - a methodology for rapidly prototyping/developing visual components - with senior team members.
-- Built a data-intensive dashboard serving millions of rows of data with PostgreSQL, Ruby on Rails, React, and Redux to help planners derive insights from historical data.
-- Developed consistent component / container pattern for data deserialization and visualizations and shared language with the design team, work that led to the full-fledged [design system](https://nulogy.design/).
+- [Patented](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018083682&_cid=P10-MDF62X-15877-1) the underlying system for & built a data-intensive dashboard serving millions of rows of data with PostgreSQL, Ruby on Rails, React, and Redux to help planners derive insights from historical data. 
+- Developed consistent component / container pattern for data deserialization and visualizations and shared language with the design team, which led to the full-fledged [design system](https://nulogy.design/).
 
 [Rangle.io](http://rangle.io) | _Junior Developer_<br>
 Oct **2015** - Apr **2016**
