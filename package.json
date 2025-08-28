@@ -19,7 +19,7 @@
 		"@unocss/extractor-svelte": "66.4.2",
 		"@unocss/transformer-directives": "66.4.2",
 		"clsx": "^2.1.1",
-		"eslint": "8.57.1",
+		"eslint": "9.34.0",
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-svelte": "2.46.1",
 		"gh-pages": "6.3.0",
