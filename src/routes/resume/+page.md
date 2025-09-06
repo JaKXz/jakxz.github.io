@@ -50,7 +50,7 @@ Jan **2024 - Present**
 - Implemented performant user lookup for large organizations for 1Password's [item sharing experience](https://share.1password.com) across desktop, mobile, and web platforms. With our squad's maintainership, this product has driven ~$1MM net new consumer ARR since 2024.
 - Led front-end engineering team of five, making the secure way the easy way with App Launcher in the [1Password browser extension](https://1password.com/applauncher) securing access to enterprise provisioned apps for employees and security-conscious administrators.
 - Co-architected simplified state management improving rendering performance by 83% in the browser extension.
-- Coached and mentored developers at all levels to support their output and professional development with [code reviews](https://jasonkurian.dev/learning/how-to-review-a-pull-request) and pair programming.
+- Coached and mentored developers at all levels to support their output and professional development with [code reviews](https://jasonkurian.dev/learning/reviewing-code-familiar-or-not) and pair programming.
 - Improved user success in item creation and item search flows by >=25% on web platforms including the desktop app.
 
 [Flexpa](https://flexpa.com) | _Staff Developer_<br>
