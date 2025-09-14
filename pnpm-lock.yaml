@@ -19,8 +19,8 @@ importers:
         version: 6.0.3(@babel/core@7.25.2)(postcss-load-config@4.0.2(postcss@8.5.6))(postcss@8.5.6)(sass@1.92.1)(svelte@5.38.10)(typescript@5.4.5)
     devDependencies:
       '@iconify-json/radix-icons':
-        specifier: 1.2.4
-        version: 1.2.4
+        specifier: 1.2.5
+        version: 1.2.5
       '@sveltejs/adapter-static':
         specifier: 3.0.9
         version: 3.0.9(@sveltejs/kit@2.39.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.10)(vite@7.1.5(jiti@2.5.1)(sass@1.92.1)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.38.10)(vite@7.1.5(jiti@2.5.1)(sass@1.92.1)(tsx@4.19.2)(yaml@2.6.1)))
@@ -514,8 +514,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@iconify-json/radix-icons@1.2.4':
-    resolution: {integrity: sha512-QgqVl1q+FfEVcVhMFR0ySeM3Rzz3I/ZH1eepktEwGLMazeIbh4ucGdnsSQBurOi0WMBtZdYaju7RsHTEfQxY5g==}
+  '@iconify-json/radix-icons@1.2.5':
+    resolution: {integrity: sha512-HkUt+ydCivK/S/aFsgaiZRvs7zDEcO07PKkuEuu2EFBWCuC+Pi1mDdXPX0U3qjRr7JknmnoR4sAg53C+Ig35ow==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2561,7 +2561,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@iconify-json/radix-icons@1.2.4':
+  '@iconify-json/radix-icons@1.2.5':
     dependencies:
       '@iconify/types': 2.0.0
 
