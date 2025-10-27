@@ -36,7 +36,7 @@
 		"tailwind-merge": "^3.0.1",
 		"unocss": "66.5.4",
 		"vite": "7.1.12",
-		"vitest": "4.0.3"
+		"vitest": "4.0.4"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npx pretty-quick --staged"
