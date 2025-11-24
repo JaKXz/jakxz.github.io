@@ -94,7 +94,7 @@
 		<aside class="post-footer">
 			<h2>Posted in:</h2>
 			<ul>
-				{#each categories as category}
+				{#each categories as category (category)}
 					<li>
 						<a href="/learning/category/{category}/">
 							{category}

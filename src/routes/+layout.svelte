@@ -47,7 +47,7 @@
 	id="main"
 	tabindex="-1"
 	class={classNames(
-		'xs:max-w-42rem mx-auto px-8',
+		'mx-auto px-8 xs:max-w-42rem',
 		data.path !== '/' && [
 			'xs:shadow-xl',
 			'xs:border-x-1',

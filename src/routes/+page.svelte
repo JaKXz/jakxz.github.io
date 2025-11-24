@@ -56,12 +56,12 @@
 
 <section class="m-auto min-h-100svh flex flex-col items-center justify-center">
 	<div class="flex flex-col">
-		<h2 class="xs:text-left text-center">Recent Posts</h2>
+		<h2 class="text-center xs:text-left">Recent Posts</h2>
 		<p>I occasionally write about things I've learned or shared and taught to colleagues.</p>
 		<div class="cards-grid">
 			{#each data.posts as post (post.slug)}
 				<div
-					class="card xs:transform xs:focus-within:scale-101 xs:hover:scale-101 border-rounded-2 transition duration-200"
+					class="card border-rounded-2 transition duration-200 xs:transform xs:focus-within:scale-101 xs:hover:scale-101"
 				>
 					<a href="/learning/{post.slug}" class="link-decoration-none">
 						<p class="subdued m-0">
