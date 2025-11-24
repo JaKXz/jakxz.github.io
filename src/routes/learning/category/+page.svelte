@@ -11,7 +11,7 @@
 	<h1 class="h2">All blog categories</h1>
 
 	<ul>
-		{#each uniqueCategories as category}
+		{#each uniqueCategories as category (category.title)}
 			<li>
 				<a href="/learning/category/{category.title}">
 					{category.title}

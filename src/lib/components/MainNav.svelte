@@ -8,7 +8,7 @@
 <!-- Contents of this file will be used in the header and the responsive hamburger menu. -->
 <nav class="main-nav" class:open={$isMenuOpen}>
 	<ul>
-		{#each navItems as page}
+		{#each navItems as page (page.route)}
 			<NavItem href={page.route}>
 				{page.title}
 			</NavItem>

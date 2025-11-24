@@ -20,7 +20,7 @@
 	{#if pagesAvailable > 1}
 		<nav aria-label="Pagination navigation" class="pagination">
 			<ul>
-				{#each Array.from({ length: pagesAvailable }, (_, i) => i + 1) as page}
+				{#each Array.from({ length: pagesAvailable }, (_, i) => i + 1) as page (path + '/' + page)}
 					<li>
 						<a href="{path}/{page}" aria-current={isCurrentPage(page)}>
 							<span class="sr-only">
