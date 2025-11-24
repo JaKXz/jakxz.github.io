@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-static": "3.0.10",
 		"@sveltejs/kit": "2.49.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
+		"@types/node": "^24.10.1",
 		"@unocss/eslint-config": "66.5.9",
 		"@unocss/extractor-svelte": "66.5.9",
 		"@unocss/transformer-directives": "66.5.9",

@@ -8,7 +8,7 @@ import 'dotenv/config';
 export default {
 	plugins: [
 		UnoCss({
-			extractors: [extractorSvelte]
+			extractors: [extractorSvelte()]
 		}),
 		sveltekit()
 	],
