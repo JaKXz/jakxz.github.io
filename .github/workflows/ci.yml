@@ -6,17 +6,9 @@ on:
   merge_group:
 
 jobs:
-  all:
-    strategy:
-      matrix:
-        target:
-          - name: 'Build'
-            command: 'build'
-          - name: 'Lint'
-            command: 'lint'
-          - name: 'Test'
-            command: 'test'
+  build-and-lint:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -50,5 +42,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: ${{ matrix.target.name }}
-        run: pnpm run ${{ matrix.target.command }}
+      - name: build
+        run: pnpm run build
+
+      - name: test
+        run: pnpm run test
+
+      - name: lint
+        run: pnpm run lint
