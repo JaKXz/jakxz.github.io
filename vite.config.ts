@@ -1,10 +1,10 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import extractorSvelte from '@unocss/extractor-svelte';
 import UnoCss from 'unocss/vite';
+import { type UserConfig } from 'vite';
 
 import 'dotenv/config';
 
-/** @type {import('vite').UserConfig} */
 export default {
 	plugins: [
 		UnoCss({
@@ -20,4 +20,4 @@ export default {
 			allow: ['.']
 		}
 	}
-};
+} satisfies UserConfig;
