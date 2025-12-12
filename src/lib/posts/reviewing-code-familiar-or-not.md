@@ -1,7 +1,7 @@
 ---
 title: 'Reviewing code: familiar or not'
 date: '2024-05-08'
-updated: '2025-08-14'
+updated: '2025-12-12'
 categories:
     - 'coaching'
     - 'dev'
@@ -65,7 +65,7 @@ e.g. A dependency bump or security request somewhere you've been asked to provid
 
 - Does a smoke test pass? Are you able to pull, build, and test the code locally? Anything strange in CI?
 - Ask about "general best practices" e.g. usually an X project does Y, does that apply here? Why or why not?
-- Can you articulate the _Why_ **and** _What_ of this change (rather than / don't worry about specific details in the *How*) succinctly back to the author?
+- Can you articulate the _Why_ **and** _What_ of this change (don't worry about specific details in the *How*) succinctly back to the author?
 
 ## What about general etiquette?
 
