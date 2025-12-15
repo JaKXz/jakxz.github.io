@@ -28,7 +28,7 @@
 		"globals": "^16.5.0",
 		"mdsvex": "0.12.6",
 		"prettier": "3.7.4",
-		"prettier-plugin-svelte": "3.4.0",
+		"prettier-plugin-svelte": "3.4.1",
 		"pretty-quick": "^4.0.0",
 		"rehype-autolink-headings": "7.1.0",
 		"rehype-external-links": "3.0.0",
