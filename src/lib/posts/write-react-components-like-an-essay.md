@@ -47,7 +47,7 @@ export default function Profile({ name, ...rest }) {
 
 Spotted the problem? 
 The `<Profile />` component, the _main export of this file_ and most likely the reason you're opening the file called `Profile.tsx`, is buried under a lot of supporting code.
-If you're trying to debug an issue in this component, you have to wade through a lot of code before you find the entry point; at best, it's supporting code, and at worst its just noise and red herrings taking away cognitive budget.
+If you're trying to debug an issue in this component, you have to wade through a lot of code before you find the entry point; at best, it's supporting code, and at worst it's just noise and red herrings taking away cognitive budget.
 By reordering the code to put the main export first, you can make it easier for other developers (or your future self!) to quickly understand what the component is doing and find the relevant code.
 
 Here's an example of what the same `<Profile />` component could look like if it followed the essay structure:
