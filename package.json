@@ -46,7 +46,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"dotenv": "17.2.3",
+		"dotenv": "17.2.4",
 		"just-throttle": "4.2.0",
 		"svelte-preprocess": "6.0.3"
 	}
