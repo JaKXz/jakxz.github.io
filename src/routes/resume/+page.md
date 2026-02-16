@@ -27,14 +27,14 @@ Up to {new Date().getFullYear() - 2012} years of experience across all roles wit
 - React, Typescript, Redux Toolkit
 - Deno, Node.js, Fastify, Express
 - Vite, Vitest, Webpack, Jest
-- Tailwind, Sass, CSS4
+- Tailwind, Sass, CSS4, Style Dictionary
 - TDD, pairing, XP
-- `git`, `jj`
-- Figma, Balsamiq, Style Dictionary
-- Ruby on Rails
-- Turborepo, Lerna
 - GraphQL, Apollo
 - PostgreSQL, Redis
+- `git`, `jj`
+- Figma, Balsamiq
+- Turborepo, Lerna
+- Ruby on Rails
 - Go
 - Rust
 

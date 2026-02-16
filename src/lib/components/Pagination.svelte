@@ -3,8 +3,8 @@
 
 	/**
 	 * @typedef {Object} Props
-	 * @property {any} currentPage
-	 * @property {any} totalPosts
+	 * @property {number} currentPage
+	 * @property {number} totalPosts
 	 * @property {string} [path]
 	 */
 
