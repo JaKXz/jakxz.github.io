@@ -11,7 +11,7 @@
 		"test": "vitest"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.1",
+		"@eslint/js": "^10.0.0",
 		"@iconify-json/radix-icons": "1.2.6",
 		"@sveltejs/adapter-static": "3.0.10",
 		"@sveltejs/kit": "2.53.2",
@@ -21,7 +21,7 @@
 		"@unocss/extractor-svelte": "66.6.2",
 		"@unocss/transformer-directives": "66.6.2",
 		"clsx": "^2.1.1",
-		"eslint": "9.39.3",
+		"eslint": "10.0.2",
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-svelte": "3.15.0",
 		"gh-pages": "6.3.0",
