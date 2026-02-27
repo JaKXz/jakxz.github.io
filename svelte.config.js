@@ -4,8 +4,8 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import { scss } from 'svelte-preprocess';
-import { type Config } from '@sveltejs/kit';
 
+/** @type {import('@sveltejs/kit').Config} */
 export default {
 	// Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or used as pages)
 	extensions: ['.svelte', '.md'],
@@ -37,4 +37,4 @@ export default {
 		},
 		adapter: adapter()
 	}
-} satisfies Config;
+};
