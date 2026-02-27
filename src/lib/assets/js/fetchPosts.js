@@ -15,9 +15,9 @@ export default async function fetchPosts({
 	);
 
 	let sortedPosts =
-		sort instanceof Function
-			? posts.sort(sort)
-			: posts.sort((a, b) => b[sort] != null && b[sort].localeCompare(a[sort]));
+		typeof sort === 'function'
+			? posts.toSorted(sort)
+			: posts.toSorted((a, b) => b[sort] != null && b[sort].localeCompare(a[sort]));
 
 	if (category) {
 		sortedPosts = sortedPosts.filter((post) => post.categories.includes(category));

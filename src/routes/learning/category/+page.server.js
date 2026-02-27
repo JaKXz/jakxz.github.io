@@ -17,6 +17,6 @@ export async function load({ url, fetch }) {
 	});
 
 	return {
-		uniqueCategories: Object.values(uniqueCategories).sort((a, b) => a.title > b.title)
+		uniqueCategories: Object.values(uniqueCategories).toSorted((a, b) => a.title > b.title)
 	};
 }
