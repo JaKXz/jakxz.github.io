@@ -25,8 +25,9 @@ jasonk92@gmail.com<br>
 Up to {new Date().getFullYear() - 2012} years of experience across all roles with:
 
 - React, Typescript, Redux Toolkit
-- Deno, Node.js, Fastify, Express
+- Bun, Node.js, Fastify, Express
 - Vite, Vitest, Webpack, Jest
+- Svelte, SvelteKit
 - Tailwind, Sass, CSS4, Style Dictionary
 - TDD, pairing, XP
 - GraphQL, Apollo
