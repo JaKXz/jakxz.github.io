@@ -22,22 +22,59 @@ jasonk92@gmail.com<br>
 
 ## 🧰 Technical
 
-Up to {new Date().getFullYear() - 2012} years of experience across all roles with:
+Up to {new Date().getFullYear() - 2012} years of experience across all roles.
 
-- React, Typescript, Redux Toolkit
-- Bun, Node.js, Fastify, Express
-- Vite, Vitest, Webpack, Jest
-- Svelte, SvelteKit
-- Tailwind, Sass, CSS4, Style Dictionary
-- TDD, pairing, XP
-- GraphQL, Apollo
-- PostgreSQL, Redis
-- `git`, `jj`
-- Figma, Balsamiq
-- Turborepo, Lerna
-- Ruby on Rails
-- Go
-- Rust
+<div class="flex flex-col gap-4">
+<div>
+<p class="m-0 mb-1 text-sm font-semibold op-70">UI & Design Systems</p>
+<div class="flex flex-wrap gap-1.5">
+{#each ['React', 'TypeScript', 'Redux Toolkit', 'Svelte', 'SvelteKit', 'Tailwind', 'Sass', 'CSS4', 'Style Dictionary', 'Figma', 'Balsamiq'] as skill}
+<span class="inline-block rd-full px-2.5 py-0.5 text-xs font-medium bg-[var(--lighterAccent)] text-[var(--ink)]">{skill}</span>
+{/each}
+</div>
+<p class="m-0 mt-1 text-xs op-60 italic">Browser extensions, design systems, multi-theme WCAG-compliant UIs</p>
+</div>
+
+<div>
+<p class="m-0 mb-1 text-sm font-semibold op-70">Runtimes & APIs</p>
+<div class="flex flex-wrap gap-1.5">
+{#each ['Node.js', 'Bun', 'Fastify', 'Express', 'GraphQL', 'Apollo'] as skill}
+<span class="inline-block rd-full px-2.5 py-0.5 text-xs font-medium bg-[var(--lighterAccent)] text-[var(--ink)]">{skill}</span>
+{/each}
+</div>
+<p class="m-0 mt-1 text-xs op-60 italic">ETL pipelines at 2000+ req/min · data-rich UIs over 440MM+ pt datasets</p>
+</div>
+
+<div>
+<p class="m-0 mb-1 text-sm font-semibold op-70">Testing & Quality</p>
+<div class="flex flex-wrap gap-1.5">
+{#each ['Vite', 'Vitest', 'Jest', 'Webpack', 'TDD', 'Pairing', 'XP'] as skill}
+<span class="inline-block rd-full px-2.5 py-0.5 text-xs font-medium bg-[var(--lighterAccent)] text-[var(--ink)]">{skill}</span>
+{/each}
+</div>
+<p class="m-0 mt-1 text-xs op-60 italic">Fast feedback loops from tooling to team process</p>
+</div>
+
+<div>
+<p class="m-0 mb-1 text-sm font-semibold op-70">Data & Infra</p>
+<div class="flex flex-wrap gap-1.5">
+{#each ['PostgreSQL', 'Redis', 'Turborepo', 'Lerna', 'git', 'jj'] as skill}
+<span class="inline-block rd-full px-2.5 py-0.5 text-xs font-medium bg-[var(--lighterAccent)] text-[var(--ink)]">{skill}</span>
+{/each}
+</div>
+<p class="m-0 mt-1 text-xs op-60 italic">Millions of rows, monorepo orchestration, modern VCS</p>
+</div>
+
+<div>
+<p class="m-0 mb-1 text-sm font-semibold op-70">Also shipping in</p>
+<div class="flex flex-wrap gap-1.5">
+{#each ['Ruby on Rails', 'Go', 'Rust'] as skill}
+<span class="inline-block rd-full px-2.5 py-0.5 text-xs font-medium bg-[var(--lighterAccent)] text-[var(--ink)] border border-dashed border-[var(--dark)]">{skill}</span>
+{/each}
+</div>
+<p class="m-0 mt-1 text-xs op-60 italic">Carrier integrations at 80%+ adoption · expanding systems toolkit</p>
+</div>
+</div>
 
 </aside>
 
