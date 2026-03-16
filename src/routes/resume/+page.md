@@ -22,7 +22,7 @@ jasonk92@gmail.com<br>
 
 ## 🧰 Technical
 
-Up to {new Date().getFullYear() - 2012} years of experience across all roles.
+Up to {new Date().getFullYear() - 2012} years of experience across all roles in:
 
 <div class="flex flex-col gap-4">
 <div>
