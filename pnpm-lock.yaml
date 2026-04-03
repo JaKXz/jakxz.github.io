@@ -23,16 +23,16 @@ importers:
         version: 1.2.6
       '@sveltejs/adapter-static':
         specifier: 3.0.10
-        version: 3.0.10(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))
+        version: 3.0.10(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))
       '@sveltejs/kit':
         specifier: 2.55.0
-        version: 2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+        version: 2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^7.0.0
-        version: 7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+        version: 7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
       '@types/node':
         specifier: ^25.3.2
-        version: 25.5.0
+        version: 25.5.2
       '@unocss/extractor-svelte':
         specifier: 66.6.7
         version: 66.6.7
@@ -86,13 +86,13 @@ importers:
         version: 3.5.0
       unocss:
         specifier: 66.6.7
-        version: 66.6.7(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+        version: 66.6.7(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
       vite:
         specifier: 8.0.3
-        version: 8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
+        version: 8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
       vitest:
         specifier: 4.1.2
-        version: 4.1.2(@types/node@25.5.0)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+        version: 4.1.2(@types/node@25.5.2)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
 
 packages:
 
@@ -1020,8 +1020,8 @@ packages:
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
-  '@types/node@25.5.0':
-    resolution: {integrity: sha512-jp2P3tQMSxWugkCUKLRPVUpGaL5MVFwF8RDuSRztfwgN1wmqJeMSbKlnEtQqU8UrhTmzEmZdu2I6v2dpp7XIxw==}
+  '@types/node@25.5.2':
+    resolution: {integrity: sha512-tO4ZIRKNC+MDWV4qKVZe3Ql/woTnmHDr5JD8UI5hn2pwBrHEwOEMZK7WlNb5RKB6EoJ02gwmQS9OrjuFnZYdpg==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -1163,8 +1163,8 @@ packages:
   bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
 
-  baseline-browser-mapping@2.10.12:
-    resolution: {integrity: sha512-qyq26DxfY4awP2gIRXhhLWfwzwI+N5Nxk6iQi8EFizIaWIjqicQTE4sLnZZVdeKPRcVNoJOkkpfzoIYuvCKaIQ==}
+  baseline-browser-mapping@2.10.13:
+    resolution: {integrity: sha512-BL2sTuHOdy0YT1lYieUxTw/QMtPBC3pmlJC6xk8BBYVv6vcw3SGdKemQ+Xsx9ik2F/lYDO9tqsFQH1r9PFuHKw==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1181,8 +1181,8 @@ packages:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
     engines: {node: '>=8'}
 
-  caniuse-lite@1.0.30001782:
-    resolution: {integrity: sha512-dZcaJLJeDMh4rELYFw1tvSn1bhZWYFOt468FcbHHxx/Z/dFidd1I6ciyFdi3iwfQCyOjqo9upF6lGQYtMiJWxw==}
+  caniuse-lite@1.0.30001784:
+    resolution: {integrity: sha512-WU346nBTklUV9YfUl60fqRbU5ZqyXlqvo1SgigE1OAXK5bFL8LL9q1K7aap3N739l4BvNqnkm3YrGHiY9sfUQw==}
 
   chai@6.2.2:
     resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
@@ -1277,8 +1277,8 @@ packages:
   duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
 
-  electron-to-chromium@1.5.329:
-    resolution: {integrity: sha512-/4t+AS1l4S3ZC0Ja7PHFIWeBIxGA3QGqV8/yKsP36v7NcyUCl+bIcmw6s5zVuMIECWwBrAK/6QLzTmbJChBboQ==}
+  electron-to-chromium@1.5.331:
+    resolution: {integrity: sha512-IbxXrsTlD3hRodkLnbxAPP4OuJYdWCeM3IOdT+CpcMoIwIoDfCmRpEtSPfwBXxVkg9xmBeY7Lz2Eo2TDn/HC3Q==}
 
   email-addresses@5.0.0:
     resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
@@ -1604,8 +1604,8 @@ packages:
   node-fetch-native@1.6.7:
     resolution: {integrity: sha512-g9yhqoedzIUm0nTnTqAQvueMPVOuIY16bqgAJJC8XOOubYFNwz6IER9qs0Gq2Xd0+CecCKFjtdDTMA4u4xG06Q==}
 
-  node-releases@2.0.36:
-    resolution: {integrity: sha512-TdC8FSgHz8Mwtw9g5L4gR/Sh9XhSP/0DEkQxfEFXOpiul5IiHgHan2VhYYb6agDSfp4KuvltmGApc8HMgUrIkA==}
+  node-releases@2.0.37:
+    resolution: {integrity: sha512-1h5gKZCF+pO/o3Iqt5Jp7wc9rH3eJJ0+nh/CIoiRwjRxde/hAHyLPXYN4V3CqKAbiZPSeJFSWHmJsbkicta0Eg==}
 
   obug@2.1.1:
     resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
@@ -2689,15 +2689,15 @@ snapshots:
     dependencies:
       acorn: 8.16.0
 
-  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))':
+  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))':
     dependencies:
-      '@sveltejs/kit': 2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+      '@sveltejs/kit': 2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
 
-  '@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
+  '@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)))(svelte@5.55.1)(typescript@5.4.5)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
     dependencies:
       '@standard-schema/spec': 1.1.0
       '@sveltejs/acorn-typescript': 1.0.9(acorn@8.16.0)
-      '@sveltejs/vite-plugin-svelte': 7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+      '@sveltejs/vite-plugin-svelte': 7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
       '@types/cookie': 0.6.0
       acorn: 8.16.0
       cookie: 0.6.0
@@ -2709,18 +2709,18 @@ snapshots:
       set-cookie-parser: 3.0.1
       sirv: 3.0.2
       svelte: 5.55.1
-      vite: 8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
+      vite: 8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
     optionalDependencies:
       typescript: 5.4.5
 
-  '@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
+  '@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.1)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
     dependencies:
       deepmerge: 4.3.1
       magic-string: 0.30.21
       obug: 2.1.1
       svelte: 5.55.1
-      vite: 8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
-      vitefu: 1.1.2(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+      vite: 8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
+      vitefu: 1.1.2(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
@@ -2745,7 +2745,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.2
 
-  '@types/node@25.5.0':
+  '@types/node@25.5.2':
     dependencies:
       undici-types: 7.18.2
 
@@ -2877,7 +2877,7 @@ snapshots:
     dependencies:
       '@unocss/core': 66.6.7
 
-  '@unocss/vite@66.6.7(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
+  '@unocss/vite@66.6.7(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@unocss/config': 66.6.7
@@ -2888,7 +2888,7 @@ snapshots:
       pathe: 2.0.3
       tinyglobby: 0.2.15
       unplugin-utils: 0.3.1
-      vite: 8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
+      vite: 8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
 
   '@vitest/expect@4.1.2':
     dependencies:
@@ -2899,13 +2899,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.2(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
+  '@vitest/mocker@4.1.2(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))':
     dependencies:
       '@vitest/spy': 4.1.2
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
+      vite: 8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
 
   '@vitest/pretty-format@4.1.2':
     dependencies:
@@ -2943,7 +2943,7 @@ snapshots:
 
   bail@2.0.2: {}
 
-  baseline-browser-mapping@2.10.12:
+  baseline-browser-mapping@2.10.13:
     optional: true
 
   braces@3.0.3:
@@ -2952,16 +2952,16 @@ snapshots:
 
   browserslist@4.28.2:
     dependencies:
-      baseline-browser-mapping: 2.10.12
-      caniuse-lite: 1.0.30001782
-      electron-to-chromium: 1.5.329
-      node-releases: 2.0.36
+      baseline-browser-mapping: 2.10.13
+      caniuse-lite: 1.0.30001784
+      electron-to-chromium: 1.5.331
+      node-releases: 2.0.37
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
     optional: true
 
   cac@6.7.14: {}
 
-  caniuse-lite@1.0.30001782:
+  caniuse-lite@1.0.30001784:
     optional: true
 
   chai@6.2.2: {}
@@ -3027,7 +3027,7 @@ snapshots:
 
   duplexer@0.1.2: {}
 
-  electron-to-chromium@1.5.329:
+  electron-to-chromium@1.5.331:
     optional: true
 
   email-addresses@5.0.0: {}
@@ -3375,7 +3375,7 @@ snapshots:
 
   node-fetch-native@1.6.7: {}
 
-  node-releases@2.0.36:
+  node-releases@2.0.37:
     optional: true
 
   obug@2.1.1: {}
@@ -3765,7 +3765,7 @@ snapshots:
 
   universalify@2.0.0: {}
 
-  unocss@66.6.7(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)):
+  unocss@66.6.7(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)):
     dependencies:
       '@unocss/cli': 66.6.7
       '@unocss/core': 66.6.7
@@ -3783,7 +3783,7 @@ snapshots:
       '@unocss/transformer-compile-class': 66.6.7
       '@unocss/transformer-directives': 66.6.7
       '@unocss/transformer-variant-group': 66.6.7
-      '@unocss/vite': 66.6.7(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+      '@unocss/vite': 66.6.7(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
     transitivePeerDependencies:
       - vite
 
@@ -3822,7 +3822,7 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1):
+  vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -3830,7 +3830,7 @@ snapshots:
       rolldown: 1.0.0-rc.12
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 25.5.0
+      '@types/node': 25.5.2
       esbuild: 0.27.1
       fsevents: 2.3.3
       jiti: 2.6.1
@@ -3838,14 +3838,14 @@ snapshots:
       tsx: 4.19.2
       yaml: 2.6.1
 
-  vitefu@1.1.2(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)):
+  vitefu@1.1.2(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)):
     optionalDependencies:
-      vite: 8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
+      vite: 8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
 
-  vitest@4.1.2(@types/node@25.5.0)(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)):
+  vitest@4.1.2(@types/node@25.5.2)(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)):
     dependencies:
       '@vitest/expect': 4.1.2
-      '@vitest/mocker': 4.1.2(vite@8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
+      '@vitest/mocker': 4.1.2(vite@8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1))
       '@vitest/pretty-format': 4.1.2
       '@vitest/runner': 4.1.2
       '@vitest/snapshot': 4.1.2
@@ -3862,10 +3862,10 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.1.0
-      vite: 8.0.3(@types/node@25.5.0)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
+      vite: 8.0.3(@types/node@25.5.2)(esbuild@0.27.1)(jiti@2.6.1)(sass@1.99.0)(tsx@4.19.2)(yaml@2.6.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 25.5.0
+      '@types/node': 25.5.2
     transitivePeerDependencies:
       - msw
 
