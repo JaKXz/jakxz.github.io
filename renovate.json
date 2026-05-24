@@ -4,14 +4,20 @@
 	"platformAutomerge": true,
 	"packageRules": [
 		{
-			"matchPackagePatterns": ["^.*svelte.*"],
-			"groupName": "all svelte packages"
+			"groupName": "all svelte packages",
+			"matchPackageNames": ["/^.*svelte.*/"]
 		},
-		{ "matchPackagePatterns": ["^.*unocss.*"], "groupName": "unocss" },
-		{ "matchPackagePatterns": ["^.*vite.*"], "groupName": "vite" },
 		{
-			"matchPackagePatterns": ["^.*(prettier|husky|pretty-quick).*"],
-			"groupName": "prettier"
+			"groupName": "unocss",
+			"matchPackageNames": ["/^.*unocss.*/"]
+		},
+		{
+			"groupName": "vite",
+			"matchPackageNames": ["/^.*vite.*/"]
+		},
+		{
+			"groupName": "prettier",
+			"matchPackageNames": ["/^.*(prettier|husky|pretty-quick).*/"]
 		},
 		{ "matchUpdateTypes": ["minor", "patch"], "automerge": true }
 	]
