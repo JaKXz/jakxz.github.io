@@ -1,7 +1,3 @@
 allowBuilds:
   simple-git-hooks: true
   svelte-preprocess: true
-onlyBuiltDependencies:
-  - esbuild
-  - simple-git-hooks
-  - svelte-preprocess
