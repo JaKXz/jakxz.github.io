@@ -27,13 +27,13 @@ Up to {new Date().getFullYear() - 2012} years of experience across all roles wit
 - React, Typescript, Redux Toolkit
 - Bun, Node.js, Fastify, Express
 - Vite, Vitest, Webpack, Jest
-- Svelte, SvelteKit
 - Tailwind, Sass, CSS4, Style Dictionary
+- Svelte, SvelteKit
+- Figma, Balsamiq
 - TDD, pairing, XP
 - GraphQL, Apollo
 - PostgreSQL, Redis
 - `git`, `jj`
-- Figma, Balsamiq
 - Turborepo, Lerna
 - Ruby on Rails
 - Go
@@ -48,9 +48,9 @@ Up to {new Date().getFullYear() - 2012} years of experience across all roles wit
 [1Password](https://1password.com) | _Senior Web Developer_<br>
 Jan **2024 - Present**
 
-- Implemented performant user lookup for large organizations for 1Password's [item sharing experience](https://share.1password.com) across desktop, mobile, and web platforms. With our squad's maintainership, this product has driven ~$1MM net new consumer ARR since 2024.
-- Led front-end engineering team of five, making the secure way the easy way with App Launcher in the [1Password browser extension](https://1password.com/applauncher) securing access to enterprise provisioned apps for employees and security-conscious administrators.
-- Co-architected simplified state management improving rendering performance by 83% in the browser extension.
+- Implemented performant user lookup for large organizations for 1Password's [item sharing experience](https://share.1password.com) across desktop, mobile, and web platforms. Driven ~$1MM net new consumer ARR since 2024.
+- Led front-end engineering team of five making the secure way the easy way with App Launcher in the [1Password browser extension](https://1password.com/applauncher) securing access to enterprise provisioned apps for employees and security-conscious administrators.
+- Co-architected simplified state management improving render performance by 83% on average in the browser extension.
 - Coached and mentored developers at all levels to support their output and professional development with [code reviews](https://jasonkurian.dev/learning/reviewing-code-familiar-or-not) and pair programming.
 - Improved user success in item creation and item search flows by >=25% on web platforms including the desktop app.
 
