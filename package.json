@@ -34,8 +34,8 @@
 		"svelte-check": "^4.5.0",
 		"tailwind-merge": "^3.6.0",
 		"unocss": "66.7.3",
-		"vite": "8.0.16",
-		"vitest": "4.1.8"
+		"vite": "8.1.0",
+		"vitest": "4.1.9"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npx pretty-quick --staged"
