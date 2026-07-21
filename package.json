@@ -20,7 +20,7 @@
 		"@unocss/transformer-directives": "66.7.3",
 		"clsx": "^2.1.1",
 		"gh-pages": "6.3.0",
-		"mdsvex": "0.12.7",
+		"mdsvex": "0.12.8",
 		"oxlint": "^1.68.0",
 		"prettier": "3.8.4",
 		"prettier-plugin-svelte": "4.1.0",
