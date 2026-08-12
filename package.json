@@ -34,7 +34,7 @@
 		"svelte-check": "^4.5.0",
 		"tailwind-merge": "^3.6.0",
 		"unocss": "66.7.5",
-		"vite": "8.1.5",
+		"vite": "8.2.1",
 		"vitest": "4.1.10"
 	},
 	"simple-git-hooks": {
