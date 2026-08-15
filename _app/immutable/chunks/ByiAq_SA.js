@@ -1,0 +1,1 @@
+import{tt as e}from"./BsbTQ-xr.js";e();

@@ -1,0 +1,1 @@
+var e=`Jason Kurian`,t=`UX + Web Developer`,n=`jasonkurian.dev`,r=`https://jasonkurian.dev`,i=`@JaKXz92`,a=[{title:`Learning`,route:`/learning`}],o=[[t,`@1Password 🇨🇦`],[`MD + keys`,`@johnmaksymmusic 🇺🇦 🇨🇦`]];export{e as a,r as i,i as n,n as o,t as r,o as s,a as t};
