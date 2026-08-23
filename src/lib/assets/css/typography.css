@@ -1,18 +1,19 @@
-@use './vars';
-
 :root {
 	--accentFont: 'Zapfino', Georgia, Times, serif;
 	--primaryFont: 'Libre Franklin', sans-serif;
 	--codeFont: 'Fira Code', monospace;
-
 	font-size: 1rem;
 	line-height: 1.6;
+}
 
-	@media (min-width: vars.$smMin) {
+@media (min-width: 768px) {
+	:root {
 		font-size: 1.125rem;
 	}
+}
 
-	@media (min-width: vars.$lgMin) {
+@media (min-width: 1280px) {
+	:root {
 		font-size: 1.25rem;
 	}
 }
@@ -21,7 +22,16 @@
 	margin: 4.5rem 0 1rem;
 	line-height: 1.1;
 	font-family: var(--accentFont);
-	@include vars.font-weight(extra-bold);
+	font-weight: 800;
+}
+
+@media (prefers-color-scheme: dark) {
+	:where(h1, h2, h3, h4, h5, h6) {
+		font-weight: 700;
+	}
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
 	color: var(--darker);
 }
 
@@ -31,30 +41,36 @@ h1 {
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 1rem;
+}
 
-	&::after {
-		content: '';
-		height: 0.1em;
-		background: var(--accent);
-		width: 100%;
-		margin-left: -100%;
-		position: absolute;
-		bottom: 0;
-	}
+h1::after {
+	content: '';
+	height: 0.1em;
+	background: var(--accent);
+	width: 100%;
+	margin-left: -100%;
+	position: absolute;
+	bottom: 0;
+}
 
-	@media (min-width: vars.$smMin) {
+@media (min-width: 768px) {
+	h1 {
 		font-size: 3rem;
 	}
+}
 
-	@media (min-width: vars.$lgMin) {
+@media (min-width: 1280px) {
+	h1 {
 		font-size: 3.2rem;
 	}
 }
 
 h2 {
 	font-size: 2rem;
+}
 
-	@media (min-width: vars.$smMin) {
+@media (min-width: 768px) {
+	h2 {
 		font-size: 2.2rem;
 	}
 }
@@ -84,22 +100,24 @@ a {
 ul {
 	list-style-type: square;
 	padding-left: 1.5rem;
+}
 
-	ul {
-		list-style-type: circle;
-	}
+ul ul {
+	list-style-type: circle;
+}
 
-	::marker {
-		color: var(--accent);
-	}
+ul ::marker {
+	color: var(--accent);
 }
 
 strong {
-	@include vars.font-weight(extra-bold);
+	font-weight: 800;
 }
 
-.subdued {
-	@apply opacity-90 text-xs text-[color:var(--ink)];
+@media (prefers-color-scheme: dark) {
+	strong {
+		font-weight: 700;
+	}
 }
 
 figcaption {
@@ -110,14 +128,11 @@ figcaption {
 }
 
 .name-heading {
-	@include vars.font-weight(extra-bold);
-	color: var(--darker);
-	font-style: italic;
+	@apply font-800 text-[var(--darker)] italic lowercase 'dark:font-700';
 	font-variant: small-caps;
-	text-transform: lowercase;
+}
 
-	&:first-letter {
-		font-family: var(--accentFont);
-		letter-spacing: 0.075em;
-	}
+.name-heading:first-letter {
+	font-family: var(--accentFont);
+	letter-spacing: 0.075em;
 }

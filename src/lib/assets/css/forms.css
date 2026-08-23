@@ -1,5 +1,3 @@
-@use './vars';
-
 form {
 	margin: 2rem 0;
 }
@@ -10,24 +8,47 @@ input[type='submit'] {
 	padding: 0.5rem 1rem;
 	background: var(--darker);
 	color: var(--paper);
-	@include vars.font-weight(extra-bold);
+	font-weight: 800;
+}
+
+@media (prefers-color-scheme: dark) {
+	button,
+	input[type='submit'] {
+		font-weight: 700;
+	}
+}
+
+button,
+input[type='submit'] {
 	border: 2px solid var(--darker);
 	border-radius: 0.125rem;
-	background: var(--darker);
 	margin: 2rem 0 0;
 	display: block;
 	width: max-content;
 	transition: background 0.2s;
+}
 
-	&:hover,
-	&:focus {
-		background: var(--accent);
+button:hover,
+button:focus,
+input[type='submit']:hover,
+input[type='submit']:focus {
+	background: var(--accent);
+}
+
+label,
+fieldset {
+	font-weight: 800;
+}
+
+@media (prefers-color-scheme: dark) {
+	label,
+	fieldset {
+		font-weight: 700;
 	}
 }
 
 label,
 fieldset {
-	@include vars.font-weight(extra-bold);
 	display: inline-block;
 }
 
@@ -45,16 +66,17 @@ input {
 	width: 100%;
 	accent-color: var(--accent);
 	background-color: transparent;
+}
 
-	&[type='radio'],
-	&[type='checkbox'] {
-		display: initial;
-		width: auto;
+input[type='radio'],
+input[type='checkbox'] {
+	display: initial;
+	width: auto;
+}
 
-		&:not(:checked) + label {
-			@include vars.font-weight(normal);
-		}
-	}
+input[type='radio']:not(:checked) + label,
+input[type='checkbox']:not(:checked) + label {
+	font-weight: 400;
 }
 
 .form-section,

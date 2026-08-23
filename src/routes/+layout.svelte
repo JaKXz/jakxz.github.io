@@ -1,7 +1,7 @@
 <script>
 	import 'uno.css';
 
-	import '$lib/assets/scss/global.scss';
+	import '$lib/assets/css/global.css';
 
 	import { preloadData } from '$app/navigation';
 	import { currentPage } from '$lib/assets/js/store';

@@ -6,7 +6,7 @@
 	{#each posts as post (post.slug)}
 		<li class="mb-24">
 			<article>
-				<div class="subdued">
+				<div class="opacity-90 text-xs text-[color:var(--ink)]">
 					📝
 					{new Date(`${post.date}T00:00:00`).toDateString()}
 				</div>

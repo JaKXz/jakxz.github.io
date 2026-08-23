@@ -18,7 +18,7 @@
 
 {#key currentPage}
 	{#if pagesAvailable > 1}
-		<nav aria-label="Pagination navigation" class="pagination">
+		<nav aria-label="Pagination navigation">
 			<ul>
 				{#each Array.from({ length: pagesAvailable }, (_, i) => i + 1) as page (path + '/' + page)}
 					<li>
@@ -38,3 +38,35 @@
 		</nav>
 	{/if}
 {/key}
+
+<style>
+	nav {
+		@apply m-0 mb-4;
+	}
+
+	nav ul {
+		@apply m-0 flex flex-wrap justify-start gap-2 list-none p-0;
+	}
+
+	nav ul li {
+		@apply m-0;
+	}
+
+	nav ul a {
+		@apply flex h-[2em] w-[2em] items-center justify-center bg-[var(--lightAccent)]
+			font-[var(--primaryFont)] font-800 leading-none no-underline 'dark:font-700';
+	}
+
+	nav ul a {
+		transition: background 0.1s;
+	}
+
+	nav ul a:hover {
+		@apply bg-[var(--accent)] text-[var(--background)];
+	}
+
+	nav ul a[aria-current='true'] {
+		@apply bg-[var(--accent)] text-[var(--background)];
+		border: 1px solid currentColor;
+	}
+</style>

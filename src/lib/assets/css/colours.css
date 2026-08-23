@@ -10,17 +10,19 @@
 	--black: #152030;
 	--ink: var(--slate);
 	--paper: var(--background);
+}
 
-	@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+	:root {
 		--lightAccent: #2e5c87;
 		--lighterAccent: #26292b;
 		--dark: #182a45;
 		--darker: var(--background);
 		--paper: var(--black);
 		--ink: var(--white);
+	}
 
-		img {
-			filter: brightness(0.8) contrast(1.2);
-		}
+	:root img {
+		filter: brightness(0.8) contrast(1.2);
 	}
 }

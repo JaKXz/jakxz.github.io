@@ -1,0 +1,89 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	font-family: inherit;
+	max-width: 100%;
+}
+
+figure img,
+.callout,
+pre[class*='language-'] {
+	max-height: 100%;
+	margin: 2rem 0 2rem -2rem;
+}
+
+@media (max-width: 599px) {
+	figure img,
+	.callout,
+	pre[class*='language-'] {
+		max-width: unset;
+		width: 100vw;
+	}
+}
+
+@media (min-width: 600px) {
+	figure img,
+	.callout,
+	pre[class*='language-'] {
+		border-radius: 0.3rem;
+		min-width: calc(100% + 4rem);
+	}
+}
+
+.callout :where(h1, h2, h3, h4, h5, h6):first-of-type,
+pre[class*='language-'] :where(h1, h2, h3, h4, h5, h6):first-of-type {
+	margin-top: 0;
+}
+
+figure img {
+	height: 100%;
+}
+
+@media (max-width: 599px) {
+	figure img {
+		margin-top: -2rem;
+	}
+}
+
+li {
+	margin-bottom: 0.25rem;
+}
+
+:where(h2, h3, h4, h5, h6) .icon-link {
+	position: relative;
+}
+
+:where(h2, h3, h4, h5, h6) .icon-link::before {
+	content: url('/link.svg');
+	fill: currentColor;
+	position: absolute;
+	left: -1.25rem;
+	min-width: 1rem;
+	width: 100%;
+	height: 1rem;
+	top: 0.1rem;
+	opacity: 0.2;
+	transition: opacity 0.2s;
+}
+
+@media (min-width: 600px) {
+	:where(h2, h3, h4, h5, h6) .icon-link::before {
+		left: -1.5rem;
+	}
+}
+
+:where(h2, h3, h4, h5, h6) .icon-link:hover::before {
+	opacity: 1;
+}
+
+.utterances {
+	margin-top: 2rem;
+}
+
+@media (max-width: 359px) {
+	.utterances {
+		margin-left: -2rem;
+		width: 100vw;
+	}
+}
