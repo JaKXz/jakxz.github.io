@@ -41,40 +41,20 @@
 
 <style>
 	nav {
-		margin: 0 0 1rem;
+		@apply m-0 mb-4;
 	}
 
 	nav ul {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: start;
-		list-style-type: none;
-		gap: 0.5rem;
-		margin: 0;
-		padding: 0;
+		@apply m-0 flex flex-wrap justify-start gap-2 list-none p-0;
 	}
 
 	nav ul li {
-		margin: 0;
+		@apply m-0;
 	}
 
 	nav ul a {
-		background: var(--lightAccent);
-		text-decoration: none;
-		line-height: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 2em;
-		height: 2em;
-		font-family: var(--primaryFont);
-		font-weight: 800;
-	}
-
-	@media (prefers-color-scheme: dark) {
-		nav ul a {
-			font-weight: 700;
-		}
+		@apply flex h-[2em] w-[2em] items-center justify-center bg-[var(--lightAccent)]
+			font-[var(--primaryFont)] font-800 leading-none no-underline 'dark:font-700';
 	}
 
 	nav ul a {
@@ -82,13 +62,11 @@
 	}
 
 	nav ul a:hover {
-		background: var(--accent);
-		color: var(--background);
+		@apply bg-[var(--accent)] text-[var(--background)];
 	}
 
 	nav ul a[aria-current='true'] {
-		background: var(--accent);
-		color: var(--background);
+		@apply bg-[var(--accent)] text-[var(--background)];
 		border: 1px solid currentColor;
 	}
 </style>

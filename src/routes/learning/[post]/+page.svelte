@@ -119,27 +119,22 @@
 	}
 
 	.post .meta {
-		font-size: 0.8rem;
-		margin-bottom: 4rem;
+		@apply mb-16 text-[0.8rem];
 	}
 
 	.post-footer ul {
-		padding: 0;
+		@apply p-0;
 	}
 
 	.post-footer li {
-		display: inline-block;
-		font-size: 0.8rem;
+		@apply inline-block text-[0.8rem];
 	}
 
 	.post-footer li + li {
-		margin-left: 0.5rem;
+		@apply ml-2;
 	}
 
 	.cover-image {
-		display: flex;
-		flex-flow: column;
-		margin-inline: 0;
-		margin-block: 0;
+		@apply m-0 flex flex-col;
 	}
 </style>

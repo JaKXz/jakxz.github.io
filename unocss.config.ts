@@ -1,6 +1,14 @@
-import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno } from 'unocss';
+import {
+	defineConfig,
+	presetAttributify,
+	presetIcons,
+	presetTypography,
+	presetUno,
+	transformerDirectives
+} from 'unocss';
 
 export default defineConfig({
+	transformers: [transformerDirectives()],
 	presets: [
 		presetIcons({
 			prefix: 'i-',

@@ -128,20 +128,8 @@ figcaption {
 }
 
 .name-heading {
-	font-weight: 800;
-}
-
-@media (prefers-color-scheme: dark) {
-	.name-heading {
-		font-weight: 700;
-	}
-}
-
-.name-heading {
-	color: var(--darker);
-	font-style: italic;
+	@apply font-800 text-[var(--darker)] italic lowercase 'dark:font-700';
 	font-variant: small-caps;
-	text-transform: lowercase;
 }
 
 .name-heading:first-letter {

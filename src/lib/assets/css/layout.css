@@ -31,7 +31,6 @@ pre[class*='language-'] {
 	}
 }
 
-figure img :where(h1, h2, h3, h4, h5, h6):first-of-type,
 .callout :where(h1, h2, h3, h4, h5, h6):first-of-type,
 pre[class*='language-'] :where(h1, h2, h3, h4, h5, h6):first-of-type {
 	margin-top: 0;

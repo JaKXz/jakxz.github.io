@@ -83,22 +83,19 @@
 
 <style>
 	.name-heading {
-		font-size: 5rem;
-		letter-spacing: -1px;
+		@apply text-[5rem] tracking-[-1px];
 	}
 
 	.name-heading::first-letter {
-		font-size: 6.5rem;
-		letter-spacing: normal;
+		@apply text-[6.5rem] tracking-normal;
 	}
 
 	.first-name::first-letter {
-		letter-spacing: 0.025em;
+		@apply tracking-[0.025em];
 	}
 
 	.cards-grid {
-		display: grid;
-		gap: 1rem;
+		@apply grid gap-4;
 	}
 
 	.cards-grid:focus-within > .card:not(:global(:focus-within)),
@@ -114,8 +111,7 @@
 
 	@media (min-width: 600px) {
 		.cards-grid {
-			margin-top: 2rem;
-			gap: 2rem;
+			@apply mt-8 gap-8;
 			grid: auto-flow dense / 1fr 1fr;
 		}
 	}

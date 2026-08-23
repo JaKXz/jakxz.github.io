@@ -22,7 +22,6 @@ button,
 input[type='submit'] {
 	border: 2px solid var(--darker);
 	border-radius: 0.125rem;
-	background: var(--darker);
 	margin: 2rem 0 0;
 	display: block;
 	width: max-content;
