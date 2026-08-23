@@ -148,4 +148,75 @@ University of Waterloo, Waterloo, ON
 </section>
 </article>
 
-<style src='./resume.scss' />
+<style>
+	.captions {
+		font-size: 0.8rem;
+	}
+
+	h2:first-of-type {
+		margin-top: 0;
+	}
+
+	.print-title p {
+		text-align: right;
+	}
+
+	article {
+		display: grid;
+		row-gap: 4.5rem;
+	}
+
+	@media print {
+		article {
+			row-gap: 0;
+			column-gap: 2rem;
+			grid-auto-rows: minmax(450px, auto);
+			grid-template-columns: 33% 1fr;
+			grid-template-areas:
+				'technical experience'
+				'oss experience'
+				'education experience'
+				'education experience';
+		}
+
+		article .technical {
+			grid-area: technical;
+		}
+
+		article .experience {
+			grid-area: experience;
+		}
+
+		article .oss {
+			grid-area: oss;
+		}
+
+		article .education {
+			grid-area: education;
+		}
+
+		h1 {
+			margin-bottom: 2rem;
+		}
+
+		.captions {
+			font-size: 0.5rem;
+		}
+
+		img {
+			width: 50px;
+			height: 50px;
+		}
+
+		ol,
+		ul:not(ul ul) {
+			padding-inline-start: 27px;
+			list-style-type: square;
+		}
+
+		ol ::marker,
+		ul:not(ul ul) ::marker {
+			color: var(--accent);
+		}
+	}
+</style>

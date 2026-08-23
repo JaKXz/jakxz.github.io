@@ -24,7 +24,7 @@
 			<div class="name-heading">Kurian</div>
 		</div>
 		<button
-			class="reset-button mt-0 w-full cursor-pointer p-0 text-center"
+			class="mt-0 w-full cursor-pointer border-none bg-transparent p-0 text-center hover:bg-transparent focus:bg-transparent active:bg-transparent"
 			type="button"
 			aria-label="Change subtitle"
 			onclick={() => {
@@ -63,7 +63,7 @@
 					class="card border-rounded-2 transition duration-200 xs:transform xs:focus-within:scale-101 xs:hover:scale-101"
 				>
 					<a href="/learning/{post.slug}" class="link-decoration-none">
-						<p class="subdued m-0">
+						<p class="m-0 opacity-90 text-xs text-[color:var(--ink)]">
 							🔃
 							{formatDate(post.updated)}
 						</p>
@@ -81,36 +81,42 @@
 	</div>
 </section>
 
-<style lang="scss">
+<style>
 	.name-heading {
 		font-size: 5rem;
 		letter-spacing: -1px;
+	}
 
-		&:first-letter {
-			font-size: 6.5rem;
-			letter-spacing: normal;
-		}
+	.name-heading::first-letter {
+		font-size: 6.5rem;
+		letter-spacing: normal;
 	}
 
 	.first-name::first-letter {
 		letter-spacing: 0.025em;
-		@media (max-width: vars.$xsMin) {
-			padding-left: 1rem;
-		}
 	}
 
 	.cards-grid {
 		display: grid;
 		gap: 1rem;
-		@media (min-width: vars.$xsMin) {
-			margin-top: 2rem;
-			gap: 2rem;
-			grid: auto-flow dense / 1fr 1fr;
-		}
 	}
 
 	.cards-grid:focus-within > .card:not(:global(:focus-within)),
 	.cards-grid:hover > .card:not(:global(:hover)) {
 		opacity: 0.75;
+	}
+
+	@media (max-width: 600px) {
+		.first-name::first-letter {
+			padding-left: 1rem;
+		}
+	}
+
+	@media (min-width: 600px) {
+		.cards-grid {
+			margin-top: 2rem;
+			gap: 2rem;
+			grid: auto-flow dense / 1fr 1fr;
+		}
 	}
 </style>

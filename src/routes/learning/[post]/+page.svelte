@@ -96,7 +96,10 @@
 			<ul>
 				{#each categories as category (category)}
 					<li>
-						<a href="/learning/category/{category}/">
+						<a
+							class="bg-[var(--lightAccent)] px-3 py-2 font-[var(--primaryFont)] font-800 uppercase dark:font-700"
+							href="/learning/category/{category}/"
+						>
 							{category}
 						</a>
 					</li>
@@ -106,42 +109,31 @@
 	{/if}
 </article>
 
-<style lang="scss">
+<style>
 	:global(.utterances-frame) {
 		position: unset;
 	}
-	.post {
-		h1:not(:first-child) {
-			margin: 1rem 0;
-		}
 
-		.meta {
-			font-size: 0.8rem;
-			margin-bottom: 4rem;
-		}
+	.post :global(h1:not(:first-child)) {
+		margin: 1rem 0;
 	}
 
-	.post-footer {
-		ul {
-			padding: 0;
-		}
+	.post .meta {
+		font-size: 0.8rem;
+		margin-bottom: 4rem;
+	}
 
-		li {
-			display: inline-block;
-			font-size: 0.8rem;
+	.post-footer ul {
+		padding: 0;
+	}
 
-			a {
-				background-color: var(--lightAccent);
-				padding: 0.5rem 0.75rem;
-				text-transform: uppercase;
-				font-family: var(--primaryFont);
-				@include vars.font-weight(extra-bold);
-			}
+	.post-footer li {
+		display: inline-block;
+		font-size: 0.8rem;
+	}
 
-			+ li {
-				margin-left: 0.5rem;
-			}
-		}
+	.post-footer li + li {
+		margin-left: 0.5rem;
 	}
 
 	.cover-image {

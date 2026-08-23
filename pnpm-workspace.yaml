@@ -1,3 +1,2 @@
 allowBuilds:
   simple-git-hooks: true
-  svelte-preprocess: true

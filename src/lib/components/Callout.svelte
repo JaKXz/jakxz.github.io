@@ -8,15 +8,12 @@
 	let { children } = $props();
 </script>
 
-<div class="callout">
+<div class="callout bg-[var(--lightAccent)] p-8 italic">
 	{@render children?.()}
 </div>
 
-<style lang="scss">
+<style>
 	.callout {
-		background: var(--lightAccent);
 		border-radius: 0.125rem;
-		font-style: italic;
-		padding: 2rem;
 	}
 </style>

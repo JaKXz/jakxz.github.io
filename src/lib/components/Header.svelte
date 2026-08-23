@@ -19,7 +19,7 @@
 
 	<a
 		href="/"
-		class="site-title m-0 block w-fit text-center text-[2.5rem] color-inherit leading-none italic"
+		class="site-title m-0 block w-fit text-center text-[2.5rem] color-inherit leading-none font-800 italic dark:font-700"
 	>
 		<div class="name-heading inline-block w-fit">Jason</div>
 		<div class="name-heading inline-block w-fit">Kurian</div>
@@ -27,11 +27,3 @@
 	<MainNav />
 	<HamburgerMenuButton />
 </header>
-
-<style lang="scss">
-	header {
-		.site-title {
-			@include vars.font-weight(extra-bold);
-		}
-	}
-</style>
