@@ -27,27 +27,7 @@ pre code {
 	font-size: 0.8rem;
 }
 
-h1 code {
-	font-size: inherit;
-}
-
-h2 code {
-	font-size: inherit;
-}
-
-h3 code {
-	font-size: inherit;
-}
-
-h4 code {
-	font-size: inherit;
-}
-
-h5 code {
-	font-size: inherit;
-}
-
-h6 code {
+:where(h1, h2, h3, h4, h5, h6) code {
 	font-size: inherit;
 }
 
