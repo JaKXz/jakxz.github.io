@@ -88,7 +88,7 @@ jjgp -b 'glob:jakxz/*'    # jj git push      — force-update the two changed bo
 ## Closing thoughts
 
 `jj` is to version control what "AI" / LLMs were supposed to be to productivity:
-- for a very low cost (re: setup work, environmental, monetary, etc)
+- for a very low cost (re: setup work, environmental impact, monetarily, etc)
 - produces high quality _deterministic_ output that enables and empowers instead of just sycophancy.
 
 `git` really was best suited for the Linux kernel development workflow via [format-patch](https://www.kernel.org/doc/html/latest/process/submitting-patches.html#the-canonical-patch-format) while `jj` is how I see most of the rest of the industry interpreted branching and stacking and so on.

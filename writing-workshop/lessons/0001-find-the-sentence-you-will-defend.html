@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Lesson one: turn a technical topic into a sentence worth defending."
+		/>
+		<title>Lesson 1 — Find the sentence you will defend</title>
+		<link rel="stylesheet" href="../assets/course.css" />
+		<script src="../assets/lesson.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<article>
+				<nav class="top-nav" aria-label="Workshop navigation">
+					<a href="../MISSION.md">Mission</a>
+					<a href="../RESOURCES.md">Resources</a>
+					<a href="../reference/essay-checklist.html">Essay checklist</a>
+					<a href="../../src/lib/posts/i-attended-the-church-of-jj.md">Current draft</a>
+				</nav>
+
+				<header>
+					<p class="eyebrow">Lesson 01 · Thesis · About 15 minutes</p>
+					<h1>Find the sentence you will defend</h1>
+					<p class="lede">
+						Your draft already has a scene, stakes, and a memorable example. The missing piece is
+						the sentence that tells those details what job to do.
+					</p>
+				</header>
+
+				<section>
+					<h2>You already know how to do this</h2>
+					<p>
+						Your post “TDD doesn’t have to be dogmatic” opens with a recognizable piece of your
+						voice:
+					</p>
+					<blockquote>
+						<p>Write your tests first!<br />Or don’t!<br />It doesn’t matter.</p>
+					</blockquote>
+					<p>
+						It immediately follows that provocation with a testable position: what makes development
+						test-driven is the resulting understanding and confidence, not ritual obedience to one
+						sequence. The rest of the post can then demonstrate that position.
+					</p>
+
+					<p>Your jj draft currently opens its argument differently:</p>
+					<blockquote>
+						<p>This post will not be a full blown tutorial on <code>jj</code>.</p>
+					</blockquote>
+					<p>
+						That sentence defines the container. It does not yet tell the reader what you believe. A
+						format is not a thesis.
+					</p>
+				</section>
+
+				<section>
+					<h2>The transferable Sean Goedecke technique</h2>
+					<p>
+						Sean says that each post he publishes argues a point, and that a draft with nothing a
+						sensible reader could dispute is usually not worth publishing. He also describes his
+						popular posts as clear opinions grounded in actual work. Those are structural choices;
+						they do not require adopting his voice.
+					</p>
+					<p class="source">
+						Primary sources:
+						<a href="https://www.seangoedecke.com/blog-about-things-you-dont-understand-yet/"
+							>“Blog about things you don’t understand yet”</a
+						>
+						and
+						<a href="https://www.seangoedecke.com/on-writing/"
+							>“Writing a tech blog people want to read.”</a
+						>
+					</p>
+
+					<ol class="formula" aria-label="A three-part thesis test">
+						<li>
+							<strong>Name the pressure.</strong><br />What real situation forced you to care?
+						</li>
+						<li>
+							<strong>Make a judgment.</strong><br />What do you now believe that another capable
+							engineer might resist?
+						</li>
+						<li>
+							<strong>Expose the mechanism.</strong><br />Why did the tool change the outcome?
+						</li>
+					</ol>
+
+					<div class="callout">
+						<p class="label">The target meaning—not final prose</p>
+						<p>
+							Your chosen argument is that jj fits the reality of stacked changes better than Git’s
+							usual branch-and-rewrite workflow. “It took fewer commands” is evidence. It is not the
+							whole claim.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Retrieval check</h2>
+					<p>
+						Answer from memory before looking back. Every answer choice has five words, so
+						formatting cannot give the answer away.
+					</p>
+
+					<form class="quiz" data-quiz>
+						<fieldset
+							data-question
+							data-correct-feedback="Yes. It makes a judgment that the essay can defend."
+							data-incorrect-feedback="That names a subject, but it does not yet take a position."
+						>
+							<legend>Which sentence is an arguable thesis?</legend>
+							<label class="answer"
+								><input type="radio" name="q1" /> This post describes learning jj.</label
+							>
+							<label class="answer"
+								><input type="radio" name="q1" data-correct="true" /> jj makes stacked changes
+								safer.</label
+							>
+							<label class="answer"
+								><input type="radio" name="q1" /> Git and jj handle history.</label
+							>
+							<p class="feedback" data-question-feedback aria-live="polite"></p>
+						</fieldset>
+
+						<fieldset
+							data-question
+							data-correct-feedback="Yes. One consequential incident can carry the larger argument."
+							data-incorrect-feedback="That may be useful elsewhere, but it does not prove this essay’s claim."
+						>
+							<legend>Which evidence best supports this essay?</legend>
+							<label class="answer"
+								><input type="radio" name="q2" /> List every alias you memorized.</label
+							>
+							<label class="answer"
+								><input type="radio" name="q2" data-correct="true" /> Show one painful stack
+								repair.</label
+							>
+							<label class="answer"
+								><input type="radio" name="q2" /> Explain how jj was installed.</label
+							>
+							<p class="feedback" data-question-feedback aria-live="polite"></p>
+						</fieldset>
+
+						<fieldset
+							data-question
+							data-correct-feedback="Yes. Readers need the position before its boundaries."
+							data-incorrect-feedback="Either the claim disappears, or credibility disappears with it."
+						>
+							<legend>How should useful caveats appear?</legend>
+							<label class="answer"
+								><input type="radio" name="q3" /> Add every possible qualification first.</label
+							>
+							<label class="answer"
+								><input type="radio" name="q3" data-correct="true" /> State the claim, then
+								qualify.</label
+							>
+							<label class="answer"
+								><input type="radio" name="q3" /> Avoid all nuance and evidence.</label
+							>
+							<p class="feedback" data-question-feedback aria-live="polite"></p>
+						</fieldset>
+
+						<div class="toolbar">
+							<button type="submit">Check answers</button>
+							<output data-quiz-result aria-live="polite"></output>
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h2>Write the new opening</h2>
+					<div class="exercise">
+						<p>
+							Write no more than 140 words in three short paragraphs. Do this from the memory of
+							your experience, not by editing the existing introduction line by line.
+						</p>
+						<ol>
+							<li><strong>Scene:</strong> Sunday morning, being ill, and the dread of Monday.</li>
+							<li>
+								<strong>Pressure:</strong> why the stacked PRs mattered and why changing their base
+								felt dangerous.
+							</li>
+							<li>
+								<strong>Position:</strong> the one sentence about jj you are willing to defend.
+							</li>
+						</ol>
+
+						<label for="opening-draft"><strong>Your opening</strong></label>
+						<textarea
+							id="opening-draft"
+							data-storage-key="lesson-0001-opening"
+							placeholder="You join me on a Sunday morning…"
+						></textarea>
+
+						<div class="toolbar">
+							<span class="quiet" data-word-count-for="opening-draft">0 words</span>
+							<button type="button" data-copy-target="#opening-draft">Copy for feedback</button>
+						</div>
+
+						<h3>Self-check before sharing</h3>
+						<ul class="checklist">
+							<li>
+								<input id="check-reader" type="checkbox" /><label for="check-reader"
+									>A Git-comfortable reader can recognize the problem.</label
+								>
+							</li>
+							<li>
+								<input id="check-claim" type="checkbox" /><label for="check-claim"
+									>The final paragraph makes a judgment, not a promise about the post.</label
+								>
+							</li>
+							<li>
+								<input id="check-dispute" type="checkbox" /><label for="check-dispute"
+									>A capable engineer could reasonably disagree with that judgment.</label
+								>
+							</li>
+							<li>
+								<input id="check-mechanism" type="checkbox" /><label for="check-mechanism"
+									>The judgment points toward why jj changed the work.</label
+								>
+							</li>
+							<li>
+								<input id="check-voice" type="checkbox" /><label for="check-voice"
+									>The language sounds like you, including when read aloud.</label
+								>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Use Vale after the thinking</h2>
+					<p>
+						Once the opening passes your self-check, put it into the draft and run
+						<code>vale src/lib/posts/i-attended-the-church-of-jj.md</code>. Vale is a second reader,
+						not a source of replacement prose.
+					</p>
+					<div class="callout">
+						<p class="label">One alert already matters</p>
+						<p>
+							The house rule flags “This post will…” because it announces a format instead of
+							advancing a claim. That corroborates the lesson. By contrast,
+							<code>write-good</code> objects to “under the weather” and “Very.” Those may be
+							intentional parts of your scene and comic timing.
+						</p>
+					</div>
+					<p>
+						For each alert, write down one of three decisions: <strong>actionable</strong>,
+						<strong>intentional voice</strong>, or <strong>vocabulary</strong>. Accept a change only
+						if you can name what it improves.
+					</p>
+				</section>
+
+				<section class="next-step">
+					<h2>Stop here</h2>
+					<p>
+						Copy your opening and send it to Codex for feedback. Do not revise the rest of the post
+						yet. Lesson 2 will be designed from what this attempt shows about your current
+						understanding.
+					</p>
+					<p>
+						Ask follow-up questions whenever a distinction or piece of feedback is unclear. The
+						feedback loop is part of the lesson.
+					</p>
+				</section>
+
+				<footer>
+					<p class="source">
+						Next planned lesson: <strong>Make the story prove the claim.</strong> It will only be
+						created after this exercise is reviewed.
+					</p>
+				</footer>
+			</article>
+		</main>
+	</body>
+</html>
