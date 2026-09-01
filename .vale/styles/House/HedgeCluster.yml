@@ -1,0 +1,7 @@
+extends: occurrence
+message: 'This paragraph contains several qualifiers; keep only the ones that sharpen the claim.'
+level: suggestion
+scope: paragraph
+ignorecase: true
+max: 1
+token: '\b(?:I (?:think|believe|feel)|maybe|perhaps|probably|possibly|to be honest|of course)\b'

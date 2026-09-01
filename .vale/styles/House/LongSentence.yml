@@ -1,0 +1,6 @@
+extends: occurrence
+message: 'This sentence has more than 45 words; check whether its argument would be clearer split in two.'
+level: suggestion
+scope: sentence
+max: 45
+token: "\\b[[:alnum:]][[:alnum:]'’-]*\\b"

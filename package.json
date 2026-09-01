@@ -12,6 +12,8 @@
     "lint": "vp lint",
     "prepare": "vp config --no-agent",
     "preview": "vp preview",
+    "prose:lint": "vale src/lib/posts",
+    "prose:sync": "vale sync",
     "test": "vp test"
   },
   "dependencies": {

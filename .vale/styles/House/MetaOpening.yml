@@ -1,0 +1,6 @@
+extends: existence
+message: "Lead with the claim instead of announcing what the post will do: '%s'."
+level: suggestion
+ignorecase: true
+tokens:
+  - '\b(?:this|the) (?:post|article|essay) (?:will|is going to|aims to|sets out to)\b'
