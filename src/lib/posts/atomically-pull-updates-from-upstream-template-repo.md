@@ -1,11 +1,11 @@
 ---
-title: 'Atomically pull updates from an upstream template repo'
-date: '2022-03-08'
-updated: '2022-09-20'
+title: "Atomically pull updates from an upstream template repo"
+date: "2022-03-08"
+updated: "2022-09-20"
 categories:
-  - 'github'
-  - 'git'
-  - 'dev'
+  - "github"
+  - "git"
+  - "dev"
 ---
 
 Earlier this year I helped improve a template repo 3rd party Shopify developers use to build apps.

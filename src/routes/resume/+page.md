@@ -84,7 +84,7 @@ May **2019** - Aug **2020**
 Aug **2016** - Aug **2018**
 
 - Implemented [storybook driven development](https://medium.com/nulogy/storybook-driven-development-a3c517276c07) - a methodology for rapidly prototyping/developing visual components - with senior team members.
-- [Patented](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018083682&_cid=P10-MDF62X-15877-1) the underlying system for & built a data-intensive dashboard serving millions of rows of data with PostgreSQL, Ruby on Rails, React, and Redux to help planners derive insights from historical data. 
+- [Patented](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018083682&_cid=P10-MDF62X-15877-1) the underlying system for & built a data-intensive dashboard serving millions of rows of data with PostgreSQL, Ruby on Rails, React, and Redux to help planners derive insights from historical data.
 - Developed consistent component / container pattern for data deserialization and visualizations and shared language with the design team, which led to the full-fledged [design system](https://nulogy.design/).
 
 [Rangle.io](http://rangle.io) | _Junior Developer_<br>

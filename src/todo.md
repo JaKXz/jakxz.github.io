@@ -11,7 +11,6 @@ There is a point of diminishing returns and I try to strike that balance once it
 
 Similar to a good design system and library components, any LLM doesn't fully understand or have opinions on the _why_ of a problem or fully get the _how_ of a solution and has its own biases, so I spend more of my time on the "last mile".
 
-
 ---
 
 # Code should be self-descriptive and cannot be self-documenting

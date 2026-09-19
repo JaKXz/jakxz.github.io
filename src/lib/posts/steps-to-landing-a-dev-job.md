@@ -1,12 +1,12 @@
 ---
-title: 'Steps to landing a dev job'
-date: '2020-08-21'
-updated: '2023-07-15'
+title: "Steps to landing a dev job"
+date: "2020-08-21"
+updated: "2023-07-15"
 categories:
-  - 'career'
-  - 'dev'
-  - 'coaching'
-excerpt: 'From Internships to GitHub, metaphorically speaking'
+  - "career"
+  - "dev"
+  - "coaching"
+excerpt: "From Internships to GitHub, metaphorically speaking"
 ---
 
 <script>

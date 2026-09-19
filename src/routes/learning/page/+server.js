@@ -1,7 +1,7 @@
-import { redirect } from '@sveltejs/kit';
+import { redirect } from "@sveltejs/kit";
 
 export const prerender = true;
 
 export function GET() {
-	throw redirect(303, '/learning');
+  throw redirect(303, "/learning");
 }
