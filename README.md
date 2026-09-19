@@ -1,1 +1,1 @@
-Built with [sveltekit](https://kit.svelte.dev/), [unocss](https://unocss.dev/), [mdsvex](https://mdsvex.com/), and others & folks' fantastic work!
+Built with [SvelteKit](https://kit.svelte.dev/), [Vite+](https://viteplus.dev/), [UnoCSS](https://unocss.dev/), [mdsvex](https://mdsvex.com/), and others & folks' fantastic work!

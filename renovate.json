@@ -15,10 +15,6 @@
 			"groupName": "vite",
 			"matchPackageNames": ["/^.*vite.*/"]
 		},
-		{
-			"groupName": "prettier",
-			"matchPackageNames": ["/^.*(prettier|husky|pretty-quick).*/"]
-		},
 		{ "matchUpdateTypes": ["minor", "patch"], "automerge": true }
 	]
 }
