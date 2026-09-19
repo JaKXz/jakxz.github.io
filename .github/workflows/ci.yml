@@ -44,11 +44,6 @@ jobs:
         env:
           VP_GIT_HOOKS: "0"
 
-      - name: check
-        run: pnpm run check
-
-      - name: test
-        run: pnpm run test
-
-      - name: build
-        run: pnpm run build
+      - run: pnpm run build
+      - run: pnpm run check
+      - run: pnpm run test
