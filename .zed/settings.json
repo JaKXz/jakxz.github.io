@@ -42,11 +42,22 @@
       "format_on_save": "on",
       "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }]
+    },
     "SCSS": {
       "format_on_save": "on",
       "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
     "Svelte": {
+      "format_on_save": "on",
+      "formatter": [
+        { "language_server": { "name": "oxfmt" } },
+        { "code_action": "source.fixAll.oxc" }
+      ]
+    },
+    "TOML": {
       "format_on_save": "on",
       "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
