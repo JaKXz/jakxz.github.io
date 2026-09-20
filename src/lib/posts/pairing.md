@@ -1,11 +1,11 @@
 ---
-title: 'Pairing'
-date: '2023-08-22'
-updated: '2024-08-07'
+title: "Pairing"
+date: "2023-08-22"
+updated: "2024-08-07"
 categories:
-  - 'dev'
-  - 'pairing'
-  - 'coaching'
+  - "dev"
+  - "pairing"
+  - "coaching"
 coverWidth: 16
 coverHeight: 9
 excerpt: A co-written essay on my approach to pairing
@@ -26,9 +26,9 @@ If pairing means working together, what does the work look like?
 
 There are three axes helpful in answering this question:
 
-* Driver vs. Navigator
-* Scheduled vs. ad hoc
-* Unblocking a problem vs. exploring a problem space
+- Driver vs. Navigator
+- Scheduled vs. ad hoc
+- Unblocking a problem vs. exploring a problem space
 
 It is typical of pair programming to have two roles: a **driver** (the person with control of the editor) and a **navigator** (the person keeping track of where we are, giving immediate feedback and information to the driver).
 
@@ -78,17 +78,17 @@ Tooling alone cannot overcome the problem of passive participation, but good def
 
 ### Etiquette
 
-* **Be clear and communicate your preferences for pairing.** Use the 3 axes as a communication tool.
-* **Start the session by writing down a clear goal.** This is especially important when a pair is working on a problem where only one party has knowledge of the problem at the start.
-* **Use a multiplayer setup and avoid problematic screen sharing.** Screen sharing in popular meeting tools, especially in low resolution like Zoom, encourages passive mode.
-* **If you need to shift your focus from the pair, announce it explicitly**. Obviously, there are times when a pair will need to temporarily pause or one person will need to take care of some urgent matter. That’s okay, but you should always announce that your attention has shifted. Be explicit.
-* **Turn on focus mode in macOS to prevent notifications.** You can allow priority notifications from applications like Slack, but you should disable everything that isn’t urgent.
-* **Put your pair in a calendar invite (even if it’s ad hoc) and update your Slack status**. If you use the Google Calendar extension, you can configure it to automatically update your status based on meeting presence. This helps to announce to other people that you won’t see their notifications immediately.
-* **Assume that people currently pairing have 100% of their attention dedicated to the pair.** If you notice a Slack status or a calendar event for pairing, assume that you will not receive a reply until the pair is finished.
-* **Don’t pair for more than 90 minutes continuously.** Pairing is a cognitively expensive process. Doing it well requires concentration and attention that many people may not have. Take breaks frequently, and be comfortable going on and off camera and mute to excuse yourself as you would normally. _Breaks for a short stretch or walk will make you more effective. Pairing is **not** just a long meeting but a continuous flow._
+- **Be clear and communicate your preferences for pairing.** Use the 3 axes as a communication tool.
+- **Start the session by writing down a clear goal.** This is especially important when a pair is working on a problem where only one party has knowledge of the problem at the start.
+- **Use a multiplayer setup and avoid problematic screen sharing.** Screen sharing in popular meeting tools, especially in low resolution like Zoom, encourages passive mode.
+- **If you need to shift your focus from the pair, announce it explicitly**. Obviously, there are times when a pair will need to temporarily pause or one person will need to take care of some urgent matter. That’s okay, but you should always announce that your attention has shifted. Be explicit.
+- **Turn on focus mode in macOS to prevent notifications.** You can allow priority notifications from applications like Slack, but you should disable everything that isn’t urgent.
+- **Put your pair in a calendar invite (even if it’s ad hoc) and update your Slack status**. If you use the Google Calendar extension, you can configure it to automatically update your status based on meeting presence. This helps to announce to other people that you won’t see their notifications immediately.
+- **Assume that people currently pairing have 100% of their attention dedicated to the pair.** If you notice a Slack status or a calendar event for pairing, assume that you will not receive a reply until the pair is finished.
+- **Don’t pair for more than 90 minutes continuously.** Pairing is a cognitively expensive process. Doing it well requires concentration and attention that many people may not have. Take breaks frequently, and be comfortable going on and off camera and mute to excuse yourself as you would normally. _Breaks for a short stretch or walk will make you more effective. Pairing is **not** just a long meeting but a continuous flow._
 
 ## See also
 
-* [Martin Fowler: On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
-* [Tuple’s Pair Programming Guide](https://tuple.app/pair-programming-guide/)
-* [Removing bottlenecks in onboarding with pairing](https://martinfowler.com/articles/bottlenecks-of-scaleups/06-onboarding.html#PairProgrammingAsACriticalOnboardingTechnique)
+- [Martin Fowler: On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
+- [Tuple’s Pair Programming Guide](https://tuple.app/pair-programming-guide/)
+- [Removing bottlenecks in onboarding with pairing](https://martinfowler.com/articles/bottlenecks-of-scaleups/06-onboarding.html#PairProgrammingAsACriticalOnboardingTechnique)

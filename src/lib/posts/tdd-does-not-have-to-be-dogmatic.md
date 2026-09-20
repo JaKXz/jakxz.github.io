@@ -1,12 +1,12 @@
 ---
 title: TDD doesn't have to be dogmatic
-date: '2023-03-06'
-updated: '2023-03-06'
+date: "2023-03-06"
+updated: "2023-03-06"
 categories:
-  - 'TDD'
-  - 'testing'
-  - 'dev'
-coverImage: '/images/markus-spiske-8CWoXxaqGrs-unsplash.jpg'
+  - "TDD"
+  - "testing"
+  - "dev"
+coverImage: "/images/markus-spiske-8CWoXxaqGrs-unsplash.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: That's right, I said it
@@ -26,9 +26,9 @@ If you're curious, what I usually do looks something like this (using React as p
 1. write out as many behaviours as I can think of in `.skip`ped or `.todo`'d tests:
 
 ```tsx
-describe('component', () => {
-	it.skip('renders this by default');
-	it.skip('');
+describe("component", () => {
+  it.skip("renders this by default");
+  it.skip("");
 });
 ```
 
@@ -36,21 +36,21 @@ describe('component', () => {
 
 ```tsx
 function MyComponent({ ...props }) {
-	return (
-		<div>
-			<pre>{JSON.stringify(props, null, 2)}</pre>
-		</div>
-	);
+  return (
+    <div>
+      <pre>{JSON.stringify(props, null, 2)}</pre>
+    </div>
+  );
 }
 ```
 
 3. go back to the tests and fill them out one at at time ...ish:
 
 ```tsx
-it('renders this by default', () => {
-	expect(wrapper).toContainText(...props);
+it("renders this by default", () => {
+  expect(wrapper).toContainText(...props);
 });
-it('does all the other things');
+it("does all the other things");
 ```
 
 4. delete the sketched solution (optional)

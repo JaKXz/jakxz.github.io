@@ -1,11 +1,11 @@
 ---
-title: 'Reviewing code: familiar or not'
-date: '2024-05-08'
-updated: '2025-12-12'
+title: "Reviewing code: familiar or not"
+date: "2024-05-08"
+updated: "2025-12-12"
 categories:
-    - 'coaching'
-    - 'dev'
-coverImage: '/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg'
+  - "coaching"
+  - "dev"
+coverImage: "/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg"
 ---
 
 <script>
@@ -46,17 +46,17 @@ You can mix and match as you see fit!
 - Acting as QA for your teammate is the best way to "have each other's backs" - testing for and catching edge cases that the author may have missed is clutch. Good teammates will thank you.
 - Product minded questions are crucial: _why_ do we need this change? Can the desired behaviour be achieved with simpler or no code? Remember, less (no) code is best code.
 - Ideally, PRs are relatively small (`+200/-200` lines changed at most excluding tests/fixtures etc);
-    - if not, can the PR be split up to introduce the change in steps? This might point out gaps in dependencies to the author.
-    - For the inevitably large MR, try to review commit by commit, and ideally commit messages are where most of the time bound context/documentation is.
-    - Or, review file by file, _going in order_ from UI -> backend, or, backend out to UI. Can you trace the logic from your developer tools back to the server requests?
+  - if not, can the PR be split up to introduce the change in steps? This might point out gaps in dependencies to the author.
+  - For the inevitably large MR, try to review commit by commit, and ideally commit messages are where most of the time bound context/documentation is.
+  - Or, review file by file, _going in order_ from UI -> backend, or, backend out to UI. Can you trace the logic from your developer tools back to the server requests?
 
 ### In-between
 
 e.g. This might be a component library that you use but don't modify often.
 
-- This change should further educate you on this area of the codebase. 
-    - If not, ask for clarification. Requesting documentation via tests is a good place to start.
-    - Asking for comments might be a double-edged sword (since they can go out of date) - the best approach is to ask for a comment explaining _why_ a complex section of code exists or is written the way it is, rather than _what_ that code is doing.
+- This change should further educate you on this area of the codebase.
+  - If not, ask for clarification. Requesting documentation via tests is a good place to start.
+  - Asking for comments might be a double-edged sword (since they can go out of date) - the best approach is to ask for a comment explaining _why_ a complex section of code exists or is written the way it is, rather than _what_ that code is doing.
 - Ideally, you spot / point out patterns that repeat or can be simplified to make the area of the codebase easier to understand.
 
 ### Low context
@@ -65,7 +65,7 @@ e.g. A dependency bump or security request somewhere you've been asked to provid
 
 - Does a smoke test pass? Are you able to pull, build, and test the code locally? Anything strange in CI?
 - Ask about "general best practices" e.g. usually an X project does Y, does that apply here? Why or why not?
-- Can you articulate the _Why_ **and** _What_ of this change (don't worry about specific details in the *How*) succinctly back to the author?
+- Can you articulate the _Why_ **and** _What_ of this change (don't worry about specific details in the _How_) succinctly back to the author?
 
 ## What about general etiquette?
 

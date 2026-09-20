@@ -6,7 +6,7 @@ on:
   merge_group:
 
 jobs:
-  build-and-lint:
+  build-test-and-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,13 +16,13 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
 
       - uses: pnpm/action-setup@v6
         name: Install pnpm
         id: pnpm-install
         with:
-          version: latest
+          version: 12.4.2
           run_install: false
 
       - name: Get pnpm store directory
@@ -41,12 +41,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+        env:
+          VP_GIT_HOOKS: "0"
 
-      - name: build
-        run: pnpm run build
-
-      - name: test
-        run: pnpm run test
-
-      - name: lint
-        run: pnpm run lint
+      - run: pnpm run build
+      - run: pnpm run check
+      - run: pnpm run test

@@ -1,37 +1,37 @@
 <!-- Renders posts listed by category -->
 <script>
-	import Pagination from '$lib/components/Pagination.svelte';
-	import PostsList from '$lib/components/PostsList.svelte';
-	import { postsPerPage, siteDescription } from '$lib/config';
+  import Pagination from "$lib/components/Pagination.svelte";
+  import PostsList from "$lib/components/PostsList.svelte";
+  import { postsPerPage, siteDescription } from "$lib/config";
 
-	let { data } = $props();
-	const { page, category, totalPosts, posts } = data;
+  let { data } = $props();
+  const { page, category, totalPosts, posts } = data;
 
-	let lowerBound = $derived(page * postsPerPage - (postsPerPage - 1) || 1);
-	let upperBound = $derived(Math.min(page * postsPerPage, totalPosts));
+  let lowerBound = $derived(page * postsPerPage - (postsPerPage - 1) || 1);
+  let upperBound = $derived(Math.min(page * postsPerPage, totalPosts));
 </script>
 
 <svelte:head>
-	<title>Blog category {category} - page {page}</title>
-	<meta data-key="description" name={siteDescription} />
+  <title>Blog category {category} - page {page}</title>
+  <meta data-key="description" name={siteDescription} />
 </svelte:head>
 
 <!-- TODO: this is duplicated across multiple `+page.svelte` files -->
 {#if posts && posts.length}
-	<h1>
-		Category: {category}
-		<br />
-		<small>Posts {lowerBound}–{upperBound} of {totalPosts}</small>
-	</h1>
-	<Pagination currentPage={page} {totalPosts} path="/learning/category/{category}/page" />
+  <h1>
+    Category: {category}
+    <br />
+    <small>Posts {lowerBound}–{upperBound} of {totalPosts}</small>
+  </h1>
+  <Pagination currentPage={page} {totalPosts} path="/learning/category/{category}/page" />
 
-	<PostsList {posts} />
+  <PostsList {posts} />
 
-	<Pagination currentPage={page} {totalPosts} path="/learning/category/{category}/page" />
+  <Pagination currentPage={page} {totalPosts} path="/learning/category/{category}/page" />
 {:else}
-	<h1>Oops!</h1>
+  <h1>Oops!</h1>
 
-	<p>Sorry, no posts to show here.</p>
+  <p>Sorry, no posts to show here.</p>
 
-	<a href="/learning">Back to blog</a>
+  <a href="/learning">Back to blog</a>
 {/if}

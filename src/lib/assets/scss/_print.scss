@@ -1,31 +1,31 @@
 @media print {
-	header,
-	footer,
-	.utterances,
-	.icon-link,
-	.no-print {
-		display: none !important;
-	}
+  header,
+  footer,
+  .utterances,
+  .icon-link,
+  .no-print {
+    display: none !important;
+  }
 
-	html,
-	body {
-		font-size: 0.8rem;
-	}
-	main {
-		margin: auto !important;
-		padding: 0 !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
+  html,
+  body {
+    font-size: 0.8rem;
+  }
+  main {
+    margin: auto !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
 
-	h2 {
-		font-size: 1.5rem !important;
-	}
+  h2 {
+    font-size: 1.5rem !important;
+  }
 }
 
 @media screen {
-	.print-only {
-		display: none !important;
-		visibility: hidden !important;
-	}
+  .print-only {
+    display: none !important;
+    visibility: hidden !important;
+  }
 }

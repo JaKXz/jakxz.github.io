@@ -1,12 +1,12 @@
 ---
-title: 'A practical example of the :where() pseudo-selector'
-date: '2023-05-07'
-updated: '2023-05-07'
+title: "A practical example of the :where() pseudo-selector"
+date: "2023-05-07"
+updated: "2023-05-07"
 categories:
-  - 'css'
-  - 'web'
-  - 'dev'
-coverImage: '/images/kelly-sikkema-mdADGzyXCVE-unsplash.jpg'
+  - "css"
+  - "web"
+  - "dev"
+coverImage: "/images/kelly-sikkema-mdADGzyXCVE-unsplash.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: This is how it clicked for me
@@ -18,14 +18,14 @@ Say you have a `.container` element, and you want to specify that all headings w
 
 ```scss
 .container {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		margin: 0;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
 }
 ```
 
@@ -35,16 +35,16 @@ However, what if e.g. you only wanted the [`:first-of-type`](https://developer.m
 
 ```scss
 .container {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		&:first-of-type {
-			margin: 0;
-		}
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:first-of-type {
+      margin: 0;
+    }
+  }
 }
 ```
 
@@ -53,7 +53,7 @@ With the `:where()` pseudo-selector, we can simplify this to one line of CSS:
 
 ```css
 .container :where(h1, h2, h3, h4, h5, h6):first-of-type {
-	margin: 0;
+  margin: 0;
 }
 ```
 
