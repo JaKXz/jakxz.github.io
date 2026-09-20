@@ -45,5 +45,7 @@ jobs:
           VP_GIT_HOOKS: "0"
 
       - run: pnpm run build
+        env:
+          UNSPLASH_ACCESS_KEY: ""
       - run: pnpm run check
       - run: pnpm run test
