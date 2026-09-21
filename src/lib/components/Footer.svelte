@@ -1,9 +1,11 @@
 <script>
   import { page } from "$app/state";
+  import classNames from "$lib/assets/js/classNames";
 
-  let { path } = $props();
+  import ThemeToggle from "./ThemeToggle.svelte";
 
-  console.log(page.url.pathname, { path });
+  let { alignWithSidebar = false } = $props();
+  let path = $derived(page.url.pathname);
 
   function getEditPath(url) {
     if (url.startsWith("/learning/")) {
@@ -18,15 +20,23 @@
 </script>
 
 <footer
-  class="site-footer relative z-1 mx-auto -mt-4 mb-6 w-[calc(100%-2rem)] max-w-60rem border border-[var(--border)] bg-[var(--sheet-muted)] px-5 pb-5 pt-10 text-sm text-[var(--muted-ink)] xs:px-8 xs:pb-6 xs:pt-12"
+  class={classNames(
+    "site-footer relative z-1 mx-auto -mt-4 mb-6 border border-[var(--border)] px-5 py-8 bg-[var(--sheet-muted)] text-sm text-[var(--muted-ink)]",
+    alignWithSidebar
+      ? ["w-[calc(100%-2rem)]", "max-w-64rem", "xs:w-[calc(100%-4rem)]"]
+      : ["w-[calc(100%-2rem)]", "max-w-60rem"],
+  )}
 >
-  <div class="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
-    <div>
-      <p class="m-0 mb-3 text-xs font-600 uppercase tracking-[0.18em]">Elsewhere</p>
-      <ul class="m-0 flex list-none flex-wrap gap-2 p-0">
-        <li>
+  <div class="grid gap-8 sm:grid-cols-[auto_1fr]">
+    <div class="flex flex-col gap-4">
+      <div>
+        <ThemeToggle />
+      </div>
+      <!-- <p class="text-xs font-600 uppercase tracking-[0.18em]">Elsewhere</p> -->
+      <ul class="flex list-none flex-wrap gap-2 p-0 m-0">
+        <li class="m-0 p-0">
           <a
-            class="social-link"
+            class="social-link h-11"
             href="https://bsky.app/profile/jasonkurian.dev"
             aria-label="Bluesky"
           >
@@ -38,15 +48,15 @@
             <span>Bluesky</span>
           </a>
         </li>
-        <li>
-          <a class="social-link" href="https://github.com/jakxz">
+        <li class="m-0 p-0">
+          <a class="social-link h-11" href="https://github.com/jakxz">
             <i class="i-radix-icons-github-logo text-base"></i>
             <span>GitHub</span>
           </a>
         </li>
-        <li>
+        <li class="m-0 p-0">
           <a
-            class="social-link"
+            class="social-link h-11"
             href="https://www.linkedin.com/in/jgkurian/"
             rel="me noopener noreferrer"
           >
@@ -57,17 +67,17 @@
       </ul>
     </div>
 
-    <div class="sm:text-right">
+    <div class="sm:text-right flex flex-col justify-between">
       <nav
         aria-label="Footer Navigation"
-        class="mb-3 flex flex-wrap gap-x-4 gap-y-2 sm:justify-end"
+        class="flex flex-wrap gap-x-4 gap-y-2 sm:justify-end"
       >
         <a href="/">Home</a>
         <a href="/learning">Learning</a>
         <a href="/api/rss.xml" rel="external">RSS</a>
       </nav>
       {#if page.status !== 404 && path !== "/learning" && !path.startsWith("/learning/category/")}
-        <p class="m-0 mb-1">
+        <p class="m-0">
           See a typo?
           <em
             ><a

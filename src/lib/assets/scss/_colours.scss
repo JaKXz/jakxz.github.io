@@ -28,6 +28,8 @@
 }
 
 :root {
+  color-scheme: light;
+
   --canvas: #eef2f4;
   --sheet: #fffdfb;
   --sheet-muted: #f2f4f3;
@@ -58,11 +60,13 @@
 }
 
 :root[data-theme="dark"] {
+  color-scheme: dark;
   @include dark-theme;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
+    color-scheme: dark;
     @include dark-theme;
   }
 }

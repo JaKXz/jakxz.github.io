@@ -3,7 +3,6 @@
 
   import HamburgerMenuButton from "./HamburgerMenuButton.svelte";
   import MainNav from "./MainNav.svelte";
-  import ThemeToggle from "./ThemeToggle.svelte";
 </script>
 
 <header
@@ -22,7 +21,6 @@
 
   <div class="flex items-center gap-3">
     <MainNav />
-    <ThemeToggle />
     <HamburgerMenuButton />
   </div>
 </header>
