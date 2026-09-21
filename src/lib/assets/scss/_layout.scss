@@ -8,31 +8,31 @@
   max-width: 100%;
 }
 
-figure img,
-.callout,
-pre[class*="language-"] {
-  max-height: 100%;
-  margin: 2rem 0 2rem -2rem;
-  $xsMinMaxW: vars.$xsMin - 1;
-  @media (max-width: $xsMinMaxW) {
-    max-width: unset;
-    width: 100vw;
-  }
-  @media (min-width: vars.$xsMin) {
-    border-radius: 0.3rem;
-    min-width: calc(100% + 4rem);
+.post-content {
+  max-width: 68ch;
+
+  > :where(figure, .callout, pre[class*="language-"]) {
+    width: calc(100% + 3rem);
+    max-width: none;
+    margin: 2.5rem -1.5rem;
+
+    @media (min-width: vars.$xsMin) {
+      width: calc(100% + 4rem);
+      margin-inline: -2rem;
+      border-radius: 0.3rem;
+    }
   }
 
-  :where(h1, h2, h3, h4, h5, h6):first-of-type {
+  figure {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  :where(h1, h2, h3, h4, h5, h6):first-child {
     margin-top: 0;
-  }
-}
-
-figure img {
-  height: 100%;
-  $xsMinMaxW: vars.$xsMin - 1;
-  @media (max-width: $xsMinMaxW) {
-    margin-top: -2rem;
   }
 }
 
@@ -54,7 +54,7 @@ li {
       height: 1rem;
       top: 0.1rem;
       opacity: 0.2;
-      transition: opacity 0.2s;
+      transition: opacity 120ms ease-out;
 
       @media (min-width: vars.$xsMin) {
         left: -1.5rem;

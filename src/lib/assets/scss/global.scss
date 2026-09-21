@@ -12,14 +12,42 @@
 @use "./print";
 
 body {
+  min-width: 20rem;
   margin: 0;
   color: var(--ink);
   font-family: var(--primaryFont);
-  background: var(--paper);
+  background-color: var(--canvas);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 2rem 2rem;
   @media print {
     background: #fff;
   }
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  color: var(--accent-contrast);
+  background: var(--accent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body,
+  header,
+  main,
+  footer {
+    transition:
+      color 200ms ease,
+      background-color 200ms ease,
+      border-color 200ms ease,
+      box-shadow 200ms ease;
+  }
 }

@@ -2,32 +2,32 @@
 
 :root {
   --accentFont: "Zapfino", Georgia, Times, serif;
-  --primaryFont: "Libre Franklin", sans-serif;
-  --codeFont: "Fira Code", monospace;
+  --primaryFont: "Libre Franklin", system-ui, sans-serif;
+  --codeFont: "Fira Code", ui-monospace, monospace;
 
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.65;
 
   @media (min-width: vars.$smMin) {
-    font-size: 1.125rem;
-  }
-
-  @media (min-width: vars.$lgMin) {
-    font-size: 1.25rem;
+    font-size: 1.0625rem;
   }
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
-  margin: 4.5rem 0 1rem;
-  line-height: 1.1;
-  font-family: var(--accentFont);
-  @include vars.font-weight(extra-bold);
-  color: var(--darker);
+  margin: 3.75rem 0 1rem;
+  color: var(--ink);
+  font-family: var(--primaryFont);
+  font-weight: 750;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: 2.8rem;
-  margin: 0 0 3rem;
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.35rem, 8vw, 4.25rem);
+  letter-spacing: -0.06em;
+
   position: relative;
   overflow: hidden;
   padding-bottom: 1rem;
@@ -41,49 +41,49 @@ h1 {
     position: absolute;
     bottom: 0;
   }
-
-  @media (min-width: vars.$smMin) {
-    font-size: 3rem;
-  }
-
-  @media (min-width: vars.$lgMin) {
-    font-size: 3.2rem;
-  }
 }
 
 h2 {
-  font-size: 2rem;
-
-  @media (min-width: vars.$smMin) {
-    font-size: 2.2rem;
-  }
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: clamp(1.35rem, 4vw, 1.8rem);
 }
 
 h4 {
-  font-size: 1.6rem;
-}
-
-h5 {
   font-size: 1.35rem;
 }
 
+h5 {
+  font-size: 1.15rem;
+}
+
 h6 {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 a {
-  color: var(--darker);
-  text-decoration-thickness: 1px;
-  text-decoration-color: var(--dark);
+  color: var(--link);
+  text-decoration-thickness: 0.08em;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-underline-offset: 0.2em;
+
+  &:hover {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+  }
 }
 
 ul {
-  list-style-type: square;
   padding-left: 1.5rem;
+  list-style-type: square;
 
   ul {
     list-style-type: circle;
@@ -99,22 +99,24 @@ strong {
 }
 
 .subdued {
-  @apply opacity-90 text-xs text-[color:var(--ink)];
+  @apply text-xs text-[var(--muted-ink)];
 }
 
 figcaption {
-  font-style: italic;
-  font-size: smaller;
-  padding: 3px;
-  text-align: center;
+  padding: 0.55rem 0.75rem 0;
+  color: var(--muted-ink);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .name-heading {
-  @include vars.font-weight(extra-bold);
-  color: var(--darker);
+  color: var(--ink);
   font-style: italic;
   font-variant: small-caps;
+  font-weight: 750;
   text-transform: lowercase;
+  user-select: none;
 
   &:first-letter {
     font-family: var(--accentFont);

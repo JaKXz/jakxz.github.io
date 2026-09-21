@@ -5,29 +5,31 @@
   import { postsPerPage, siteDescription } from "$lib/config";
 
   let { data } = $props();
-  const { page, totalPosts, posts } = data;
 
-  let lowerBound = $derived(page * postsPerPage - (postsPerPage - 1) || 1);
-  let upperBound = $derived(Math.min(page * postsPerPage, totalPosts));
+  let lowerBound = $derived(data.page * postsPerPage - (postsPerPage - 1) || 1);
+  let upperBound = $derived(Math.min(data.page * postsPerPage, data.totalPosts));
 </script>
 
 <svelte:head>
-  <title>Blog - page {page}</title>
+  <title>Learning - page {data.page}</title>
   <meta data-key="description" name="description" content={siteDescription} />
 </svelte:head>
 
-<!-- TODO: this is duplicated across multiple `+page.svelte` files -->
-{#if posts.length}
-  <h1>Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
-  <Pagination currentPage={page} {totalPosts} />
+{#if data.posts.length}
+  <header class="mb-10">
+    <p class="mb-3 text-xs font-600 uppercase tracking-[0.18em] text-[var(--accent)]">Learning</p>
+    <h1>Notes {lowerBound}–{upperBound}</h1>
+    <p class="m-0 text-[var(--muted-ink)]">Page {data.page} of the archive.</p>
+  </header>
+  <Pagination currentPage={data.page} totalPosts={data.totalPosts} />
 
-  <PostsList {posts} />
+  <div class="my-8"><PostsList posts={data.posts} /></div>
 
-  <Pagination currentPage={page} {totalPosts} />
+  <Pagination currentPage={data.page} totalPosts={data.totalPosts} />
 {:else}
   <h1>Oops!</h1>
 
-  <p>Sorry, no posts to show here.</p>
+  <p>Sorry, no notes to show here.</p>
 
-  <a href="/learning">Back to blog</a>
+  <a href="/learning">Back to Learning</a>
 {/if}

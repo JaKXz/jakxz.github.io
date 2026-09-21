@@ -17,7 +17,9 @@
     }
 
     a {
-      background: var(--lightAccent);
+      color: var(--ink);
+      background: var(--sheet-muted);
+      border: 1px solid var(--border);
       text-decoration: none;
       line-height: 1;
       display: flex;
@@ -27,17 +29,21 @@
       height: 2em;
       font-family: var(--primaryFont);
       @include vars.font-weight(extra-bold);
-      transition: background 0.1s;
+      transition:
+        color 120ms ease-out,
+        background 120ms ease-out,
+        border-color 120ms ease-out;
 
       &:hover {
         background: var(--accent);
-        color: var(--background);
+        border-color: var(--accent);
+        color: var(--accent-contrast);
       }
 
       &[aria-current="true"] {
         background: var(--accent);
-        color: var(--background);
-        border: 1px solid currentColor;
+        color: var(--accent-contrast);
+        border-color: var(--accent);
       }
     }
   }

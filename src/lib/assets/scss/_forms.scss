@@ -8,12 +8,11 @@ button,
 input[type="submit"] {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  background: var(--darker);
-  color: var(--paper);
+  background: var(--ink);
+  color: var(--sheet);
   @include vars.font-weight(extra-bold);
-  border: 2px solid var(--darker);
+  border: 2px solid var(--ink);
   border-radius: 0.125rem;
-  background: var(--darker);
   margin: 2rem 0 0;
   display: block;
   width: max-content;
@@ -22,6 +21,8 @@ input[type="submit"] {
   &:hover,
   &:focus {
     background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-contrast);
   }
 }
 
@@ -40,7 +41,8 @@ input {
   display: block;
   font-size: inherit;
   padding: 0.5rem;
-  border: 1px solid var(--darker);
+  color: var(--ink);
+  border: 1px solid var(--border-strong);
   border-radius: 0.125rem;
   width: 100%;
   accent-color: var(--accent);
@@ -63,5 +65,5 @@ fieldset {
 }
 
 ::placeholder {
-  color: var(--dark);
+  color: var(--muted-ink);
 }

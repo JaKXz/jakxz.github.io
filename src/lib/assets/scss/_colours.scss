@@ -1,26 +1,78 @@
+@mixin dark-theme {
+  --canvas: #0d1725;
+  --sheet: #172538;
+  --sheet-muted: #1d2e43;
+  --ink: #e6e8e4;
+  --muted-ink: #aab7c6;
+  --border: #39516a;
+  --border-strong: #5a7188;
+  --link: #f4f0e8;
+  --accent: #ff6670;
+  --accent-contrast: #152030;
+  --focus: #7bdff2;
+  --focus-ring: var(--focus);
+  --grid-line: rgb(168 218 229 / 7%);
+  --shadow-soft: 0 0.75rem 2rem rgb(0 0 0 / 18%);
+  --shadow-deep: 0 1.5rem 4rem rgb(0 0 0 / 34%);
+  --sheet-shadow: 0 1px 1px rgb(0 0 0 / 24%), 0 1.5rem 4rem rgb(0 0 0 / 28%);
+
+  // Compatibility aliases for existing pages and post content.
+  --lightAccent: #2e5c87;
+  --lighterAccent: var(--sheet-muted);
+  --dark: var(--sheet);
+  --darker: var(--link);
+  --slate: var(--ink);
+  --white: var(--ink);
+  --black: var(--canvas);
+  --paper: var(--canvas);
+}
+
 :root {
-  --accent: #e63946;
+  --canvas: #eef2f4;
+  --sheet: #fffdfb;
+  --sheet-muted: #f2f4f3;
+  --ink: #2f3948;
+  --muted-ink: #657080;
+  --border: #c5d0d8;
+  --border-strong: #8296a7;
+  --link: #1d3557;
+  --accent: #c62836;
+  --accent-contrast: #faf9f8;
+  --focus: #b51f2d;
+  --focus-ring: var(--focus);
+  --grid-line: rgb(69 123 157 / 8%);
+  --shadow-soft: 0 0.75rem 2rem rgb(29 53 87 / 10%);
+  --shadow-deep: 0 1.5rem 4rem rgb(29 53 87 / 22%);
+  --sheet-shadow: 0 1px 1px rgb(29 53 87 / 8%), 0 1.5rem 4rem rgb(29 53 87 / 14%);
+
+  // Compatibility aliases for existing pages and post content.
   --background: #faf9f8;
   --lightAccent: #a8dae5;
   --lighterAccent: #e6e8e4;
   --dark: #457b9d;
-  --darker: #1d3557;
-  --slate: #2f3948;
+  --darker: var(--link);
+  --slate: var(--ink);
   --white: #d2d2d2;
   --black: #152030;
-  --ink: var(--slate);
-  --paper: var(--background);
+  --paper: var(--canvas);
+}
 
-  @media (prefers-color-scheme: dark) {
-    --lightAccent: #2e5c87;
-    --lighterAccent: #26292b;
-    --dark: #182a45;
-    --darker: var(--background);
-    --paper: var(--black);
-    --ink: var(--white);
+:root[data-theme="dark"] {
+  @include dark-theme;
+}
 
-    img {
-      filter: brightness(0.8) contrast(1.2);
-    }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    @include dark-theme;
+  }
+}
+
+:root[data-theme="dark"] img {
+  filter: brightness(0.82) contrast(1.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) img {
+    filter: brightness(0.82) contrast(1.12);
   }
 }

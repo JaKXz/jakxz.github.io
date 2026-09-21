@@ -57,13 +57,13 @@
 
     <nav class="mt-8 flex flex-wrap gap-3" aria-label="Error recovery">
       <a
-        class="route-link min-h-11 inline-flex items-center justify-center border-2 border-[var(--darker)] rounded-[0.125rem] bg-[var(--darker)] px-4 py-2 text-[0.9rem] text-[var(--paper)] font-800 no-underline transition duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--background)] hover:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--background)] focus-visible:translate-y-[-0.1rem] dark:font-700"
+        class="route-link min-h-11 inline-flex items-center justify-center border-2 border-[var(--ink)] bg-[var(--ink)] px-4 py-2 text-[0.9rem] text-[var(--sheet)] font-800 no-underline transition duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] hover:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)] focus-visible:translate-y-[-0.1rem]"
         href="/"
       >
         Return home
       </a>
       <a
-        class="route-link min-h-11 inline-flex items-center justify-center border-2 border-[var(--darker)] rounded-[0.125rem] bg-transparent px-4 py-2 text-[0.9rem] text-[var(--darker)] font-800 no-underline transition duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--background)] hover:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--background)] focus-visible:translate-y-[-0.1rem] dark:font-700"
+        class="route-link min-h-11 inline-flex items-center justify-center border-2 border-[var(--border-strong)] bg-transparent px-4 py-2 text-[0.9rem] text-[var(--ink)] font-800 no-underline transition duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] hover:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)] focus-visible:translate-y-[-0.1rem]"
         href="/learning"
       >
         Browse learning
@@ -73,7 +73,7 @@
 
   <div class="w-full max-w-84 justify-self-center">
     <div
-      class="radar relative isolate aspect-square w-full overflow-hidden border border-[var(--lightAccent)] rounded-full bg-[var(--lighterAccent)] text-[var(--darker)]"
+      class="radar relative isolate aspect-square w-full overflow-hidden border border-[var(--border-strong)] rounded-full bg-[var(--sheet-muted)] text-[var(--ink)]"
       aria-hidden="true"
     >
       <span class="absolute left-0 right-0 top-1/2 z-[-1] h-px bg-current opacity-25"></span>
@@ -95,7 +95,7 @@
       {/if}
 
       <strong
-        class="radar-code absolute left-1/2 top-1/2 text-[clamp(2rem,11vw,4rem)] text-[var(--darker)] leading-none [font-family:var(--codeFont)]"
+        class="radar-code absolute left-1/2 top-1/2 text-[clamp(2rem,11vw,4rem)] text-[var(--ink)] leading-none [font-family:var(--codeFont)]"
       >
         {page.status}
       </strong>
@@ -122,15 +122,15 @@
 
   .radar {
     box-shadow:
-      inset 0 0 3rem color-mix(in srgb, var(--dark) 15%, transparent),
-      0 1.25rem 3rem rgb(21 32 48 / 16%);
+      inset 0 0 3rem color-mix(in srgb, var(--accent) 9%, transparent),
+      var(--shadow-soft);
   }
 
   .sweep {
     background: conic-gradient(
       from 250deg,
       transparent 0deg 310deg,
-      color-mix(in srgb, var(--lightAccent) 75%, transparent) 355deg,
+      color-mix(in srgb, var(--accent) 32%, transparent) 355deg,
       var(--accent) 360deg
     );
     animation: radar-sweep 4s linear infinite;
@@ -148,7 +148,7 @@
   }
 
   .radar-code {
-    text-shadow: 0 0.08em var(--paper);
+    text-shadow: 0 0.08em var(--sheet);
     transform: translate(-50%, -50%);
   }
 
