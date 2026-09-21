@@ -35,6 +35,8 @@ export default {
         "/learning/category/*/page/*",
       ],
     },
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: "404.html",
+    }),
   },
 };
