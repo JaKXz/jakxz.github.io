@@ -17,5 +17,5 @@
 }
 
 .reset-button {
-  @apply bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent border-none;
+  @apply border-none bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent;
 }

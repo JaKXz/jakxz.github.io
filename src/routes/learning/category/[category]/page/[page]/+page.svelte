@@ -17,7 +17,7 @@
 
 {#if data.posts && data.posts.length}
   <header class="mb-10">
-    <p class="mb-3 text-xs font-600 uppercase tracking-[0.18em] text-[var(--accent)]">Category</p>
+    <p class="font-600 mb-3 text-xs tracking-[0.18em] text-[var(--accent)] uppercase">Category</p>
     <h1>{data.category}</h1>
     <p class="m-0 text-[var(--muted-ink)]">
       Notes {lowerBound}–{upperBound} of {data.totalPosts}

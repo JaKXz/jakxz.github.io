@@ -29,7 +29,7 @@
   aria-controls="mobile-navigation"
   aria-expanded={closeOnly ? undefined : $isMenuOpen}
   aria-label={closeOnly ? "Close navigation" : "Open navigation"}
-  class="menu-button h-10 w-10 inline-grid cursor-pointer place-items-center border border-[var(--border)] bg-[var(--sheet)] p-0 text-[var(--ink)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] sm:hidden"
+  class="menu-button inline-grid h-10 w-10 cursor-pointer place-items-center border border-[var(--border)] bg-[var(--sheet)] p-0 text-[var(--ink)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] sm:hidden"
   tabindex={$isMenuOpen || !closeOnly ? "0" : "-1"}
 >
   {#if closeOnly}

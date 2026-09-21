@@ -27,12 +27,12 @@
 </svelte:head>
 
 <section
-  class="min-h-[clamp(34rem,65svh,45rem)] grid items-center gap-12 pb-12 pt-4 sm:grid-cols-[minmax(0,1fr)_minmax(17rem,0.85fr)] sm:py-0"
+  class="grid min-h-[clamp(34rem,65svh,45rem)] items-center gap-12 pt-4 pb-12 sm:grid-cols-[minmax(0,1fr)_minmax(17rem,0.85fr)] sm:py-0"
   aria-labelledby="error-heading"
 >
   <div class="min-w-0">
     <p
-      class="mb-4 mt-0 flex items-center gap-[0.6rem] text-[0.8rem] text-[var(--ink)] tracking-[0.14em] uppercase [font-family:var(--codeFont)]"
+      class="mt-0 mb-4 flex items-center gap-[0.6rem] [font-family:var(--codeFont)] text-[0.8rem] tracking-[0.14em] text-[var(--ink)] uppercase"
     >
       <span
         class="status-light h-[0.65rem] w-[0.65rem] flex-none rounded-full bg-[var(--accent)]"
@@ -49,21 +49,21 @@
     </p>
 
     <p
-      class="mb-0 mt-6 flex flex-wrap items-baseline gap-x-[0.65rem] gap-y-[0.35rem] text-[0.8rem] text-[var(--ink)]"
+      class="mt-6 mb-0 flex flex-wrap items-baseline gap-x-[0.65rem] gap-y-[0.35rem] text-[0.8rem] text-[var(--ink)]"
     >
-      <span class="tracking-[0.08em] uppercase [font-family:var(--codeFont)]">System says</span>
+      <span class="[font-family:var(--codeFont)] tracking-[0.08em] uppercase">System says</span>
       <code class="[overflow-wrap:anywhere]">{errorMessage}</code>
     </p>
 
     <nav class="mt-8 flex flex-wrap gap-3" aria-label="Error recovery">
       <a
-        class="route-link min-h-11 inline-flex items-center justify-center border-2 border-[var(--ink)] bg-[var(--ink)] px-4 py-2 text-[0.9rem] text-[var(--sheet)] font-800 no-underline transition duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] hover:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)] focus-visible:translate-y-[-0.1rem]"
+        class="route-link font-800 inline-flex min-h-11 items-center justify-center border-2 border-[var(--ink)] bg-[var(--ink)] px-4 py-2 text-[0.9rem] text-[var(--sheet)] no-underline transition duration-200 hover:translate-y-[-0.1rem] hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] focus-visible:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)]"
         href="/"
       >
         Return home
       </a>
       <a
-        class="route-link min-h-11 inline-flex items-center justify-center border-2 border-[var(--border-strong)] bg-transparent px-4 py-2 text-[0.9rem] text-[var(--ink)] font-800 no-underline transition duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] hover:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)] focus-visible:translate-y-[-0.1rem]"
+        class="route-link font-800 inline-flex min-h-11 items-center justify-center border-2 border-[var(--border-strong)] bg-transparent px-4 py-2 text-[0.9rem] text-[var(--ink)] no-underline transition duration-200 hover:translate-y-[-0.1rem] hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)] focus-visible:translate-y-[-0.1rem] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--accent)] focus-visible:text-[var(--accent-contrast)]"
         href="/learning"
       >
         Browse learning
@@ -73,29 +73,29 @@
 
   <div class="w-full max-w-84 justify-self-center">
     <div
-      class="radar relative isolate aspect-square w-full overflow-hidden border border-[var(--border-strong)] rounded-full bg-[var(--sheet-muted)] text-[var(--ink)]"
+      class="radar relative isolate aspect-square w-full overflow-hidden rounded-full border border-[var(--border-strong)] bg-[var(--sheet-muted)] text-[var(--ink)]"
       aria-hidden="true"
     >
-      <span class="absolute left-0 right-0 top-1/2 z-[-1] h-px bg-current opacity-25"></span>
-      <span class="absolute bottom-0 left-1/2 top-0 z-[-1] w-px bg-current opacity-25"></span>
-      <span class="absolute inset-[12.5%] border border-current rounded-full opacity-35"></span>
-      <span class="absolute inset-1/4 border border-current rounded-full opacity-35"></span>
-      <span class="absolute inset-[37.5%] border border-current rounded-full opacity-35"></span>
+      <span class="absolute top-1/2 right-0 left-0 z-[-1] h-px bg-current opacity-25"></span>
+      <span class="absolute top-0 bottom-0 left-1/2 z-[-1] w-px bg-current opacity-25"></span>
+      <span class="absolute inset-[12.5%] rounded-full border border-current opacity-35"></span>
+      <span class="absolute inset-1/4 rounded-full border border-current opacity-35"></span>
+      <span class="absolute inset-[37.5%] rounded-full border border-current opacity-35"></span>
       <span class="sweep absolute inset-0 z-[-1] rounded-full"></span>
       <span
-        class="signal absolute left-[70%] top-[31%] h-[0.7rem] w-[0.7rem] rounded-full bg-[var(--accent)]"
+        class="signal absolute top-[31%] left-[70%] h-[0.7rem] w-[0.7rem] rounded-full bg-[var(--accent)]"
       ></span>
 
       {#if pingCount > 0}
         {#key pingCount}
           <span
-            class="ping-wave absolute left-[70%] top-[31%] h-4 w-4 border-2 border-[var(--accent)] rounded-full"
+            class="ping-wave absolute top-[31%] left-[70%] h-4 w-4 rounded-full border-2 border-[var(--accent)]"
           ></span>
         {/key}
       {/if}
 
       <strong
-        class="radar-code absolute left-1/2 top-1/2 text-[clamp(2rem,11vw,4rem)] text-[var(--ink)] leading-none [font-family:var(--codeFont)]"
+        class="radar-code absolute top-1/2 left-1/2 [font-family:var(--codeFont)] text-[clamp(2rem,11vw,4rem)] leading-none text-[var(--ink)]"
       >
         {page.status}
       </strong>
@@ -105,7 +105,7 @@
       Send a ping
     </button>
     <p
-      class="mb-0 mt-[0.6rem] min-h-[1.5em] text-center text-[0.7rem] [font-family:var(--codeFont)]"
+      class="mt-[0.6rem] mb-0 min-h-[1.5em] text-center [font-family:var(--codeFont)] text-[0.7rem]"
       aria-live="polite"
       aria-atomic="true"
     >

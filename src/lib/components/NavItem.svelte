@@ -11,7 +11,7 @@
   <a
     {href}
     onclick={() => isMenuOpen.set(false)}
-    class="nav-link block px-3 py-2 text-sm font-600 tracking-wide"
+    class="nav-link font-600 block px-3 py-2 text-sm tracking-wide"
     class:text-2xl={mobile}
     class:active={isCurrentPage}
     aria-current={isCurrentPage ? "page" : undefined}

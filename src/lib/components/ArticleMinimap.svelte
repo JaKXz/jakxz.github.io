@@ -94,7 +94,7 @@
 </script>
 
 <aside class="minimap hidden md:block" aria-hidden="true">
-  <div class="mb-3 font-mono text-[0.6rem] uppercase tracking-[0.14em] text-[var(--muted-ink)]">
+  <div class="mb-3 font-mono text-[0.6rem] tracking-[0.14em] text-[var(--muted-ink)] uppercase">
     minimap
   </div>
   <div
@@ -102,7 +102,7 @@
   >
     {#each blocks as block}
       <span
-        class="block absolute left-2 right-2 bg-[var(--muted-ink)]"
+        class="absolute right-2 left-2 block bg-[var(--muted-ink)]"
         class:heading={block.kind === "heading"}
         class:figure={block.kind === "figure"}
         class:code={block.kind === "code"}

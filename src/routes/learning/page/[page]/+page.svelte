@@ -17,7 +17,7 @@
 
 {#if data.posts.length}
   <header class="mb-10">
-    <p class="mb-3 text-xs font-600 uppercase tracking-[0.18em] text-[var(--accent)]">Learning</p>
+    <p class="font-600 mb-3 text-xs tracking-[0.18em] text-[var(--accent)] uppercase">Learning</p>
     <h1>Notes {lowerBound}–{upperBound}</h1>
     <p class="m-0 text-[var(--muted-ink)]">Page {data.page} of the archive.</p>
   </header>

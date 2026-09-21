@@ -44,7 +44,7 @@
 
 <button
   type="button"
-  class="theme-toggle m-0 h-11 w-11 inline-grid cursor-pointer place-items-center rounded-none bg-[var(--sheet-muted)] p-0 text-[var(--ink)] hover:border-[var(--accent)] hover:bg-[var(--sheet)] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--sheet)]"
+  class="theme-toggle m-0 inline-grid h-11 w-11 cursor-pointer place-items-center rounded-none bg-[var(--sheet-muted)] p-0 text-[var(--ink)] hover:border-[var(--accent)] hover:bg-[var(--sheet)] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--sheet)]"
   aria-label={`Switch to ${nextTheme} theme`}
   title={`Switch to ${nextTheme} theme`}
   aria-pressed={theme === "dark"}

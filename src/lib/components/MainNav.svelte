@@ -90,7 +90,7 @@
     <nav
       id="mobile-navigation"
       aria-label="Main Navigation"
-      class="mobile-nav mx-auto h-full max-w-128 flex flex-col border border-[var(--border-strong)] bg-[var(--sheet)] p-5"
+      class="mobile-nav mx-auto flex h-full max-w-128 flex-col border border-[var(--border-strong)] bg-[var(--sheet)] p-5"
       transition:fly={{ x: 32, duration: motionDuration }}
     >
       <div class="flex justify-end">

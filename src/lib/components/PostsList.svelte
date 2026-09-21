@@ -12,12 +12,12 @@
   {#each posts as post, index (post.slug)}
     <li class="m-0">
       <article
-        class="post-preview grid gap-4 border border-[var(--border)] bg-[var(--sheet-muted)] p-5 xs:grid-cols-[auto_1fr] xs:p-6"
+        class="post-preview xs:grid-cols-[auto_1fr] xs:p-6 grid gap-4 border border-[var(--border)] bg-[var(--sheet-muted)] p-5"
       >
         <div class="min-w-0">
           <time
             datetime={post.date}
-            class="block text-xs font-600 uppercase tracking-[0.12em] text-[var(--muted-ink)]"
+            class="font-600 block text-xs tracking-[0.12em] text-[var(--muted-ink)] uppercase"
           >
             {formatDate(post.date)}
           </time>

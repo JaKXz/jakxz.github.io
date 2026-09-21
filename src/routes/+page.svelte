@@ -1,10 +1,21 @@
 <script>
-  import { subtitles, siteTitle } from "$lib/config";
+  import { onMount } from "svelte";
   import { slide } from "svelte/transition";
 
+  import { siteTitle, subtitles } from "$lib/config";
+
   let { data } = $props();
-  let index = $state(0);
-  let [desc, subtitle] = $derived(subtitles[index]);
+  let subtitleIndex = $state(0);
+  let motionDuration = $state(0);
+  let [description, subtitle] = $derived(subtitles[subtitleIndex]);
+
+  onMount(() => {
+    motionDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 180;
+  });
+
+  function nextSubtitle() {
+    subtitleIndex = (subtitleIndex + 1) % subtitles.length;
+  }
 
   function formatDate(date) {
     return new Intl.DateTimeFormat(undefined, {
@@ -17,27 +28,38 @@
   <title>{siteTitle}</title>
 </svelte:head>
 
-<section class="m-auto max-w-21rem min-h-100svh flex flex-col items-center justify-center">
-  <div class="flex flex-col gap-8">
-    <div class="text-center leading-[1.1]">
-      <div class="name-heading first-name">Jason</div>
-      <div class="name-heading">Kurian</div>
-    </div>
-    <button
-      class="reset-button mt-0 w-full cursor-pointer p-0 text-center"
-      type="button"
-      aria-label="Change subtitle"
-      onclick={() => {
-        index = (index + 1) % subtitles.length;
-      }}
+<div
+  class="max-w-68rem xs:px-8 xs:py-16 mx-auto grid w-full items-start gap-5 px-4 py-12 md:grid-cols-[minmax(18rem,0.82fr)_minmax(0,1.18fr)] md:gap-6"
+>
+  <section
+    aria-labelledby="sidebar-heading"
+    class="rounded-1 xs:px-9 xs:py-11 flex flex-col gap-y-4 border border-[var(--border)] bg-[var(--sheet)] px-6 py-9 [box-shadow:var(--sheet-shadow)] sm:mt-4 sm:gap-y-8 md:sticky md:top-8"
+  >
+    <h1
+      id="sidebar-heading"
+      class="m-0 overflow-visible leading-[0.9] tracking-[-0.06em] after:hidden"
     >
-      {#key index}
-        <code class="block whitespace-pre border-none p-0 text-xl font-300" transition:slide>
-          {desc}<br />{subtitle}
+      <span class="name-heading inline-block first-letter:text-[1.16em]">Jason</span>
+      <span class="name-heading inline-block first-letter:text-[1.16em]">Kurian</span>
+    </h1>
+
+    <button
+      class="subtitle-button reset-button w-full cursor-pointer overflow-hidden p-0 text-left text-[var(--ink)]"
+      type="button"
+      onclick={nextSubtitle}
+      aria-label="Change subtitle"
+    >
+      {#key subtitleIndex}
+        <code
+          class="font-300 block border-none bg-transparent p-0 text-lg whitespace-pre"
+          transition:slide={{ duration: motionDuration }}
+        >
+          {description}<br />{subtitle}
         </code>
       {/key}
     </button>
-    <p class="m-0">
+
+    <p class="mb-0 leading-relaxed">
       👋🏽 hey, thanks for stopping by! My friends call me Jay, or JK. Contact me on
       <a
         target="_blank"
@@ -51,66 +73,66 @@
         GitHub</a
       >.
     </p>
-  </div>
-</section>
+  </section>
 
-<section class="m-auto min-h-100svh flex flex-col items-center justify-center">
-  <div class="flex flex-col">
-    <h2 class="text-center xs:text-left">Recent Posts</h2>
-    <div class="cards-grid">
-      {#each data.posts as post (post.slug)}
-        <div
-          class="card border-rounded-2 transition duration-200 xs:transform xs:focus-within:scale-101 xs:hover:scale-101"
-        >
-          <a href="/learning/{post.slug}" class="link-decoration-none">
-            <p class="subdued m-0">
-              🔃
-              {formatDate(post.updated)}
-            </p>
-            <p class="my-1"><strong>{post.title}</strong></p>
-          </a>
-          <div class="mx-auto my-4 flex gap-4">
+  <section
+    aria-labelledby="sidebar-posts-heading"
+    class="rounded-1 xs:px-8 xs:py-10 border border-[var(--border)] bg-[var(--sheet)] px-5 py-8 [box-shadow:var(--sheet-shadow)]"
+  >
+    <div class="mb-7 flex items-end justify-between gap-4">
+      <h2 id="sidebar-posts-heading" class="m-0">Recent Posts</h2>
+      <a class="shrink-0 font-mono text-sm" href="/learning">View all →</a>
+    </div>
+
+    <div class="grid gap-3">
+      {#each data.posts as post, index (post.slug)}
+        <article class="xs:p-6 border border-[var(--border)] bg-[var(--sheet-muted)] p-5">
+          <div class="subdued mb-5 flex items-center justify-between gap-4 font-mono text-xs">
+            <time datetime={post.updated}>🔃 {formatDate(post.updated)}</time>
+          </div>
+          <h3 class="xs:text-2xl m-0 text-xl leading-snug">
+            <a class="text-[var(--ink)] hover:text-[var(--accent)]" href={`/learning/${post.slug}`}
+              >{post.title}</a
+            >
+          </h3>
+          <div class="mt-4 flex flex-wrap gap-2">
             {#each post.categories as category (category)}
-              <a href="/learning/category/{category}"><code>#{category}</code></a>
+              <a href={`/learning/category/${category}`}><code>#{category}</code></a>
             {/each}
           </div>
-        </div>
+        </article>
       {/each}
     </div>
-    <p class="text-center"><a href="/learning">See all entries</a></p>
-  </div>
-</section>
+  </section>
+</div>
 
-<style lang="scss">
-  .name-heading {
-    font-size: 5rem;
-    letter-spacing: -1px;
+<style>
+  .subtitle-button {
+    background-image: linear-gradient(
+      105deg,
+      transparent 35%,
+      color-mix(in srgb, var(--accent) 12%, transparent) 50%,
+      transparent 65%
+    );
+    background-position: 50% 0;
+    background-size: 300% 100%;
+  }
 
-    &:first-letter {
-      font-size: 6.5rem;
-      letter-spacing: normal;
+  @media (prefers-reduced-motion: no-preference) {
+    .subtitle-button {
+      animation: subtitle-sweep 8s ease-in-out infinite;
     }
   }
 
-  .first-name::first-letter {
-    letter-spacing: 0.025em;
-    @media (max-width: vars.$xsMin) {
-      padding-left: 1rem;
+  @keyframes subtitle-sweep {
+    0%,
+    45% {
+      background-position: 130% 0;
     }
-  }
 
-  .cards-grid {
-    display: grid;
-    gap: 1rem;
-    @media (min-width: vars.$xsMin) {
-      margin-top: 2rem;
-      gap: 2rem;
-      grid: auto-flow dense / 1fr 1fr;
+    80%,
+    100% {
+      background-position: -30% 0;
     }
-  }
-
-  .cards-grid:focus-within > .card:not(:global(:focus-within)),
-  .cards-grid:hover > .card:not(:global(:hover)) {
-    opacity: 0.75;
   }
 </style>

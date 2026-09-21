@@ -6,13 +6,13 @@
   <title>Learning | Categories</title>
 </svelte:head>
 
-<header class="mb-10 max-w-42rem">
-  <p class="mb-3 text-xs font-600 uppercase tracking-[0.18em] text-[var(--accent)]">Index</p>
+<header class="max-w-42rem mb-10">
+  <p class="font-600 mb-3 text-xs tracking-[0.18em] text-[var(--accent)] uppercase">Index</p>
   <h1>Categories</h1>
   <p class="m-0 text-[var(--muted-ink)]">A map of the ideas and tools in these notes.</p>
 </header>
 
-<ul class="m-0 grid list-none gap-3 p-0 xs:grid-cols-2">
+<ul class="xs:grid-cols-2 m-0 grid list-none gap-3 p-0">
   {#each data.uniqueCategories as category (category.title)}
     <li class="m-0">
       <a

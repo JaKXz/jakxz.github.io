@@ -34,7 +34,7 @@
 </svelte:head>
 
 <article class="post">
-  <header class="mx-auto mb-10 max-w-68ch">
+  <header class="max-w-68ch mx-auto mb-10">
     <h1>{meta.title}</h1>
     {#if meta.excerpt}
       <p class="my-0 text-lg text-[var(--muted-ink)]">{meta.excerpt}</p>
@@ -54,7 +54,7 @@
   </header>
 
   {#if meta.coverImage}
-    <figure class="cover-image mx-auto mb-12 max-w-48rem">
+    <figure class="cover-image max-w-48rem mx-auto mb-12">
       <img
         class="block h-auto w-full border border-[var(--border)]"
         src={meta.coverImage}
@@ -86,7 +86,7 @@
     </figure>
   {/if}
 
-  <div class="article-layout mx-auto grid max-w-50rem gap-12 md:grid-cols-[minmax(0,68ch)_4.5rem]">
+  <div class="article-layout max-w-50rem mx-auto grid gap-12 md:grid-cols-[minmax(0,68ch)_4.5rem]">
     <div class="post-content min-w-0" bind:this={articleBody}>
       <data.PostContent />
     </div>
@@ -95,7 +95,7 @@
     {/if}
   </div>
 
-  <div class="mx-auto max-w-68ch">
+  <div class="max-w-68ch mx-auto">
     <svelte:element
       this={"script"}
       src="https://utteranc.es/client.js"
@@ -110,7 +110,7 @@
       <aside class="mt-14 border-t border-[var(--border)] pt-8" aria-labelledby="post-categories">
         <h2
           id="post-categories"
-          class="m-0 mb-4 text-xs uppercase tracking-[0.16em] text-[var(--muted-ink)]"
+          class="m-0 mb-4 text-xs tracking-[0.16em] text-[var(--muted-ink)] uppercase"
         >
           Filed under
         </h2>
