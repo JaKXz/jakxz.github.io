@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Breakpoints
 $xsMin: 600px;
 $xsMax: 767px;
@@ -36,15 +38,21 @@ $xxxlMin: 1960px;
   );
 
   $output: $weight;
-  @if map-has-key($weights, $weight) {
-    $output: map-get($weights, $weight);
+  @if map.has-key($weights, $weight) {
+    $output: map.get($weights, $weight);
   }
 
   font-weight: $output;
   // prefer that the extra css is not written at all as opposed to setting a minimum
   @if $output >= 500 {
-    @media (prefers-color-scheme: dark) {
+    :root[data-theme="dark"] & {
       font-weight: $output - 100;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) & {
+        font-weight: $output - 100;
+      }
     }
   }
 }

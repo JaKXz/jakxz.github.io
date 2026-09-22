@@ -1,37 +1,37 @@
 <script>
-  import { preventDefault } from "svelte/legacy";
+  import { isMenuOpen } from "$lib/assets/js/store";
 
   import HamburgerMenuButton from "./HamburgerMenuButton.svelte";
   import MainNav from "./MainNav.svelte";
-
-  const focusMain = () => {
-    const main = document.querySelector("main");
-    main.focus();
-  };
 </script>
 
 <header
-  class="mx-auto mb-2 flex justify-between border-0.5 border-gray border-rounded-t bg-white px-8 py-6 text-[var(--darker)] shadow-lg xs:mt-8 xs:max-w-54rem xs:w-4/5 xs:border-solid dark:bg-[var(--dark)]"
+  class="site-header max-w-60rem xs:mt-8 xs:px-8 relative mx-auto mt-4 flex min-h-20 w-[calc(100%-2rem)] items-center justify-between gap-4 rounded-[0.5rem] border border-[var(--border)] bg-[var(--sheet-muted)] px-5 pt-5 pb-7 text-[var(--ink)]"
+  style:z-index={$isMenuOpen ? 40 : 1}
 >
-  <a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
-    Skip to main content
-  </a>
+  <a class="skip-to-content-link" href="#main"> Skip to main content </a>
 
   <a
     href="/"
-    class="site-title m-0 block w-fit text-center text-[2.5rem] color-inherit leading-none italic"
+    class="site-title color-inherit m-0 block w-fit text-center text-[2.5rem] leading-none italic no-underline"
   >
     <div class="name-heading inline-block w-fit">Jason</div>
     <div class="name-heading inline-block w-fit">Kurian</div>
   </a>
-  <MainNav />
-  <HamburgerMenuButton />
+
+  <div class="flex items-center gap-3">
+    <MainNav />
+    <HamburgerMenuButton />
+  </div>
 </header>
 
 <style lang="scss">
-  header {
-    .site-title {
-      @include vars.font-weight(extra-bold);
-    }
+  .site-header {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .signature-mark {
+    font-family: var(--accentFont);
+    transform: rotate(-6deg);
   }
 </style>

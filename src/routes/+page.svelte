@@ -1,10 +1,22 @@
 <script>
-  import { subtitles, siteTitle } from "$lib/config";
+  import { onMount } from "svelte";
   import { slide } from "svelte/transition";
 
+  import { siteTitle, subtitles } from "$lib/config";
+
   let { data } = $props();
-  let index = $state(0);
-  let [desc, subtitle] = $derived(subtitles[index]);
+  let subtitleIndex = $state(0);
+  let motionDuration = $state(0);
+  let [description, subtitle] = $derived(subtitles[subtitleIndex]);
+
+  onMount(() => {
+    motionDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 180;
+  });
+
+  function nextSubtitle(event) {
+    subtitleIndex = (subtitleIndex + 1) % subtitles.length;
+    event.currentTarget.blur();
+  }
 
   function formatDate(date) {
     return new Intl.DateTimeFormat(undefined, {
@@ -17,27 +29,35 @@
   <title>{siteTitle}</title>
 </svelte:head>
 
-<section class="m-auto max-w-21rem min-h-100svh flex flex-col items-center justify-center">
-  <div class="flex flex-col gap-8">
-    <div class="text-center leading-[1.1]">
-      <div class="name-heading first-name">Jason</div>
-      <div class="name-heading">Kurian</div>
-    </div>
+<div
+  class="max-w-68rem xs:px-8 xs:py-16 mx-auto grid w-full items-start gap-11 px-4 py-12 md:grid-cols-[minmax(18rem,0.82fr)_minmax(0,1.18fr)] md:gap-6"
+>
+  <section
+    aria-labelledby="sidebar-heading"
+    class="rounded-1 xs:px-9 xs:py-11 flex flex-col gap-y-4 border border-[var(--border)] bg-[var(--sheet)] px-6 py-9 [box-shadow:var(--sheet-shadow)] sm:mt-4 sm:gap-y-8 md:sticky md:top-8"
+  >
+    <h1 id="sidebar-heading" class="m-0 overflow-visible leading-[0.9] tracking-[-0.06em]">
+      <span class="name-heading inline-block first-letter:text-[1.16em]">Jason</span>
+      <span class="name-heading inline-block first-letter:text-[1.16em]">Kurian</span>
+    </h1>
+
     <button
-      class="reset-button mt-0 w-full cursor-pointer p-0 text-center"
+      class="post-card w-full cursor-pointer overflow-hidden border-none bg-[var(--sheet-muted)] p-5 text-left text-[var(--ink)]"
       type="button"
+      onclick={nextSubtitle}
       aria-label="Change subtitle"
-      onclick={() => {
-        index = (index + 1) % subtitles.length;
-      }}
     >
-      {#key index}
-        <code class="block whitespace-pre border-none p-0 text-xl font-300" transition:slide>
-          {desc}<br />{subtitle}
+      {#key subtitleIndex}
+        <code
+          class="font-300 block border-none bg-transparent p-0 text-lg whitespace-pre"
+          transition:slide={{ duration: motionDuration }}
+        >
+          {description}<br />{subtitle}
         </code>
       {/key}
     </button>
-    <p class="m-0">
+
+    <p class="mb-0 leading-relaxed">
       👋🏽 hey, thanks for stopping by! My friends call me Jay, or JK. Contact me on
       <a
         target="_blank"
@@ -51,66 +71,44 @@
         GitHub</a
       >.
     </p>
-  </div>
-</section>
+  </section>
 
-<section class="m-auto min-h-100svh flex flex-col items-center justify-center">
-  <div class="flex flex-col">
-    <h2 class="text-center xs:text-left">Recent Posts</h2>
-    <div class="cards-grid">
-      {#each data.posts as post (post.slug)}
-        <div
-          class="card border-rounded-2 transition duration-200 xs:transform xs:focus-within:scale-101 xs:hover:scale-101"
+  <section
+    aria-labelledby="sidebar-posts-heading"
+    class="rounded-1 xs:px-8 xs:py-10 border border-[var(--border)] bg-[var(--sheet)] px-5 py-8 [box-shadow:var(--sheet-shadow)]"
+  >
+    <div class="mb-7 flex items-end justify-between gap-4">
+      <h2 id="sidebar-posts-heading" class="m-0">Recent Posts</h2>
+      <a class="shrink-0 font-mono text-sm" href="/learning">View all →</a>
+    </div>
+
+    <div class="post-card-list grid gap-4">
+      {#each data.posts as post, index (post.slug)}
+        <article
+          class="post-card xs:p-6 relative cursor-pointer border border-[var(--border)] bg-[var(--sheet-muted)] p-5"
         >
-          <a href="/learning/{post.slug}" class="link-decoration-none">
-            <p class="subdued m-0">
-              🔃
-              {formatDate(post.updated)}
-            </p>
-            <p class="my-1"><strong>{post.title}</strong></p>
-          </a>
-          <div class="mx-auto my-4 flex gap-4">
+          <time
+            datetime={post.updated}
+            class="font-600 block text-xs tracking-[0.12em] text-[var(--muted-ink)] uppercase"
+          >
+            <i class="i-radix-icons-lap-timer mr-1 align-[-0.125em] text-sm" aria-hidden="true"></i>
+            {formatDate(post.updated)}
+          </time>
+          <h3 class="my-2 text-[clamp(1.35rem,4vw,1.8rem)]">
+            <a class="post-card-title" href={`/learning/${post.slug}`}>{post.title}</a>
+          </h3>
+          <ul class="mt-4 flex list-none flex-wrap gap-2 p-0" aria-label="Categories">
             {#each post.categories as category (category)}
-              <a href="/learning/category/{category}"><code>#{category}</code></a>
+              <li class="m-0">
+                <a
+                  class="relative z-1 inline-block border border-[var(--border)] bg-[var(--sheet)] px-2 py-1 font-mono text-xs no-underline hover:border-[var(--accent)]"
+                  href={`/learning/category/${category}`}>#{category}</a
+                >
+              </li>
             {/each}
-          </div>
-        </div>
+          </ul>
+        </article>
       {/each}
     </div>
-    <p class="text-center"><a href="/learning">See all entries</a></p>
-  </div>
-</section>
-
-<style lang="scss">
-  .name-heading {
-    font-size: 5rem;
-    letter-spacing: -1px;
-
-    &:first-letter {
-      font-size: 6.5rem;
-      letter-spacing: normal;
-    }
-  }
-
-  .first-name::first-letter {
-    letter-spacing: 0.025em;
-    @media (max-width: vars.$xsMin) {
-      padding-left: 1rem;
-    }
-  }
-
-  .cards-grid {
-    display: grid;
-    gap: 1rem;
-    @media (min-width: vars.$xsMin) {
-      margin-top: 2rem;
-      gap: 2rem;
-      grid: auto-flow dense / 1fr 1fr;
-    }
-  }
-
-  .cards-grid:focus-within > .card:not(:global(:focus-within)),
-  .cards-grid:hover > .card:not(:global(:hover)) {
-    opacity: 0.75;
-  }
-</style>
+  </section>
+</div>

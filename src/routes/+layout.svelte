@@ -3,24 +3,16 @@
 
   import "$lib/assets/scss/global.scss";
 
+  import { page } from "$app/state";
   import { preloadData } from "$app/navigation";
-  import { currentPage } from "$lib/assets/js/store";
   import classNames from "$lib/assets/js/classNames";
   import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
   import { navItems, siteAuthorTwitter, siteLink } from "$lib/config";
   import { onMount } from "svelte";
-  import { run } from "svelte/legacy";
 
   let { data, children } = $props();
-
-  /**
-   * Updates the global store with the current path. (Used for highlighting
-   * the current page in the nav, but could be useful for other purposes.)
-   **/
-  run(() => {
-    currentPage.set(data.path);
-  });
+  let path = $derived(page.url.pathname);
 
   /**
    * This pre-fetches all top-level routes on the site in the background for faster loading.
@@ -35,39 +27,48 @@
 </script>
 
 <svelte:head>
-  <meta name="og:url" content="{siteLink}{data.path}" />
+  <meta name="og:url" content="{siteLink}{path}" />
   <meta name="twitter:site" content={siteAuthorTwitter} />
   <meta name="twitter:creator" content={siteAuthorTwitter} />
 </svelte:head>
 
-{#if data.path !== "/"}
+{#if path !== "/"}
   <Header />
 {/if}
 <main
   id="main"
   tabindex="-1"
   class={classNames(
-    "mx-auto px-8 xs:max-w-42rem",
-    data.path !== "/" && [
-      "xs:shadow-xl",
-      "xs:border-x-1",
-      "xs:border-t-1",
-      "xs:border-rounded-t",
-      "xs:px-24",
-      "xs:py-16",
-      "xs:max-w-60rem",
-      "relative",
-      "z-2",
-      "mt-[-1rem]",
-      "border-0",
-      "border-gray",
-      "border-solid",
-      "bg-white",
-      "p-8",
-      "dark:bg-[var(--dark)]",
-    ],
+    "mx-auto",
+    path === "/"
+      ? ["w-full", "max-w-none", "p-0"]
+      : [
+          "site-sheet",
+          "w-[calc(100%-1rem)]",
+          "max-w-64rem",
+          "xs:w-[calc(100%-2rem)]",
+          "xs:px-12",
+          "xs:py-16",
+          "sm:px-16",
+          "relative",
+          "z-2",
+          "mt-[-1.25rem]",
+          "border",
+          "border-[var(--border)]",
+          "rounded-1",
+          "border-solid",
+          "bg-[var(--sheet)]",
+          "px-6",
+          "py-10",
+        ],
   )}
 >
   {@render children?.()}
 </main>
-<Footer path={data.path} />
+<Footer />
+
+<style>
+  :global(.site-sheet) {
+    box-shadow: var(--sheet-shadow);
+  }
+</style>

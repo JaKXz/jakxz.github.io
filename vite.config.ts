@@ -5,6 +5,9 @@ import { defineConfig, lazyPlugins } from "vite-plus";
 
 export default defineConfig(() => ({
   fmt: {
+    sortTailwindcss: {
+      functions: ["classNames", "clsx"],
+    },
     svelte: true,
   },
   plugins: lazyPlugins(() => [

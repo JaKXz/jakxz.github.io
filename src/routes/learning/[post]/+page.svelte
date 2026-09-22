@@ -1,35 +1,32 @@
 <script>
+  import ArticleMinimap from "$lib/components/ArticleMinimap.svelte";
   import { siteLink, siteTitle } from "$lib/config";
 
   let { data } = $props();
 
-  const {
-    coverCaption,
-    coverImage,
-    coverWidth,
-    coverHeight,
-    categories,
-    date,
-    excerpt,
-    imageAlt,
-    title,
-    updated,
-  } = data.meta;
+  let meta = $derived(data.meta);
+  let articleBody = $state();
+
+  function formatDate(date) {
+    return new Intl.DateTimeFormat(undefined, {
+      dateStyle: "medium",
+    }).format(new Date(`${date}T00:00:00`));
+  }
 </script>
 
 <svelte:head>
-  <title>{title} | {siteTitle}</title>
-  <meta data-key="description" name="description" content={excerpt} />
+  <title>{meta.title} | {siteTitle}</title>
+  <meta data-key="description" name="description" content={meta.excerpt} />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={excerpt} />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={excerpt} />
-  {#if coverImage}
-    <meta property="og:image:width" content={coverWidth} />
-    <meta property="og:image:height" content={coverHeight} />
-    <meta property="og:image" content="{siteLink}{coverImage}" />
-    <meta name="twitter:image" content="{siteLink}{coverImage}" />
+  <meta property="og:title" content={meta.title} />
+  <meta property="og:description" content={meta.excerpt} />
+  <meta name="twitter:title" content={meta.title} />
+  <meta name="twitter:description" content={meta.excerpt} />
+  {#if meta.coverImage}
+    <meta property="og:image:width" content={meta.coverWidth} />
+    <meta property="og:image:height" content={meta.coverHeight} />
+    <meta property="og:image" content="{siteLink}{meta.coverImage}" />
+    <meta name="twitter:image" content="{siteLink}{meta.coverImage}" />
     <meta name="twitter:card" content="summary_large_image" />
   {:else}
     <meta name="twitter:card" content="summary" />
@@ -37,23 +34,43 @@
 </svelte:head>
 
 <article class="post">
-  {#if !!coverImage}
-    <figure class="cover-image">
+  <header class="max-w-68ch mx-auto mb-10">
+    <h1 class="last-line-underline"><span>{meta.title}</span></h1>
+    {#if meta.excerpt}
+      <p class="my-0 text-lg text-[var(--muted-ink)]">{meta.excerpt}</p>
+    {/if}
+    <dl
+      class="mt-6 flex flex-wrap gap-x-8 gap-y-2 border-t border-[var(--border)] pt-4 text-xs text-[var(--muted-ink)]"
+    >
+      <div class="flex gap-2">
+        <dt class="font-700 text-[var(--ink)]">Published</dt>
+        <dd class="m-0"><time datetime={meta.date}>{formatDate(meta.date)}</time></dd>
+      </div>
+      <div class="flex gap-2">
+        <dt class="font-700 text-[var(--ink)]">Updated</dt>
+        <dd class="m-0"><time datetime={meta.updated}>{formatDate(meta.updated)}</time></dd>
+      </div>
+    </dl>
+  </header>
+
+  {#if meta.coverImage}
+    <figure class="cover-image max-w-48rem mx-auto mb-12">
       <img
-        src={coverImage}
-        alt={imageAlt || ""}
-        style="aspect-ratio: {coverWidth} / {coverHeight};"
-        width={coverWidth}
-        height={coverHeight}
+        class="block h-auto w-full border border-[var(--border)]"
+        src={meta.coverImage}
+        alt={meta.imageAlt || ""}
+        style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight};"
+        width={meta.coverWidth}
+        height={meta.coverHeight}
       />
-      {#if !!coverCaption}
+      {#if meta.coverCaption}
         <figcaption>
           Photo by
           <a
             target="_blank"
             rel="noopener noreferrer nofollow"
-            href={`${coverCaption.authorUrl}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`}
-            >{coverCaption.author}</a
+            href={`${meta.coverCaption.authorUrl}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`}
+            >{meta.coverCaption.author}</a
           >
           on
           <a
@@ -63,91 +80,67 @@
             >Unsplash</a
           >
         </figcaption>
-      {:else if imageAlt}
-        <figcaption>{imageAlt}</figcaption>
+      {:else if meta.imageAlt}
+        <figcaption>{meta.imageAlt}</figcaption>
       {/if}
     </figure>
   {/if}
-  <h1>{title}</h1>
 
-  <div class="meta">
-    <b>Published:</b>
-    {date}
-    <br />
-    <b>Updated:</b>
-    {updated}
+  <div class="article-layout max-w-50rem mx-auto grid gap-12 md:grid-cols-[minmax(0,68ch)_4.5rem]">
+    <div class="post-content min-w-0" bind:this={articleBody}>
+      <data.PostContent />
+    </div>
+    {#if articleBody}
+      <ArticleMinimap target={articleBody} />
+    {/if}
   </div>
 
-  <data.PostContent />
+  <div class="max-w-68ch mx-auto">
+    <svelte:element
+      this={"script"}
+      src="https://utteranc.es/client.js"
+      repo="jakxz/jakxz.github.io"
+      issue-term="og:title"
+      theme="preferred-color-scheme"
+      crossorigin="anonymous"
+      async
+    />
 
-  <svelte:element
-    this={"script"}
-    src="https://utteranc.es/client.js"
-    repo="jakxz/jakxz.github.io"
-    issue-term="og:title"
-    theme="preferred-color-scheme"
-    crossorigin="anonymous"
-    async
-  />
-
-  {#if categories}
-    <aside class="post-footer">
-      <h2>Posted in:</h2>
-      <ul>
-        {#each categories as category (category)}
-          <li>
-            <a href="/learning/category/{category}/">
-              {category}
-            </a>
-          </li>
-        {/each}
-      </ul>
-    </aside>
-  {/if}
+    {#if meta.categories?.length}
+      <aside class="mt-14 border-t border-[var(--border)] pt-8" aria-labelledby="post-categories">
+        <h2
+          id="post-categories"
+          class="m-0 mb-4 text-xs tracking-[0.16em] text-[var(--muted-ink)] uppercase"
+        >
+          Filed under
+        </h2>
+        <ul class="m-0 flex list-none flex-wrap gap-2 p-0">
+          {#each meta.categories as category (category)}
+            <li class="m-0">
+              <a
+                class="inline-block border border-[var(--border)] bg-[var(--sheet-muted)] px-3 py-2 font-mono text-xs no-underline hover:border-[var(--accent)]"
+                href="/learning/category/{category}/"
+              >
+                #{category}
+              </a>
+            </li>
+          {/each}
+        </ul>
+      </aside>
+    {/if}
+  </div>
 </article>
 
-<style lang="scss">
+<style>
   :global(.utterances-frame) {
     position: unset;
   }
-  .post {
-    h1:not(:first-child) {
-      margin: 1rem 0;
-    }
 
-    .meta {
-      font-size: 0.8rem;
-      margin-bottom: 4rem;
-    }
+  :global(.post-content > :first-child) {
+    margin-top: 0;
   }
 
-  .post-footer {
-    ul {
-      padding: 0;
-    }
-
-    li {
-      display: inline-block;
-      font-size: 0.8rem;
-
-      a {
-        background-color: var(--lightAccent);
-        padding: 0.5rem 0.75rem;
-        text-transform: uppercase;
-        font-family: var(--primaryFont);
-        @include vars.font-weight(extra-bold);
-      }
-
-      + li {
-        margin-left: 0.5rem;
-      }
-    }
-  }
-
-  .cover-image {
-    display: flex;
-    flex-flow: column;
-    margin-inline: 0;
-    margin-block: 0;
+  :global(.post-content > :last-child) {
+    margin-bottom: 0;
   }
 </style>

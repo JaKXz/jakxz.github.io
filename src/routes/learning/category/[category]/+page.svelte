@@ -7,10 +7,14 @@
 </script>
 
 <svelte:head>
-  <title>Category: {data.category}</title>
+  <title>Learning category: {data.category}</title>
 </svelte:head>
 
-<h1>Blog category: {data.category}</h1>
+<header class="mb-10">
+  <p class="font-600 mb-3 text-xs tracking-[0.18em] text-[var(--accent)] uppercase">Category</p>
+  <h1>{data.category}</h1>
+  <p class="m-0"><a href="/learning/category">← All categories</a></p>
+</header>
 
 {#if data.posts.length}
   <PostsList posts={data.posts} />
@@ -20,7 +24,7 @@
     path="/learning/category/{data.category}/page"
   />
 {:else}
-  <p><strong>Ope!</strong> Sorry, couldn't find any posts in the category "{data.category}".</p>
+  <p><strong>Ope!</strong> I couldn't find any notes in the category “{data.category}”.</p>
 
-  <p><a href="/learning">Back to blog</a></p>
+  <p><a href="/learning">Back to Learning</a></p>
 {/if}
