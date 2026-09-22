@@ -35,7 +35,7 @@
 
 <article class="post">
   <header class="max-w-68ch mx-auto mb-10">
-    <h1>{meta.title}</h1>
+    <h1 class="last-line-underline"><span>{meta.title}</span></h1>
     {#if meta.excerpt}
       <p class="my-0 text-lg text-[var(--muted-ink)]">{meta.excerpt}</p>
     {/if}
