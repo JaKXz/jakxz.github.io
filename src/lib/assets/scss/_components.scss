@@ -48,3 +48,50 @@
     }
   }
 }
+
+.post-card {
+  box-shadow: 0.3rem 0.3rem 0 var(--border);
+  transition:
+    opacity 200ms ease-out,
+    transform 200ms ease-out,
+    box-shadow 200ms ease-out,
+    border-color 200ms ease-out;
+
+  &:focus-within,
+  &:hover {
+    border-color: var(--accent);
+    box-shadow: 0.45rem 0.45rem 0 color-mix(in srgb, var(--accent) 38%, var(--border));
+    transform: translate(-0.1rem, -0.1rem);
+
+    @media (min-width: vars.$xsMin) {
+      transform: translate(-0.1rem, -0.1rem) scale(1.01);
+    }
+  }
+}
+
+.post-card-list:has(.post-card:focus-within) .post-card:not(:focus-within),
+.post-card-list:has(.post-card:hover) .post-card:not(:hover) {
+  opacity: 0.75;
+}
+
+.post-card-title {
+  color: var(--ink);
+  text-decoration-color: transparent;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-card {
+    transition: none;
+
+    &:focus-within,
+    &:hover {
+      transform: none;
+    }
+  }
+}

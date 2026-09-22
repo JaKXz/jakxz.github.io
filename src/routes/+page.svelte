@@ -84,22 +84,28 @@
       <a class="shrink-0 font-mono text-sm" href="/learning">View all →</a>
     </div>
 
-    <div class="grid gap-3">
+    <div class="post-card-list grid gap-4">
       {#each data.posts as post, index (post.slug)}
-        <article class="xs:p-6 border border-[var(--border)] bg-[var(--sheet-muted)] p-5">
-          <div class="subdued mb-5 flex items-center justify-between gap-4 font-mono text-xs">
-            <time datetime={post.updated}>🔃 {formatDate(post.updated)}</time>
-          </div>
-          <h3 class="xs:text-2xl m-0 text-xl leading-snug">
-            <a class="text-[var(--ink)] hover:text-[var(--accent)]" href={`/learning/${post.slug}`}
-              >{post.title}</a
-            >
+        <article class="post-card xs:p-6 border border-[var(--border)] bg-[var(--sheet-muted)] p-5">
+          <time
+            datetime={post.updated}
+            class="font-600 block text-xs tracking-[0.12em] text-[var(--muted-ink)] uppercase"
+          >
+            🔃 {formatDate(post.updated)}
+          </time>
+          <h3 class="my-2 text-[clamp(1.35rem,4vw,1.8rem)]">
+            <a class="post-card-title" href={`/learning/${post.slug}`}>{post.title}</a>
           </h3>
-          <div class="mt-4 flex flex-wrap gap-2">
+          <ul class="mt-4 flex list-none flex-wrap gap-2 p-0" aria-label="Categories">
             {#each post.categories as category (category)}
-              <a href={`/learning/category/${category}`}><code>#{category}</code></a>
+              <li class="m-0">
+                <a
+                  class="inline-block border border-[var(--border)] bg-[var(--sheet)] px-2 py-1 font-mono text-xs no-underline hover:border-[var(--accent)]"
+                  href={`/learning/category/${category}`}>#{category}</a
+                >
+              </li>
             {/each}
-          </div>
+          </ul>
         </article>
       {/each}
     </div>
