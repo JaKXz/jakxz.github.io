@@ -67,6 +67,7 @@
       >
         <a href="/">Home</a>
         <a href="/learning">Learning</a>
+        <a href="/coaching">Coaching</a>
         <a href="/api/rss.xml" rel="external">RSS</a>
         <ThemeToggle />
       </nav>

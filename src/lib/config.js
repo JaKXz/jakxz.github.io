@@ -13,6 +13,10 @@ export const navItems = [
     title: "Learning",
     route: "/learning",
   },
+  {
+    title: "Coaching",
+    route: "/coaching",
+  },
 ];
 
 export const subtitles = [
