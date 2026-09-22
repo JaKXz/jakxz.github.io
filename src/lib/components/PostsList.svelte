@@ -12,7 +12,7 @@
   {#each posts as post, index (post.slug)}
     <li class="m-0">
       <article
-        class="post-card xs:grid-cols-[auto_1fr] xs:p-6 grid gap-4 border border-[var(--border)] bg-[var(--sheet-muted)] p-5"
+        class="post-card xs:grid-cols-[auto_1fr] xs:p-6 relative grid cursor-pointer gap-4 border border-[var(--border)] bg-[var(--sheet-muted)] p-5"
       >
         <div class="min-w-0">
           <time
@@ -32,7 +32,7 @@
               {#each post.categories as category (category)}
                 <li class="m-0">
                   <a
-                    class="inline-block border border-[var(--border)] bg-[var(--sheet)] px-2 py-1 font-mono text-xs no-underline hover:border-[var(--accent)]"
+                    class="relative z-1 inline-block border border-[var(--border)] bg-[var(--sheet)] px-2 py-1 font-mono text-xs no-underline hover:border-[var(--accent)]"
                     href="/learning/category/{category}">#{category}</a
                   >
                 </li>

@@ -86,7 +86,9 @@
 
     <div class="post-card-list grid gap-4">
       {#each data.posts as post, index (post.slug)}
-        <article class="post-card xs:p-6 border border-[var(--border)] bg-[var(--sheet-muted)] p-5">
+        <article
+          class="post-card xs:p-6 relative cursor-pointer border border-[var(--border)] bg-[var(--sheet-muted)] p-5"
+        >
           <time
             datetime={post.updated}
             class="font-600 block text-xs tracking-[0.12em] text-[var(--muted-ink)] uppercase"
@@ -100,7 +102,7 @@
             {#each post.categories as category (category)}
               <li class="m-0">
                 <a
-                  class="inline-block border border-[var(--border)] bg-[var(--sheet)] px-2 py-1 font-mono text-xs no-underline hover:border-[var(--accent)]"
+                  class="relative z-1 inline-block border border-[var(--border)] bg-[var(--sheet)] px-2 py-1 font-mono text-xs no-underline hover:border-[var(--accent)]"
                   href={`/learning/category/${category}`}>#{category}</a
                 >
               </li>
