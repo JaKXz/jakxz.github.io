@@ -1,20 +1,10 @@
 <script>
   import { page } from "$app/state";
   import classNames from "$lib/assets/js/classNames";
+  import getEditPath from "$lib/assets/js/getEditPath.svelte.js";
   import ThemeToggle from "$lib/components/ThemeToggle.svelte";
 
   let path = $derived(page.url.pathname);
-
-  function getEditPath(url) {
-    if (url.startsWith("/learning/")) {
-      return `${url.replace("/learning", "/src/lib/posts")}.md`;
-    }
-    return (
-      {
-        "/resume/": "/src/routes/resume/+page.md",
-      }[url] || `/src/routes${url}+page.svelte`
-    );
-  }
 </script>
 
 <footer
@@ -71,14 +61,14 @@
         <a href="/api/rss.xml" rel="external">RSS</a>
         <ThemeToggle />
       </nav>
-      {#if page.status !== 404 && path !== "/learning" && !path.startsWith("/learning/category/")}
+      {#if !path.startsWith("/learning/category/")}
         <p class="m-0">
           See a typo?
           <em
             ><a
               target="_blank"
               rel="nofollow noopener noreferrer"
-              href={`https://github.com/jakxz/jakxz.github.io/edit/develop${getEditPath(path)}`}
+              href={`https://github.com/jakxz/jakxz.github.io/edit/develop${getEditPath()}`}
               >Please open a PR here.</a
             ></em
           >
