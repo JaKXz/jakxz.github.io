@@ -12,6 +12,7 @@
   --focus: #7bdff2;
   --focus-ring: var(--focus);
   --grid-line: rgb(168 218 229 / 7%);
+  --grid-dot: color-mix(in srgb, var(--accent) 20%, transparent);
   --shadow-soft: 0 0.75rem 2rem rgb(0 0 0 / 18%);
   --shadow-deep: 0 1.5rem 4rem rgb(0 0 0 / 34%);
   --sheet-shadow: 0 1px 1px rgb(0 0 0 / 24%), 0 1.5rem 4rem rgb(0 0 0 / 28%);
@@ -43,6 +44,7 @@
   --focus: #b51f2d;
   --focus-ring: var(--focus);
   --grid-line: rgb(69 123 157 / 8%);
+  --grid-dot: transparent;
   --shadow-soft: 0 0.75rem 2rem rgb(29 53 87 / 10%);
   --shadow-deep: 0 1.5rem 4rem rgb(29 53 87 / 22%);
   --sheet-shadow: 0 1px 1px rgb(29 53 87 / 8%), 0 1.5rem 4rem rgb(29 53 87 / 14%);

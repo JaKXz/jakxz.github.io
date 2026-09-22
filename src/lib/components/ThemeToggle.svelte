@@ -44,7 +44,7 @@
 
 <button
   type="button"
-  class="theme-toggle m-0 inline-grid h-11 w-11 cursor-pointer place-items-center rounded-none bg-[var(--sheet-muted)] p-0 text-[var(--ink)] hover:border-[var(--accent)] hover:bg-[var(--sheet)] focus-visible:border-[var(--accent)] focus-visible:bg-[var(--sheet)]"
+  class="theme-toggle rounded-1 m-0 inline-grid h-8 w-8 shrink-0 cursor-pointer place-items-center border border-[var(--border)] bg-[var(--sheet)] p-0 text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] focus-visible:border-[var(--accent)]"
   aria-label={`Switch to ${nextTheme} theme`}
   title={`Switch to ${nextTheme} theme`}
   aria-pressed={theme === "dark"}
@@ -53,13 +53,13 @@
   {#key theme}
     {#if theme === "dark"}
       <span
-        class="i-radix-icons-sun h-5 w-5"
+        class="i-radix-icons-sun h-4 w-4"
         aria-hidden="true"
         transition:fade={{ duration: transitionDuration }}
       ></span>
     {:else}
       <span
-        class="i-radix-icons-moon h-5 w-5"
+        class="i-radix-icons-moon h-4 w-4"
         aria-hidden="true"
         transition:fade={{ duration: transitionDuration }}
       ></span>

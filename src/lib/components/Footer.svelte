@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/state";
   import classNames from "$lib/assets/js/classNames";
+  import ThemeToggle from "$lib/components/ThemeToggle.svelte";
 
   let path = $derived(page.url.pathname);
 
@@ -60,10 +61,14 @@
     </div>
 
     <div class="flex flex-col justify-between sm:text-right">
-      <nav aria-label="Footer Navigation" class="flex flex-wrap gap-x-4 gap-y-2 sm:justify-end">
+      <nav
+        aria-label="Footer Navigation"
+        class="flex flex-wrap items-center gap-x-4 gap-y-2 sm:justify-end"
+      >
         <a href="/">Home</a>
         <a href="/learning">Learning</a>
         <a href="/api/rss.xml" rel="external">RSS</a>
+        <ThemeToggle />
       </nav>
       {#if page.status !== 404 && path !== "/learning" && !path.startsWith("/learning/category/")}
         <p class="m-0">

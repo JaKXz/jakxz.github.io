@@ -45,7 +45,7 @@
     </h1>
 
     <button
-      class="post-card w-full cursor-pointer overflow-hidden border border-[var(--border)] bg-[var(--sheet-muted)] p-5 text-left text-[var(--ink)]"
+      class="post-card w-full cursor-pointer overflow-hidden border-none bg-[var(--sheet-muted)] p-5 text-left text-[var(--ink)]"
       type="button"
       onclick={nextSubtitle}
       aria-label="Change subtitle"

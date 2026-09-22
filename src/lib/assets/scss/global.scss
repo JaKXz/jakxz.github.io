@@ -17,6 +17,7 @@ body {
   font-family: var(--primaryFont);
   background-color: var(--canvas);
   background-image:
+    radial-gradient(circle at 1px 1px, var(--grid-dot) 0 1px, transparent 1.5px),
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 2rem 2rem;
