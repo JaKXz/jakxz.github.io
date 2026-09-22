@@ -11,16 +11,13 @@ pre {
   background: #101a28;
   padding: 1rem;
   font-size: 0.8rem;
-  border: 1px solid var(--border-strong);
 }
 
 code {
   color: var(--ink);
   font-size: 0.8rem;
   padding: 0.125em 0.25em;
-  border-radius: 4px;
   background: var(--sheet-muted);
-  border: 1px solid var(--border);
 }
 
 pre code {

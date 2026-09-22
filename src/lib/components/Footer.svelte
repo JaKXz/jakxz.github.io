@@ -91,6 +91,7 @@
   }
 
   .social-link {
+    @apply rounded-1;
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;

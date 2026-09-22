@@ -17,9 +17,9 @@
     margin: 2.5rem -1.5rem;
 
     @media (min-width: vars.$xsMin) {
+      @apply rounded-1;
       width: calc(100% + 4rem);
       margin-inline: -2rem;
-      border-radius: 0.3rem;
     }
   }
 

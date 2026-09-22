@@ -36,7 +36,7 @@
     aria-labelledby="sidebar-heading"
     class="rounded-1 xs:px-9 xs:py-11 flex flex-col gap-y-4 border border-[var(--border)] bg-[var(--sheet)] px-6 py-9 [box-shadow:var(--sheet-shadow)] sm:mt-4 sm:gap-y-8 md:sticky md:top-8"
   >
-    <h1 id="sidebar-heading" class="m-0 overflow-visible leading-[0.9] tracking-[-0.06em]">
+    <h1 id="sidebar-heading" class="m-0 ms-4 overflow-visible leading-[0.9] tracking-[-0.06em]">
       <span class="name-heading inline-block first-letter:text-[1.16em]">Jason</span>
       <span class="name-heading inline-block first-letter:text-[1.16em]">Kurian</span>
     </h1>
