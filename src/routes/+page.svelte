@@ -13,8 +13,9 @@
     motionDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 180;
   });
 
-  function nextSubtitle() {
+  function nextSubtitle(event) {
     subtitleIndex = (subtitleIndex + 1) % subtitles.length;
+    event.currentTarget.blur();
   }
 
   function formatDate(date) {
@@ -44,7 +45,7 @@
     </h1>
 
     <button
-      class="subtitle-button reset-button w-full cursor-pointer overflow-hidden p-0 text-left text-[var(--ink)]"
+      class="post-card w-full cursor-pointer overflow-hidden border border-[var(--border)] bg-[var(--sheet-muted)] p-5 text-left text-[var(--ink)]"
       type="button"
       onclick={nextSubtitle}
       aria-label="Change subtitle"
@@ -93,7 +94,8 @@
             datetime={post.updated}
             class="font-600 block text-xs tracking-[0.12em] text-[var(--muted-ink)] uppercase"
           >
-            🔃 {formatDate(post.updated)}
+            <i class="i-radix-icons-lap-timer mr-1 align-[-0.125em] text-sm" aria-hidden="true"></i>
+            {formatDate(post.updated)}
           </time>
           <h3 class="my-2 text-[clamp(1.35rem,4vw,1.8rem)]">
             <a class="post-card-title" href={`/learning/${post.slug}`}>{post.title}</a>
@@ -113,34 +115,3 @@
     </div>
   </section>
 </div>
-
-<style>
-  .subtitle-button {
-    background-image: linear-gradient(
-      105deg,
-      transparent 35%,
-      color-mix(in srgb, var(--accent) 12%, transparent) 50%,
-      transparent 65%
-    );
-    background-position: 50% 0;
-    background-size: 300% 100%;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .subtitle-button {
-      animation: subtitle-sweep 8s ease-in-out infinite;
-    }
-  }
-
-  @keyframes subtitle-sweep {
-    0%,
-    45% {
-      background-position: 130% 0;
-    }
-
-    80%,
-    100% {
-      background-position: -30% 0;
-    }
-  }
-</style>

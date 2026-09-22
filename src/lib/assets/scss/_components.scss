@@ -50,6 +50,7 @@
 }
 
 .post-card {
+  @apply rounded-1;
   box-shadow: 0.3rem 0.3rem 0 var(--border);
   transition:
     opacity 200ms ease-out,
@@ -64,7 +65,7 @@
     transform: translate(-0.1rem, -0.1rem);
 
     @media (min-width: vars.$xsMin) {
-      transform: translate(-0.1rem, -0.1rem) scale(1.01);
+      transform: translate(-0.1rem, -0.1rem) scale(1.001);
     }
   }
 }
