@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        if (["light", "dark"].includes(savedTheme)) {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch {
+        // The CSS system-preference fallback remains active when storage is unavailable.
+      }
+    </script>
+
+    <link href="/_app/immutable/entry/start.BaEUIUBy.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CNe56s2Y.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/B8rOxzKk.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Dt-HX3Vu.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.kTUdU4hV.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/uBIymjUX.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.BQjgCV3S.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CLNtIhP9.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CUlClZ9v.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/zHdXIi8m.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DgaMeH1D.js" rel="modulepreload">
+		
+		<link href="/_app/immutable/assets/0.C07viWbL.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Libre+Franklin:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer data-domain="jasonkurian.dev" src="https://plausible.io/js/script.js"></script>
+  </head>
+  <body>
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1svhysb = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.BaEUIUBy.js"),
+						import("/_app/immutable/entry/app.kTUdU4hV.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
