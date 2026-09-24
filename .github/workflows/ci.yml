@@ -22,7 +22,7 @@ jobs:
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 12.5.1
+          version: 12.6.0
           run_install: false
 
       - name: Get pnpm store directory
