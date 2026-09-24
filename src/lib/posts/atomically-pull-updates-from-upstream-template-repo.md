@@ -1,5 +1,6 @@
 ---
 title: "Atomically pull updates from an upstream template repo"
+seoDescription: "Apply an upstream GitHub pull request as a diff to try template repo updates in your own repository."
 date: "2022-03-08"
 updated: "2022-09-20"
 categories:

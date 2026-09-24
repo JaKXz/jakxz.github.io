@@ -9,7 +9,11 @@ export async function load() {
       sort: "updated",
     });
 
-    return { posts };
+    return {
+      posts,
+      seoDescription:
+        "Personalized one-on-one coaching for software developers navigating their craft and career.",
+    };
   } catch (err) {
     console.error(err.stack);
     throw error(500, err.message);

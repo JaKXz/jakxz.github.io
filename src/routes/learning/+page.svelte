@@ -1,14 +1,13 @@
 <script>
   import Pagination from "$lib/components/Pagination.svelte";
   import PostsList from "$lib/components/PostsList.svelte";
-  import { siteTitle, siteDescription } from "$lib/config";
+  import { siteTitle } from "$lib/config";
 
   let { data } = $props();
 </script>
 
 <svelte:head>
   <title>{siteTitle} | Learning</title>
-  <meta data-key="description" name="description" content={siteDescription} />
 </svelte:head>
 
 <header class="max-w-42rem mb-12">

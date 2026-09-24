@@ -1,5 +1,6 @@
 ---
 title: "Pairing"
+seoDescription: "Explore an approach to pair programming that covers driver and navigator roles, scheduling, communication, and shared learning."
 date: "2023-08-22"
 updated: "2024-08-07"
 categories:

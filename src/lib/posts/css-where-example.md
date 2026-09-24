@@ -1,5 +1,6 @@
 ---
 title: "A practical example of the :where() pseudo-selector"
+seoDescription: "See a practical CSS :where() example that groups heading selectors without raising specificity and targets the first heading in a container."
 date: "2023-05-07"
 updated: "2023-05-07"
 categories:

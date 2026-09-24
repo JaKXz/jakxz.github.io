@@ -16,7 +16,6 @@
 
 <svelte:head>
   <title>{meta.title} | {siteTitle}</title>
-  <meta data-key="description" name="description" content={meta.excerpt} />
   <meta property="og:type" content="article" />
   <meta property="og:title" content={meta.title} />
   <meta property="og:description" content={meta.excerpt} />

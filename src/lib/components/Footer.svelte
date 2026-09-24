@@ -56,8 +56,8 @@
         class="flex flex-wrap items-center gap-x-4 gap-y-2 sm:justify-end"
       >
         <a href="/">Home</a>
-        <a href="/learning">Learning</a>
-        <a href="/coaching">Coaching</a>
+        <a href="/learning" data-sveltekit-preload-data="tap">Learning</a>
+        <a href="/coaching" data-sveltekit-preload-data="tap">Coaching</a>
         <a href="/api/rss.xml" rel="external">RSS</a>
         <ThemeToggle />
       </nav>

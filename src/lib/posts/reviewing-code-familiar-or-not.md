@@ -1,5 +1,6 @@
 ---
 title: "Reviewing code: familiar or not"
+seoDescription: "Get practical code review prompts for familiar and unfamiliar code, with guidance for asking useful questions at different levels of context."
 date: "2024-05-08"
 updated: "2025-12-12"
 categories:

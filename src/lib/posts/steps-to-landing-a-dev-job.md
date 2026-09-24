@@ -1,5 +1,6 @@
 ---
 title: "Steps to landing a dev job"
+seoDescription: "Advice for early career developers seeking a software job, from internships to public projects that demonstrate real-world impact."
 date: "2020-08-21"
 updated: "2023-07-15"
 categories:

@@ -12,6 +12,11 @@
       ? "The page you're looking for drifted off the map."
       : "Something disrupted the connection.",
   );
+  let metaDescription = $derived(
+    isNotFound
+      ? "The page you requested could not be found. Browse Jason Kurian’s learning notes or coaching page."
+      : "Something went wrong loading Jason Kurian’s website. Try the homepage or return later.",
+  );
   let errorMessage = $derived(page.error?.message ?? "Unexpected error");
   let pingMessage = $derived(
     pingCount === 0 ? "Radar ready." : `Ping ${pingCount}: no signal found. Try a known route.`,
@@ -24,6 +29,7 @@
 
 <svelte:head>
   <title>{page.status} — {heading} | {siteTitle}</title>
+  <meta name="description" content={metaDescription} />
 </svelte:head>
 
 <section

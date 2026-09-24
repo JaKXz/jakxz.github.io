@@ -1,5 +1,6 @@
 ---
 title: "Manage node versions with brew"
+seoDescription: "Use Homebrew to install multiple Node.js versions and switch between them by changing your shell PATH."
 date: "2019-01-24"
 updated: "2022-11-10"
 categories:

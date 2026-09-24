@@ -4,32 +4,24 @@
   import "$lib/assets/scss/global.scss";
 
   import { page } from "$app/state";
-  import { preloadData } from "$app/navigation";
   import classNames from "$lib/assets/js/classNames";
   import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
-  import { navItems, siteAuthorTwitter, siteLink } from "$lib/config";
-  import { onMount } from "svelte";
+  import { siteLink } from "$lib/config";
 
-  let { data, children } = $props();
+  let { children } = $props();
   let path = $derived(page.url.pathname);
 
-  /**
-   * This pre-fetches all top-level routes on the site in the background for faster loading.
-   * https://kit.svelte.dev/docs#modules-$app-navigation
-   *
-   * Any route added in src/lib/config.js will be prefetched automatically. You can add your
-   * own preloadData() calls here, too.
-   **/
-  onMount(() => {
-    navItems.forEach((item) => preloadData(item.route));
-  });
+  const defaultSeoDescription =
+    "Jason Kurian shares notes on web development, thoughtful interfaces, durable systems, and stronger engineering teams.";
+  let seoDescription = $derived(page.data.seoDescription?.trim() || defaultSeoDescription);
 </script>
 
 <svelte:head>
+  {#if page.status < 400 && !page.error}
+    <meta name="description" content={seoDescription} />
+  {/if}
   <meta name="og:url" content="{siteLink}{path}" />
-  <meta name="twitter:site" content={siteAuthorTwitter} />
-  <meta name="twitter:creator" content={siteAuthorTwitter} />
 </svelte:head>
 
 {#if path !== "/"}
