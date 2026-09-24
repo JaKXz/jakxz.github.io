@@ -85,7 +85,7 @@
     <p class="font-600 mt-0 mb-2 text-xs tracking-[0.16em] text-[var(--muted-ink)] uppercase">
       Details
     </p>
-    <h2 id="coaching-details-heading" class="m-0">$100 <span class="text-lg">USD</span></h2>
+    <h2 id="coaching-details-heading" class="m-0">€100</h2>
     <p class="font-600 mt-2 mb-5 text-sm text-[var(--ink)]">per 75-minute session</p>
     <p>
       You bring the agenda. Finding the right cadence for you will be part of our first session and
