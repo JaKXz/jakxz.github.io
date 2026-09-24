@@ -1,0 +1,2 @@
+static/*.txt text eol=lf
+static/**/*.txt text eol=lf
