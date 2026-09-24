@@ -4,6 +4,9 @@ import UnoCss from "unocss/vite";
 import { defineConfig, lazyPlugins } from "vite-plus";
 
 export default defineConfig(() => ({
+  css: {
+    devSourcemap: true,
+  },
   fmt: {
     sortTailwindcss: {
       functions: ["classNames", "clsx"],

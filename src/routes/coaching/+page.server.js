@@ -6,7 +6,6 @@ export async function load() {
   try {
     const { posts } = await fetchPosts({
       category: "coaching",
-      limit: -1,
       sort: "updated",
     });
 
