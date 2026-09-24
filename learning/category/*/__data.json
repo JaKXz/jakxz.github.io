@@ -1,1 +1,1 @@
-{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1,"category":2,"total":3},[],"*",0],"uses":{"params":["category"]}}]}
+{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1,"category":2,"total":3,"seoDescription":4},[],"*",0,"Browse Jason Kurian’s * learning notes about software development and engineering practices."],"uses":{"params":["category"]}}]}

@@ -1,4 +1,4 @@
-import{D as e,Y as t,at as n,k as r,ot as i,q as a,x as o}from"./B8rOxzKk.js";import"./xihTtKlq.js";import"./zHdXIi8m.js";var s={title:`Write React components like an essay`,date:`2023-02-09`,updated:`2025-05-08`,categories:[`react`,`web`,`dev`]},{title:c,date:l,updated:u,categories:d}=s,f=r(`<p>If you’re a developer who writes React components, you may have found yourself wondering how to structure your code to make it more readable and maintainable.
+import{D as e,Y as t,at as n,k as r,ot as i,q as a,x as o}from"./B8rOxzKk.js";import"./xihTtKlq.js";import"./zHdXIi8m.js";var s={title:`Write React components like an essay`,seoDescription:`Structure React component files like an essay: put the main component first, then place helpers and subcomponents in order of usage.`,date:`2023-02-09`,updated:`2025-05-08`,categories:[`react`,`web`,`dev`]},{title:c,seoDescription:l,date:u,updated:d,categories:f}=s,p=r(`<p>If you’re a developer who writes React components, you may have found yourself wondering how to structure your code to make it more readable and maintainable.
 One way to approach this is to think of your component code like an essay.</p> <p>In a well-written essay, the main point (or thesis) is usually near the beginning of the piece, with supporting arguments and evidence following in order of relevance.
 Similarly, in a React component, you can put the main export of your file as close to the top as possible, like the “thesis” of your code.
 Then, put supporting “arguments” (helpers, subcomponents, etc.) immediately following in order of relevance and use.</p> <p>Let’s look at an example of a <code>&lt;Profile /&gt;</code> component:</p> <pre class="language-tsx"></pre> <p>Spotted the problem?
@@ -6,7 +6,7 @@ The <code>&lt;Profile /&gt;</code> component, the <em>main export of this file</
 If you’re trying to debug an issue in this component, you have to wade through a lot of code before you find the entry point; at best, it’s supporting code, and at worst it’s just noise and red herrings taking away cognitive budget.
 By reordering the code to put the main export first, you can make it easier for other developers (or your future self!) to quickly understand what the component is doing and find the relevant code.</p> <p>Here’s an example of what the same <code>&lt;Profile /&gt;</code> component could look like if it followed the essay structure:</p> <pre class="language-tsx"></pre> <p>By structuring your React components like an essay, you can make your code more readable, easier to maintain, and quicker to understand.
 Give it a try in your own projects and see how it works for you!</p> <p>I also think this could be applicable to non React code;
-you would just need to determine what the “thesis” is and see if it makes sense to use “supporting arguments” as described here.</p>`,1);function p(r){var s=f(),c=t(a(s),6);o(c,()=>`<code class="language-tsx"><span class="token comment">// app/components/Profile.tsx (types omitted for brevity)</span>
+you would just need to determine what the “thesis” is and see if it makes sense to use “supporting arguments” as described here.</p>`,1);function m(r){var s=p(),c=t(a(s),6);o(c,()=>`<code class="language-tsx"><span class="token comment">// app/components/Profile.tsx (types omitted for brevity)</span>
 <span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
 <span class="token comment">// N more imports</span>
 
@@ -56,4 +56,4 @@ you would just need to determine what the “thesis” is and see if it makes se
 
 <span class="token keyword">function</span> <span class="token function">helper</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
   <span class="token comment">// Many complex lines</span>
-<span class="token punctuation">&#125;</span></code>`,!0),i(l),n(4),e(r,s)}export{p as default,s as metadata};
+<span class="token punctuation">&#125;</span></code>`,!0),i(l),n(4),e(r,s)}export{m as default,s as metadata};

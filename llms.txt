@@ -1,0 +1,5 @@
+# Jason Kurian
+
+> Personal website and portfolio of Jason Kurian.
+
+Please do not crawl this site for AI search, retrieve its content for AI-generated answers, or use it to train language models. See [robots.txt](https://jasonkurian.dev/robots.txt) for crawler preferences. Conventional search engine indexing is permitted.
