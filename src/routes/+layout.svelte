@@ -4,26 +4,13 @@
   import "$lib/assets/scss/global.scss";
 
   import { page } from "$app/state";
-  import { preloadData } from "$app/navigation";
   import classNames from "$lib/assets/js/classNames";
   import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
-  import { navItems, siteAuthorTwitter, siteLink } from "$lib/config";
-  import { onMount } from "svelte";
+  import { siteAuthorTwitter, siteLink } from "$lib/config";
 
   let { data, children } = $props();
   let path = $derived(page.url.pathname);
-
-  /**
-   * This pre-fetches all top-level routes on the site in the background for faster loading.
-   * https://kit.svelte.dev/docs#modules-$app-navigation
-   *
-   * Any route added in src/lib/config.js will be prefetched automatically. You can add your
-   * own preloadData() calls here, too.
-   **/
-  onMount(() => {
-    navItems.forEach((item) => preloadData(item.route));
-  });
 </script>
 
 <svelte:head>

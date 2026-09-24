@@ -239,6 +239,9 @@ importers:
       vite:
         specifier: 'catalog:'
         version: '@voidzero-dev/vite-plus-core@0.3.3(@types/node@25.9.8)(jiti@2.6.1)(sass@1.105.0)(typescript@5.4.5)'
+      vite-plugin-devtools-json:
+        specifier: 1.1.0
+        version: 1.1.0(@voidzero-dev/vite-plus-core@0.3.3(@types/node@25.9.8)(jiti@2.6.1)(sass@1.105.0)(typescript@5.4.5))
       vite-plus:
         specifier: 'catalog:'
         version: 0.3.3(@types/node@25.9.8)(jiti@2.6.1)(sass@1.105.0)(svelte@5.57.1)(typescript@5.4.5)
@@ -2161,6 +2164,10 @@ packages:
     resolution: {integrity: sha512-5uKD0nqiYVzlmCRs01Fhs2BdkEgBS3SAVP6ndrBsuK42iC2+JHyxM05Rm9G8+5mkmRtzMZGY8Ct5+mliZxU/Ww==}
     engines: {node: '>=18.12.0'}
 
+  uuid@14.0.2:
+    resolution: {integrity: sha512-xZe/16rV4aa+HGSOCiY2YeLT1OybRLrrkL/Rqaq7p7GMVXjFh+6wN4oMYgjFmnSnhY8t6Xpdl2l9qmnHYuMHwQ==}
+    hasBin: true
+
   vfile-message@2.0.4:
     resolution: {integrity: sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==}
 
@@ -2169,6 +2176,11 @@ packages:
 
   vfile@6.0.1:
     resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
+
+  vite-plugin-devtools-json@1.1.0:
+    resolution: {integrity: sha512-Fy9nMgMudGzDtUh1tGL7v0WAH0gsnZcZu2LFr/+1YxvYaJnxgbqRqv4jLU2tn5L9oqSaETHVCdDo9f8mSCQEZQ==}
+    peerDependencies:
+      vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
 
   vite-plus@0.3.3:
     resolution: {integrity: sha512-gr3t8ZIsytJnpPE0YPxtkouf+asMsc+TWlKXYzEdY6rRXUdCGYxgaPmzRePx1Gyip2gmARRLogAwoMMW9BvSUA==}
@@ -3877,6 +3889,8 @@ snapshots:
       picomatch: 4.0.5
       webpack-virtual-modules: 0.6.2
 
+  uuid@14.0.2: {}
+
   vfile-message@2.0.4:
     dependencies:
       '@types/unist': 2.0.6
@@ -3892,6 +3906,11 @@ snapshots:
       '@types/unist': 3.0.2
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
+
+  vite-plugin-devtools-json@1.1.0(@voidzero-dev/vite-plus-core@0.3.3(@types/node@25.9.8)(jiti@2.6.1)(sass@1.105.0)(typescript@5.4.5)):
+    dependencies:
+      uuid: 14.0.2
+      vite: '@voidzero-dev/vite-plus-core@0.3.3(@types/node@25.9.8)(jiti@2.6.1)(sass@1.105.0)(typescript@5.4.5)'
 
   vite-plus@0.3.3(@types/node@25.9.8)(jiti@2.6.1)(sass@1.105.0)(svelte@5.57.1)(typescript@5.4.5):
     dependencies:

@@ -10,6 +10,7 @@
 <li>
   <a
     {href}
+    data-sveltekit-preload-data="tap"
     onclick={() => isMenuOpen.set(false)}
     class="nav-link font-600 block px-3 py-2 text-sm tracking-wide"
     class:text-2xl={mobile}
