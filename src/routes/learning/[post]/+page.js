@@ -1,4 +1,5 @@
 import { error } from "@sveltejs/kit";
+import { siteTitle } from "$lib/config";
 
 export async function load({ params, data }) {
   const { imageMeta } = data;
@@ -16,6 +17,10 @@ export async function load({ params, data }) {
         slug: params.post,
         ...imageMeta,
       },
+      seoDescription:
+        post.metadata.seoDescription?.trim() ||
+        post.metadata.excerpt?.trim() ||
+        `${post.metadata.title} — a learning note by ${siteTitle}.`,
     };
   } catch (err) {
     console.error(err.stack);

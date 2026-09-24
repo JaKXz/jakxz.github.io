@@ -14,5 +14,6 @@ export async function load({ params }) {
     posts,
     category,
     total: posts.length,
+    seoDescription: `Browse Jason Kurian’s ${category} learning notes about software development and engineering practices.`,
   };
 }

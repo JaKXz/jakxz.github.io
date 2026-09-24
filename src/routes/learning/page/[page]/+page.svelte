@@ -2,7 +2,7 @@
 <script>
   import PostsList from "$lib/components/PostsList.svelte";
   import Pagination from "$lib/components/Pagination.svelte";
-  import { postsPerPage, siteDescription } from "$lib/config";
+  import { postsPerPage } from "$lib/config";
 
   let { data } = $props();
 
@@ -12,7 +12,6 @@
 
 <svelte:head>
   <title>Learning - page {data.page}</title>
-  <meta data-key="description" name="description" content={siteDescription} />
 </svelte:head>
 
 {#if data.posts.length}

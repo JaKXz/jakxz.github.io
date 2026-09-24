@@ -1,5 +1,6 @@
 ---
 title: "Write React components like an essay"
+seoDescription: "Structure React component files like an essay: put the main component first, then place helpers and subcomponents in order of usage."
 date: "2023-02-09"
 updated: "2025-05-08"
 categories:

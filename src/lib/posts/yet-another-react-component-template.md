@@ -1,11 +1,10 @@
 ---
 title: "Yet another react component template"
+seoDescription: "Archived: A minimalist starter template for publishing React component packages, with Microbundle, TypeScript, and an example app."
 date: "2021-08-30"
 updated: "2022-07-27"
 categories:
-  - "react"
-  - "web"
-  - "dev"
+  - "archived"
 coverImage: "/images/linus-nylund-Q5QspluNZmM-unsplash.jpg"
 coverWidth: 16
 coverHeight: 9

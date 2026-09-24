@@ -18,5 +18,7 @@ export async function load({ url, fetch }) {
 
   return {
     uniqueCategories: Object.values(uniqueCategories).toSorted((a, b) => a.title > b.title),
+    seoDescription:
+      "Browse Jason Kurian’s learning notes by topic, from React and CSS to testing, Git, pairing, and career growth.",
   };
 }

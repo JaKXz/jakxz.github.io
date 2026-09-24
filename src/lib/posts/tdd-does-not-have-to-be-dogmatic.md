@@ -1,5 +1,6 @@
 ---
 title: TDD doesn't have to be dogmatic
+seoDescription: "A flexible approach to test-driven development: start with behaviors, sketch a solution, and build reliable tests without rigid rules."
 date: "2023-03-06"
 updated: "2023-03-06"
 categories:

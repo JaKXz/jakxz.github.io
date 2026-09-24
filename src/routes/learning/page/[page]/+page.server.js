@@ -21,5 +21,6 @@ export async function load({ url, params, fetch }) {
     posts,
     page,
     totalPosts,
+    seoDescription: `Page ${page} of Jason Kurian’s learning notes on web development, engineering practices, and career growth.`,
   };
 }

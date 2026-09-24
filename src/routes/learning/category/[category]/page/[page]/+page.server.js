@@ -23,5 +23,6 @@ export async function load({ url, params }) {
     page,
     category,
     totalPosts,
+    seoDescription: `Page ${page} of Jason Kurian’s ${category} learning notes and articles.`,
   };
 }

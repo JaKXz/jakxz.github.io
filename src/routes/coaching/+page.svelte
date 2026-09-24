@@ -4,9 +4,6 @@
 
   let { data } = $props();
 
-  const description =
-    "Personalized one-on-one coaching for software developers navigating their craft and career.";
-
   const topics = [
     {
       title: "Growth & craft",
@@ -35,7 +32,6 @@
 
 <svelte:head>
   <title>{siteTitle} | Coaching</title>
-  <meta data-key="description" name="description" content={description} />
 </svelte:head>
 
 <header class="max-w-46rem mb-12">
