@@ -34,7 +34,7 @@
 >
   <section
     aria-labelledby="sidebar-heading"
-    class="intro-stack rounded-1 flex min-w-0 flex-col border border-[var(--border)] bg-[var(--sheet)] p-3 [box-shadow:var(--sheet-shadow)]"
+    class="intro-stack [@media(min-height:52rem)]:mt-6 rounded-1 flex min-w-0 flex-col bg-[var(--sheet)] p-3 [box-shadow:var(--sheet-shadow)]"
   >
     <figure class="m-0">
       <div
@@ -180,6 +180,7 @@
   @media (min-width: 1024px) and (min-height: 56rem) {
     .intro-stack {
       position: sticky;
+      margin: 0;
       top: 2rem;
     }
   }
