@@ -7,6 +7,7 @@
   import classNames from "$lib/assets/js/classNames";
   import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
+  import NavigationBeacon from "$lib/components/NavigationBeacon.svelte";
   import { siteLink } from "$lib/config";
 
   let { children } = $props();
@@ -57,6 +58,7 @@
 >
   {@render children?.()}
 </main>
+<NavigationBeacon />
 <Footer />
 
 <style>
