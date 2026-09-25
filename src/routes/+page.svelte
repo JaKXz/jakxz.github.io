@@ -32,48 +32,46 @@
 <div
   class="max-w-68rem xs:px-8 xs:py-16 mx-auto grid w-full items-start gap-11 px-4 py-12 md:grid-cols-[minmax(18rem,0.82fr)_minmax(0,1.18fr)] md:gap-6"
 >
-  <div class="intro-stack flex min-w-0 flex-col gap-4">
-    <figure
-      class="rounded-1 m-0 border border-[var(--border)] bg-[var(--sheet)] p-3 [box-shadow:var(--sheet-shadow)]"
-    >
+  <section
+    aria-labelledby="sidebar-heading"
+    class="intro-stack rounded-1 flex min-w-0 flex-col border border-[var(--border)] bg-[var(--sheet)] p-3 [box-shadow:var(--sheet-shadow)]"
+  >
+    <figure class="m-0">
       <div
-        class="relative aspect-[4/3] overflow-hidden border border-[var(--border)] bg-[var(--sheet-muted)] md:aspect-[1.67/1]"
+        class="rounded-1 relative aspect-[4/3] overflow-hidden bg-[var(--sheet-muted)] md:aspect-[1.67/1]"
       >
         <img
           src="/images/headshot.webp"
-          alt=""
+          alt="Headshot of Jason at his wedding."
           width="909"
           height="1136"
           decoding="async"
-          class="photo-light absolute inset-0 h-full w-full object-cover"
-          style="filter: none"
+          class="absolute inset-0 h-full w-full object-cover object-[50%_34%]"
         />
         <img
           src="/images/jason-at-the-keys.webp"
-          alt=""
+          alt="Jason playing his Nord keyboard on stage."
           width="1600"
           height="2000"
           decoding="async"
-          class="photo-dark absolute inset-0 h-full w-full object-cover"
-          style="filter: none"
+          class="photo-dark absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-240 ease-[ease] motion-reduce:transition-none"
         />
       </div>
       <figcaption
         class="min-h-8 px-1 pt-2 pb-0 text-right font-mono text-xs text-[var(--muted-ink)]"
       >
-        <span class="photo-caption-light text">
-          At my wedding!<span class="sr-only">Headshot of Jason at his wedding.</span>
+        <span class="photo-caption-light">
+          Me at my wedding!<span class="sr-only">Headshot of Jason at his wedding.</span>
         </span>
-        <span class="photo-caption-dark">
-          At the keys.<span class="sr-only">Jason playing his Nord keyboard on stage.</span>
+        <span class="photo-caption-dark hidden">
+          <em>Vibing</em> at the keys.<span class="sr-only"
+            >Jason playing his Nord keyboard on stage.</span
+          >
         </span>
       </figcaption>
     </figure>
 
-    <section
-      aria-labelledby="sidebar-heading"
-      class="rounded-1 xs:px-9 xs:py-11 flex flex-col gap-y-4 border border-[var(--border)] bg-[var(--sheet)] px-6 py-9 [box-shadow:var(--sheet-shadow)] sm:gap-y-8"
-    >
+    <div class="xs:px-6 xs:pt-5 xs:pb-8 flex flex-col gap-y-4 px-3 pt-4 pb-6 sm:gap-y-8">
       <h1 id="sidebar-heading" class="m-0 ms-4 overflow-visible leading-[0.9] tracking-[-0.06em]">
         <span class="name-heading inline-block first-letter:text-[1.16em]">Jason</span>
         <span class="name-heading inline-block first-letter:text-[1.16em]">Kurian</span>
@@ -109,8 +107,8 @@
           GitHub</a
         >.
       </p>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <section
     aria-labelledby="sidebar-posts-heading"
@@ -153,20 +151,6 @@
 </div>
 
 <style>
-  .photo-light {
-    object-position: 50% 34%;
-  }
-
-  .photo-dark {
-    object-position: 50% 50%;
-    opacity: 0;
-    transition: opacity 240ms ease;
-  }
-
-  .photo-caption-dark {
-    display: none;
-  }
-
   :global(:root[data-theme="dark"]) .photo-dark {
     opacity: 1;
   }
@@ -197,12 +181,6 @@
     .intro-stack {
       position: sticky;
       top: 2rem;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .photo-dark {
-      transition: none;
     }
   }
 </style>
