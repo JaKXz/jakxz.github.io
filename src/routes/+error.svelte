@@ -3,7 +3,18 @@
   import { page } from "$app/state";
   import { siteTitle } from "$lib/config";
 
+  const signalPositions = [
+    { x: 70, y: 31 },
+    { x: 78, y: 50 },
+    { x: 65, y: 76 },
+    { x: 37, y: 77 },
+    { x: 21, y: 52 },
+    { x: 34, y: 25 },
+  ];
+
   let pingCount = $state(0);
+  let signalIndex = $state(0);
+  let signalPosition = $derived(signalPositions[signalIndex]);
 
   let isNotFound = $derived(page.status === 404);
   let heading = $derived(isNotFound ? "Signal lost." : "Signal interrupted.");
@@ -23,6 +34,8 @@
   );
 
   function sendPing() {
+    const offset = 1 + Math.floor(Math.random() * (signalPositions.length - 1));
+    signalIndex = (signalIndex + offset) % signalPositions.length;
     pingCount += 1;
   }
 </script>
@@ -80,6 +93,8 @@
   <div class="w-full max-w-84 justify-self-center">
     <div
       class="radar relative isolate aspect-square w-full overflow-hidden rounded-full border border-[var(--border-strong)] bg-[var(--sheet-muted)] text-[var(--ink)]"
+      style:--signal-x={`${signalPosition.x}%`}
+      style:--signal-y={`${signalPosition.y}%`}
       aria-hidden="true"
     >
       <span class="absolute top-1/2 right-0 left-0 z-[-1] h-px bg-current opacity-25"></span>
@@ -89,13 +104,13 @@
       <span class="absolute inset-[37.5%] rounded-full border border-current opacity-35"></span>
       <span class="sweep absolute inset-0 z-[-1] rounded-full"></span>
       <span
-        class="signal absolute top-[31%] left-[70%] h-[0.7rem] w-[0.7rem] rounded-full bg-[var(--accent)]"
+        class="signal absolute top-[var(--signal-y)] left-[var(--signal-x)] h-[0.7rem] w-[0.7rem] rounded-full bg-[var(--accent)] transition-[top,left] duration-220 ease-out motion-reduce:transition-none"
       ></span>
 
       {#if pingCount > 0}
         {#key pingCount}
           <span
-            class="ping-wave absolute top-[31%] left-[70%] h-4 w-4 rounded-full border-2 border-[var(--accent)]"
+            class="ping-wave absolute top-[var(--signal-y)] left-[var(--signal-x)] h-4 w-4 rounded-full border-2 border-[var(--accent)]"
           ></span>
         {/key}
       {/if}
