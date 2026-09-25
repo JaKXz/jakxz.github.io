@@ -29,9 +29,4 @@
   .site-header {
     box-shadow: var(--shadow-soft);
   }
-
-  .signature-mark {
-    font-family: var(--accentFont);
-    transform: rotate(-6deg);
-  }
 </style>
