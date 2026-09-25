@@ -7,6 +7,8 @@ categories:
   - "coaching"
   - "dev"
 coverImage: "/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg"
+coverWidth: 3353
+coverHeight: 2514
 ---
 
 <script>

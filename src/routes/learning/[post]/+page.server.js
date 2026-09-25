@@ -1,5 +1,6 @@
 import { UNSPLASH_ACCESS_KEY } from "$env/static/private";
 import { error } from "@sveltejs/kit";
+import { blurhashPlaceholder } from "$lib/server/blurhash-placeholder";
 
 export async function load({ params, fetch }) {
   try {
@@ -31,7 +32,7 @@ export async function load({ params, fetch }) {
             }
           : null,
         imageAlt: alt_description,
-        imageBlurHash: blur_hash,
+        imagePlaceholder: blurhashPlaceholder(blur_hash),
       };
     }
     return { imageMeta };

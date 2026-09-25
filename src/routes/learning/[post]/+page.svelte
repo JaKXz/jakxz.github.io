@@ -7,6 +7,28 @@
   let meta = $derived(data.meta);
   let articleBody = $state();
 
+  function fadeInOnLoad(image) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || image.complete) return;
+
+    image.style.opacity = "0";
+    const reveal = () => {
+      image.style.opacity = "1";
+      image.removeEventListener("load", reveal);
+      image.removeEventListener("error", reveal);
+    };
+
+    image.addEventListener("load", reveal);
+    image.addEventListener("error", reveal);
+    if (image.complete) reveal();
+
+    return {
+      destroy() {
+        image.removeEventListener("load", reveal);
+        image.removeEventListener("error", reveal);
+      },
+    };
+  }
+
   function formatDate(date) {
     return new Intl.DateTimeFormat(undefined, {
       dateStyle: "medium",
@@ -54,14 +76,29 @@
 
   {#if meta.coverImage}
     <figure class="cover-image max-w-48rem mx-auto mb-12">
-      <img
-        class="block h-auto w-full border border-[var(--border)]"
-        src={meta.coverImage}
-        alt={meta.imageAlt || ""}
-        style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight};"
-        width={meta.coverWidth}
-        height={meta.coverHeight}
-      />
+      <div class="relative bg-[var(--sheet-muted)]">
+        {#if meta.imagePlaceholder}
+          <img
+            class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+            src={meta.imagePlaceholder}
+            alt=""
+            aria-hidden="true"
+            width="32"
+            height="18"
+          />
+        {/if}
+        {#key meta.coverImage}
+          <img
+            class="relative block h-auto w-full border border-[var(--border)] transition-opacity duration-300 motion-reduce:transition-none"
+            src={meta.coverImage}
+            alt={meta.imageAlt || ""}
+            style="aspect-ratio: {meta.coverWidth} / {meta.coverHeight};"
+            width={meta.coverWidth}
+            height={meta.coverHeight}
+            use:fadeInOnLoad
+          />
+        {/key}
+      </div>
       {#if meta.coverCaption}
         <figcaption>
           Photo by
