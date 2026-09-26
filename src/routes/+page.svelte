@@ -34,7 +34,7 @@
 >
   <section
     aria-labelledby="sidebar-heading"
-    class="intro-stack [@media(min-height:52rem)]:mt-6 rounded-1 flex min-w-0 flex-col bg-[var(--sheet)] p-3 [box-shadow:var(--sheet-shadow)]"
+    class="intro-stack rounded-1 flex min-w-0 flex-col bg-[var(--sheet)] p-3 [box-shadow:var(--sheet-shadow)] [@media(min-height:52rem)]:mt-6"
   >
     <figure class="m-0">
       <div
