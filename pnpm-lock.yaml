@@ -229,7 +229,7 @@ importers:
         version: 5.57.1
       svelte-check:
         specifier: ^4.5.0
-        version: 4.7.6(picomatch@4.0.5)(svelte@5.57.1)(typescript@5.4.5)
+        version: 4.7.6(picomatch@4.0.7)(svelte@5.57.1)(typescript@5.4.5)
       tailwind-merge:
         specifier: ^3.6.0
         version: 3.7.0
@@ -3229,9 +3229,9 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
-  fdir@6.5.0(picomatch@4.0.5):
+  fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
-      picomatch: 4.0.5
+      picomatch: 4.0.7
 
   fflate@0.8.3: {}
 
@@ -3734,12 +3734,12 @@ snapshots:
     dependencies:
       escape-string-regexp: 1.0.5
 
-  svelte-check@4.7.6(picomatch@4.0.5)(svelte@5.57.1)(typescript@5.4.5):
+  svelte-check@4.7.6(picomatch@4.0.7)(svelte@5.57.1)(typescript@5.4.5):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@sveltejs/load-config': 0.2.3
       chokidar: 4.0.3
-      fdir: 6.5.0(picomatch@4.0.5)
+      fdir: 6.5.0(picomatch@4.0.7)
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.57.1
@@ -3785,8 +3785,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.5)
-      picomatch: 4.0.5
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
 
   tinypool@2.1.2: {}
 
@@ -3905,13 +3905,13 @@ snapshots:
   unplugin-utils@0.3.2:
     dependencies:
       pathe: 2.0.3
-      picomatch: 4.0.5
+      picomatch: 4.0.7
 
   unplugin@2.3.11:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       acorn: 8.18.0
-      picomatch: 4.0.5
+      picomatch: 4.0.7
       webpack-virtual-modules: 0.6.2
 
   uuid@14.0.2: {}
