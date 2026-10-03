@@ -1,6 +1,10 @@
 // IMPORTANT: update all these property values in src/lib/config.js
 import { siteTitle, siteDescription, siteURL, siteLink } from "$lib/config";
 
+// server routes do not inherit prerender from layout:
+// https://svelte.dev/docs/kit/page-options#prerender-Prerendering-server-routes
+export const prerender = true;
+
 export async function GET() {
   const data = await Promise.all(
     Object.entries(import.meta.glob("$lib/posts/*.md")).map(async ([path, page]) => {
@@ -27,7 +31,7 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <title>${siteTitle}</title>
 <description>${siteDescription}</description>
 <link>${siteLink}</link>
-<atom:link href="https://${siteURL}/rss.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://${siteURL}/api/rss.xml" rel="self" type="application/rss+xml"/>
 ${posts
   .map(
     (post) => `<item>
