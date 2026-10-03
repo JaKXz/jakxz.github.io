@@ -311,15 +311,15 @@
   </a>
 {/snippet}
 
-<header class="mb-8">
+<div class="mb-8">
   <p class="font-600 mt-0 mb-3 text-xs tracking-[0.18em] text-[var(--accent)] uppercase">
     My setup
   </p>
-  <h1 class="last-line-underline"><span>Uses</span></h1>
+  <h1 class="tracking-normal">/uses</h1>
   <p class="m-0 text-lg text-[var(--muted-ink)]">
     A few of the tools behind my day-to-day work on macOS.
   </p>
-</header>
+</div>
 
 <div class="grid items-start gap-6 md:grid-cols-[minmax(0,1fr)_18rem]">
   <div class="min-w-0">

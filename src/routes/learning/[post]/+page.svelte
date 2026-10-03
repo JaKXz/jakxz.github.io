@@ -55,7 +55,7 @@
 </svelte:head>
 
 <article class="post">
-  <header class="max-w-68ch mx-auto mb-10">
+  <div class="max-w-68ch mx-auto mb-10">
     <h1 class="last-line-underline"><span>{meta.title}</span></h1>
     {#if meta.excerpt}
       <p class="my-0 text-lg text-[var(--muted-ink)]">{meta.excerpt}</p>
@@ -72,7 +72,7 @@
         <dd class="m-0"><time datetime={meta.updated}>{formatDate(meta.updated)}</time></dd>
       </div>
     </dl>
-  </header>
+  </div>
 
   {#if meta.coverImage}
     <figure class="cover-image max-w-48rem mx-auto mb-12">

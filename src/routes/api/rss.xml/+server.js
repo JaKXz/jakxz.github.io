@@ -1,8 +1,6 @@
 // IMPORTANT: update all these property values in src/lib/config.js
 import { siteTitle, siteDescription, siteURL, siteLink } from "$lib/config";
 
-export const prerender = true;
-
 export async function GET() {
   const data = await Promise.all(
     Object.entries(import.meta.glob("$lib/posts/*.md")).map(async ([path, page]) => {
