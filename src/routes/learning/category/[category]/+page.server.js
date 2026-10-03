@@ -1,4 +1,4 @@
-import fetchPosts from "$lib/assets/js/fetchPosts";
+import loadCategoryPage from "$lib/server/loadCategoryPage";
 import { redirect } from "@sveltejs/kit";
 
 // server routes do not inherit prerender from layout:
@@ -12,12 +12,5 @@ export async function load({ params }) {
     throw redirect(303, "/learning/category");
   }
 
-  const { posts } = await fetchPosts({ category });
-
-  return {
-    posts,
-    category,
-    total: posts.length,
-    seoDescription: `Browse Jason Kurian’s ${category} learning notes about software development and engineering practices.`,
-  };
+  return loadCategoryPage({ category });
 }
