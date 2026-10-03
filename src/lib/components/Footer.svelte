@@ -80,7 +80,7 @@
   </div>
 </footer>
 
-<style lang="scss">
+<style lang="postcss">
   .site-footer {
     box-shadow: var(--shadow-soft);
 
