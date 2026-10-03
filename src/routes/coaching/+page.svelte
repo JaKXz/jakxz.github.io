@@ -34,7 +34,7 @@
   <title>{siteTitle} | Coaching</title>
 </svelte:head>
 
-<header class="max-w-46rem mb-12">
+<div class="max-w-46rem mb-12">
   <p class="font-600 mb-3 text-xs tracking-[0.18em] text-[var(--accent)] uppercase">
     One-on-one coaching
   </p>
@@ -43,7 +43,7 @@
     I am a low-volume coach for developers who prefer a highly personalized approach over a group
     setting.
   </p>
-</header>
+</div>
 
 <div class="grid items-start gap-8 md:grid-cols-[minmax(0,1.25fr)_minmax(17rem,0.75fr)]">
   <section aria-labelledby="coaching-topics-heading">

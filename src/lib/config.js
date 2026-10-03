@@ -9,6 +9,10 @@ export const postsPerPage = 10;
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
   {
+    title: "Uses",
+    route: "/uses",
+  },
+  {
     title: "Learning",
     route: "/learning",
   },

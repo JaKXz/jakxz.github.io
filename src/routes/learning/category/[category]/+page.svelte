@@ -10,11 +10,11 @@
   <title>Learning category: {data.category}</title>
 </svelte:head>
 
-<header class="mb-10">
+<div class="mb-10">
   <p class="font-600 mb-3 text-xs tracking-[0.18em] text-[var(--accent)] uppercase">Category</p>
   <h1>{data.category}</h1>
   <p class="m-0"><a href="/learning/category">← All categories</a></p>
-</header>
+</div>
 
 {#if data.posts.length}
   <PostsList posts={data.posts} />

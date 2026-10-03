@@ -37,11 +37,9 @@
       : [
           "site-sheet",
           "w-[calc(100%-1rem)]",
-          "max-w-64rem",
+          path === "/uses/" ? "max-w-88rem" : "max-w-64rem",
           "xs:w-[calc(100%-2rem)]",
-          "xs:px-12",
-          "xs:py-16",
-          "sm:px-16",
+          path === "/uses/" ? ["xs:p-8"] : ["xs:px-12", "xs:py-16", "sm:px-16"],
           "relative",
           "z-2",
           "mt-[-1.25rem]",
