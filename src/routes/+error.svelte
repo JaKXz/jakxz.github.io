@@ -1,4 +1,3 @@
-<!-- This page handles any error encountered by the site. -->
 <script>
   import { page } from "$app/state";
   import { siteTitle } from "$lib/config";
@@ -30,7 +29,9 @@
   );
   let errorMessage = $derived(page.error?.message ?? "Unexpected error");
   let pingMessage = $derived(
-    pingCount === 0 ? "Radar ready." : `Ping ${pingCount}: no signal found. Try a known route.`,
+    pingCount === 0
+      ? "Radar ready."
+      : `Ping ${pingCount}: no signal found. ${isNotFound ? "Try a known route." : ""}`,
   );
 
   function sendPing() {
@@ -46,10 +47,10 @@
 </svelte:head>
 
 <section
-  class="grid min-h-[clamp(34rem,65svh,45rem)] items-center gap-12 pt-4 pb-12 sm:grid-cols-[minmax(0,1fr)_minmax(17rem,0.85fr)] sm:py-0"
+  class="max-w-64rem grid min-h-[clamp(34rem,65svh,45rem)] place-items-center justify-between gap-12 px-8 pt-4 pb-12 sm:grid-cols-[minmax(0,1fr)_minmax(17rem,0.85fr)] sm:px-16 sm:py-0"
   aria-labelledby="error-heading"
 >
-  <div class="min-w-0">
+  <div>
     <p
       class="mt-0 mb-4 flex items-center gap-[0.6rem] [font-family:var(--codeFont)] text-[0.8rem] tracking-[0.14em] text-[var(--ink)] uppercase"
     >
@@ -60,8 +61,11 @@
       Error {page.status}
     </p>
 
-    <h1 id="error-heading" class="mb-6 text-[clamp(2.8rem,11vw,5.75rem)] tracking-[-0.035em]">
-      {heading}
+    <h1
+      id="error-heading"
+      class="last-line-underline mb-6 text-[clamp(2.8rem,calc(11vw/1.5),5.75rem)] tracking-[-0.035em]"
+    >
+      <span>{heading}</span>
     </h1>
     <p class="m-0 max-w-120 text-[clamp(1.1rem,3vw,1.35rem)] leading-[1.45]">
       {description}
@@ -90,7 +94,7 @@
     </nav>
   </div>
 
-  <div class="w-full max-w-84 justify-self-center">
+  <div class="w-full max-w-84">
     <div
       class="radar relative isolate aspect-square w-full overflow-hidden rounded-full border border-[var(--border-strong)] bg-[var(--sheet-muted)] text-[var(--ink)]"
       style:--signal-x={`${signalPosition.x}%`}
