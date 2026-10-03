@@ -9,7 +9,6 @@
       id: "coding-and-browsing",
       title: "Coding & browsing",
       position: [5, 5],
-      viewBox: "0 0 490 640",
       tools: [
         {
           name: "Zed",
@@ -60,7 +59,6 @@
       id: "version-control-and-setup",
       title: "Version control & setup",
       position: [54, 5],
-      viewBox: "500 0 500 330",
       tools: [
         {
           name: "Jujutsu",
@@ -92,7 +90,6 @@
       id: "everyday-macos",
       title: "Everyday macOS",
       position: [54, 55],
-      viewBox: "500 330 500 310",
       tools: [
         {
           name: "1Password",
@@ -189,13 +186,13 @@
     sections.flatMap((section) => section.tools).find((tool) => tool.name === selectedName),
   );
 
-  const desktop = new MediaQuery("(min-width: 1280px)", false);
+  const scrollable = new MediaQuery("(min-width: 1280px)", false);
   let isDragging = $state(false);
   let drag = null;
 
   function startDrag(event) {
     if (
-      !desktop.current ||
+      !scrollable.current ||
       event.pointerType !== "mouse" ||
       !event.isPrimary ||
       event.button !== 0 ||
@@ -228,7 +225,7 @@
 
   function moveDrag(event) {
     if (!drag || event.pointerId !== drag.pointerId) return;
-    if (!desktop.current || !(event.buttons & 1)) {
+    if (!scrollable.current || !(event.buttons & 1)) {
       finishDrag(event);
       return;
     }
@@ -253,7 +250,7 @@
   }
 
   $effect(() => {
-    if (!desktop.current) finishDrag();
+    if (!scrollable.current) finishDrag();
   });
 
   onDestroy(() => finishDrag());
@@ -324,7 +321,7 @@
   </p>
 </header>
 
-<div class="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
+<div class="grid items-start gap-6 md:grid-cols-[minmax(0,1fr)_18rem]">
   <div class="min-w-0">
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (The scrollable map region needs native keyboard scrolling.) -->
     <div
@@ -332,8 +329,8 @@
       class:is-dragging={isDragging}
       role="region"
       aria-label="Tools map"
-      aria-describedby={desktop.current ? "uses-map-hint" : undefined}
-      tabindex={desktop.current ? 0 : undefined}
+      aria-describedby={scrollable.current ? "uses-map-hint" : undefined}
+      tabindex={scrollable.current ? 0 : undefined}
       onpointerdown={startDrag}
       onpointermove={moveDrag}
       onpointerup={finishDrag}
@@ -341,34 +338,34 @@
       onlostpointercapture={finishDrag}
     >
       <div
-        class="xs:p-6 relative isolate grid min-w-0 gap-8 p-4 lg:block lg:h-[calc(100%+6rem)] lg:w-[calc(100%+8rem)] lg:max-w-none lg:p-0"
+        class="xs:p-6 md:lt-lg:min-h-[calc(32rem-2px)] md:lt-lg:grid-cols-2 md:lt-lg:grid-rows-[repeat(2,minmax(min-content,1fr))] md:lt-lg:gap-6 md:lt-lg:p-4 relative isolate grid min-w-0 gap-8 p-4 lg:block lg:h-[calc(100%+6rem)] lg:w-[calc(100%+8rem)] lg:max-w-none lg:p-0"
       >
-        <div
-          class="rounded-1 pointer-events-none absolute inset-0 -z-1 hidden overflow-hidden lg:block"
-        >
+        <div class="rounded-1 pointer-events-none absolute inset-0 -z-1 overflow-hidden">
           {@render topography("0 0 1000 640")}
         </div>
         {#each sections as section (section.id)}
           <section
-            class="relative isolate min-w-0 lg:static lg:[isolation:auto]"
+            class={[
+              "md:lt-lg:flex md:lt-lg:flex-col relative isolate min-w-0 lg:static lg:[isolation:auto]",
+              section.id === "coding-and-browsing" && "md:lt-lg:row-span-2",
+            ]}
             aria-labelledby={section.id}
             style:--region-x={`${section.position[0]}%`}
             style:--region-y={`${section.position[1]}%`}
           >
-            <div class="pointer-events-none absolute -inset-3 -z-1 overflow-hidden lg:hidden">
-              {@render topography(section.viewBox)}
-            </div>
             <h2
               id={section.id}
               tabindex="-1"
-              class="m-0 mb-5 w-fit scroll-mt-8 bg-[var(--sheet-muted)] px-2 py-1 font-mono text-sm leading-relaxed tracking-wide lg:absolute lg:top-[var(--region-y)] lg:left-[var(--region-x)] lg:max-w-[44%]"
+              class="md:lt-lg:mb-2 md:lt-lg:self-center md:lt-lg:text-center m-0 mb-5 w-fit scroll-mt-8 bg-[var(--sheet-muted)] px-2 py-1 font-mono text-sm leading-relaxed tracking-wide lg:absolute lg:top-[var(--region-y)] lg:left-[var(--region-x)] lg:max-w-[44%]"
             >
               {section.title}
             </h2>
-            <ul class="m-0 grid list-none gap-3 p-0">
+            <ul
+              class="md:lt-lg:flex md:lt-lg:flex-1 md:lt-lg:flex-col md:lt-lg:justify-between md:lt-lg:gap-1 m-0 grid list-none gap-3 p-0"
+            >
               {#each section.tools as tool (tool.name)}
                 <li
-                  class="m-0 min-w-0 lg:absolute lg:top-[var(--tool-y)] lg:left-[var(--tool-x)] lg:w-max lg:max-w-[24%]"
+                  class="md:lt-lg:flex md:lt-lg:odd:self-start md:lt-lg:even:self-end m-0 min-w-0 lg:absolute lg:top-[var(--tool-y)] lg:left-[var(--tool-x)] lg:w-max lg:max-w-[24%]"
                   style:--tool-x={`${tool.position[0]}%`}
                   style:--tool-y={`${tool.position[1]}%`}
                 >
@@ -390,7 +387,7 @@
                   {#if selectedName === tool.name}
                     <div
                       id="inline-tool-details"
-                      class="rounded-1 mt-3 border border-[var(--border)] bg-[var(--sheet)] p-4 lg:hidden"
+                      class="rounded-1 mt-3 border border-[var(--border)] bg-[var(--sheet)] p-4 md:hidden"
                       role="region"
                       aria-labelledby="inline-tool-heading"
                     >
@@ -414,7 +411,7 @@
 
   <aside
     id="selected-tool-details"
-    class="rounded-1 hidden min-w-0 border border-[var(--border)] bg-[var(--sheet-muted)] p-6 [box-shadow:var(--shadow-soft)] lg:block"
+    class="rounded-1 hidden min-w-0 border border-[var(--border)] bg-[var(--sheet-muted)] p-6 [box-shadow:var(--shadow-soft)] md:block"
     aria-labelledby="selected-tool-heading"
     aria-live="polite"
     aria-atomic="true"
