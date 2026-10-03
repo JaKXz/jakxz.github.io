@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
 
-  import { applyTheme, getStoredTheme, resolveTheme, saveTheme } from "$lib/assets/js/theme";
+  import { applyTheme, getStoredTheme, resolveTheme, saveTheme } from "$lib/assets/js/theme.svelte";
 
   let theme = $state("light");
   let transitionDuration = $state(0);
@@ -70,9 +70,9 @@
 <style>
   .theme-toggle {
     transition:
-      color 150ms ease,
-      border-color 150ms ease,
-      background 150ms ease;
+      color 150ms ease-out,
+      border-color 150ms ease-out,
+      background 150ms ease-out;
   }
 
   @media (prefers-reduced-motion: reduce) {

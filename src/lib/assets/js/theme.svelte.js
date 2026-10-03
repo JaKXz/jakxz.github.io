@@ -1,5 +1,7 @@
 export const THEME_STORAGE_KEY = "theme";
 
+export let theme = $state({ current: resolveTheme(getStoredTheme()) });
+
 export function resolveTheme(storedTheme, prefersDark = false) {
   if (storedTheme === "light" || storedTheme === "dark") {
     return storedTheme;
@@ -24,7 +26,8 @@ export function saveTheme(theme, storage = localStorage) {
   }
 }
 
-export function applyTheme(theme, root = document.documentElement) {
-  root.dataset.theme = theme;
-  root.style.colorScheme = theme;
+export function applyTheme(nextTheme, root = document.documentElement) {
+  theme.current = nextTheme;
+  root.dataset.theme = nextTheme;
+  root.style.colorScheme = nextTheme;
 }

@@ -1,16 +1,17 @@
 <script>
   import { onMount } from "svelte";
-  import { slide } from "svelte/transition";
+  import { slide, fade } from "svelte/transition";
 
   import { siteTitle, subtitles } from "$lib/config";
+  import { theme } from "$lib/assets/js/theme.svelte";
 
   let { data } = $props();
   let subtitleIndex = $state(0);
-  let motionDuration = $state(0);
+  let prefersReducedMotion = $state(false);
   let [description, subtitle] = $derived(subtitles[subtitleIndex]);
 
   onMount(() => {
-    motionDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 180;
+    prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   });
 
   function nextSubtitle(event) {
@@ -40,34 +41,36 @@
       <div
         class="rounded-1 relative aspect-[4/3] overflow-hidden bg-[var(--sheet-muted)] md:aspect-[1.67/1]"
       >
-        <img
-          src="/images/headshot.webp"
-          alt="Headshot of Jason at his wedding."
-          width="909"
-          height="1136"
-          decoding="async"
-          class="absolute inset-0 h-full w-full object-cover object-[50%_34%]"
-        />
-        <img
-          src="/images/jason-at-the-keys.webp"
-          alt="Jason playing his Nord keyboard on stage."
-          width="1600"
-          height="2000"
-          decoding="async"
-          class="photo-dark absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-240 ease-[ease] motion-reduce:transition-none"
-        />
+        {#if theme.current === "light"}
+          <img
+            src="/images/headshot.webp"
+            alt="Headshot of Jason at his wedding."
+            width="909"
+            height="1136"
+            decoding="async"
+            class="absolute inset-0 h-full w-full object-cover object-[50%_34%]"
+            transition:fade={{ duration: prefersReducedMotion ? 0 : 375 }}
+          />
+        {:else}
+          <img
+            src="/images/jason-at-the-keys.webp"
+            alt="Jason playing his Nord keyboard on stage."
+            width="1600"
+            height="2000"
+            decoding="async"
+            class="absolute inset-0 h-full w-full object-cover object-center"
+            transition:fade={{ duration: prefersReducedMotion ? 0 : 375 }}
+          />
+        {/if}
       </div>
       <figcaption
         class="min-h-8 px-1 pt-2 pb-0 text-right font-mono text-xs text-[var(--muted-ink)]"
       >
-        <span class="photo-caption-light">
-          Me at my wedding!<span class="sr-only">Headshot of Jason at his wedding.</span>
-        </span>
-        <span class="photo-caption-dark hidden">
-          <em>Vibing</em> at the keys.<span class="sr-only"
-            >Jason playing his Nord keyboard on stage.</span
-          >
-        </span>
+        {#if theme.current === "light"}
+          Me at my wedding!
+        {:else}
+          <em>Vibing</em> at the keys.
+        {/if}
       </figcaption>
     </figure>
 
@@ -86,7 +89,7 @@
         {#key subtitleIndex}
           <code
             class="font-300 block border-none bg-transparent p-0 text-lg whitespace-pre"
-            transition:slide={{ duration: motionDuration }}
+            transition:slide={{ duration: prefersReducedMotion ? 0 : 180 }}
           >
             {description}<br />{subtitle}
           </code>
@@ -151,32 +154,6 @@
 </div>
 
 <style>
-  :global(:root[data-theme="dark"]) .photo-dark {
-    opacity: 1;
-  }
-
-  :global(:root[data-theme="dark"]) .photo-caption-light {
-    display: none;
-  }
-
-  :global(:root[data-theme="dark"]) .photo-caption-dark {
-    display: inline;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :global(:root:not([data-theme])) .photo-dark {
-      opacity: 1;
-    }
-
-    :global(:root:not([data-theme])) .photo-caption-light {
-      display: none;
-    }
-
-    :global(:root:not([data-theme])) .photo-caption-dark {
-      display: inline;
-    }
-  }
-
   @media (min-width: 1024px) and (min-height: 56rem) {
     .intro-stack {
       position: sticky;

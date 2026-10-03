@@ -44,9 +44,9 @@ body {
   header,
   footer {
     transition:
-      color 200ms ease,
-      background-color 200ms ease,
-      border-color 200ms ease,
-      box-shadow 200ms ease;
+      color 400ms ease-out,
+      background-color 400ms ease-out,
+      border-color 400ms ease-out,
+      box-shadow 400ms ease-out;
   }
 }

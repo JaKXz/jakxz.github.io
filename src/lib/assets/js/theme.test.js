@@ -1,6 +1,6 @@
 import { expect, test } from "vite-plus/test";
 
-import { applyTheme, getStoredTheme, resolveTheme, saveTheme } from "./theme";
+import { applyTheme, getStoredTheme, resolveTheme, saveTheme } from "./theme.svelte";
 
 test("uses a valid saved theme before the system preference", () => {
   expect(resolveTheme("light", true)).toBe("light");
