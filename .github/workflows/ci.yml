@@ -47,5 +47,8 @@ jobs:
       - run: pnpm run build
         env:
           UNSPLASH_ACCESS_KEY: ""
+          RESUME_EMAIL: ""
+          RESUME_PHONE: ""
+
       - run: pnpm run check
       - run: pnpm run test

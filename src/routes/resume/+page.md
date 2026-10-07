@@ -1,5 +1,7 @@
 <script>
    import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config';
+
+   let { data } = $props();
 </script>
 
 <svelte:head>
@@ -11,9 +13,11 @@
 
 # {siteTitle}
 
-jasonk92@gmail.com<br>
-[{siteURL}]({siteLink})<br>
-+1 (226) 929-4750
+<p>
+{#if data.resumeEmail}{data.resumeEmail}<br>{/if}
+<a href={siteLink}>{siteURL}</a>
+{#if data.resumePhone}<br>{data.resumePhone}{/if}
+</p>
 
 </div>
 

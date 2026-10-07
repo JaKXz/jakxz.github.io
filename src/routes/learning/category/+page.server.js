@@ -1,5 +1,7 @@
-export async function load({ url, fetch }) {
-  const posts = await fetch(`${url.origin}/api/posts.json?limit=-1`).then((res) => res.json());
+import fetchPosts from "$lib/assets/js/fetchPosts";
+
+export async function load() {
+  const { posts } = await fetchPosts({ limit: -1 });
 
   let uniqueCategories = {};
 
