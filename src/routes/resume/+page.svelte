@@ -9,9 +9,10 @@
   <meta name="description" content="{siteTitle} - {siteDescription} Resume" />
 </svelte:head>
 
-<div class="resume-layout contents">
+<!-- Chromium resolves print:h-screen (100vh) to the printable page area, excluding page margins. -->
+<div class="contents print:grid print:h-screen print:grid-rows-[auto_minmax(0,1fr)]">
   <div class="print-only print-title flex justify-between">
-    <h1 class="last-line-underline"><span>{siteTitle}</span></h1>
+    <h1 class="last-line-underline print:mb-8"><span>{siteTitle}</span></h1>
     <p class="text-right">
       {data.email}<br />
       <a href={siteLink}>{siteURL}</a><br />
@@ -19,8 +20,8 @@
     </p>
   </div>
 
-  <article>
-    <div class="resume-first-page contents">
+  <article class="grid gap-y-18 print:block print:min-h-0 print:text-[10pt] print:leading-[1.4]">
+    <div class="resume-first-page contents print:grid print:h-full print:gap-x-8">
       <aside class="technical">
         <data.TechnicalContent />
       </aside>
@@ -31,45 +32,19 @@
         <data.OpenSourceContent />
       </section>
     </div>
-    <section class="education">
+    <section class="education print:w-[33%]">
       <data.EducationContent />
     </section>
   </article>
 </div>
 
 <style lang="scss">
-  .education :global(.captions) {
-    font-size: 0.8rem;
-  }
-
   article :global(h2:first-of-type) {
     margin-top: 0;
   }
 
-  article {
-    display: grid;
-    row-gap: 4.5rem;
-
-    @media print {
-      display: block;
-      min-height: 0;
-      font-size: 10pt;
-      line-height: 1.4;
-    }
-  }
-
   @media print {
-    .resume-layout {
-      display: grid;
-      // Chromium resolves 100vh to the printable page area, excluding page margins.
-      height: 100vh;
-      grid-template-rows: auto minmax(0, 1fr);
-    }
-
     .resume-first-page {
-      display: grid;
-      height: 100%;
-      column-gap: 2rem;
       grid-template-rows: minmax(0, 1fr) auto;
       grid-template-columns: 33% 1fr;
       grid-template-areas:
@@ -87,20 +62,8 @@
       }
     }
 
-    .education {
-      width: 33%;
-    }
-
-    h1 {
-      margin-bottom: 2rem;
-    }
-
     article :global(h2) {
       break-after: avoid;
-    }
-
-    .education :global(.captions) {
-      font-size: 0.5rem;
     }
 
     .education :global(img) {

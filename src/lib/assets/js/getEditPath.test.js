@@ -31,7 +31,7 @@ test("preserves a trailing slash as the separator before a route page filename",
 test("maps the resume pathname to its source folder", () => {
   const result = getEditPath("/resume/");
 
-  expect(result).toBe("/src/routes/resume/");
+  expect(result).toBe("/src/routes/resume");
 });
 
 test("removes the trailing slash from a learning pathname before adding the Markdown extension", () => {
