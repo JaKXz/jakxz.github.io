@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-  {#if page.status < 400 && !page.error}
+  {#if page.status < 400 && !page.error && path !== "/resume/"}
     <meta name="description" content={seoDescription} />
   {/if}
   <meta name="og:url" content="{siteLink}{path}" />

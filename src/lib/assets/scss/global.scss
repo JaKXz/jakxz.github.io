@@ -1,3 +1,4 @@
+@use "sass:meta";
 @use "./colours";
 @use "./fonts";
 @use "./typography";
@@ -21,9 +22,6 @@ body {
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 2rem 2rem;
-  @media print {
-    background: #fff;
-  }
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -50,3 +48,5 @@ body {
       box-shadow 400ms ease-out;
   }
 }
+
+@include meta.load-css("./print");

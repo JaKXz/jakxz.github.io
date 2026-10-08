@@ -1,31 +1,35 @@
-@media print {
-  header,
-  footer,
-  .utterances,
-  .icon-link,
-  .no-print {
-    display: none !important;
+:root {
+  @media print {
+    header,
+    footer,
+    .utterances,
+    .icon-link,
+    .no-print {
+      display: none;
+    }
+
+    html,
+    body {
+      font-size: 0.95rem;
+      background: #fff;
+    }
+
+    main {
+      margin: auto;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 
-  html,
-  body {
-    font-size: 0.8rem;
-  }
-  main {
-    margin: auto !important;
-    padding: 0 !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
-
-  h2 {
-    font-size: 1.5rem !important;
-  }
-}
-
-@media screen {
-  .print-only {
-    display: none !important;
-    visibility: hidden !important;
+  @media screen {
+    .print-only {
+      display: none;
+      visibility: hidden;
+    }
   }
 }

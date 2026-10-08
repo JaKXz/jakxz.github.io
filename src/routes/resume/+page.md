@@ -1,5 +1,6 @@
 <script>
-   import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config';
+  import { page } from "$app/state";
+  import { siteTitle, siteDescription, siteURL, siteLink } from "$lib/config";
 </script>
 
 <svelte:head>
@@ -9,11 +10,11 @@
 
 <div class='print-only flex justify-between print-title'>
 
-# {siteTitle}
+<h1 class="last-line-underline"><span>{siteTitle}</span></h1>
 
-jasonk92@gmail.com<br>
+{page.data.email}<br>
 [{siteURL}]({siteLink})<br>
-+1 (226) 929-4750
+{page.data.phone}
 
 </div>
 

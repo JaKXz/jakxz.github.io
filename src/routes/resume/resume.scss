@@ -13,6 +13,7 @@ h2:first-of-type {
 article {
   display: grid;
   row-gap: 4.5rem;
+
   @media print {
     row-gap: 0;
     column-gap: 2rem;
