@@ -20,19 +20,19 @@
     </p>
   </div>
 
-  <article class="grid gap-y-18 print:block print:min-h-0 print:text-[10pt] print:leading-[1.4]">
+  <article class="grid gap-y-18 print:block print:min-h-0 print:text-[10.5pt]">
     <div class="resume-first-page contents print:grid print:h-full print:gap-x-8">
-      <aside class="technical">
+      <aside class="technical print:text-[10.2pt] print:leading-[1.4]">
         <data.TechnicalContent />
       </aside>
       <section class="experience">
         <data.ExperienceContent />
       </section>
-      <section class="oss">
+      <section class="oss print:text-[10.2pt] print:leading-[1.4]">
         <data.OpenSourceContent />
       </section>
     </div>
-    <section class="education print:w-[33%]">
+    <section class="education print:w-[33%] print:text-[10.2pt]">
       <data.EducationContent />
     </section>
   </article>
