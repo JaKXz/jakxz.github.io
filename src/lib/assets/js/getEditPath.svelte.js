@@ -9,9 +9,10 @@ export default function getEditPath(pathname = page.url.pathname) {
   if (path.startsWith("/learning/")) {
     return `${path.replace("/learning", "/src/lib/posts")}.md`;
   }
-  return (
-    {
-      "/resume/": "/src/routes/resume/+page.md",
-    }[pathname] || `/src/routes${pathname}+page.svelte`
-  );
+
+  if (pathname === "/resume/") {
+    return "/src/routes/resume";
+  }
+
+  return `/src/routes${pathname}+page.svelte`;
 }
