@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/state";
   import { siteTitle, siteDescription, siteURL, siteLink } from "$lib/config";
+  import ResumeSectionMark from "./ResumeSectionMark.svelte";
 </script>
 
 <svelte:head>
@@ -21,7 +22,7 @@
 <article>
 <aside class='technical'>
 
-## 🧰 Technical
+## <ResumeSectionMark kind="technical" /> Technical
 
 Up to {new Date().getFullYear() - 2012} years of experience across all roles with:
 
@@ -44,7 +45,7 @@ Up to {new Date().getFullYear() - 2012} years of experience across all roles wit
 
 <section class='experience'>
 
-## 🎒 Experience
+## <ResumeSectionMark kind="experience" /> Experience
 
 [1Password](https://1password.com) | _Senior Web Developer_<br>
 Jan **2024 - Present**
@@ -97,7 +98,7 @@ Oct **2015** - Apr **2016**
 
 <section class='oss'>
 
-## ䷢ Open Source
+## <ResumeSectionMark kind="open-source" /> Open Source
 
 I got my start in open source, so I'm quick to jump in and help:
 
@@ -126,7 +127,7 @@ I got my start in open source, so I'm quick to jump in and help:
 </section>
 <section class='education'>
 
-## 📚 Education
+## <ResumeSectionMark kind="education" /> Education
 
 [3+ years of internships](https://linkedin.com/in/jgkurian) between **2011 - 2015** on these teams:
 

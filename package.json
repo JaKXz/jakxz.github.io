@@ -12,6 +12,7 @@
     "lint": "vp lint",
     "prepare": "vp config --no-agent",
     "preview": "vp preview",
+    "resume:pdf": "node scripts/generate-resume-pdf.mjs",
     "test": "vp test"
   },
   "dependencies": {
