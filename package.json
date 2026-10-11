@@ -38,7 +38,7 @@
     "tailwind-merge": "^3.6.0",
     "unocss": "66.10.5",
     "vite": "catalog:",
-    "vite-plugin-devtools-json": "1.1.0",
+    "vite-plugin-devtools-json": "1.1.1",
     "vite-plus": "catalog:"
   },
   "devEngines": {
