@@ -240,8 +240,8 @@ importers:
         specifier: 'catalog:'
         version: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@25.9.9)(jiti@2.6.1)(sass@1.105.1)(typescript@5.4.5)'
       vite-plugin-devtools-json:
-        specifier: 1.1.0
-        version: 1.1.0(@voidzero-dev/vite-plus-core@1.1.0(@types/node@25.9.9)(jiti@2.6.1)(sass@1.105.1)(typescript@5.4.5))
+        specifier: 1.1.1
+        version: 1.1.1(@voidzero-dev/vite-plus-core@1.1.0(@types/node@25.9.9)(jiti@2.6.1)(sass@1.105.1)(typescript@5.4.5))
       vite-plus:
         specifier: 'catalog:'
         version: 1.1.0(@types/node@25.9.9)(@vitest/ui@5.0.3)(jiti@2.6.1)(sass@1.105.1)(svelte@5.57.2)(typescript@5.4.5)
@@ -2212,8 +2212,8 @@ packages:
   vfile@6.0.1:
     resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
 
-  vite-plugin-devtools-json@1.1.0:
-    resolution: {integrity: sha512-Fy9nMgMudGzDtUh1tGL7v0WAH0gsnZcZu2LFr/+1YxvYaJnxgbqRqv4jLU2tn5L9oqSaETHVCdDo9f8mSCQEZQ==}
+  vite-plugin-devtools-json@1.1.1:
+    resolution: {integrity: sha512-uDi+KOwi2VNlB0/NEE+wMZnTn9YTumw+EM6FA2wUbJh/i4e+ckSymi6Y5gXLdO+9LZuNzlN55wqsGlQmUmXhlw==}
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
 
@@ -3938,7 +3938,7 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-devtools-json@1.1.0(@voidzero-dev/vite-plus-core@1.1.0(@types/node@25.9.9)(jiti@2.6.1)(sass@1.105.1)(typescript@5.4.5)):
+  vite-plugin-devtools-json@1.1.1(@voidzero-dev/vite-plus-core@1.1.0(@types/node@25.9.9)(jiti@2.6.1)(sass@1.105.1)(typescript@5.4.5)):
     dependencies:
       uuid: 14.0.2
       vite: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@25.9.9)(jiti@2.6.1)(sass@1.105.1)(typescript@5.4.5)'
