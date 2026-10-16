@@ -229,7 +229,7 @@ importers:
         version: 5.57.2
       svelte-check:
         specifier: ^4.5.0
-        version: 4.7.6(picomatch@4.0.7)(svelte@5.57.2)(typescript@5.4.5)
+        version: 4.7.7(picomatch@4.0.7)(svelte@5.57.2)(typescript@5.4.5)
       tailwind-merge:
         specifier: ^3.6.0
         version: 3.7.0
@@ -2055,8 +2055,8 @@ packages:
     resolution: {integrity: sha512-k55yxKHwaXnpYGsOzg4Vl8+tDrWylxDEpknGjhTiZB8dFRU5rTo9CAzeycivxV3s+zlTKwrs6WxMxR95n26kwg==}
     engines: {node: '>=0.10.0'}
 
-  svelte-check@4.7.6:
-    resolution: {integrity: sha512-t2scM//ZuVbSY/T2w6FSBw1v9s2NEmh/g+sy1lqtosW5ylBV5AF4wFb1Ts9Kf3MbfPDUDJDZ9L436YT0SPTdvw==}
+  svelte-check@4.7.7:
+    resolution: {integrity: sha512-Ge2IMdeTpbJuzNFGRiiMg0RWgbScysKQu7xwcyFJ22+DU9F5nPX51+Q3gHmGqRxYQMx2knreVWt5oCtfe0vf2g==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -3771,7 +3771,7 @@ snapshots:
     dependencies:
       escape-string-regexp: 1.0.5
 
-  svelte-check@4.7.6(picomatch@4.0.7)(svelte@5.57.2)(typescript@5.4.5):
+  svelte-check@4.7.7(picomatch@4.0.7)(svelte@5.57.2)(typescript@5.4.5):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@sveltejs/load-config': 0.2.3
