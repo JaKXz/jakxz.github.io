@@ -1,1 +1,1 @@
-{"type":"redirect","location":"/learning/category/*"}
+{"type":"redirect","status":301,"location":"/learning/category/*"}
