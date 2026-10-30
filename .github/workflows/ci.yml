@@ -8,6 +8,10 @@ on:
 jobs:
   build-test-and-check:
     runs-on: ubuntu-latest
+    env:
+      UNSPLASH_ACCESS_KEY: "a"
+      RESUME_EMAIL: "b"
+      RESUME_PHONE: "c"
 
     steps:
       - name: Checkout
@@ -45,9 +49,5 @@ jobs:
           VP_GIT_HOOKS: "0"
 
       - run: pnpm run build
-        env:
-          UNSPLASH_ACCESS_KEY: ""
-          RESUME_EMAIL: ""
-          RESUME_PHONE: ""
       - run: pnpm run check
       - run: pnpm run test

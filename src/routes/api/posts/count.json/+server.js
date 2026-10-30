@@ -1,7 +1,5 @@
-import { json } from "@sveltejs/kit";
-
 export async function GET() {
-  const posts = import.meta.glob(`$lib/posts/*.md`);
+  const posts = import.meta.glob(`#posts/*.md`);
 
-  return json(Object.keys(posts).length);
+  return Response.json(Object.keys(posts).length);
 }

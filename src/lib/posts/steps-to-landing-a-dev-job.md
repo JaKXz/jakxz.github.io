@@ -11,7 +11,7 @@ excerpt: "From Internships to GitHub, metaphorically speaking"
 ---
 
 <script>
-    import Callout from "$lib/components/Callout.svelte";
+    import Callout from "#components/Callout.svelte";
 </script>
 
 If you're an early career software developer looking for a new role, you might find yourself in a highly competitive job market.

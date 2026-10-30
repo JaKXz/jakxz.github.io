@@ -1,5 +1,5 @@
 import { error } from "@sveltejs/kit";
-import { siteTitle } from "$lib/config";
+import { siteTitle } from "#lib/config.js";
 
 export async function load({ params, data }) {
   const { imageMeta } = data;

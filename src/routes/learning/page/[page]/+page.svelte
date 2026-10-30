@@ -1,8 +1,8 @@
 <!-- This file handles any /learning/page/x route for pagination -->
 <script>
-  import PostsList from "$lib/components/PostsList.svelte";
-  import Pagination from "$lib/components/Pagination.svelte";
-  import { postsPerPage } from "$lib/config";
+  import PostsList from "#components/PostsList.svelte";
+  import Pagination from "#components/Pagination.svelte";
+  import { postsPerPage } from "#lib/config.js";
 
   let { data } = $props();
 

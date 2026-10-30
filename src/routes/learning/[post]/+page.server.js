@@ -1,6 +1,6 @@
-import { UNSPLASH_ACCESS_KEY } from "$env/static/private";
+import { UNSPLASH_ACCESS_KEY } from "$app/env/private";
 import { error } from "@sveltejs/kit";
-import { blurhashPlaceholder } from "$lib/server/blurhash-placeholder";
+import { blurhashPlaceholder } from "#server/blurhash-placeholder.js";
 
 export async function load({ params, fetch }) {
   try {
@@ -8,12 +8,11 @@ export async function load({ params, fetch }) {
     let imageMeta = {};
     if (post.metadata.coverImage) {
       const [, , id] = post.metadata.coverImage.split("-");
+
       const { alt_description, user, blur_hash, errors } = await fetch(
         `https://api.unsplash.com/photos/${id}`,
         {
-          headers: {
-            Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
-          },
+          headers: { Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}` },
         },
       )
         .then((res) => res.json())

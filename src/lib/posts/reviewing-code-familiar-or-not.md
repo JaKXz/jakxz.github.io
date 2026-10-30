@@ -12,7 +12,7 @@ coverHeight: 2514
 ---
 
 <script>
-    import Callout from "$lib/components/Callout.svelte";
+    import Callout from "#components/Callout.svelte";
 </script>
 
 ## Reviewing code is most of the job

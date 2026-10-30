@@ -1,6 +1,6 @@
 import { error } from "@sveltejs/kit";
 
-import fetchPosts from "$lib/assets/js/fetchPosts";
+import fetchPosts from "#assets/js/fetchPosts.js";
 
 export async function load() {
   try {

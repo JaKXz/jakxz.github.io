@@ -2,6 +2,13 @@
   "name": "jason-kurian-portfolio",
   "private": true,
   "type": "module",
+  "imports": {
+    "#assets/*": "./src/lib/assets/*",
+    "#components/*": "./src/lib/components/*",
+    "#lib/*": "./src/lib/*",
+    "#posts/*": "./src/lib/posts/*",
+    "#server/*": "./src/lib/server/*"
+  },
   "scripts": {
     "build": "vp build",
     "check": "svelte-check && vp check",
@@ -20,8 +27,8 @@
   },
   "devDependencies": {
     "@iconify-json/radix-icons": "1.2.6",
-    "@sveltejs/adapter-static": "3.0.10",
-    "@sveltejs/kit": "2.70.3",
+    "@sveltejs/adapter-static": "^4.0.0",
+    "@sveltejs/kit": "^3.0.0",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@types/node": "^26.6.6",
     "@unocss/extractor-svelte": "66.12.0",
@@ -34,7 +41,7 @@
     "rehype-slug": "6.0.0",
     "sass": "1.107.0",
     "svelte": "5.57.3",
-    "svelte-check": "^4.5.0",
+    "svelte-check": "^4.7.5",
     "tailwind-merge": "^3.6.0",
     "unocss": "66.12.0",
     "vite": "catalog:",

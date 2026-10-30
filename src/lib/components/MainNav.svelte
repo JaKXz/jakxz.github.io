@@ -2,8 +2,8 @@
   import { tick } from "svelte";
   import { fade, fly } from "svelte/transition";
 
-  import { isMenuOpen } from "$lib/assets/js/store";
-  import { navItems } from "$lib/config";
+  import { isMenuOpen } from "#assets/js/store.js";
+  import { navItems } from "#lib/config.js";
   import HamburgerMenuButton from "./HamburgerMenuButton.svelte";
   import NavItem from "./NavItem.svelte";
 
