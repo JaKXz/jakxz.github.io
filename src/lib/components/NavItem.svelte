@@ -1,6 +1,6 @@
 <script>
   import { page } from "$app/state";
-  import { isMenuOpen } from "#lib/assets/js/store.js";
+  import { isMenuOpen } from "#assets/js/store.js";
 
   let { href, children, mobile = false } = $props();
 

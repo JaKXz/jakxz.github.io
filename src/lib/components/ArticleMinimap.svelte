@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
 
-  import { calculateViewport, normalizeBlock } from "#lib/assets/js/minimap.js";
+  import { calculateViewport, normalizeBlock } from "#assets/js/minimap.js";
 
   let { target } = $props();
 

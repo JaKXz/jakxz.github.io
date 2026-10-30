@@ -1,7 +1,7 @@
 <!-- Renders posts listed by category -->
 <script>
-  import Pagination from "#lib/components/Pagination.svelte";
-  import PostsList from "#lib/components/PostsList.svelte";
+  import Pagination from "#components/Pagination.svelte";
+  import PostsList from "#components/PostsList.svelte";
   import { postsPerPage } from "#lib/config.js";
 
   let { data } = $props();

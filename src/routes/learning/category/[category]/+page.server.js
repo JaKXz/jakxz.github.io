@@ -1,4 +1,4 @@
-import fetchPosts from "#lib/assets/js/fetchPosts.js";
+import fetchPosts from "#assets/js/fetchPosts.js";
 import { redirect } from "@sveltejs/kit";
 
 // server routes do not inherit prerender from layout:

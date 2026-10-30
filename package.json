@@ -3,8 +3,11 @@
   "private": true,
   "type": "module",
   "imports": {
-    "#lib": "./src/lib/index.js",
-    "#lib/*": "./src/lib/*"
+    "#assets/*": "./src/lib/assets/*",
+    "#components/*": "./src/lib/components/*",
+    "#lib/*": "./src/lib/*",
+    "#posts/*": "./src/lib/posts/*",
+    "#server/*": "./src/lib/server/*"
   },
   "scripts": {
     "build": "vp build",

@@ -1,6 +1,6 @@
 import { UNSPLASH_ACCESS_KEY } from "$app/env/private";
 import { error } from "@sveltejs/kit";
-import { blurhashPlaceholder } from "#lib/server/blurhash-placeholder.js";
+import { blurhashPlaceholder } from "#server/blurhash-placeholder.js";
 
 export async function load({ params, fetch }) {
   try {

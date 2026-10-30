@@ -1,4 +1,4 @@
-import fetchPosts from "#lib/assets/js/fetchPosts.js";
+import fetchPosts from "#assets/js/fetchPosts.js";
 import { postsPerPage } from "#lib/config.js";
 import { redirect } from "@sveltejs/kit";
 

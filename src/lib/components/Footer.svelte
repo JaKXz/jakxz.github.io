@@ -1,8 +1,8 @@
 <script>
   import { page } from "$app/state";
-  import classNames from "#lib/assets/js/classNames.js";
-  import getEditPath from "#lib/assets/js/getEditPath.svelte.js";
-  import ThemeToggle from "#lib/components/ThemeToggle.svelte";
+  import classNames from "#assets/js/classNames.js";
+  import getEditPath from "#assets/js/getEditPath.svelte.js";
+  import ThemeToggle from "#components/ThemeToggle.svelte";
 
   let path = $derived(page.url.pathname);
 </script>

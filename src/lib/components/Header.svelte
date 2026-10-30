@@ -1,5 +1,5 @@
 <script>
-  import { isMenuOpen } from "#lib/assets/js/store.js";
+  import { isMenuOpen } from "#assets/js/store.js";
 
   import HamburgerMenuButton from "./HamburgerMenuButton.svelte";
   import MainNav from "./MainNav.svelte";
