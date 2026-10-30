@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
   import { slide, fade } from "svelte/transition";
 
-  import { siteTitle, subtitles } from "$lib/config";
-  import { theme } from "$lib/assets/js/theme.svelte";
+  import { siteTitle, subtitles } from "#lib/config.js";
+  import { theme } from "#lib/assets/js/theme.svelte.js";
 
   let { data } = $props();
   let subtitleIndex = $state(0);

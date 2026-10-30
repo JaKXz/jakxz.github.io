@@ -1,7 +1,7 @@
 <script>
-  import Pagination from "$lib/components/Pagination.svelte";
-  import PostsList from "$lib/components/PostsList.svelte";
-  import { siteTitle } from "$lib/config";
+  import Pagination from "#lib/components/Pagination.svelte";
+  import PostsList from "#lib/components/PostsList.svelte";
+  import { siteTitle } from "#lib/config.js";
 
   let { data } = $props();
 </script>

@@ -2,7 +2,7 @@
   import { onDestroy } from "svelte";
   import { MediaQuery } from "svelte/reactivity";
 
-  import { siteTitle } from "$lib/config";
+  import { siteTitle } from "#lib/config.js";
 
   const sections = [
     {

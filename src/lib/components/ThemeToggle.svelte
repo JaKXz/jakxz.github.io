@@ -2,7 +2,12 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
 
-  import { applyTheme, getStoredTheme, resolveTheme, saveTheme } from "$lib/assets/js/theme.svelte";
+  import {
+    applyTheme,
+    getStoredTheme,
+    resolveTheme,
+    saveTheme,
+  } from "#lib/assets/js/theme.svelte.js";
 
   let theme = $state("light");
   let transitionDuration = $state(0);

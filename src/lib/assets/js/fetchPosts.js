@@ -1,4 +1,4 @@
-import { postsPerPage } from "$lib/config";
+import { postsPerPage } from "#lib/config.js";
 
 export default async function fetchPosts({
   offset = 0,

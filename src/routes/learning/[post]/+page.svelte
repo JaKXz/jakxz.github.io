@@ -1,6 +1,6 @@
 <script>
-  import ArticleMinimap from "$lib/components/ArticleMinimap.svelte";
-  import { siteLink, siteTitle } from "$lib/config";
+  import ArticleMinimap from "#lib/components/ArticleMinimap.svelte";
+  import { siteLink, siteTitle } from "#lib/config.js";
 
   let { data } = $props();
 

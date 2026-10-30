@@ -1,5 +1,5 @@
 <script>
-  import { siteTitle, siteDescription, siteURL, siteLink } from "$lib/config";
+  import { siteTitle, siteDescription, siteURL, siteLink } from "#lib/config.js";
 
   let { data } = $props();
 </script>

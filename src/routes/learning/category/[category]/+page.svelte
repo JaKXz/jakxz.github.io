@@ -1,7 +1,7 @@
 <!-- Renders any page at /learning/category/* -->
 <script>
-  import PostsList from "$lib/components/PostsList.svelte";
-  import Pagination from "$lib/components/Pagination.svelte";
+  import PostsList from "#lib/components/PostsList.svelte";
+  import Pagination from "#lib/components/Pagination.svelte";
 
   let { data } = $props();
 </script>

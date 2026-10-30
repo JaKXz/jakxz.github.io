@@ -1,6 +1,6 @@
 import { expect, test } from "vite-plus/test";
 
-import { postsPerPage } from "$lib/config";
+import { postsPerPage } from "#lib/config.js";
 
 import fetchPosts from "./fetchPosts";
 

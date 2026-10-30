@@ -14,7 +14,7 @@ excerpt: Use homebrew to simply manage your local node installations
 ---
 
 <script>
-  import Callout from "$lib/components/Callout.svelte";
+  import Callout from "#lib/components/Callout.svelte";
 </script>
 
 ## TL;DR

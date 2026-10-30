@@ -1,7 +1,7 @@
 <script>
   import { onMount, tick } from "svelte";
 
-  import { isMenuOpen } from "$lib/assets/js/store";
+  import { isMenuOpen } from "#lib/assets/js/store.js";
   import HamburgerSVG from "./svg/HamburgerSVG.svelte";
   import XSVG from "./svg/XSVG.svelte";
 

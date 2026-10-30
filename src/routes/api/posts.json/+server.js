@@ -1,6 +1,5 @@
-import fetchPosts from "$lib/assets/js/fetchPosts";
-import { postsPerPage } from "$lib/config";
-import { json } from "@sveltejs/kit";
+import fetchPosts from "#lib/assets/js/fetchPosts.js";
+import { postsPerPage } from "#lib/config.js";
 
 export async function GET() {
   const options = {
@@ -8,5 +7,5 @@ export async function GET() {
   };
 
   const { posts } = await fetchPosts(options);
-  return json(posts);
+  return Response.json(posts);
 }
