@@ -4,7 +4,7 @@ import { blurhashPlaceholder } from "#server/blurhash-placeholder.js";
 
 export async function load({ params, fetch }) {
   try {
-    const post = await import(`../../../lib/posts/${params.post}.md`);
+    const post = await import(`#posts/${params.post}.md`);
     let imageMeta = {};
     if (post.metadata.coverImage) {
       const [, , id] = post.metadata.coverImage.split("-");

@@ -4,7 +4,7 @@ import { siteTitle } from "#lib/config.js";
 export async function load({ params, data }) {
   const { imageMeta } = data;
   try {
-    const post = await import(`../../../lib/posts/${params.post}.md`);
+    const post = await import(`#posts/${params.post}.md`);
 
     if (!post.metadata) {
       throw new Error(`${params.post} is missing meta, check the frontmatter`);
