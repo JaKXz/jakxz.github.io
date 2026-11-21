@@ -4,7 +4,7 @@
 
 ## <ResumeSectionMark kind="education" /> Education
 
-[3+ years of internships](https://linkedin.com/in/jgkurian) between **2011 - 2015** on these teams:
+[3+ years of internships](https://linkedin.com/in/jgkurian) between _2011 - 2015_ on these teams:
 
 <div class="flex gap-y-4 flex-wrap justify-between captions text-[0.8rem] print:text-[0.5rem]">
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/boltmade.webp" alt="Boltmade logo" title="Fullstack Developer at Boltmade" /> Fullstack Dev</div>
@@ -15,9 +15,9 @@
   <div class="basis-1/3 inline-flex flex-col items-center"><img width="100" height="100" src="/images/morega.webp" alt="Morega systems logo" title="QA Analyst at Morega Systems Inc."/> QA Analyst</div>
 </div>
 
-**Bachelor of Knowledge Integration, Honours, _inc._ | 2016 - 2019**<br>
+_Bachelor of Knowledge Integration, Honours, *inc.* | 2016 - 2019_<br>
 _Collaborative Design Specialization_<br>
 University of Waterloo, Waterloo, ON
 
-**Bachelor of Applied Science, Systems Design Engineering, _inc._ | 2010 - 2014**<br>
+_Bachelor of Applied Science, Systems Design Engineering, *inc.* | 2010 - 2014_<br>
 University of Waterloo, Waterloo, ON

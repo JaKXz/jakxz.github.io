@@ -1,8 +1,7 @@
 import adapter from "@sveltejs/adapter-static";
+import { anchors } from "@mdsvex/plugin-anchors";
+import { external_links } from "@mdsvex/plugin-external-links";
 import { mdsvex } from "mdsvex";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeExternalLinks from "rehype-external-links";
-import rehypeSlug from "rehype-slug";
 import { scss } from "svelte-preprocess";
 import { sveltekit } from "@sveltejs/kit/vite";
 import extractorSvelte from "@unocss/extractor-svelte";
@@ -21,6 +20,16 @@ export default defineConfig(() => ({
     svelte: true,
   },
   plugins: lazyPlugins(() => [
+    mdsvex({
+      // The default mdsvex extension is .svx; this overrides that.
+      extensions: [".md"],
+      heading_ids: true,
+      smart_punctuation: true,
+      plugins: [
+        anchors(),
+        external_links({ target: "_blank", new_tab_label: "opens in a new tab" }),
+      ],
+    }),
     unocss({ extractors: [extractorSvelte()] }),
     sveltekit({
       // Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or used as pages)
@@ -30,13 +39,6 @@ export default defineConfig(() => ({
           // Ensures Sass variables are always available inside component <style lang="scss"> blocks as vars.$variableDefinedInFile
           prependData: `@use 'src/lib/assets/scss/vars';`,
           silenceDeprecations: ["import", "mixed-decls", "global-builtin"],
-        }),
-
-        mdsvex({
-          // The default mdsvex extension is .svx; this overrides that.
-          extensions: [".md"],
-          // Adds IDs to headings, and anchor links to those IDs. Note: must stay in this order to work.
-          rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, rehypeExternalLinks],
         }),
       ],
       prerender: {
