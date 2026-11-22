@@ -23,6 +23,8 @@ export default defineConfig(() => ({
     mdsvex({
       // The default mdsvex extension is .svx; this overrides that.
       extensions: [".md"],
+      components: "#lib/markdown.js",
+      highlight: { languages: { scss: "css" } },
       heading_ids: true,
       smart_punctuation: true,
       plugins: [

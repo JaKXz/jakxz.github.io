@@ -18,8 +18,7 @@ Then, put supporting "arguments" (helpers, subcomponents, etc.) immediately foll
 
 Let's look at an example of a `<Profile />` component:
 
-```tsx
-// app/components/Profile.tsx (types omitted for brevity)
+```tsx [app/components/Profile.tsx] caption="the main export is buried under all this..." :line-numbers
 import React from "react";
 // N more imports
 
@@ -32,9 +31,10 @@ function utilThatDoesSomething() {}
 const SubComponentThatTakesPartialProps = () => {};
 
 const A_CONSTANT = "CONSTANT_VALUE";
+// and so on and so on...
+```
 
-// named or default exports are interchangeable in this story.
-// by this point, we might be at line 200+
+```tsx [app/components/Profile.tsx] :line-numbers=200
 export default function Profile({ name, ...rest }) {
   const inlineUtilBasedOnPropsButReturnsMarkup = () => {};
   return (
@@ -53,7 +53,7 @@ By reordering the code to put the main export first, you can make it easier for 
 
 Here's an example of what the same `<Profile />` component could look like if it followed the essay structure:
 
-```tsx
+```tsx [app/components/Profile.tsx] :line-numbers
 // app/components/Profile.tsx (types omitted for brevity)
 import React from "react";
 // N more imports, like the "introductory" sentences that bring in hooks, shared helper functions, and so on

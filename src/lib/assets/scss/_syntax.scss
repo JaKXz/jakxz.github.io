@@ -1,0 +1,119 @@
+// Twinkleplop emits these classes at build time; UnoCSS cannot infer their styles.
+.twinkleplop {
+  .tok.comment,
+  .tok.doctype {
+    color: var(--code-comment);
+  }
+
+  .tok.keyword,
+  .tok.tag_name {
+    color: var(--code-keyword);
+  }
+
+  .tok.string,
+  .tok.template,
+  .tok.string_escape,
+  .tok.regex,
+  .tok.char {
+    color: var(--code-string);
+  }
+
+  .tok.number,
+  .tok.boolean,
+  .tok.constant {
+    color: var(--code-number);
+  }
+
+  .tok.function,
+  .tok.builtin {
+    color: var(--code-function);
+  }
+
+  .tok.type,
+  .tok.class_name,
+  .tok.selector,
+  .tok.selector_class,
+  .tok.selector_id,
+  .tok.selector_pseudo {
+    color: var(--code-type);
+  }
+
+  .tok.property,
+  .tok.css_variable,
+  .tok.attr_name {
+    color: var(--code-property);
+  }
+
+  .highlight,
+  .highlighted-word {
+    background: color-mix(in srgb, var(--focus) 12%, transparent);
+  }
+
+  .highlighted-word {
+    border-radius: 0.15em;
+    outline: 1px solid color-mix(in srgb, var(--focus) 40%, transparent);
+  }
+
+  .diff-add {
+    background: color-mix(in srgb, var(--code-string) 12%, transparent);
+  }
+
+  .diff-del {
+    background: color-mix(in srgb, var(--code-keyword) 12%, transparent);
+  }
+
+  .diff-mod {
+    background: color-mix(in srgb, var(--code-function) 12%, transparent);
+  }
+}
+
+pre.twinkleplop {
+  // Keep line backgrounds full width without doubling the source's newlines.
+  .l {
+    display: inline-block;
+    width: 100%;
+    min-height: 1lh;
+  }
+
+  .ln {
+    display: inline-block;
+    min-width: 3ch;
+    margin-right: 1.5ch;
+    color: var(--code-comment);
+    text-align: right;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  &.has-focus .l:not(.focus) {
+    // Reduce emphasis without making the remaining code illegible.
+    color: var(--code-comment);
+
+    .tok {
+      color: inherit;
+    }
+  }
+
+  &:is(.has-diff-add, .has-diff-del, .has-diff-mod) .l::before {
+    display: inline-block;
+    width: 2ch;
+    content: " ";
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .l.diff-add::before {
+    color: var(--code-string);
+    content: "+";
+  }
+
+  .l.diff-del::before {
+    color: var(--code-keyword);
+    content: "−";
+  }
+
+  .l.diff-mod::before {
+    color: var(--code-function);
+    content: "~";
+  }
+}
