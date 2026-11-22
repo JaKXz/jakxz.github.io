@@ -18,7 +18,7 @@ Then, put supporting "arguments" (helpers, subcomponents, etc.) immediately foll
 
 Let's look at an example of a `<Profile />` component:
 
-```tsx [app/components/Profile.tsx] :line-numbers line-jump="14:200"
+```tsx [app/components/Profile.tsx] :line-numbers line-jump="14:200" nocopy
 import React from "react";
 // N more imports
 
@@ -50,16 +50,14 @@ By reordering the code to put the main export first, you can make it easier for 
 
 Here's an example of what the same `<Profile />` component could look like if it followed the essay structure:
 
-```tsx [app/components/Profile.tsx] :line-numbers
-// app/components/Profile.tsx (types omitted for brevity)
+```tsx [app/components/Profile.tsx] :line-numbers line-jump="3:24" nocopy
 import React from "react";
 // N more imports, like the "introductory" sentences that bring in hooks, shared helper functions, and so on
-
 const A_CONSTANT = "global setup";
 const QUERY_LIMIT = 10; // etc.
 
 // now, the thesis, most of the reason why a dev would come to this file
-// *most* of the time this will start at line 30 or less when arranged this way!
+// is visible with a lot less scrolling and much less cognitive budget
 export function Profile({ name, ...rest }) {
   const [i18n] = usei18n();
   // and so on!

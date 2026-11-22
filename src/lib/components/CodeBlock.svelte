@@ -8,10 +8,11 @@
    * @property {string} [lang]
    * @property {string} [title]
    * @property {string} [caption]
+   * @property {boolean} [nocopy]
    */
 
   /** @type {Props} */
-  let { children, code, lang, title, caption } = $props();
+  let { children, code, lang, title, caption, nocopy = false } = $props();
 
   const id = $props.id();
   let ready = $state(false);
@@ -69,11 +70,11 @@
     class="flex min-h-11 flex-wrap items-center gap-x-4 gap-y-1 border-b border-[var(--border)] bg-[var(--sheet-muted)] px-4 py-2 font-mono text-xs"
   >
     <span class="min-w-0 flex-1 break-words">{title || lang || "Code"}</span>
-    {#if title && lang}
+    {#if !title && lang}
       <span class="text-[var(--muted-ink)]">{lang}</span>
     {/if}
     <span class="text-[var(--muted-ink)]" role="status">{status}</span>
-    {#if ready}
+    {#if ready && !nocopy}
       <button
         type="button"
         class="min-h-6 min-w-6 cursor-pointer border border-[var(--border)] bg-[var(--sheet)] px-2 py-1 text-[var(--ink)] hover:border-[var(--accent)]"

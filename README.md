@@ -4,8 +4,8 @@ Built with [SvelteKit](https://kit.svelte.dev/), [Vite+](https://viteplus.dev/),
 
 Fenced code is highlighted at build time by mdsvex's bundled Twinkleplop highlighter.
 Colours follow the site's theme. Every block has a language label, an optional filename
-and caption, and a copy button after JavaScript loads. Code remains readable and
-keyboard-scrollable without JavaScript.
+and caption, and a copy button after JavaScript loads unless the fence includes `nocopy`.
+Code remains readable and keyboard-scrollable without JavaScript.
 
 ````md
 ```ts [settings.ts] caption="Choose the new theme" :line-numbers {3}
@@ -15,15 +15,16 @@ saveTheme(theme); // [!focus]
 ```
 ````
 
-| Feature         | Fence metadata or comment                                  |
-| --------------- | ---------------------------------------------------------- |
-| Filename        | `[settings.ts]` or `title="settings.ts"`                   |
-| Caption         | `caption="Explanation"`                                    |
-| Line numbers    | `:line-numbers`, `:line-numbers=10`, or `:no-line-numbers` |
-| Highlight lines | `{1,3-5}` in fence metadata, or `// [!hl]` on a line       |
-| Highlight words | `/theme/` in fence metadata                                |
-| Focus lines     | `// [!focus]` on the lines to emphasize                    |
-| Diff lines      | `// [!add]`, `// [!del]`, or `// [!mod]`                   |
+| Feature          | Fence metadata or comment                                  |
+| ---------------- | ---------------------------------------------------------- |
+| Filename         | `[settings.ts]` or `title="settings.ts"`                   |
+| Caption          | `caption="Explanation"`                                    |
+| Hide copy button | `nocopy` in fence metadata                                 |
+| Line numbers     | `:line-numbers`, `:line-numbers=10`, or `:no-line-numbers` |
+| Highlight lines  | `{1,3-5}` in fence metadata, or `// [!hl]` on a line       |
+| Highlight words  | `/theme/` in fence metadata                                |
+| Focus lines      | `// [!focus]` on the lines to emphasize                    |
+| Diff lines       | `// [!add]`, `// [!del]`, or `// [!mod]`                   |
 
 Numbering and annotations are opt-in. Annotation markers belong in the language's
 comment syntax and disappear from rendered and copied code. Copy includes all displayed
