@@ -18,7 +18,7 @@ Then, put supporting "arguments" (helpers, subcomponents, etc.) immediately foll
 
 Let's look at an example of a `<Profile />` component:
 
-```tsx [app/components/Profile.tsx] caption="the main export is buried under all this..." :line-numbers
+```tsx [app/components/Profile.tsx] :line-numbers line-jump="14:200"
 import React from "react";
 // N more imports
 
@@ -32,9 +32,6 @@ const SubComponentThatTakesPartialProps = () => {};
 
 const A_CONSTANT = "CONSTANT_VALUE";
 // and so on and so on...
-```
-
-```tsx [app/components/Profile.tsx] :line-numbers=200
 export default function Profile({ name, ...rest }) {
   const inlineUtilBasedOnPropsButReturnsMarkup = () => {};
   return (

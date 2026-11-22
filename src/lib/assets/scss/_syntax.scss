@@ -116,4 +116,14 @@ pre.twinkleplop {
     color: var(--code-function);
     content: "~";
   }
+
+  .code-line-gap {
+    display: block;
+    margin-block: 0.5lh;
+    padding-block: 0.5lh;
+    border-block: 1px dashed var(--border);
+    color: var(--muted-ink);
+    user-select: none;
+    -webkit-user-select: none;
+  }
 }

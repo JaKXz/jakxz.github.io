@@ -9,6 +9,12 @@ import unocss from "unocss/vite";
 import devtoolsJson from "vite-plugin-devtools-json";
 import { defineConfig, lazyPlugins } from "vite-plus";
 
+import {
+  lineJumpMarkup,
+  renderLineJump,
+  validateLineJumps,
+} from "./src/lib/markdown/line-jumps.js";
+
 export default defineConfig(() => ({
   css: {
     devSourcemap: true,
@@ -24,7 +30,8 @@ export default defineConfig(() => ({
       // The default mdsvex extension is .svx; this overrides that.
       extensions: [".md"],
       components: "#lib/markdown.js",
-      highlight: { languages: { scss: "css" } },
+      highlight: { languages: { scss: "css" }, parse_meta: renderLineJump },
+      parse_plugins: [validateLineJumps],
       heading_ids: true,
       smart_punctuation: true,
       plugins: [
@@ -32,6 +39,7 @@ export default defineConfig(() => ({
         external_links({ target: "_blank", new_tab_label: "opens in a new tab" }),
       ],
     }),
+    lineJumpMarkup(),
     unocss({ extractors: [extractorSvelte()] }),
     sveltekit({
       // Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or used as pages)
