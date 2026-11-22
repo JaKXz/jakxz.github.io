@@ -48,7 +48,7 @@ describe("line-jump compilation", async () => {
 
     const result = compile(source, {
       ...options,
-      components: [{ specifier: "#lib/markdown.js", names: ["pre"] }],
+      components: [{ specifier: "#assets/js/markdown/index.js", names: ["pre"] }],
     });
 
     expect(result.code).toContain(`code={${JSON.stringify(expected)}}`);

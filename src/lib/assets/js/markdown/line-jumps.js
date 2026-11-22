@@ -1,31 +1,6 @@
 import { fence_meta } from "mdsvex/compile";
 import { parse } from "svelte/compiler";
 
-/** @param {string} meta */
-function readLineJump(meta) {
-  const entries = fence_meta(`text ${meta}`).props.filter(([name]) => name === "line-jump");
-  if (entries.length === 0) return;
-
-  const value = entries[0][1];
-  const match = typeof value === "string" && /^(\d+):(\d+)$/.exec(value);
-  if (entries.length !== 1 || !match) {
-    throw new Error('line-jump must appear once as "SOURCE:DISPLAY", for example "14:200"');
-  }
-
-  const sourceLine = Number(match[1]);
-  const displayLine = Number(match[2]);
-  if (
-    !Number.isSafeInteger(sourceLine) ||
-    sourceLine < 1 ||
-    !Number.isSafeInteger(displayLine) ||
-    displayLine < 1
-  ) {
-    throw new Error("line-jump requires positive safe integers");
-  }
-
-  return { sourceLine, displayLine };
-}
-
 /** @type {import('mdsvex/compile').ParsePlugin} */
 export const validateLineJumps = {
   name: "line-jumps",
@@ -100,29 +75,6 @@ export function renderLineJump(meta, options) {
   };
 }
 
-/**
- * @param {import('svelte/compiler').AST.RegularElement} node
- * @param {string} name
- */
-function attributeText(node, name) {
-  const attribute = node.attributes.find((item) => item.type === "Attribute" && item.name === name);
-  if (attribute?.type !== "Attribute" || !Array.isArray(attribute.value)) return;
-  const value = attribute.value[0];
-  if (attribute.value.length === 1 && value.type === "Text") return value.data;
-}
-
-/**
- * @param {unknown} value
- * @param {(node: import('svelte/compiler').AST.RegularElement) => void} visit
- */
-function visitElements(value, visit) {
-  if (!value || typeof value !== "object") return;
-  if ("type" in value && value.type === "RegularElement") {
-    visit(/** @type {import('svelte/compiler').AST.RegularElement} */ (value));
-  }
-  for (const child of Object.values(value)) visitElements(child, visit);
-}
-
 /** @returns {import('vite').Plugin} */
 export function lineJumpMarkup() {
   return {
@@ -173,4 +125,52 @@ export function lineJumpMarkup() {
       return { code, map: null };
     },
   };
+}
+
+/** @param {string} meta */
+function readLineJump(meta) {
+  const entries = fence_meta(`text ${meta}`).props.filter(([name]) => name === "line-jump");
+  if (entries.length === 0) return;
+
+  const value = entries[0][1];
+  const match = typeof value === "string" && /^(\d+):(\d+)$/.exec(value);
+  if (entries.length !== 1 || !match) {
+    throw new Error('line-jump must appear once as "SOURCE:DISPLAY", for example "14:200"');
+  }
+
+  const sourceLine = Number(match[1]);
+  const displayLine = Number(match[2]);
+  if (
+    !Number.isSafeInteger(sourceLine) ||
+    sourceLine < 1 ||
+    !Number.isSafeInteger(displayLine) ||
+    displayLine < 1
+  ) {
+    throw new Error("line-jump requires positive safe integers");
+  }
+
+  return { sourceLine, displayLine };
+}
+
+/**
+ * @param {import('svelte/compiler').AST.RegularElement} node
+ * @param {string} name
+ */
+function attributeText(node, name) {
+  const attribute = node.attributes.find((item) => item.type === "Attribute" && item.name === name);
+  if (attribute?.type !== "Attribute" || !Array.isArray(attribute.value)) return;
+  const value = attribute.value[0];
+  if (attribute.value.length === 1 && value.type === "Text") return value.data;
+}
+
+/**
+ * @param {unknown} value
+ * @param {(node: import('svelte/compiler').AST.RegularElement) => void} visit
+ */
+function visitElements(value, visit) {
+  if (!value || typeof value !== "object") return;
+  if ("type" in value && value.type === "RegularElement") {
+    visit(/** @type {import('svelte/compiler').AST.RegularElement} */ (value));
+  }
+  for (const child of Object.values(value)) visitElements(child, visit);
 }

@@ -4,7 +4,7 @@ import { create_highlight, load_default_languages } from "mdsvex/highlight";
 import { render } from "svelte/server";
 import { expect, test } from "vite-plus/test";
 
-import CodeBlocks from "./__fixtures__/code-blocks.md";
+import CodeBlocks from "../__fixtures__/code-blocks.md";
 
 test("renders rich fences through the configured mdsvex and Svelte components", () => {
   const { body } = render(CodeBlocks);
@@ -37,7 +37,7 @@ test("renders literal and empty code without JavaScript or an active copy button
 });
 
 test("passes clean copy text separately from highlighted markup", async () => {
-  const source = readFileSync(new URL("./__fixtures__/code-blocks.md", import.meta.url), "utf8");
+  const source = readFileSync(new URL("../__fixtures__/code-blocks.md", import.meta.url), "utf8");
   const highlight = create_highlight({
     languages: { ...(await load_default_languages()), scss: "css" },
   });
@@ -46,7 +46,7 @@ test("passes clean copy text separately from highlighted markup", async () => {
 
   const result = compile(source, {
     highlight,
-    components: [{ specifier: "#lib/markdown.js", names: ["pre"] }],
+    components: [{ specifier: "#assets/js/markdown/index.js", names: ["pre"] }],
   });
 
   expect(result.code).toContain(`code={${JSON.stringify(expectedCode)}}`);

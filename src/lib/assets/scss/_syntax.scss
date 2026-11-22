@@ -45,8 +45,16 @@
   }
 
   .highlight,
+  .code-callout-line,
   .highlighted-word {
     background: color-mix(in srgb, var(--focus) 12%, transparent);
+  }
+
+  .code-callout-target {
+    background: color-mix(in srgb, var(--focus) 12%, transparent);
+    text-decoration: underline;
+    text-decoration-color: var(--focus);
+    text-underline-offset: 0.2em;
   }
 
   .highlighted-word {
@@ -68,6 +76,24 @@
 }
 
 pre.twinkleplop {
+  .code-annotated-line {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .code-note {
+    display: block;
+    max-width: 65ch;
+    margin: 0.4rem 0 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-inline-start: 3px solid var(--focus);
+    background: var(--sheet-muted);
+    color: var(--ink);
+    white-space: normal;
+    overflow-wrap: anywhere;
+    font-family: var(--primaryFont);
+  }
   // Keep line backgrounds full width without doubling the source's newlines.
   .l {
     display: inline-block;

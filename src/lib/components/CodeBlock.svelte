@@ -105,6 +105,10 @@
 </div>
 
 <style>
+  .code-scroll {
+    position: relative;
+  }
+
   .code-scroll :global(pre) {
     width: max-content;
     min-width: 100%;
