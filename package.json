@@ -37,7 +37,7 @@
     "@unocss/transformer-directives": "66.13.0",
     "clsx": "^2.1.1",
     "gh-pages": "6.3.0",
-    "mdsvex": "1.0.1",
+    "mdsvex": "1.1.0",
     "sass": "1.108.2",
     "svelte": "5.59.1",
     "svelte-check": "^4.7.5",
