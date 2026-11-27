@@ -7,6 +7,7 @@ categories:
   - "css"
   - "web"
   - "dev"
+  - "TIL"
 coverImage: "/images/kelly-sikkema-mdADGzyXCVE-unsplash.jpg"
 coverWidth: 16
 coverHeight: 9

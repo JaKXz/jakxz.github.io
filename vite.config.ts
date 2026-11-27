@@ -18,6 +18,7 @@ export default defineConfig(() => ({
     devSourcemap: true,
   },
   fmt: {
+    ignorePatterns: ["src/todo.md"],
     sortTailwindcss: {
       functions: ["classNames", "clsx"],
     },
