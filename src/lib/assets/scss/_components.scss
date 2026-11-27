@@ -1,54 +1,5 @@
 @use "./vars";
 
-.pagination {
-  margin: 0 0 1rem;
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    list-style-type: none;
-    gap: 0.5rem;
-    margin: 0;
-    padding: 0;
-
-    li {
-      margin: 0;
-    }
-
-    a {
-      color: var(--ink);
-      background: var(--sheet-muted);
-      border: 1px solid var(--border);
-      text-decoration: none;
-      line-height: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 2em;
-      height: 2em;
-      font-family: var(--primaryFont);
-      @include vars.font-weight(extra-bold);
-      transition:
-        color 120ms ease-out,
-        background 120ms ease-out,
-        border-color 120ms ease-out;
-
-      &:hover {
-        background: var(--accent);
-        border-color: var(--accent);
-        color: var(--accent-contrast);
-      }
-
-      &[aria-current="true"] {
-        background: var(--accent);
-        color: var(--accent-contrast);
-        border-color: var(--accent);
-      }
-    }
-  }
-}
-
 .post-card {
   @apply rounded-1;
   box-shadow: 0.3rem 0.3rem 0 var(--border);

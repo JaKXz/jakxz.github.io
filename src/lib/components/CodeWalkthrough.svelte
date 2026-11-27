@@ -3,6 +3,7 @@
   import { createLineAnimator } from "#assets/js/markdown/line-transitions.js";
   import { stepAtMidpoint } from "#assets/js/markdown/walkthrough.js";
   import CodeStep from "./CodeStep.svelte";
+  import NavigationControl from "./NavigationControl.svelte";
 
   /** @type {{title: string, mode?: 'click' | 'scroll', steps: {title: string, content: import('svelte').Snippet, code: import('svelte').Snippet}[]}} */
   let { title, mode = "click", steps } = $props();
@@ -122,15 +123,17 @@
 <section bind:this={root} class="code-group code-walkthrough" aria-label={title}>
   <p class="font-semibold">{title}</p>
   {#if ready && !scrolling && steps.length}
-    <div class="controls">
-      <button type="button" aria-disabled={active === 0} onclick={() => select(active - 1)}
-        >Previous</button
+    <div class="flex flex-wrap items-center justify-between gap-3 py-3">
+      <NavigationControl
+        class="px-3 py-2"
+        aria-disabled={active === 0}
+        onclick={() => select(active - 1)}>Previous</NavigationControl
       >
-      <span role="status">Step {active + 1} of {steps.length}: {steps[active].title}</span>
-      <button
-        type="button"
+      <span role="status" class="flex-1 text-center">{active + 1} of {steps.length}</span>
+      <NavigationControl
+        class="px-3 py-2"
         aria-disabled={active === steps.length - 1}
-        onclick={() => select(active + 1)}>Next</button
+        onclick={() => select(active + 1)}>Next</NavigationControl
       >
     </div>
   {/if}
@@ -166,30 +169,6 @@
 <style>
   .code-walkthrough {
     min-width: 0;
-  }
-  .controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    padding-block: 0.75rem;
-  }
-  .controls span {
-    flex: 1;
-    text-align: center;
-  }
-  button {
-    padding: 0.5rem 0.75rem;
-    border: 1px solid var(--border);
-    background: var(--sheet);
-    color: var(--ink);
-    font: inherit;
-    cursor: pointer;
-  }
-  button[aria-disabled="true"] {
-    opacity: 0.5;
-    cursor: default;
   }
   .enhanced {
     display: grid;

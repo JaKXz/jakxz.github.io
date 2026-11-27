@@ -12,6 +12,10 @@ coverHeight: 9
 excerpt: and now I'm a true believer
 ---
 
+<script>
+  import Callout from "#components/Callout.svelte";
+</script>
+
 ## Cold open
 
 You join me on a Sunday morning.
@@ -38,7 +42,13 @@ Shoutout to @mitmaro's [`git-rebase-interactive-tool`](https://github.com/MitMar
 
 Learning another set of commands to do the same work was not an especially compelling use of a Sunday.
 
-_Using judgement and discernment (being principled) before adding to or changing your tools is a good thing._
+<Callout>
+
+To anyone experiencing FOMO, or wondering about yet another shiny thing to chase, I just want to encourage:
+
+_Using judgement and discernment (being principled) before adding to or changing your tools is a very good, excellent thing._
+
+</Callout>
 
 But I kept running into the same problem: I wanted several small changes reviewed and merged separately, and maintaining the branches was becoming a job of its own.
 For this story, the changes were CI improvements, the sort of small changes that can have large consequences if somebody glosses over them in a giant PR.
@@ -50,11 +60,9 @@ When I learned `git`, the Oh My Zsh aliases helped me get past all the repetitiv
 I could memorize a short sequence of symbols for the thing I wanted to do.
 The `jj` plugin gave me the same way in.
 
-So I'll use those aliases below and put their expansions in a table afterwards.
-If a train of symbols helps you too, help yourself.
-
 A few symbols in the log are worth knowing first:
 
+- trunk or `trunk()` refers to wherever the `main` branch currently is.
 - `@` is the change I'm currently working on.
   [The working copy is already a commit](https://docs.jj-vcs.dev/v0.47.0/working-copy/); most jj commands snapshot edits into it.
 - `zltuz`, `qpvqv`, etc. are **change IDs**.
@@ -70,7 +78,7 @@ Naming a change, editing it, and starting the next change are separate things.
 
 This is the useful subset for this story, rather than the entire plugin's vocabulary:
 
-| Alias  | Expands to          | What I use it for                                                                                                      |
+| Alias  | Expands to          | What it's used for                                                                                                     |
 | ------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `jjst` | `jj status`         | Check the current change and its conflicts                                                                             |
 | `jjl`  | `jj log`            | See where the changes and bookmarks are                                                                                |
@@ -87,14 +95,14 @@ Being able to [undo a local operation](https://docs.jj-vcs.dev/v0.47.0/cli-refer
 Before pushing, if I didn't like a rewrite, I could back it out and try again.
 Note: Undoing local history doesn't undo a push on the remote.
 
-And pushing rewritten history still has checks: `jj` compares the remote with its last known state, similarly to [`git push --force-with-lease`](https://docs.jj-vcs.dev/v0.47.0/bookmarks/#pushing-bookmarks-safety-checks).
+And pushing rewritten history still has checks: `jj` compares the remote with its last known state, similar to [`git push --force-with-lease`](https://docs.jj-vcs.dev/v0.47.0/bookmarks/#pushing-bookmarks-safety-checks).
 If somebody else has moved a branch incompatibly, I need to fetch and reconcile that before pushing.
 
 ---
 
 ## Back to the story
 
-Then I found myself in a precarious (and familiar) position.
+So: I found myself in a precarious (and familiar) position.
 I'd made a fix while working near the top of a stack, and realized it belonged near the beginning.
 There were already other changes depending on the one I needed to amend.
 
@@ -102,7 +110,7 @@ How painful would this be in my usual `git` workflow?
 
 Very.
 
-I could do it.
+I know I could do it.
 I also knew how much attention I was about to spend keeping track of which branch needed rebasing onto which rewritten commit.
 
 ### So, I decided to try `jj` instead

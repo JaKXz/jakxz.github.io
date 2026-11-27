@@ -1,5 +1,6 @@
 <script>
   import { postsPerPage } from "#lib/config.js";
+  import NavigationControl from "./NavigationControl.svelte";
 
   /**
    * @typedef {Object} Props
@@ -18,11 +19,15 @@
 
 {#key currentPage}
   {#if pagesAvailable > 1}
-    <nav aria-label="Pagination navigation" class="pagination">
-      <ul>
+    <nav aria-label="Pagination navigation" class="m-0 mb-4">
+      <ul class="m-0 flex list-none flex-wrap justify-start gap-2 p-0">
         {#each Array.from({ length: pagesAvailable }, (_, i) => i + 1) as page (path + "/" + page)}
-          <li>
-            <a href="{path}/{page}" aria-current={isCurrentPage(page)}>
+          <li class="m-0">
+            <NavigationControl
+              href="{path}/{page}"
+              aria-current={isCurrentPage(page)}
+              class="h-[2em] w-[2em]"
+            >
               <span class="sr-only">
                 {#if isCurrentPage(page)}
                   Current page:
@@ -31,7 +36,7 @@
                 {/if}
               </span>
               {page}
-            </a>
+            </NavigationControl>
           </li>
         {/each}
       </ul>

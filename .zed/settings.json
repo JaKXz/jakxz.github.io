@@ -22,7 +22,10 @@
       }
     }
   },
-  "language_servers": ["!ast-grep", "..."],
+  "language_servers": [
+    "!ast-grep",
+    "..."
+  ],
   "languages": {
     "CSS": {
       "format_on_save": "on",
@@ -46,7 +49,11 @@
     },
     "JavaScript": {
       "format_on_save": "on",
-      "language_servers": ["!ast-grep", "!jj_lsp", "..."],
+      "language_servers": [
+        "!ast-grep",
+        "!jj_lsp",
+        "..."
+      ],
       "formatter": [
         {
           "language_server": {
@@ -113,7 +120,11 @@
     },
     "TypeScript": {
       "format_on_save": "on",
-      "language_servers": ["!ast-grep", "!jj_lsp", "..."],
+      "language_servers": [
+        "!ast-grep",
+        "!jj_lsp",
+        "..."
+      ],
       "formatter": [
         {
           "language_server": {
