@@ -61,7 +61,9 @@
       if (panel?.contains(document.activeElement)) return;
       if (selection && !selection.isCollapsed && panel?.contains(selection.anchorNode)) return;
       const index = stepAtMidpoint(
-        explanations.map((element) => element.getBoundingClientRect().top),
+        explanations.map((element, i) =>
+          i === 0 ? element.getBoundingClientRect().bottom : element.getBoundingClientRect().top,
+        ),
         innerHeight / 2,
       );
       void select(index);
@@ -219,8 +221,9 @@
     grid-column: 1;
   }
   .scrolling .step-explanation {
-    min-height: 65vh;
-    padding: 2rem 0.75rem;
+    min-height: fit-content;
+    padding-block: 2rem;
+    padding-inline: 1rem;
     border-inline-start: 3px solid transparent;
   }
   .scrolling .current .step-explanation {
