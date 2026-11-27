@@ -6,6 +6,12 @@
 <link>https://jasonkurian.dev</link>
 <atom:link href="https://jasonkurian.dev/api/rss.xml" rel="self" type="application/rss+xml"/>
 <item>
+<guid isPermaLink="true">https://jasonkurian.dev/learning/i-attended-the-church-of-jj</guid>
+<title>I attended the church of jj</title>
+<link>https://jasonkurian.dev/learning/i-attended-the-church-of-jj</link>
+<description>and now I'm a true believer</description>
+<pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+</item><item>
 <guid isPermaLink="true">https://jasonkurian.dev/learning/reviewing-code-familiar-or-not</guid>
 <title>Reviewing code: familiar or not</title>
 <link>https://jasonkurian.dev/learning/reviewing-code-familiar-or-not</link>
@@ -59,6 +65,12 @@
 <link>https://jasonkurian.dev/learning/manage-node-versions-with-brew</link>
 <description>Use homebrew to simply manage your local node installations</description>
 <pubDate>Thu, 24 Jan 2019 00:00:00 GMT</pubDate>
+</item><item>
+<guid isPermaLink="true">https://jasonkurian.dev/learning/the-role-of-trust-in-creativity-and-innovation</guid>
+<title>Trust + Collaboration in Student Innovation and Creativity</title>
+<link>https://jasonkurian.dev/learning/the-role-of-trust-in-creativity-and-innovation</link>
+<description>undefined</description>
+<pubDate>Thu, 13 Apr 2017 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
