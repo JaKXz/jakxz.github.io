@@ -11,6 +11,13 @@
   --accent-contrast: #152030;
   --focus: #7bdff2;
   --focus-ring: var(--focus);
+  --code-comment: #aab7c6;
+  --code-keyword: #ff8b98;
+  --code-string: #a3d9a5;
+  --code-number: #d4b2ff;
+  --code-function: #f1d58a;
+  --code-type: #7bdff2;
+  --code-property: #99c7ff;
   --grid-line: rgb(168 218 229 / 7%);
   --grid-dot: color-mix(in srgb, var(--accent) 20%, transparent);
   --shadow-soft: 0 0.75rem 2rem rgb(0 0 0 / 18%);
@@ -43,6 +50,13 @@
   --accent-contrast: #faf9f8;
   --focus: #b51f2d;
   --focus-ring: var(--focus);
+  --code-comment: #596779;
+  --code-keyword: #9b2438;
+  --code-string: #236345;
+  --code-number: #7441a2;
+  --code-function: #805000;
+  --code-type: #176477;
+  --code-property: #2c5796;
   --grid-line: rgb(69 123 157 / 8%);
   --grid-dot: transparent;
   --shadow-soft: 0 0.75rem 2rem rgb(29 53 87 / 10%);

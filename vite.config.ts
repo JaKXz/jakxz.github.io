@@ -1,35 +1,49 @@
-import adapter from "@sveltejs/adapter-static";
 import { anchors } from "@mdsvex/plugin-anchors";
 import { external_links } from "@mdsvex/plugin-external-links";
 import { mdsvex } from "mdsvex";
-import { scss } from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-static";
 import { sveltekit } from "@sveltejs/kit/vite";
+import { scss } from "svelte-preprocess";
+import { svelteDevtools } from "@sveltejs/vite-devtools-svelte";
 import extractorSvelte from "@unocss/extractor-svelte";
 import unocss from "unocss/vite";
 import devtoolsJson from "vite-plugin-devtools-json";
 import { defineConfig, lazyPlugins } from "vite-plus";
 
+import { lineJumpMarkup, validateLineJumps } from "#assets/js/markdown/line-jumps.js";
+import { presentationDirectives, presentationMarkup } from "#assets/js/markdown/presentations.js";
+import { calloutMarkup, codeHighlightOptions } from "#assets/js/markdown/callouts.js";
+
 export default defineConfig(() => ({
   css: {
     devSourcemap: true,
   },
+  devtools: { apply: "serve" },
   fmt: {
+    ignorePatterns: ["src/todo.md"],
     sortTailwindcss: {
       functions: ["classNames", "clsx"],
     },
     svelte: true,
   },
   plugins: lazyPlugins(() => [
+    svelteDevtools(),
     mdsvex({
-      // The default mdsvex extension is .svx; this overrides that.
       extensions: [".md"],
+      components: "#assets/js/markdown/index.js",
+      highlight: codeHighlightOptions(),
+      parse_plugins: [validateLineJumps],
       heading_ids: true,
       smart_punctuation: true,
       plugins: [
+        presentationDirectives,
         anchors(),
         external_links({ target: "_blank", new_tab_label: "opens in a new tab" }),
       ],
     }),
+    lineJumpMarkup(),
+    calloutMarkup(),
+    presentationMarkup(),
     unocss({ extractors: [extractorSvelte()] }),
     sveltekit({
       // Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or used as pages)

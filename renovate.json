@@ -4,7 +4,7 @@
   "platformAutomerge": true,
   "packageRules": [
     {
-      "groupName": "all svelte packages",
+      "groupName": "svelte",
       "matchPackageNames": ["/^.*svelte.*/"]
     },
     {
@@ -14,6 +14,10 @@
     {
       "groupName": "vite",
       "matchPackageNames": ["/^.*vite.*/"]
+    },
+    {
+      "groupName": "mdsvex",
+      "matchPackageNames": ["/^.*mdsvex.*/"]
     },
     { "matchUpdateTypes": ["minor", "patch"], "automerge": true }
   ]

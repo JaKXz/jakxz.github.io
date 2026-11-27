@@ -16,7 +16,7 @@
 
     function classify(element) {
       if (element.matches("h2, h3, h4")) return "heading";
-      if (element.matches("pre")) return "code";
+      if (element.matches("pre, .code-block, .code-group")) return "code";
       if (element.matches("figure")) return "figure";
       if (element.matches("ul, ol")) return "list";
       if (element.matches("blockquote, .callout")) return "callout";
@@ -40,7 +40,7 @@
 
       blocks = Array.from(
         target.querySelectorAll(
-          ":scope > :is(h2, h3, h4, p, ul, ol, pre, figure, blockquote, .callout, hr)",
+          ":scope > :is(h2, h3, h4, p, ul, ol, pre, .code-block, .code-group, figure, blockquote, .callout, hr)",
         ),
       ).map((element) => {
         const rect = element.getBoundingClientRect();

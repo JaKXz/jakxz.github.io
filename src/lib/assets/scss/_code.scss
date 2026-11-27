@@ -6,11 +6,17 @@ code {
 }
 
 pre {
-  overflow-y: auto;
-  color: #f4f0e8;
-  background: #101a28;
+  overflow-x: auto;
+  color: var(--ink);
+  background: var(--sheet);
   padding: 1rem;
   font-size: 0.8rem;
+  line-height: 1.6;
+  tab-size: 4;
+  hyphens: none;
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 code {
@@ -21,6 +27,7 @@ code {
 }
 
 pre code {
+  color: inherit;
   padding: 0;
   background: transparent;
   border: 0;
@@ -31,8 +38,4 @@ pre code {
   h#{$i} code {
     font-size: inherit;
   }
-}
-
-pre[class*="language-"] {
-  padding: 2rem;
 }
