@@ -1,9 +1,10 @@
-import adapter from "@sveltejs/adapter-static";
 import { anchors } from "@mdsvex/plugin-anchors";
 import { external_links } from "@mdsvex/plugin-external-links";
 import { mdsvex } from "mdsvex";
-import { scss } from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-static";
 import { sveltekit } from "@sveltejs/kit/vite";
+import { scss } from "svelte-preprocess";
+import { svelteDevtools } from "@sveltejs/vite-devtools-svelte";
 import extractorSvelte from "@unocss/extractor-svelte";
 import unocss from "unocss/vite";
 import devtoolsJson from "vite-plugin-devtools-json";
@@ -17,6 +18,7 @@ export default defineConfig(() => ({
   css: {
     devSourcemap: true,
   },
+  devtools: { apply: "serve" },
   fmt: {
     ignorePatterns: ["src/todo.md"],
     sortTailwindcss: {
@@ -25,6 +27,7 @@ export default defineConfig(() => ({
     svelte: true,
   },
   plugins: lazyPlugins(() => [
+    svelteDevtools(),
     mdsvex({
       extensions: [".md"],
       components: "#assets/js/markdown/index.js",

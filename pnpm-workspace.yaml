@@ -2,8 +2,8 @@ allowBuilds:
   "@parcel/watcher": true
   svelte-preprocess: true
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
-  vite-plus: 1.7.0
+  vite: npm:@voidzero-dev/vite-plus-core@8.3.8001
+  vite-plus: 1.8.0
 overrides:
   vite@*: "catalog:"
 peerDependencyRules:
@@ -11,3 +11,10 @@ peerDependencyRules:
     - vite
   allowedVersions:
     vite: "*"
+permissions:
+  "@sveltejs/vite-devtools-svelte":
+    skills: [vite-devtools-svelte-perf-audit, vite-devtools-svelte-perf-fix]
+skills:
+  dirs:
+    - .agents/skills
+    - .claude/skills

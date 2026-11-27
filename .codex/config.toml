@@ -1,0 +1,3 @@
+[mcp_servers.svelte-devtools]
+command = "pnpx"
+args = ["@sveltejs/vite-devtools-svelte", "mcp"]
