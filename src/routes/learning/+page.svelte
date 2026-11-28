@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
   import Pagination from "#components/Pagination.svelte";
   import PostsList from "#components/PostsList.svelte";
-  import { siteTitle } from "#lib/config.js";
+  import { siteTitle } from "#lib/config.ts";
+  import type { PageProps } from "./$types";
 
-  let { data } = $props();
+  let { data }: PageProps = $props();
 </script>
 
 <svelte:head>

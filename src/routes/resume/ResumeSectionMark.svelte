@@ -1,6 +1,9 @@
-<script>
-  /** @type {{ kind: "technical" | "experience" | "open-source" | "education" }} */
-  let { kind } = $props();
+<script lang="ts">
+  interface Props {
+    kind: "technical" | "experience" | "open-source" | "education";
+  }
+
+  let { kind }: Props = $props();
 </script>
 
 <svg

@@ -1,13 +1,14 @@
-<script>
+<script lang="ts">
   import ArticleMinimap from "#components/ArticleMinimap.svelte";
-  import { siteLink, siteTitle } from "#lib/config.js";
+  import { siteLink, siteTitle } from "#lib/config.ts";
+  import type { PageProps } from "./$types";
 
-  let { data } = $props();
+  let { data }: PageProps = $props();
 
   let meta = $derived(data.meta);
-  let articleBody = $state();
+  let articleBody = $state<HTMLDivElement>();
 
-  function fadeInOnLoad(image) {
+  function fadeInOnLoad(image: HTMLImageElement) {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || image.complete) return;
 
     image.style.opacity = "0";
@@ -29,7 +30,7 @@
     };
   }
 
-  function formatDate(date) {
+  function formatDate(date: string) {
     return new Intl.DateTimeFormat(undefined, {
       dateStyle: "medium",
     }).format(new Date(`${date}T00:00:00`));
@@ -44,8 +45,8 @@
   <meta name="twitter:title" content={meta.title} />
   <meta name="twitter:description" content={meta.excerpt} />
   {#if meta.coverImage}
-    <meta property="og:image:width" content={meta.coverWidth} />
-    <meta property="og:image:height" content={meta.coverHeight} />
+    <meta property="og:image:width" content={meta.coverWidth?.toString()} />
+    <meta property="og:image:height" content={meta.coverHeight?.toString()} />
     <meta property="og:image" content="{siteLink}{meta.coverImage}" />
     <meta name="twitter:image" content="{siteLink}{meta.coverImage}" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -67,10 +68,10 @@
         <dt class="font-700 text-[var(--ink)]">Published</dt>
         <dd class="m-0"><time datetime={meta.date}>{formatDate(meta.date)}</time></dd>
       </div>
-      <div class="flex gap-2">
-        <dt class="font-700 text-[var(--ink)]">Updated</dt>
-        <dd class="m-0"><time datetime={meta.updated}>{formatDate(meta.updated)}</time></dd>
-      </div>
+      {#if meta.updated}<div class="flex gap-2">
+          <dt class="font-700 text-[var(--ink)]">Updated</dt>
+          <dd class="m-0"><time datetime={meta.updated}>{formatDate(meta.updated)}</time></dd>
+        </div>{/if}
     </dl>
   </div>
 
@@ -135,9 +136,11 @@
     <svelte:element
       this={"script"}
       src="https://utteranc.es/client.js"
-      repo="jakxz/jakxz.github.io"
-      issue-term="og:title"
-      theme="preferred-color-scheme"
+      {...{
+        repo: "jakxz/jakxz.github.io",
+        "issue-term": "og:title",
+        theme: "preferred-color-scheme",
+      }}
       crossorigin="anonymous"
       async
     />

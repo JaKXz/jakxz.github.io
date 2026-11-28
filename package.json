@@ -42,6 +42,7 @@
     "svelte-check": "^4.7.5",
     "svelte-preprocess": "6.0.5",
     "tailwind-merge": "^3.7.1",
+    "typescript": "^6.0.3",
     "unocss": "66.13.0",
     "vite": "catalog:",
     "vite-plugin-devtools-json": "1.1.2",

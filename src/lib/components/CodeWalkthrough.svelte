@@ -1,30 +1,29 @@
-<script>
-  import { onMount, tick } from "svelte";
-  import { createLineAnimator } from "#assets/js/markdown/line-transitions.js";
-  import { stepAtMidpoint } from "#assets/js/markdown/walkthrough.js";
+<script lang="ts">
+  import { onMount, tick, type Snippet } from "svelte";
+  import { createLineAnimator } from "#assets/js/markdown/line-transitions.ts";
+  import { stepAtMidpoint } from "#assets/js/markdown/walkthrough.ts";
   import CodeStep from "./CodeStep.svelte";
   import NavigationControl from "./NavigationControl.svelte";
 
-  /** @type {{title: string, mode?: 'click' | 'scroll', steps: {title: string, content: import('svelte').Snippet, code: import('svelte').Snippet}[]}} */
-  let { title, mode = "click", steps } = $props();
+  interface Props {
+    title: string;
+    mode?: "click" | "scroll";
+    steps: { title: string; content: Snippet; code: Snippet }[];
+  }
+  let { title, mode = "click", steps }: Props = $props();
   let ready = $state(false);
   let active = $state(0);
   let wide = $state(false);
   let motion = $state(false);
   let scrolling = $derived(ready && wide && mode === "scroll");
-  /** @type {HTMLElement} */
-  let root = $state();
-  /** @type {HTMLDivElement[]} */
-  let explanations = $state([]);
-  /** @type {HTMLDivElement[]} */
-  let panels = $state([]);
-  /** @type {ReturnType<typeof createLineAnimator> | undefined} */
-  let animator;
+  let root = $state<HTMLElement>();
+  let explanations = $state<HTMLDivElement[]>([]);
+  let panels = $state<HTMLDivElement[]>([]);
+  let animator: ReturnType<typeof createLineAnimator> | undefined;
   let disposed = false;
   let scheduleScroll = () => {};
 
-  /** @param {number} index @param {boolean} [animate] */
-  async function select(index, animate = true) {
+  async function select(index: number, animate = true) {
     if (disposed || index === active || index < 0 || index >= steps.length) return;
     const previous = panels[active];
     const next = panels[index];
@@ -32,24 +31,24 @@
     const update = async () => {
       active = index;
       await tick();
-      if (!disposed && moveFocus) next?.querySelector(".code-scroll")?.focus();
+      if (!disposed && moveFocus) next?.querySelector<HTMLElement>(".code-scroll")?.focus();
     };
     if (animator) await animator.change(previous, next, update, animate && motion);
     else await update();
   }
 
-  /** @param {number} index */
-  function reveal(index) {
+  function reveal(index: number) {
     void select(index, false);
     if (scrolling) explanations[index]?.scrollIntoView({ block: "center", behavior: "instant" });
   }
 
   onMount(() => {
+    const element = root;
+    if (!element) return;
     animator = createLineAnimator();
     const media = matchMedia("(min-width: 48rem)");
     const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-    /** @type {IntersectionObserver | undefined} */
-    let observer;
+    let observer: IntersectionObserver | undefined;
     let frame = 0;
 
     function syncScroll() {
@@ -84,7 +83,7 @@
         observer = new IntersectionObserver(scheduleScroll, {
           rootMargin: `${-top}px 0px ${-(innerHeight - top - 1)}px 0px`,
         });
-        explanations.forEach((element) => observer.observe(element));
+        for (const explanation of explanations) observer.observe(explanation);
       }
       scheduleScroll();
     }
@@ -101,8 +100,8 @@
     window.addEventListener("resize", resize);
     // Also handles jumps that pass an entire step between observer notifications.
     window.addEventListener("scroll", scheduleScroll, { passive: true });
-    root.addEventListener("focusout", scheduleScroll);
-    root.addEventListener("scroll", cancelMotion, true);
+    element.addEventListener("focusout", scheduleScroll);
+    element.addEventListener("scroll", cancelMotion, true);
     document.addEventListener("selectionchange", scheduleScroll);
     return () => {
       disposed = true;
@@ -113,8 +112,8 @@
       media.removeEventListener("change", resize);
       window.removeEventListener("resize", resize);
       window.removeEventListener("scroll", scheduleScroll);
-      root.removeEventListener("focusout", scheduleScroll);
-      root.removeEventListener("scroll", cancelMotion, true);
+      element.removeEventListener("focusout", scheduleScroll);
+      element.removeEventListener("scroll", cancelMotion, true);
       document.removeEventListener("selectionchange", scheduleScroll);
     };
   });

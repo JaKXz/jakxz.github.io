@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import CodeTabs from "#components/CodeTabs.svelte";
   import CodeWalkthrough from "#components/CodeWalkthrough.svelte";
   import CodeStep from "#components/CodeStep.svelte";

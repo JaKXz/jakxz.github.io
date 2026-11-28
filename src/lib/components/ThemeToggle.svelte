@@ -1,14 +1,20 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
 
-  import { applyTheme, getStoredTheme, resolveTheme, saveTheme } from "#assets/js/theme.svelte.js";
+  import {
+    applyTheme,
+    getStoredTheme,
+    resolveTheme,
+    saveTheme,
+    type Theme,
+  } from "#assets/js/theme.svelte.ts";
 
-  let theme = $state("light");
+  let theme = $state<Theme>("light");
   let transitionDuration = $state(0);
   let followsSystem = true;
 
-  let nextTheme = $derived(theme === "dark" ? "light" : "dark");
+  let nextTheme = $derived<Theme>(theme === "dark" ? "light" : "dark");
 
   onMount(() => {
     const colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -22,7 +28,7 @@
     applyTheme(theme);
     transitionDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 140;
 
-    const followSystemTheme = (event) => {
+    const followSystemTheme = (event: MediaQueryListEvent) => {
       if (followsSystem) {
         theme = resolveTheme(null, event.matches);
         applyTheme(theme);

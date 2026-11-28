@@ -1,9 +1,10 @@
 <!-- Renders any page at /learning/category/* -->
-<script>
+<script lang="ts">
   import PostsList from "#components/PostsList.svelte";
   import Pagination from "#components/Pagination.svelte";
+  import type { PageProps } from "./$types";
 
-  let { data } = $props();
+  let { data }: PageProps = $props();
 </script>
 
 <svelte:head>
@@ -19,7 +20,7 @@
 {#if data.posts.length}
   <PostsList posts={data.posts} />
   <Pagination
-    currentPage="1"
+    currentPage={1}
     totalPosts={data.total}
     path="/learning/category/{data.category}/page"
   />

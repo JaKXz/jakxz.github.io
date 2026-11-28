@@ -1,26 +1,21 @@
-<script>
-  import { onMount, tick } from "svelte";
+<script lang="ts">
+  import { onMount, tick, type Snippet } from "svelte";
 
-  /** @type {{title: string, items: {title: string, code: import('svelte').Snippet}[]}} */
-  let { title, items } = $props();
+  let { title, items }: { title: string; items: { title: string; code: Snippet }[] } = $props();
   const id = $props.id();
   let ready = $state(false);
   let active = $state(0);
   let nativeFocusGroup = $state(false);
-  /** @type {HTMLDivElement} */
-  let tablist = $state();
-  /** @type {HTMLButtonElement[]} */
-  let tabs = [];
-  /** @type {HTMLDivElement[]} */
-  let panels = [];
+  let tablist = $state<HTMLDivElement>();
+  let tabs: HTMLButtonElement[] = [];
+  let panels: HTMLDivElement[] = [];
 
   onMount(() => {
     nativeFocusGroup = Object.hasOwn(HTMLElement.prototype, "focusGroup");
     ready = true;
   });
 
-  /** @param {number} index */
-  async function select(index) {
+  async function select(index: number) {
     const moveFocus = panels[active]?.contains(document.activeElement);
     active = index;
     if (moveFocus) tabs[index]?.focus();
@@ -34,9 +29,8 @@
     else if (bounds.right > viewport.right) tablist.scrollLeft += bounds.right - viewport.right;
   }
 
-  /** @param {KeyboardEvent} event @param {number} index */
-  function navigate(event, index) {
-    if (nativeFocusGroup) return;
+  function navigate(event: KeyboardEvent, index: number) {
+    if (nativeFocusGroup || !tablist) return;
     let next;
     const rtl = getComputedStyle(tablist).direction === "rtl";
     if (event.key === "ArrowRight") next = index + (rtl ? -1 : 1);

@@ -1,7 +1,8 @@
-<script>
-  import { siteTitle, siteDescription, siteURL, siteLink } from "#lib/config.js";
+<script lang="ts">
+  import { siteTitle, siteDescription, siteURL, siteLink } from "#lib/config.ts";
+  import type { PageProps } from "./$types";
 
-  let { data } = $props();
+  let { data }: PageProps = $props();
 </script>
 
 <svelte:head>

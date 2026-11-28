@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import { slide, fade } from "svelte/transition";
 
-  import { siteTitle, subtitles } from "#lib/config.js";
-  import { theme } from "#assets/js/theme.svelte.js";
+  import { siteTitle, subtitles } from "#lib/config.ts";
+  import { theme } from "#assets/js/theme.svelte.ts";
+  import type { PageProps } from "./$types";
 
-  let { data } = $props();
+  let { data }: PageProps = $props();
   let subtitleIndex = $state(0);
   let prefersReducedMotion = $state(false);
   let [description, subtitle] = $derived(subtitles[subtitleIndex]);
@@ -14,12 +15,12 @@
     prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   });
 
-  function nextSubtitle(event) {
+  function nextSubtitle(event: MouseEvent & { currentTarget: HTMLButtonElement }) {
     subtitleIndex = (subtitleIndex + 1) % subtitles.length;
     event.currentTarget.blur();
   }
 
-  function formatDate(date) {
+  function formatDate(date: string) {
     return new Intl.DateTimeFormat(undefined, {
       dateStyle: "medium",
     }).format(new Date(`${date}T00:00:00`));
@@ -128,11 +129,11 @@
           class="post-card xs:p-6 relative cursor-pointer border border-[var(--border)] bg-[var(--sheet-muted)] p-5"
         >
           <time
-            datetime={post.updated}
+            datetime={post.updated ?? post.date}
             class="font-600 block text-xs tracking-[0.12em] text-[var(--muted-ink)] uppercase"
           >
             <i class="i-radix-icons-lap-timer mr-1 align-[-0.125em] text-sm" aria-hidden="true"></i>
-            {formatDate(post.updated)}
+            {formatDate(post.updated ?? post.date)}
           </time>
           <h3 class="my-2 text-[clamp(1.35rem,4vw,1.8rem)]">
             <a class="post-card-title" href={`/learning/${post.slug}`}>{post.title}</a>

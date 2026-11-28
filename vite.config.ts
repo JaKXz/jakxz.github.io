@@ -10,9 +10,9 @@ import unocss from "unocss/vite";
 import devtoolsJson from "vite-plugin-devtools-json";
 import { defineConfig, lazyPlugins } from "vite-plus";
 
-import { lineJumpMarkup, validateLineJumps } from "#assets/js/markdown/line-jumps.js";
-import { presentationDirectives, presentationMarkup } from "#assets/js/markdown/presentations.js";
-import { calloutMarkup, codeHighlightOptions } from "#assets/js/markdown/callouts.js";
+import { lineJumpMarkup, validateLineJumps } from "#assets/js/markdown/line-jumps.ts";
+import { presentationDirectives, presentationMarkup } from "#assets/js/markdown/presentations.ts";
+import { calloutMarkup, codeHighlightOptions } from "#assets/js/markdown/callouts.ts";
 
 export default defineConfig(() => ({
   css: {
@@ -30,7 +30,7 @@ export default defineConfig(() => ({
     svelteDevtools(),
     mdsvex({
       extensions: [".md"],
-      components: "#assets/js/markdown/index.js",
+      components: "#assets/js/markdown/index.ts",
       highlight: codeHighlightOptions(),
       parse_plugins: [validateLineJumps],
       heading_ids: true,
