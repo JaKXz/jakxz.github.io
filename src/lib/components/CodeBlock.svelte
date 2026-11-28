@@ -61,11 +61,11 @@
   }
 </script>
 
-<div class="code-block my-8 min-w-0 border border-[var(--border)] bg-[var(--sheet)]">
+<div class="code-block my-8 min-w-0 border border-[var(--border)]">
   <div
-    class="flex min-h-11 flex-wrap items-center gap-x-4 gap-y-1 border-b border-[var(--border)] bg-[var(--sheet-muted)] px-4 py-2 font-mono text-xs"
+    class="flex min-h-11 flex-wrap items-center gap-x-4 gap-y-1 border-b border-[var(--border)] px-4 py-2 font-mono text-xs"
   >
-    <em class="min-w-0 flex-1 break-words">{title ?? ""}</em>
+    <em class="font-700 min-w-0 flex-1 break-words underline">{title ?? ""}</em>
     {#if !title && lang}
       <span class="text-[var(--muted-ink)]">{lang}</span>
     {/if}
@@ -100,7 +100,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   .code-scroll {
     position: relative;
   }
@@ -111,5 +111,9 @@
     max-width: none;
     margin: 0;
     overflow: visible;
+  }
+
+  :global(.code-block pre) {
+    @apply bg-[var(--sheet-muted)];
   }
 </style>
