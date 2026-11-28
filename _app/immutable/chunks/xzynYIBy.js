@@ -1,0 +1,1 @@
+import{N as e,T as t,W as n,ft as r,j as i,lt as a}from"./Cd2pHszM.js";var o=e(`<div class="callout svelte-1ezppec"><!></div>`);function s(e,s){var c=o(),l=n(c);t(l,()=>s.children??a),r(c),i(e,c)}export{s as t};
