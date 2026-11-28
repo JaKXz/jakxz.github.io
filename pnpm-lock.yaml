@@ -254,6 +254,9 @@ importers:
       tailwind-merge:
         specifier: ^3.7.1
         version: 3.7.1
+      typescript:
+        specifier: ^6.0.3
+        version: 6.0.3
       unocss:
         specifier: 66.13.0
         version: 66.13.0(@devframes/agentic@1.4.0)(@oxc-project/types@0.159.0)(@voidzero-dev/vite-plus-core@8.3.8001(@types/node@26.6.11)(@vitejs/devtools@0.8.3)(jiti@2.7.0)(sass@1.108.2)(typescript@6.0.3))(cac@7.1.1)(srvx@1.0.8)

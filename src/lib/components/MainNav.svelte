@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import { tick } from "svelte";
   import { fade, fly } from "svelte/transition";
 
-  import { isMenuOpen } from "#assets/js/store.js";
-  import { navItems } from "#lib/config.js";
+  import { isMenuOpen } from "#assets/js/store.ts";
+  import { navItems } from "#lib/config.ts";
   import HamburgerMenuButton from "./HamburgerMenuButton.svelte";
   import NavItem from "./NavItem.svelte";
 
@@ -44,10 +44,10 @@
   async function closeMenu() {
     isMenuOpen.set(false);
     await tick();
-    document.querySelector("header .menu-button")?.focus();
+    document.querySelector<HTMLButtonElement>("header .menu-button")?.focus();
   }
 
-  function handleKeydown(event) {
+  function handleKeydown(event: KeyboardEvent) {
     if (!$isMenuOpen) return;
 
     if (event.key === "Escape") {
@@ -58,7 +58,7 @@
     if (event.key !== "Tab") return;
 
     const menu = document.querySelector("#mobile-navigation");
-    const focusable = Array.from(menu?.querySelectorAll("button, a[href]") ?? []);
+    const focusable = Array.from(menu?.querySelectorAll<HTMLElement>("button, a[href]") ?? []);
     const first = focusable[0];
     const last = focusable.at(-1);
 

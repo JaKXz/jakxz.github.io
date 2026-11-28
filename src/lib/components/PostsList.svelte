@@ -1,7 +1,8 @@
-<script>
-  let { posts = [] } = $props();
+<script lang="ts">
+  import type { Post } from "#posts/types.ts";
+  let { posts = [] }: { posts?: Post[] } = $props();
 
-  function formatDate(date) {
+  function formatDate(date: string) {
     return new Intl.DateTimeFormat(undefined, {
       dateStyle: "medium",
     }).format(new Date(`${date}T00:00:00`));

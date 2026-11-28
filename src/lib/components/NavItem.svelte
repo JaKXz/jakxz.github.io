@@ -1,8 +1,15 @@
-<script>
+<script lang="ts">
+  import type { Snippet } from "svelte";
   import { page } from "$app/state";
-  import { isMenuOpen } from "#assets/js/store.js";
+  import { isMenuOpen } from "#assets/js/store.ts";
 
-  let { href, children, mobile = false } = $props();
+  interface Props {
+    href: string;
+    children: Snippet;
+    mobile?: boolean;
+  }
+
+  let { href, children, mobile = false }: Props = $props();
 
   let isCurrentPage = $derived(page.url.pathname.startsWith(href));
 </script>

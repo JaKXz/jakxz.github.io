@@ -1,33 +1,28 @@
-<script>
-  /**
-   * @typedef {import('svelte/elements').HTMLAnchorAttributes & {href: string}} LinkProps
-   * @typedef {import('svelte/elements').HTMLButtonAttributes & {href?: never}} ButtonProps
-   * @typedef {(LinkProps | ButtonProps) & {children: import('svelte').Snippet}} Props
-   */
+<script lang="ts">
+  import type { Snippet } from "svelte";
+  import type { HTMLAnchorAttributes, HTMLButtonAttributes } from "svelte/elements";
+  import classNames from "#assets/js/classNames.ts";
 
-  /** @type {Props} */
-  let { children, ...props } = $props();
+  type LinkProps = HTMLAnchorAttributes & { href: string };
+  type ButtonProps = HTMLButtonAttributes & { href?: never };
+  type Props = (LinkProps | ButtonProps) & { children: Snippet };
 
-  const controlClasses = `inline-flex cursor-pointer items-center justify-center
-    border border-solid border-[var(--border)] bg-[var(--sheet-muted)] p-0
-    font-[var(--primaryFont)] [font-size:inherit] font-extrabold leading-none
-    text-[var(--ink)] no-underline transition-colors duration-120
-    [transition-timing-function:ease-out] motion-reduce:transition-none
-    [:root[data-theme=dark]_&]:font-bold dark:[:root:not([data-theme])_&]:font-bold
-    [&:not([aria-disabled=true])]:hover:bg-[var(--accent)]
-    [&:not([aria-disabled=true])]:hover:border-[var(--accent)]
-    [&:not([aria-disabled=true])]:hover:text-[var(--accent-contrast)]
-    aria-[current=true]:bg-[var(--accent)] aria-[current=true]:border-[var(--accent)]
-    aria-[current=true]:text-[var(--accent-contrast)]
-    aria-disabled:opacity-50 aria-disabled:cursor-default`;
+  let { children, ...props }: Props = $props();
+
+  let classes = $derived(
+    classNames(
+      `inline-flex cursor-pointer items-center justify-center border border-solid border-[var(--border)] bg-[var(--sheet-muted)] p-0 [font-size:inherit] leading-none font-extrabold text-[var(--ink)] no-underline transition-colors duration-120 aria-disabled:cursor-default aria-disabled:opacity-50 aria-[current=true]:border-[var(--accent)] aria-[current=true]:bg-[var(--accent)] aria-[current=true]:text-[var(--accent-contrast)] motion-reduce:transition-none [&:not([aria-disabled=true])]:hover:border-[var(--accent)] [&:not([aria-disabled=true])]:hover:bg-[var(--accent)] [&:not([aria-disabled=true])]:hover:text-[var(--accent-contrast)] dark:[:root:not([data-theme])_&]:font-bold [:root[data-theme=dark]_&]:font-bold`,
+      props.class,
+    ),
+  );
 </script>
 
 {#if props.href !== undefined}
-  <a {...props} class={[controlClasses, props.class]}>
+  <a {...props} class={classes}>
     {@render children()}
   </a>
 {:else}
-  <button {...props} type={props.type ?? "button"} class={[controlClasses, props.class]}>
+  <button {...props} type={props.type ?? "button"} class={classes}>
     {@render children()}
   </button>
 {/if}

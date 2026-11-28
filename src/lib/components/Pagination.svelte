@@ -1,20 +1,18 @@
-<script>
-  import { postsPerPage } from "#lib/config.js";
+<script lang="ts">
+  import { postsPerPage } from "#lib/config.ts";
   import NavigationControl from "./NavigationControl.svelte";
 
-  /**
-   * @typedef {Object} Props
-   * @property {number} currentPage
-   * @property {number} totalPosts
-   * @property {string} [path]
-   */
+  interface Props {
+    currentPage: number;
+    totalPosts: number;
+    path?: string;
+  }
 
-  /** @type {Props} */
-  let { currentPage, totalPosts, path = "/learning/page" } = $props();
+  let { currentPage, totalPosts, path = "/learning/page" }: Props = $props();
 
   let pagesAvailable = $derived(Math.ceil(totalPosts / postsPerPage));
 
-  const isCurrentPage = (page) => page == currentPage;
+  const isCurrentPage = (page: number) => page === currentPage;
 </script>
 
 {#key currentPage}

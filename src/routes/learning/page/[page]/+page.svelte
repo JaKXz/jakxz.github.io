@@ -1,10 +1,11 @@
 <!-- This file handles any /learning/page/x route for pagination -->
-<script>
+<script lang="ts">
   import PostsList from "#components/PostsList.svelte";
   import Pagination from "#components/Pagination.svelte";
-  import { postsPerPage } from "#lib/config.js";
+  import { postsPerPage } from "#lib/config.ts";
+  import type { PageProps } from "./$types";
 
-  let { data } = $props();
+  let { data }: PageProps = $props();
 
   let lowerBound = $derived(data.page * postsPerPage - (postsPerPage - 1) || 1);
   let upperBound = $derived(Math.min(data.page * postsPerPage, data.totalPosts));

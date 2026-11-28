@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import { page } from "$app/state";
-  import { siteTitle } from "#lib/config.js";
+  import { siteTitle } from "#lib/config.ts";
 
   const signalPositions = [
     { x: 70, y: 31 },

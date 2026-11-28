@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
   import PostsList from "#components/PostsList.svelte";
-  import { siteTitle } from "#lib/config.js";
+  import { siteTitle } from "#lib/config.ts";
+  import type { PageProps } from "./$types";
 
-  let { data } = $props();
+  let { data }: PageProps = $props();
 
   const topics = [
     {

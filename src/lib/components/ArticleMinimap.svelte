@@ -1,20 +1,20 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
 
-  import { calculateViewport, normalizeBlock } from "#assets/js/minimap.js";
+  import { calculateViewport, normalizeBlock } from "#assets/js/minimap.ts";
 
-  let { target } = $props();
+  let { target }: { target: HTMLElement } = $props();
 
-  let blocks = $state([]);
+  let blocks = $state<ReturnType<typeof normalizeBlock>[]>([]);
   let viewport = $state({ top: 0, height: 1 });
 
   onMount(() => {
     let articleTop = 0;
     let articleHeight = 1;
-    let frame;
+    let frame: number | undefined;
     let disposed = false;
 
-    function classify(element) {
+    function classify(element: Element) {
       if (element.matches("h2, h3, h4")) return "heading";
       if (element.matches("pre, .code-block, .code-group")) return "code";
       if (element.matches("figure")) return "figure";
@@ -62,7 +62,7 @@
       frame = requestAnimationFrame(measure);
     }
 
-    let scrollFrame;
+    let scrollFrame: number | undefined;
     function handleScroll() {
       if (scrollFrame) return;
       scrollFrame = requestAnimationFrame(() => {

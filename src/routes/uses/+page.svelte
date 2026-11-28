@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import { onDestroy } from "svelte";
   import { MediaQuery } from "svelte/reactivity";
 
-  import { siteTitle } from "#lib/config.js";
+  import { siteTitle } from "#lib/config.ts";
 
   const sections = [
     {
@@ -188,15 +188,23 @@
 
   const scrollable = new MediaQuery("(min-width: 1280px)", false);
   let isDragging = $state(false);
-  let drag = null;
+  let drag: {
+    viewport: HTMLElement;
+    pointerId: number;
+    x: number;
+    y: number;
+    scrollLeft: number;
+    scrollTop: number;
+  } | null = null;
 
-  function startDrag(event) {
+  function startDrag(event: PointerEvent & { currentTarget: HTMLElement }) {
     if (
       !scrollable.current ||
       event.pointerType !== "mouse" ||
       !event.isPrimary ||
       event.button !== 0 ||
       drag ||
+      !(event.target instanceof Element) ||
       event.target.closest("button, a")
     ) {
       return;
@@ -223,7 +231,7 @@
     viewport.setPointerCapture(event.pointerId);
   }
 
-  function moveDrag(event) {
+  function moveDrag(event: PointerEvent) {
     if (!drag || event.pointerId !== drag.pointerId) return;
     if (!scrollable.current || !(event.buttons & 1)) {
       finishDrag(event);
@@ -240,7 +248,7 @@
     drag.viewport.scrollTop = drag.scrollTop - dy;
   }
 
-  function finishDrag(event) {
+  function finishDrag(event?: PointerEvent) {
     if (!drag || (event && event.pointerId !== drag.pointerId)) return;
 
     const { viewport, pointerId } = drag;
@@ -262,7 +270,7 @@
   <title>{siteTitle} | Uses</title>
 </svelte:head>
 
-{#snippet topography(viewBox)}
+{#snippet topography(viewBox: string)}
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="h-full w-full text-[var(--border)]"
@@ -303,7 +311,7 @@
   </svg>
 {/snippet}
 
-{#snippet toolDetails(tool, headingId)}
+{#snippet toolDetails(tool: (typeof sections)[number]["tools"][number], headingId: string)}
   <h3 id={headingId} class="m-0 text-2xl">{tool.name}</h3>
   <p class="my-4 leading-relaxed text-[var(--muted-ink)]">{tool.description}</p>
   <a class="inline-block py-2 font-mono text-sm" href={tool.href}>
@@ -419,7 +427,9 @@
     <p class="mt-0 mb-5 font-mono text-xs tracking-[0.12em] text-[var(--muted-ink)] uppercase">
       Selected tool
     </p>
-    {@render toolDetails(selectedTool, "selected-tool-heading")}
+    {#if selectedTool}
+      {@render toolDetails(selectedTool, "selected-tool-heading")}
+    {/if}
   </aside>
 </div>
 

@@ -1,18 +1,16 @@
-<script>
-  import { onMount } from "svelte";
+<script lang="ts">
+  import { onMount, type Snippet } from "svelte";
 
-  /**
-   * @typedef {Object} Props
-   * @property {import('svelte').Snippet} children
-   * @property {string} code
-   * @property {string} [lang]
-   * @property {string} [title]
-   * @property {string} [caption]
-   * @property {boolean} [nocopy]
-   */
+  interface Props {
+    children: Snippet;
+    code: string;
+    lang?: string;
+    title?: string;
+    caption?: string;
+    nocopy?: boolean;
+  }
 
-  /** @type {Props} */
-  let { children, code, lang, title, caption, nocopy = false } = $props();
+  let { children, code, lang, title, caption, nocopy = false }: Props = $props();
 
   const id = $props.id();
   let ready = $state(false);
@@ -20,8 +18,7 @@
   let supportsCommands = false;
   let lastStatus = "";
   let attempt = 0;
-  /** @type {ReturnType<typeof setTimeout> | undefined} */
-  let timer;
+  let timer: ReturnType<typeof setTimeout> | undefined;
 
   onMount(() => {
     supportsCommands = "CommandEvent" in window;
@@ -55,8 +52,7 @@
     timer = setTimeout(() => (status = ""), 2000);
   }
 
-  /** @param {CommandEvent} event */
-  function handleCommand(event) {
+  function handleCommand(event: CommandEvent) {
     if (event.command === "--copy") void copy();
   }
 
@@ -93,7 +89,7 @@
     role="region"
     aria-label={title || (lang ? `${lang} code` : "Code example")}
     tabindex="0"
-    oncommand={handleCommand}
+    {...{ oncommand: handleCommand }}
   >
     {@render children()}
   </div>

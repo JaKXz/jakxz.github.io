@@ -1,14 +1,15 @@
-<script>
+<script lang="ts">
   import "virtual:uno.css";
   import "#assets/scss/global.scss";
 
   import { page } from "$app/state";
-  import classNames from "#assets/js/classNames.js";
+  import classNames from "#assets/js/classNames.ts";
   import Footer from "#components/Footer.svelte";
   import Header from "#components/Header.svelte";
-  import { siteLink } from "#lib/config.js";
+  import { siteLink } from "#lib/config.ts";
+  import type { LayoutProps } from "./$types";
 
-  let { children } = $props();
+  let { children }: LayoutProps = $props();
   let path = $derived(page.url.pathname);
 
   const defaultSeoDescription =

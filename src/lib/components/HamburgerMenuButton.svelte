@@ -1,15 +1,15 @@
-<script>
+<script lang="ts">
   import { onMount, tick } from "svelte";
 
-  import { isMenuOpen } from "#assets/js/store.js";
+  import { isMenuOpen } from "#assets/js/store.ts";
   import HamburgerSVG from "./svg/HamburgerSVG.svelte";
   import XSVG from "./svg/XSVG.svelte";
 
   let { closeOnly = false } = $props();
-  let button;
+  let button: HTMLButtonElement | undefined;
 
   onMount(() => {
-    if (closeOnly) button.focus();
+    if (closeOnly) button?.focus();
   });
 
   async function toggleIsMenuOpen() {
@@ -18,7 +18,7 @@
 
     if (!willOpen) {
       await tick();
-      document.querySelector("header .menu-button")?.focus();
+      document.querySelector<HTMLButtonElement>("header .menu-button")?.focus();
     }
   }
 </script>
@@ -30,7 +30,7 @@
   aria-expanded={closeOnly ? undefined : $isMenuOpen}
   aria-label={closeOnly ? "Close navigation" : "Open navigation"}
   class="menu-button inline-grid h-10 w-10 cursor-pointer place-items-center border-none bg-[var(--sheet)] p-0 text-[var(--ink)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] sm:hidden"
-  tabindex={$isMenuOpen || !closeOnly ? "0" : "-1"}
+  tabindex={$isMenuOpen || !closeOnly ? 0 : -1}
 >
   {#if closeOnly}
     <XSVG />

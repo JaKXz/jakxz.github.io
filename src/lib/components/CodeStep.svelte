@@ -1,6 +1,13 @@
-<script>
-  /** @type {{title: string, children: import('svelte').Snippet, code?: import('svelte').Snippet}} */
-  let { title, children, code } = $props();
+<script lang="ts">
+  import type { Snippet } from "svelte";
+
+  interface Props {
+    title: string;
+    children: Snippet;
+    code?: Snippet;
+  }
+
+  let { title, children, code }: Props = $props();
   const id = $props.id();
 </script>
 
